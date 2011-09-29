@@ -1,0 +1,277 @@
+body {
+	background:#f8efee url(../img/bg.gif) repeat top center;
+	font-size:87.5%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	color:#9d9999;
+	margin:10px auto;
+	text-align:center;
+	line-height:1.4em;
+	width:960px;
+}
+input, textarea {
+	font-size:1em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight:300;
+	color:#606060;
+	padding:6px 3px 5px;
+	background:#dad2d2;
+	border:1px solid #dad2d2;
+}
+input:focus, textarea:focus {
+	border-color:#606060;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:1.714em;
+	line-height:1em;
+	font-weight:normal;
+	font-style:italic;
+	color:#606060;
+	margin:10px 0px;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	text-decoration:none;
+	display:block;
+}
+a:link, a:visited {
+	color:#af7a85;
+}
+a:hover {
+	color:#606060;
+}
+a img {
+	border:none;
+}
+header, footer {
+	margin:10px 0px;
+}
+header {
+	display:block;
+	position:relative;
+	text-align:left;
+}
+header h1 {
+	padding-left:20px;
+}
+
+header h2 {
+	padding-left:20px;
+	font-size:1em;
+	margin-top:-2px;
+}
+nav {
+	float:left;
+	clear:left;
+	margin:0px 20px 10px;
+	width:920px;
+	border-top:3px double #dad2d2;
+	border-bottom:3px double #dad2d2;
+	overflow:hidden;
+}
+nav ul {
+	padding:0px;
+	list-style-type:none;
+	display:inline;
+}
+nav li {
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+	float:left;
+}
+nav a:link, nav a:visited {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-decoration:none;
+	padding:10px;float:left;
+}
+nav a:hover {
+	background:#dad2d2;
+	background:rgba(96,96,96,0.4);
+	color:#fff;
+}
+
+/*** West Side***/
+article {
+	float:left;
+	width:660px;
+	padding-left:20px;
+	text-align:left;
+	overflow:hidden;
+}
+article p {
+	margin:10px 0px;
+}
+article p:first-of-type {
+	float:left;
+	padding-right:40px;
+	width:310px;
+}
+article > p:nth-of-type(2) {
+	float:left;
+	width:310px;
+}
+article > p:nth-of-type(3) {
+	float:left;
+	clear:left;
+	border-top:1px solid #dad2d2;
+	padding-top:10px;
+	margin:10px 0px;
+}
+
+/*** East Side ***/
+aside#right {
+	float:right;
+	width:220px;
+	padding:10px 20px 0px 0px;
+	text-align:left;
+}
+section {
+	float:left;
+	width:100%;
+	border-bottom:3px double #dad2d2;
+	padding:0px 0px 10px;
+}
+section label {
+	display:block;
+	font-weight:bold;
+}
+.screen-reader-text {
+	display:none;
+}
+section h1 {
+	margin-bottom:6px;
+}
+section input {
+	width:212px;
+}
+section button {
+	margin:10px 0px 0px;
+	float:right;
+	border:none;
+	padding:5px 10px;
+	background:#af7a85;
+	font-size:1em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight:300;
+	color:#fff;
+	cursor:pointer;
+}
+button:hover {
+	background:#606060;
+}
+section ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	border-top:1px solid #dad2d2;
+}
+section li {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	float:left;
+	width:100%;
+	border-bottom:1px solid #dad2d2;
+}
+section li a:link, section li a:visited {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:0.714em;
+	letter-spacing:.2em;
+	line-height:normal;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding:3px 0px;
+	float:left;
+	width:100%;
+}
+section table {
+	width:100%;
+	border-collapse:collapse;
+	border-top:1px solid #dad2d2;
+	border-right:1px solid #dad2d2;
+}
+section caption {
+	padding:10px 0px;
+	color:#606060;
+}
+section th, section td {
+	border-bottom:1px solid #dad2d2;
+	border-left:1px solid #dad2d2;
+	padding:2px 4px;
+	background:#ede4e4;text-align:center;
+}
+section td {
+	text-align:left;
+	background:#fff;
+}
+footer {
+	border-top:3px double #dad2d2;
+	margin:10px 20px 0px;
+	padding:10px 0px;
+	text-align:left;
+	display:block;
+	clear:both;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:0.714em;
+	letter-spacing:.2em;
+	line-height:normal;
+	text-transform:uppercase;
+}
+
+/**************************/
+/***  www.SliderJs.com  ***/
+/**************************/
+aside#promotion {
+	width:100%;
+	float:left;
+	position:relative;
+	height:277px;
+}
+#slides {
+	position:absolute;
+	top:0px;
+	left:20px;
+	z-index:100;
+	margin:0px auto;
+}
+#slides .next, #slides .prev {
+	position:absolute;
+	top:95px;
+	left:-20px;
+	width:20px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+#slides .next {
+	left:920px;
+}
+.slides_container {
+	width:918px;
+	height:240px;
+	overflow:hidden;
+	position:relative;
+	border:1px solid #dad2d2;
+}
+/* IE */ * html .slides_container {margin-left:-20px;}
+.pagination {
+	margin:10px auto 0px;
+	width:58px;	/* Each li including margin is 14px (14x14=56) Ooooh, and then add 2 pixels for IE */
+}
+.pagination li {
+	float:left;margin:0 1px;
+}
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0px;
+	padding-top:12px;
+	background-image:url(../img/pagination.gif);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+.pagination li.current a {
+	background-position:0 -12px;
+}
