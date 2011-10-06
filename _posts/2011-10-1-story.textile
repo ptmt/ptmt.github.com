@@ -1,0 +1,8 @@
+---
+layout: post
+title: История
+---
+
+h1. {{ page.title }}
+
+hello there

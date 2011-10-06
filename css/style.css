@@ -35,7 +35,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	display:block;
 }
 a:link, a:visited {
-	color:#af7a85;
+	color:#2b0a11;
 }
 a:hover {
 	color:#606060;
@@ -65,8 +65,8 @@ nav {
 	clear:left;
 	margin:0px 20px 10px;
 	width:920px;
-	border-top:3px double #dad2d2;
-	border-bottom:3px double #dad2d2;
+	border-top:3px double black;
+	border-bottom:3px double black;
 	overflow:hidden;
 }
 nav ul {
