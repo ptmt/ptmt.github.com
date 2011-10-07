@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Потому что такова жизнь программиста
+title: potomushto book
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
+<div id="home">  
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>

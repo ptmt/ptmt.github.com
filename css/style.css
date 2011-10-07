@@ -50,6 +50,7 @@ header {
 	display:block;
 	position:relative;
 	text-align:left;
+	border-bottom:3px double black;
 }
 header h1 {
 	padding-left:20px;
@@ -59,36 +60,6 @@ header h2 {
 	padding-left:20px;
 	font-size:1em;
 	margin-top:-2px;
-}
-nav {
-	float:left;
-	clear:left;
-	margin:0px 20px 10px;
-	width:920px;
-	border-top:3px double black;
-	border-bottom:3px double black;
-	overflow:hidden;
-}
-nav ul {
-	padding:0px;
-	list-style-type:none;
-	display:inline;
-}
-nav li {
-	margin:0px;
-	padding:0px;
-	list-style-type:none;
-	float:left;
-}
-nav a:link, nav a:visited {
-	font-family:Georgia, "Times New Roman", Times, serif;
-	text-decoration:none;
-	padding:10px;float:left;
-}
-nav a:hover {
-	background:#dad2d2;
-	background:rgba(96,96,96,0.4);
-	color:#fff;
 }
 
 /*** West Side***/
@@ -206,7 +177,7 @@ section td {
 	background:#fff;
 }
 footer {
-	border-top:3px double #dad2d2;
+	border-top:3px double black;
 	margin:10px 20px 0px;
 	padding:10px 0px;
 	text-align:left;
@@ -217,61 +188,4 @@ footer {
 	letter-spacing:.2em;
 	line-height:normal;
 	text-transform:uppercase;
-}
-
-/**************************/
-/***  www.SliderJs.com  ***/
-/**************************/
-aside#promotion {
-	width:100%;
-	float:left;
-	position:relative;
-	height:277px;
-}
-#slides {
-	position:absolute;
-	top:0px;
-	left:20px;
-	z-index:100;
-	margin:0px auto;
-}
-#slides .next, #slides .prev {
-	position:absolute;
-	top:95px;
-	left:-20px;
-	width:20px;
-	height:43px;
-	display:block;
-	z-index:101;
-}
-#slides .next {
-	left:920px;
-}
-.slides_container {
-	width:918px;
-	height:240px;
-	overflow:hidden;
-	position:relative;
-	border:1px solid #dad2d2;
-}
-/* IE */ * html .slides_container {margin-left:-20px;}
-.pagination {
-	margin:10px auto 0px;
-	width:58px;	/* Each li including margin is 14px (14x14=56) Ooooh, and then add 2 pixels for IE */
-}
-.pagination li {
-	float:left;margin:0 1px;
-}
-.pagination li a {
-	display:block;
-	width:12px;
-	height:0px;
-	padding-top:12px;
-	background-image:url(../img/pagination.gif);
-	background-position:0 0;
-	float:left;
-	overflow:hidden;
-}
-.pagination li.current a {
-	background-position:0 -12px;
 }
