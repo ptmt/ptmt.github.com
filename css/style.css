@@ -79,6 +79,7 @@ article div.page {
   	padding-bottom:20px;
   	/*border-bottom:1px solid grey;   */
 }
+ul.posts { margin-top: 100px; margin-bottom:100px;}
 /*
 article p:first-of-type {
 	float:left;
