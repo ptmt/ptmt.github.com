@@ -3,6 +3,8 @@ layout: post
 title: История
 ---
 
-h1. {{ page.title }}
+h1. История
 
-hello there
+Почему.
+Зачем.
+Когда
