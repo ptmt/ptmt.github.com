@@ -60,12 +60,12 @@ article {
 article div.page {
 	margin:10px 0px;
 	text-align: justify;
-	column-width: 20em;
-  	column-gap: 4em; 
-	-moz-column-width: 20em;
-  	-moz-column-gap: 4em;    
-	-webkit-column-width: 20em;
-  	-webkit-column-gap: 4em;    
+	column-width: 23em;
+  	column-gap: 6em; 
+	-moz-column-width: 23em;
+  	-moz-column-gap: 46em;    
+	-webkit-column-width: 23em;
+  	-webkit-column-gap: 6em;    
 
   	padding: 5px;   
   	padding-bottom:20px;
