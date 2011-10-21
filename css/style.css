@@ -51,8 +51,7 @@ header h2 {	font-size:1em;	margin-top:-2px;}
 
 /*** West Side***/
 article {		
-	padding-left:20px;
-	padding-right:20px;
+	padding:20px;	
 	margin: auto auto;
 	text-align:left;
 	overflow:hidden;
@@ -61,6 +60,7 @@ article {
 	text-indent: 20px;
 	font-family: "Times New Roman";
 }
+article h1, article h2 {padding-top:30px;padding-bottom:15px;}
 blockquote {
 	margin-left: 250px;
 	font-style: italic;

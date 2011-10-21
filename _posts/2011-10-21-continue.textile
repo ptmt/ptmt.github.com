@@ -2,7 +2,7 @@
 layout: post
 title: История продолжается
 ---
-h1. title
+h1. {{ page.title }}
 
 <blockquote>
 Любите, женщины,
