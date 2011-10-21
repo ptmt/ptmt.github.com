@@ -53,20 +53,25 @@ header h2 {	font-size:1em;	margin-top:-2px;}
 article {		
 	padding-left:20px;
 	padding-right:20px;
+	margin: auto auto;
 	text-align:left;
 	overflow:hidden;
-	font-size: 13px;
+	font-size: 14px;
+	width: 500px;
+	text-indent: 20px;
+	font-family: "Times New Roman";
 }
+blockquote {
+	margin-left: 250px;
+	font-style: italic;
+	text-indent: 0px;
+	font-size: 14px;
+	padding:29px;
+}
+
 article div.page {
 	margin:10px 0px;
 	text-align: justify;
-	column-width: 23em;
-  	column-gap: 6em; 
-	-moz-column-width: 23em;
-  	-moz-column-gap: 46em;    
-	-webkit-column-width: 23em;
-  	-webkit-column-gap: 6em;    
-
   	padding: 5px;   
   	padding-bottom:20px;
   	/*border-bottom:1px solid grey;   */
