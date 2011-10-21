@@ -61,7 +61,12 @@ article div.page {
 	margin:10px 0px;
 	text-align: justify;
 	column-width: 20em;
-  	column-gap: 4em;   
+  	column-gap: 4em; 
+	-moz-column-width: 20em;
+  	-moz-column-gap: 4em;    
+	-webkit-column-width: 20em;
+  	-webkit-column-gap: 4em;    
+
   	padding: 5px;   
   	padding-bottom:20px;
   	/*border-bottom:1px solid grey;   */
