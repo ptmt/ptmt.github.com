@@ -49,26 +49,10 @@ header, footer {
 header { display:block;	position:relative;	text-align:left;	border-bottom:3px double black;}
 header h2 {	font-size:1em;	margin-top:-2px;}
 
-/*** West Side***/
-article {		
-	padding:20px;	
-	margin: auto auto;
-	text-align:left;
-	overflow:hidden;
-	font-size: 14px;
-	width: 500px;
-	text-indent: 20px;
-	font-family: "Times New Roman";
-}
+article {padding:20px;	margin: auto auto;text-align:justify;overflow:hidden;font-size: 14px;width: 500px;text-indent: 20px;font-family: "Times New Roman";}
 article h1, article h2 {padding-top:30px;padding-bottom:15px;}
-blockquote {
-	margin-left: 250px;
-	font-style: italic;
-	text-indent: 0px;
-	font-size: 14px;
-	padding:29px;
-}
-
+blockquote { margin-left: 250px;	font-style: italic;	text-indent: 0px;	font-size: 14px;	padding:29px;}
+.footnote { vertical-align:super; font-size:10px }
 article div.page {
 	margin:10px 0px;
 	text-align: justify;
