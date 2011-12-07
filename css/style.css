@@ -1,5 +1,5 @@
 body {
-	background:#f8efee url(../img/bg.gif) repeat top center;
+	background:#fff  repeat top center;
 	font-size:87.5%;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
@@ -9,18 +9,7 @@ body {
 	line-height:1.4em;
 	width:960px;
 }
-input, textarea {
-	font-size:1em;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-weight:300;
-	color:#606060;
-	padding:6px 3px 5px;
-	background:#dad2d2;
-	border:1px solid #dad2d2;
-}
-input:focus, textarea:focus {
-	border-color:#606060;
-}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:1.314em;
@@ -52,7 +41,7 @@ header, footer {
 header { display:block;	position:relative;	text-align:left;	border-bottom:3px double black;}
 header h2 {	font-size:1em;	margin-top:-2px;}
 
-article {padding:20px;	margin: auto auto;text-align:left;overflow:hidden;font-size: 17px;width: 555px;text-indent: 20px;}
+article {padding:20px;	margin: auto auto;text-align:left;overflow:hidden;font-size: 15px;width: 555px;text-indent: 20px;}
 article h1, article h2 {padding-top:30px;padding-bottom:15px;}
 blockquote { margin-left: 250px;	font-style: italic;	text-indent: 0px;	font-size: 14px;	padding:29px;}
 sup { vertical-align:super; font-size:10px }
