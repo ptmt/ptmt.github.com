@@ -1,112 +1,27 @@
-body {
-	background:#fff  repeat top center;
-	font-size:87.5%;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-weight: 300;
-	color:black;
-	margin:10px auto;
-	text-align:center;
-	line-height:1.4em;
-	width:960px;
-}
+body { background:#C7C7C7; font-size:87.5%; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300;}
 
-h1, h2, h3, h4, h5, h6 {
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size:1.314em;
-	line-height:1em;
-	font-weight:normal;
-	font-style:italic;
-	color:#606060;
-	margin:10px 0px;
-}
-h1 {	
-	font-size:2.0em !important;	
-}
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	text-decoration:none;
-	display:block;
-}
-a:link, a:visited {
-	color:#2b0a11;
-}
-a:hover {
-	color:#606060;
-}
-a img {
-	border:none;
-}
-header, footer {
-	margin:10px 0px;
-}
+h1, h2, h3, h4, h5, h6 {font-family:Georgia, "Times New Roman", Times, serif;font-size:1.314em;line-height:1em;font-weight:normal;font-style:italic;color:#606060;margin:10px 0px;}
+h1 {	font-size:2.0em !important;	}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {	text-decoration:none;	display:block;}
+a:link, a:visited {color:#2b0a11;}
+a:hover {color:#606060;}
+a img {border:none;}
+header, footer {	margin:10px 0px;}
 header { display:block;	position:relative;	text-align:left;	border-bottom:3px double black;}
 header h2 {	font-size:1em;	margin-top:-2px;}
-
-article {padding:20px;	margin: auto auto;text-align:left;overflow:hidden;font-size: 15px;width: 555px;text-indent: 20px;}
+article {padding: 20px 100px;margin: auto auto;text-align:left;overflow:hidden;font-size: 15px;width: 555px;text-indent: 20px;background: white;}
 article h1, article h2 {padding-top:30px;padding-bottom:15px;}
+article p { line-height: 22px;margin: 10px 0; }
 blockquote { margin-left: 250px;	font-style: italic;	text-indent: 0px;	font-size: 14px;	padding:29px;}
 sup { vertical-align:super; font-size:10px }
-article div.page {
-	margin:10px 0px;
-	text-align: left;
-  	padding: 5px;   
-  	padding-bottom:20px;
-  	/*border-bottom:1px solid grey;   */
-}
+article div.page {margin:10px 0px;text-align: left; 	padding: 5px;padding-bottom:20px;  	/*border-bottom:1px solid grey;   */}
 ul.posts { margin-top: 100px; margin-bottom:100px;}
-/*
-article p:first-of-type {
-	float:left;
-	padding-right:40px;
-	width:310px;
-}
-article > p {
-	
-	padding-right:40px;	
-	
-	border-bottom:4px solid #dad2d2;
-	padding-bottom:10px;	
-}*/
-/*** East Side ***/
-aside#right {
-	float:right;
-	width:220px;
-	padding:10px 20px 0px 0px;
-	text-align:left;
-}
-section {
-	float:left;
-	width:100%;
-	border-bottom:3px double #dad2d2;
-	padding:0px 0px 10px;
-}
-section label {
-	display:block;
-	font-weight:bold;
-}
-.screen-reader-text {
-	display:none;
-}
-section h1 {
-	margin-bottom:6px;
-}
-section input {
-	width:212px;
-}
-section button {
-	margin:10px 0px 0px;
-	float:right;
-	border:none;
-	padding:5px 10px;
-	background:#af7a85;
-	font-size:1em;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-weight:300;
-	color:#fff;
-	cursor:pointer;
-}
-button:hover {
-	background:#606060;
-}
+
+section {float:left;width:100%;border-bottom:3px double #dad2d2;padding:0px 0px 10px;}
+section label {	display:block;	font-weight:bold;}
+.screen-reader-text {	display:none;}
+section h1 {margin-bottom:6px;}
+
 section ul {
 	margin:0px;
 	padding:0px;
