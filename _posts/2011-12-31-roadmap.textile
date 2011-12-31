@@ -1,0 +1,7 @@
+---
+layout: post
+title: Рубеж
+---
+h1. {{ page.title }}
+
+Небольшой рубеж.
