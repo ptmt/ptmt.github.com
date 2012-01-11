@@ -15,27 +15,15 @@ article p { line-height: 22px;margin: 10px 0; }
 blockquote { margin-left: 250px;	font-style: italic;	text-indent: 0px;	font-size: 14px;	padding:29px;}
 sup { vertical-align:super; font-size:10px }
 article div.page {margin:10px 0px;text-align: left; 	padding: 5px;padding-bottom:20px;  	/*border-bottom:1px solid grey;   */}
-ul.posts { margin-top: 100px; margin-bottom:100px;}
+ul.posts { margin-top: 45px; margin-bottom:100px;}
 
 section {float:left;width:100%;border-bottom:3px double #dad2d2;padding:0px 0px 10px;}
 section label {	display:block;	font-weight:bold;}
 .screen-reader-text {	display:none;}
 section h1 {margin-bottom:6px;}
 
-section ul {
-	margin:0px;
-	padding:0px;
-	list-style:none;
-	border-top:1px solid #dad2d2;
-}
-section li {
-	margin:0px;
-	padding:0px;
-	list-style:none;
-	float:left;
-	width:100%;
-	border-bottom:1px solid #dad2d2;
-}
+section ul {margin:0px;	padding:0px;list-style:none;border-top:1px solid #dad2d2;}
+section li {margin:0px;padding:0px;list-style:none;float:left;width:100%;border-bottom:1px solid #dad2d2;}
 section li a:link, section li a:visited {
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:0.714em;
