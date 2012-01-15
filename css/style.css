@@ -24,47 +24,5 @@ section h1 {margin-bottom:6px;}
 
 section ul {margin:0px;	padding:0px;list-style:none;border-top:1px solid #dad2d2;}
 section li {margin:0px;padding:0px;list-style:none;float:left;width:100%;border-bottom:1px solid #dad2d2;}
-section li a:link, section li a:visited {
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size:0.714em;
-	letter-spacing:.2em;
-	line-height:normal;
-	text-transform:uppercase;
-	text-decoration:none;
-	padding:3px 0px;
-	float:left;
-	width:100%;
-}
-section table {
-	width:100%;
-	border-collapse:collapse;
-	border-top:1px solid #dad2d2;
-	border-right:1px solid #dad2d2;
-}
-section caption {
-	padding:10px 0px;
-	color:#606060;
-}
-section th, section td {
-	border-bottom:1px solid #dad2d2;
-	border-left:1px solid #dad2d2;
-	padding:2px 4px;
-	background:#ede4e4;text-align:center;
-}
-section td {
-	text-align:left;
-	background:#fff;
-}
-footer {
-	border-top:3px double black;
-	margin:0px;
-	padding:50px 0px 0px;
-	text-align:left;
-	display:block;
-	clear:both;
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size:0.714em;
-	letter-spacing:.2em;
-	line-height:normal;
-	text-transform:uppercase;
-}
+section li a:link, section li a:visited {font-family:Georgia, "Times New Roman", Times, serif;font-size:0.714em;letter-spacing:.2em;line-height:normal;text-transform:uppercase;text-decoration:none;padding:3px 0px;float:left;width:100%;}
+footer {border-top:3px double black;margin:0px;	padding:50px 0px 0px;text-align:left;display:block;clear:both;	font-family:Georgia, "Times New Roman", Times, serif;	font-size:0.714em;	letter-spacing:.2em;	line-height:normal;	text-transform:uppercase;}
