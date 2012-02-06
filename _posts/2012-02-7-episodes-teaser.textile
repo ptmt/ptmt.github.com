@@ -1,0 +1,7 @@
+---
+layout: post
+title: О эпизодах
+---
+h1. {{ page.title }}
+
+<iframe width="853" height="480" src="http://www.youtube.com/embed/_CD7Oid2Cp4" frameborder="0" allowfullscreen></iframe>
