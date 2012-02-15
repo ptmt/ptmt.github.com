@@ -2,51 +2,40 @@
 <html>
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title> Потому что {{ page.title }} - Блог</title>
+   <title> Потому что о ком - О жизни в России и работе в IT</title>
    <meta name="author" content="potomushto" />
-   <meta name="description" content="Жить в России и работать в IT? Мой ответ почему" >
-   <link rel="stylesheet" media="screen" type="text/css" href="/css/reset.css" />
-   <link rel="stylesheet" media="screen" type="text/css" href="/css/style.css" />
-   
+   <meta name="description" content="Жить в России и работать в IT" >
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic' rel='stylesheet' type='text/css'>
+<style>
+	body { background: black }
+	section { width: 50%; margin:0px auto; text-align:center;  font-family: 'Open Sans Condensed', sans-serif;}
+	section h1 a { color: white; text-decoration: none; }
+	h1 {  font-size: 120px;}
+
+	h2 {  color: #ccc; font-size: 20px;}
+
+	nav ul {margin-top: -110px;margin-bottom:100px; padding: 0;list-style-type: none;text-align: center;}
+	nav ul li { display: inline; }
+	nav ul li a{ padding: .2em 1em;color: #fff;}
+	nav ul li a:hover{color: #ccc;}
+</style>
+<script>
+</script>
 </head>
 <body>
-  <header>
-      <hgroup>
-          <h1><a href="/" >potomushto</a></h1>
-          <h2>Live in Russia, work in IT</h2>
-      </hgroup>   
-  </header>
-
-  {{ content }}
-    
-  <footer>
-    <div class="contact">      
-      <p>
-        unknown live id at hotmail.com
-      </p>  
-      <p>       
-        All &copy; <a href="http://twitter.com/potomushto/">twitter.com/potomushto</a><br />
-      </p>
-    </div>  
-    <div class="feeds">
-        <p><a href="http://potomushto.com/rss.xml">RSS</a>/<a href="http://potomushto.com/atom.xml">Atom</a></p>
-        <p><a href="http://potomushto.com/technotes/">Technotes</p>
-     </div>  
-  </footer>
-
-  <!-- Yandex.Metrika counter -->
-<div style="display:none;"><script type="text/javascript">
-(function(w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter10589050 = new Ya.Metrika({id:10589050, enableAll: true, webvisor:true});
-        }
-        catch(e) { }
-    });
-})(window, "yandex_metrika_callbacks");
-</script></div>
-<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
-<noscript><div><img src="//mc.yandex.ru/watch/10589050" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+	<section>
+          <h1><a href="/" >potomushto.com</a></h1>         
+	  <nav>
+		<ul>
+			<li><a href="/stories.html">stories</a></li>
+		        <li><a href="http://www.youtube.com/user/unknownpodcast">episodes</a></li>
+			<li><a href="/technotes/">technotes</a><li>
+			<li><a href="http://twitter.com/potomushto">@potomushto</a><li>
+		</ul>
+	  </nav>
+	  <h2>Live in Russia, work in IT</h2>
+	</section>
+		  
 </body>
 </html>
