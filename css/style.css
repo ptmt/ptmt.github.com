@@ -21,7 +21,7 @@ section {float:left;width:100%;border-bottom:3px double #dad2d2;padding:0px 0px 
 section label {	display:block;	font-weight:bold;}
 .screen-reader-text {	display:none;}
 section h1 {margin-bottom:6px;}
-
+strong {font-weight: 700;}
 section ul {margin:0px;	padding:0px;list-style:none;border-top:1px solid #dad2d2;}
 section li {margin:0px;padding:0px;list-style:none;float:left;width:100%;border-bottom:1px solid #dad2d2;}
 section li a:link, section li a:visited {font-family:Georgia, "Times New Roman", Times, serif;font-size:0.714em;letter-spacing:.2em;line-height:normal;text-transform:uppercase;text-decoration:none;padding:3px 0px;float:left;width:100%;}
