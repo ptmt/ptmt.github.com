@@ -1,7 +1,7 @@
 body { background:#E8E8E8; font-size:87.5%; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300;margin:10px auto;	text-align:center;	line-height:1.4em;	width:960px;}
 
 h1, h2, h3, h4, h5, h6 {font-family:Georgia, "Times New Roman", Times, serif;font-size:1.314em;line-height:1em;font-weight:normal;font-style:italic;color:#606060;margin:10px 0px;}
-h1 {	font-size:2.0em !important;	}
+h1 {	font-size:3.0em !important;	}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {	text-decoration:none;	display:block;}
 a:link, a:visited {color:#2b0a11;}
 a:hover {color:#606060;}
@@ -10,7 +10,7 @@ header, footer {	margin:10px 0px;}
 header { display:block;	position:relative;	text-align:left;	border-bottom:3px double black;}
 header h2 {	font-size:1em;	margin-top:-2px;}
 article {padding: 20px 100px;margin: auto auto;text-align:left;overflow:hidden;font-size: 15px;width: 555px;text-indent: 20px;background: white;border: 1px solid #D1D1D1}
-article h1, article h2 {padding-top:30px;padding-bottom:15px;}
+article h1, article h2 {padding-top:30px;padding-bottom:20px;font-style:normal}
 article p { line-height: 22px;margin: 10px 0; }
 blockquote { margin-left: 250px;	font-style: italic;	text-indent: 0px;	font-size: 14px;	padding:29px;}
 sup { vertical-align:super; font-size:10px }
