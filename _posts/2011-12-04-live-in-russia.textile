@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Живу в России
+title: Живя в России
 ---
 h1. {{ page.title }}
 
