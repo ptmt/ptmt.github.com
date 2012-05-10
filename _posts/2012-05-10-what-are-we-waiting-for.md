@@ -69,6 +69,9 @@ title:  Чего же мы ждем
 
 ***
 
- ^1 "Small, furry…and smart" NATURE|Vol 461 Vol 461||15 October 2009 15 October 2009 [link](http://www.nature.com/news/2009/091014/pdf/461862a.pdf)
 
- ^2 Боже, благослови этот светлый день, 27 сентября 2010 года. 
+
+
+ _^1 "Small, furry…and smart" NATURE|Vol 461 Vol 461||15 October 2009 15 October 2009 [link](http://www.nature.com/news/2009/091014/pdf/461862a.pdf)
+
+ _^2 Боже, благослови этот светлый день, 27 сентября 2010 года. 
