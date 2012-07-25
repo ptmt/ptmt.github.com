@@ -19,3 +19,4 @@ title: То ли меланхолия, то ли похмелье
 Здесь нет движняка просто так, все инвестируется в себя. Завтра ты проснешься, мир станет лучше, быстрее, сильнее. А ты?
 
 <iframe allowfullscreen="" frameborder="0" height="281" mozallowfullscreen="" src="http://player.vimeo.com/video/46371668" webkitallowfullscreen="" width="500"></iframe>
+
