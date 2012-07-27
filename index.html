@@ -1,37 +1,44 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>Жить в России, работать в IT</title>
-   <meta name="author" content="potomushto" />
-   <meta name="description" content="Жить в России, работать в IT" >
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Жить в России, работать в webdev</title>
+	<meta name="author" content="potomushto" />
+	<meta name="description" content="Жить в России, работать в webdev" >
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic' rel='stylesheet' type='text/css'>
 	<style>
-		body { background: url(img/back.jpg) }
+		body{background:url('img/back.jpg');}
 		section { text-align:center;  font-family: 'Open Sans Condensed', sans-serif;}
 		section h1 a { color: white; text-decoration: none; }
 		h1 {  font-size: 120px;}
 		h2 {  color: #ccc; font-size: 20px;background: black}
-	
-		nav ul {font-size: 20px;margin-top: -110px;margin-bottom:100px; padding: 0;list-style-type: none;text-align: center;}
-		nav ul li { display: inline;background: black }
+		ol,ul {list-style:none;}
+		nav ul {font-size: 20px;margin-top: -110px;margin-bottom:100px; list-style-type: none;text-align: center;}
+		nav ul li { display: inline;background: black;padding:0px;margin:0px;}
 		nav ul li a{ padding: .2em 1em;color: #fff;}
 		nav ul li a:hover{color: #ccc;}
 	</style>
-
+	<script>
+		var show_face = function() {
+			document.body.style.background = "url(img/back2.jpg)";
+		}
+		if (document.location.hash === "#me") {
+			show_face();
+		}
+	</script>
 </head>
 <body>
-	<section>
+	<section>	  
 	  <h1><a href="/" >potomushto.com</a></h1>         
 	  <nav>
 		<ul>
-			<li><a href="stories.html">blog</a></li>					    
-		    <!--<li><a href="/txt/">txt</a></li>-->
-		    <!--<li><a href="http://potomushto.com/technotes/">startup daily</a><li>-->
+			<li><a href="stories.html">blog</a></li>					    		   
 		    <li><a href="http://vimeo.com/phinitive">vimeo</a><li>
-		    <li><a href="http://twitter.com/potomushto">twitter</a><li>		    	    
-
+		    <li><a href="http://twitter.com/potomushto">twitter</a><li>		
+		    <li><a href="#me" onclick="show_face();">me</a><li>		
+		     <!--<li><a href="/txt/">txt</a></li>-->
+		    <!--<li><a href="http://potomushto.com/technotes/">startup daily</a><li>-->    	    		    
 		</ul>
 	  </nav>
 	 
@@ -39,8 +46,7 @@
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-30314477-1']);
-		_gaq.push(['_trackPageview']);
-		
+		_gaq.push(['_trackPageview']);		
 		(function() {
 		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
