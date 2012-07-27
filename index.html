@@ -23,8 +23,10 @@
 		var show_face = function() {
 			document.body.style.background = "url(img/back2.jpg)";
 		}
-		if (document.location.hash === "#me") {
-			show_face();
+		window.onload = function() {
+			if (document.location.hash === "#me") {
+				show_face();
+			}
 		}
 	</script>
 </head>
