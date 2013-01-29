@@ -9,9 +9,9 @@ a img {border:none;}
 header, footer {	margin:10px 0px;}
 header { display:block;	position:relative;	text-align:left;}
 header h2 {	margin-top:-2px;}
-article {text-align:left;overflow:hidden;width: 555px;}
+article {text-align:left;overflow:hidden;width: 700px;}
 article h1, article h2 {padding-top:30px;padding-bottom:20px;font-style:normal}
-article p { line-height: 22px;margin: 10px 0; }
+article p { line-height: 22px;margin: 10px 0; width: 555px;}
 blockquote { margin-left: 120px;	font-style: italic;	text-indent: 0px;	font-size: 14px;	padding:29px;}
 sup { vertical-align:super; font-size:10px }
 article div.page {margin:10px 0px;text-align: left; 	padding: 5px;padding-bottom:20px;  	/*border-bottom:1px solid grey;   */}
