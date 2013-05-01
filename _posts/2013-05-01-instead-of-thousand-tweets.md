@@ -12,3 +12,5 @@ title: Вместо тысячи твитов
   mencoder "$1" -ovc xvid -oac mp3lame -xvidencopts pass=1 -o "$2"
 ```
 
+Музыка [https://soundcloud.com/groups/legal-free-music-downloads](https://soundcloud.com/groups/legal-free-music-downloads)
+
