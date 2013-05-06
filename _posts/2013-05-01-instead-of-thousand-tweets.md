@@ -14,3 +14,6 @@ title: Вместо тысячи твитов
 
 Музыка [https://soundcloud.com/groups/legal-free-music-downloads](https://soundcloud.com/groups/legal-free-music-downloads)
 
+Фоторедактор GNU Image Manipulation Program. Самый худший в мире.
+
+
