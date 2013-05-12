@@ -18,3 +18,6 @@ title: Вместо тысячи твитов
 
 В фотошопе не получится сделать анимацию. After Effects?
 
+20 hipsters fonts http://play4theworld.com/20-free-fonts-for-hipsters/
+
+
