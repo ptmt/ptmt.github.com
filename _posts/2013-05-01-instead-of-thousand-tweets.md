@@ -12,13 +12,13 @@ title: Вместо тысячи твитов
 
 1. Запись скринкаста с помощью `recordmydesktop`, потом конвертация с помощью `/usr/bin/ogv2avi`:
 
-<pre>
-```
+<pre><code>
+
     #!/bin/bash
     # ogv to avi converting
     mencoder "$1" -ovc xvid -oac mp3lame -xvidencopts pass=1 -o "$2"
-```
-</pre>
+
+</code></pre>
 
 
 2. Музыка дольше десятка секунд отсюда: [https://soundcloud.com/groups/legal-free-music-downloads](https://soundcloud.com/groups/legal-free-music-downloads)
