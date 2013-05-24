@@ -17,11 +17,9 @@ title: Вместо тысячи твитов
 1. Запись скринкаста в убунте с помощью `recordmydesktop`, потом конвертация с помощью `/usr/bin/ogv2avi`:
 
 <pre><code>
-
     #!/bin/bash
     # ogv to avi converting
     mencoder "$1" -ovc xvid -oac mp3lame -xvidencopts pass=1 -o "$2"
-
 </code></pre>
 
 Если в Canonical, делая Ubuntu, гнались за Windows — у них получилось. Обновлений она требует также часто и также много, а после них ещё и перезагружается. 
