@@ -10,6 +10,7 @@ title: Вместо тысячи твитов
 
 1. Запись скринкаста с помощью `recordmydesktop`, потом конвертация с помощью `/usr/bin/ogv2avi`:
 
+
 ```
   #!/bin/bash
   # ogv to avi converting
