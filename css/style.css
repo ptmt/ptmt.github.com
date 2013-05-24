@@ -29,9 +29,10 @@ footer {border-top:3px double black;margin:0px;	padding:50px 0px 0px;text-align:
 .feeds { margin-left: 857px;margin-top: -26px; }
 
 code{
-    background-color: #F9F9F9;
-    border: 1px dashed #2F6FAB;
-    color: black;
-    line-height: 1.1em;
-    padding: 1em;
+    margin: 0 2px;
+    padding: 0px 5px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 3px;
 }
+pre { margin: 15px 0; }
