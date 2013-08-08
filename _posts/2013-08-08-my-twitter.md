@@ -18,12 +18,16 @@ title: Мой твиттер
 17 июля все токены были отозваны, на каждом из сотен сайтов и приложений. Наступали тяжелые времена, в России кончался дешевый природный газ, либерально не любили свою страну как и 150 лет назад. 
 
 <blockquote>
-The email address you're writing from does not match the email on this account. For privacy reasons, we can't offer any more information about the email.
+The email address you're writing from does not match the email on this account. 
 
+For privacy reasons, we can't offer any more information about the email.
+
+</blockquote>
+<blockquote>
 ...
-
+<p>
 Thanks,
-
+<p>
 Twitter
 
 Twitter Support
