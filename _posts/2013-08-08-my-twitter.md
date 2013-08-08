@@ -19,17 +19,15 @@ title: Мой твиттер
 
 <blockquote>
 The email address you're writing from does not match the email on this account. 
-
+<p>
 For privacy reasons, we can't offer any more information about the email.
-
-</blockquote>
-<blockquote>
+<p>
 ...
 <p>
 Thanks,
 <p>
 Twitter
-
+<p>
 Twitter Support
 support.twitter.com
 </blockquote>
