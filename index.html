@@ -40,6 +40,13 @@
             document.location = menus[currentId].href;
           document.querySelectorAll('.terminal pre')[0].innerHTML = renderMenu(menus, currentId);
        };
+       document.querySelectorAll('.joystick')[0].addEventListener("click", function () {
+          currentId === menus.length-1 ? currentId = 0 : currentId++;
+          document.querySelectorAll('.terminal pre')[0].innerHTML = renderMenu(menus, currentId);
+       });
+       document.querySelectorAll('.button')[0].addEventListener("click", function () {
+          document.location = menus[currentId].href;
+       });
     }
 
     function addClass(el, className) {
@@ -119,9 +126,12 @@
   -webkit-transform: rotate(-9deg) skew(-5deg, -5deg);
   font-family:'zx_spectrum-7regular';
 }
-
+.joystick{z-index:1;left: 937px;top: 498px;position: absolute;opacity:0;}
+.joystick:hover{opacity:1;}
+.button{left: 686px;top: 689px;position: absolute;opacity:0;}
+.button:hover{opacity:1;}
 </style>
-<section class="spectrum-img" ></section>
+<section class="spectrum-img" ><img src="img/joystick.gif" class="joystick"/><img src="img/button.gif" class="button"/></section>
 <div class="terminal"><pre></pre></div>
 <section class="spectrum-ascii">
   <pre>''+:::::::::::::;::,,,:+:;+`+;::;;;;;'+++''''''''';;`,#+'''''':'+++'+#+++++++++++#@@@@@@##++##++++++++++++''''+++++++++++++'';;;;;'''''''''''''''''''''++'++##########:##############;####''++++++##++++
