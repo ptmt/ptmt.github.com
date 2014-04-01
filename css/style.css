@@ -1,4 +1,4 @@
-body { padding: 20px;font-family: monospace; margin:10px auto;	text-align:center;	line-height:1.4em;	width:960px;}
+body { padding: 20px;margin:10px auto;	text-align:center;	line-height:1.4em;	width:960px;}
 
 h1, h2, h3, h4, h5, h6 {font-size:1.314em;line-height:1em;font-weight:normal;font-style:italic;color:#606060;}
 h1 {	font-size:3.0em !important;	}
