@@ -44,4 +44,5 @@ pre>code {
     word-break: normal;
     white-space: pre;
     background: transparent;
+    border: 0;
 }
