@@ -29,11 +29,19 @@ section li a:link, section li a:visited {font-family:Georgia, "Times New Roman",
 footer {border-top:3px double black;margin:0px;	padding:50px 0px 0px;text-align:left;display:block;clear:both;	font-family:Georgia, "Times New Roman", Times, serif;	font-size:0.714em;	letter-spacing:.2em;	line-height:normal;	text-transform:uppercase;}
 .feeds { margin-left: 857px;margin-top: -26px; }
 
-code{
+code {
     margin: 0 2px;
     padding: 0px 5px;
     border: 1px solid #ddd;
     background-color: #f8f8f8;
     border-radius: 3px;
 }
-pre { margin: 15px 0; }
+pre { margin: 15px 0; background-color: #f7f7f7 }
+pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+}
