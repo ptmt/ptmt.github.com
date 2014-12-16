@@ -9,7 +9,9 @@ function $(selector, value) {
     document.querySelector(selector).innerHTML = value;
   }
 }
-
+conn.onerror = function() {
+  console.log('Извините, но видимо происходит падение на дно');
+};
 conn.onmessage = function (e) {
   document.getElementById('input').focus();
   var values = e.data.split(';');
