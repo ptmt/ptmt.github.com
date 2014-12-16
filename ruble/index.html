@@ -1,3 +1,5 @@
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Open+Sans+Condensed:300&subset=latin,cyrillic'
+rel='stylesheet' type='text/css'>
 <script type="text/javascript">
 var conn = new WebSocket('ws://zenrus.ru:8888');
 function $(selector, value) {
@@ -33,7 +35,7 @@ body
   position: absolute;
   top: 20%;
   margin-top: -130px;
-  color: white;
+  color: black;
   width: 100%;
 }
 .quotes .item {
@@ -50,7 +52,7 @@ body
 .quotes .item .value {
   font-family: 'Oxygen', sans-serif;
   font-size: 6em;
-  text-shadow: 0 0 15px #555;
+  text-shadow: 0 2px 2px #111;
   font-weight: bold;
   transition: all 1s ease;
 }
@@ -61,18 +63,18 @@ body
   text-shadow: 0 0 3px #666;
 }
 .details {
-  font-size: 2em;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.7em;
   margin-top:10%;
-  color:white;
-  opacity:0.9;
-  text-shadow: 0 0 3px black;
+  color:black;
+  opacity:0.6;
   letter-spacing: 1px;
 }
 .details span {
   font-weight: bold;
 }
 .details a {
-  color:white;
+  color:black;
 }
 </style>
 
@@ -90,7 +92,7 @@ body
     <div class="note">твоя зарплата в евро</div>
   </div>
   <ul class="details note">
-    <li><span class="detail-1">0</span> месяцев 4Gb 2 сore виртуального сервера Digital Ocean
+    <li><span class="detail-1">0</span> месяцев 4Gb/2-сore виртуального сервера Digital Ocean
     <li><span class="detail-2">0</span> билетов на типичную конференцию в San Francisco (<a href="http://nodesummit.com/registration/">NodeSummit</a>)
     <li><span class="detail-3">0</span> билетов Moscow - San Francisco - Moscow (600 €)
     <li><span class="detail-4">0</span> плат Raspberry PI Model B+ (<a href="http://www.element14.com/community/community/raspberry-pi">€32.1</a>)
