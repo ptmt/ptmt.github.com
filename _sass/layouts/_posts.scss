@@ -22,6 +22,9 @@ article {
   .highlight code {
     background: #FCFCFC;
     font-size: 0.8em;
+    @media (max-width: 1000px) {
+      font-size: 0.6em;
+    }
   }
   code {
     font-family: 'Droid Sans Mono', monospace;
