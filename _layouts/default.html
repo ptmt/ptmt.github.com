@@ -1,41 +1,16 @@
 <!DOCTYPE html>
-<html>
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title> Потому что {{ page.title }} - Веб и снег на берегу</title>
-   <meta name="author" content="potomushto" />
-   <meta name="description" content="Веб и снег на берегу реки" >
-   <link rel="stylesheet" media="screen" type="text/css" href="/css/reset.css" />
-   <link rel="stylesheet" media="screen" type="text/css" href="/css/style.css" />
-   
-</head>
-<body>
-  <header>
-      <hgroup>
-          <h1><a href="/" >@potomushto/stories</a></h1>
-          <h2>#siberia #code #existentialism</h2>
-      </hgroup>   
-  </header>
+<html class="no-js">
 
-  {{ content }}
-    
-  <footer>
-    <div class="contact">      
-      <p>
-       <a href="mailto:dim@potomushto.com">email</a>/<a href="http://twitter.com/potomushto/">twitter</a>
-      </p>
-    </div>     
-  </footer>
+  {% include head.html %}
 
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-30314477-1']);
-        _gaq.push(['_trackPageview']);		
-        (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>	
-</body>
+  <body>
+    {% include header.html %}
+
+    <div class="content">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+  </body>
+  
 </html>

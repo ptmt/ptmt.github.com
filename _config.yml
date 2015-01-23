@@ -1,3 +1,68 @@
-markdown: kramdown
-pygments: true
-permalink: /:year-:month-:title
+# SITE CONFIGURATION
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://potomushto.com" # the base hostname & protocol for your site
+
+# THEME-SPECIFIC CONFIGURATION
+theme:
+  # Meta
+  title: Potom ush to
+  avatar: avatar.png
+  gravatar: # email md5 hash
+  description: "Node.js developer blog" # used by search engines
+
+  # # Header and footer text
+  # header_text: >
+  #    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  #
+  #    <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
+  footer_text: >
+   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
+
+  # Icons
+  rss: false
+  email_address: # full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  github: "unknownexception"
+  google_plus:
+  instagram:
+  linkedin:  # full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # full URL
+  steam:
+  tumblr:
+  twitter: "dima_loktev"
+  wordpress:
+  youtube: "phinitive"
+
+  # Scripts
+  google_analytics: UA-30314477-1
+  disqus_shortname: potomushtocom
+
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Continue reading"
+
+  # Colors, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# BUILD SETTINGS
+markdown: redcarpet
+highlighter: pygments
+
+sass:
+  sass_dir: _sass
+  style: :compressed
