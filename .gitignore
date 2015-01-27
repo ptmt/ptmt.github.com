@@ -18,7 +18,7 @@ Thumbs.db
 *.cache
 *.ilk
 *.log
-.c9revesions
+.c9revisions
 [Bb]in
 [Dd]ebug*/
 *.lib
@@ -28,3 +28,4 @@ obj/
 _ReSharper*/
 [Tt]est[Rr]esult*
 _site*/
+.sass-cache
