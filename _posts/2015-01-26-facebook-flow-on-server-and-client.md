@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Trying to heal Node.js app with Facebook Flow
-excerpt: "Flowtype typechecking for all your javascript code, including Node.js"
+excerpt: "Typechecking for all your javascript code, including Node.js"
 tags: [flowtype, node, javascript, ecmascript, facebook]
 modified: 2015-01-26
 comments: true
