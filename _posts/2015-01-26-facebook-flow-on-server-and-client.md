@@ -72,15 +72,15 @@ To fix these errors, simply add the following two conditions to the runtime chec
 /* @flow */
 
 function length(x) {
-if (!x) { // check for null and underfined
-return 0;
-}  
-if (typeof x === 'string')
-{
-return x.length;
-} else {
-return x;
-}
+  if (!x) { // check for null and underfined
+    return 0;
+  }  
+  if (typeof x === 'string')
+  {
+    return x.length;
+  } else {
+    return x;
+  }
 }
 
 var a, b = 10;
@@ -118,11 +118,11 @@ The previous example typechecked because Flow’s standard library [define](http
 
 ```javascript
 declare module "child_process" {
-declare function exec(
-command: string,
-options?: child_process$execOpts,
-callback: (error: ?Error, stdout: Buffer, stderr: Buffer) => void
-): child_process$ChildProcess;
+  declare function exec(
+    command: string,
+    options?: child_process$execOpts,
+    callback: (error: ?Error, stdout: Buffer, stderr: Buffer) => void
+  ): child_process$ChildProcess;
 }
 ```
 
@@ -162,9 +162,9 @@ declare var Math: {
   // ..
   }
 
-  Math.max(1,2,3,4,5); // valid
-  Math.max(1,'2');
-  //          ^    Flow type error
+Math.max(1,2,3,4,5); // valid
+Math.max(1,'2');
+//          ^    Flow type error
 
 ```
 ...polymorphic classes, positional access methods, static methods, inheritance:
