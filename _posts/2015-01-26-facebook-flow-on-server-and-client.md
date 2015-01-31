@@ -45,7 +45,7 @@ console.log(length("Hello") + length(a) + length(b));
 Flow performs type inference and defines the type of `x` as a `string`. Function `length` has type signature `string => number`.
 
 Executing this code through Node or a browser obviously produces `Uncaught TypeError: Cannot read property 'length' of null`.
-Could it be caught at compile time rather than runtime? You could try checking the same code with the very useful [jshint.com](http://jshint.com/), and seeing if it gives no warnings. You could also think about using [TypeScript Playground](http://www.typescriptlang.org/Playground).
+Could it be caught at compile time rather than runtime? You could try checking the same code with the very useful [jshint.com](http://jshint.com/), and seeing if it gives no warnings. [TypeScript Playground](http://www.typescriptlang.org/Playground) also couldn't find this error.
 
 
 This is where Flow takes the stage. It’s no surprise, then, that we've got two related errors when run our first “flow check”:
