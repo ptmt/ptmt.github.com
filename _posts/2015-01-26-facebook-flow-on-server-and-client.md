@@ -8,7 +8,7 @@ comments: true
 feature-img: "img/sample_feature_img.png"
 ---
 
-Recently, Facebook released a library that quickly became the lastest frontend sensation. The project, ReactJS, brings a fresh approach to maintaining the viewing part of web applications. Facebook is well known for building tools which help improve all types of legacy, including languages, codebase, developers, Hip-hop, HHVM and Hack.
+Recently, Facebook released a library that quickly became the lastest frontend sensation. The project, ReactJS, brings a fresh approach to maintaining the viewing part of web applications. Facebook is well known for building tools which help improve all types of legacy, including languages, codebase, developers (Hip-hop, HHVM and Hack).
 
 And now, meet the awesome [Facebook Flow](http://flowtype.org/) — a static typechecker for Javascript.
 
