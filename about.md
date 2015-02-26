@@ -65,4 +65,24 @@ Sending HTTP hither and thither, mostly with Node.js @ Novosibirsk.
 
 ## Projects
 
-Loading...
+### TryFlow.org
+
+Facebook static typechecker online, Written in typed ES6 which targeted to Node.js and React.js, used MaterialUI and ACE editor. Hosted on Heroku. [github](https://github.com/unknownexception/tryflow)
+
+### @prophetraptor
+
+Twitter bot, which use NLP and ML to make hilarious answers on twitter (in russian). Node.js, Docker, Twitter/Bing API. [github](https://github.com/unknownexception/philosoraptor)
+
+### venturemap.herokuapp.com
+
+Russian startups graph visualized via D3.js. (Node.js, Mongo).
+
+### tinynlp.fs
+
+NLP lib written in F# for Russian language.
+
+### PRISM
+...
+
+
+Loading more...
