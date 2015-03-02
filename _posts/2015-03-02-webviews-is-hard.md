@@ -14,7 +14,7 @@ But turns out it much harder to build app based on WebView than plain web app wi
 How Supersonic is deal with it? You’ve got Native UI Components, for example `NavigationBar`, which allows you to set buttons and title. That’s all. You can make:
 
 ```javascript
-steroids.view.navigationBar.show('The long-long title here and would be nice to split it into 2 lines');
+steroids.view.navigationBar.show('The long-long title here and would be nice to split it into 2 lines')
 ```
 But you've got something like `The long-long ti..`. And you can't place an input box there. 
 Android and theirs exciting Material UI? Meh, no. Windows Phone? Forget about it. I mean you can’t use the same component for both platforms that feels native, but even worse, you haven’t choice. So meet Anroid app which looks exactly the same as iOS.
