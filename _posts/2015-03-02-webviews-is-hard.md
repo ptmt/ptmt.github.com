@@ -12,6 +12,7 @@ But turns out it much harder to build app based on WebView than plain web app wi
 ### 1. Cross-platform
 
 How Supersonic is deal with it? You’ve got Native UI Components, for example `NavigationBar`, which allows you to set buttons and title. That’s all. You can make:
+
 ```javascript
 steroids.view.navigationBar.show('The long-long title here and would be nice to split it into 2 lines');
 ```
@@ -20,11 +21,11 @@ Android and theirs exciting Material UI? Meh, no. Windows Phone? Forget about it
 
 ### 2. Performance
 
-Parsing Javascript's thousand of lines takes time. For your MBP15 Core i7 not so much, but for the first iPad mini it could take 4 seconds. You have to include a much, much js libraries (from `cordova.js`, `supersonic.js` to many others such as `angular` or `backbone`).
+Parsing Javascript's thousand of lines takes a time. For your MBP15 Core i7 not so much, but for the first iPad mini it could take 4 seconds. You have to include a lot js libraries (from `cordova.js`, `supersonic.js` to many others such as `angular` or `backbone`).
 
 ### 3. Plugins 
 
-You have got a SDK for some fancy service written in Objective C. Good luck to adopt it for Cordova. Push Notifications, Facebook plugin, 
+You have got a SDK for some fancy service written in Objective C. Good luck to adopt it for Cordova. Push Notifications, Facebook plugin, Google Analytics, Hockey app, etc. 
 
 ### 4. Stability
 
@@ -36,16 +37,15 @@ It’s sucks that you have to deal with it, because adds new abstract layer. Tho
 
 ### 6. Not-native
 
-It’s not feels native. Again. For example, notification. No total control might be good or not. 
-
+It’s not feels native. Again. You have to emulate many tings, from pull to refresh to input controls (see Ionic). The lack of total control might be good or not, depends of complexity of app. When you look at the simple examples it really works. But after months the list of features that "difficult to implement" is growing really fast.
 
 ### 7. Cloud 
 
-Supersonic ships with cloud build service, cloud data providers, cloud distribution. Bootstrapping is good for starters, then you accidently figuring out that it doesn’t fit into you limitation. Inconsistent versions (cloud build / local steroids package). Downloading, uploading, uh. Why you should use console at first to deploy package, and after you have to go to web, then checking email, then download package, then upload it to iTunes, then make it available there.
+Supersonic ships with the cloud build service, the cloud data providers, the cloud distribution. Bootstrapping is good at first, then you accidentally figuring out that it doesn’t fit into your limits. Inconsistent versions (cloud build / local steroids package). Want to distribute test version of app? Downloading, uploading, uh. You should use console at first to deploy package, and after you have to go to web, then checking email over and over again, then download the package, then upload it to iTunes, then wait for status and make it available there. Such automation. 
 
 ### 8. Debugging. 
 
-Yep, you could build debug app and use Safari Web Inspector or awesome Chrome Developer Tools, but forget about XCode debugging. 
+Yep, you could build debug app and use Safari Web Inspector or awesome Chrome Developer Tools, but forget about XCode debugging. Debuggin plugin is also the interesting challenge.
 
 
-As a software engineer I supposed to solve the problem for business and I’m kinda failed. But Javascript is not giving up. I’m very exciting about React Native and looking forward to make `git checkout -b react-native`. 
+Yes, we've managed to publish stable version of the app to AppStore. As a software engineer I supposed to solve the problem for business and I’m kinda failed, because the quality is not satisfiyng, and I spent 3 months on it. But Javascript is not giving up. I’m very exciting about React Native and looking forward to make `git checkout -b react-native`. 
