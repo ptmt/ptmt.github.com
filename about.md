@@ -63,6 +63,10 @@ Sending HTTP hither and thither, mostly with Node.js @ Novosibirsk.
 </span>
 </li>
 
+Also:
+
+<li>[HackerNews profile](https://news.ycombinator.com/threads?id=potomushto)
+
 ## Projects
 
 ### TryFlow.org
@@ -71,7 +75,7 @@ Facebook static typechecker online, Written in typed ES6 which targeted to Node.
 
 ### @prophetraptor
 
-Twitter bot, which use NLP and ML to make hilarious answers on twitter (in russian). Node.js, Docker, Twitter/Bing API. [github](https://github.com/unknownexception/philosoraptor)
+Twitter bot, which uses NLP and ML to make hilarious answers on twitter (in russian). Node.js, Docker, Twitter/Bing API. [github](https://github.com/unknownexception/philosoraptor)
 
 ### venturemap.herokuapp.com
 
