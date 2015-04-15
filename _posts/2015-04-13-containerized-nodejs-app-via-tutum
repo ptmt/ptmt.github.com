@@ -5,6 +5,7 @@ excerpt: "Get rid of Heroku-like PaaS with cheaper, faster and more reliable clo
 tags: [docker, digitalocean, nodejs, iojs]
 modified: 2015-04-13
 comments: true
+published: false
 feature-img: "img/sample_feature_img.png"
 ---
 <!-- TOC depth:6 withLinks:1 updateOnSave:1 -->
@@ -15,19 +16,19 @@ feature-img: "img/sample_feature_img.png"
 <!-- /TOC -->
 
 
-## Containers for everybody, even for simplest tasks
+## Containers for everybody, even for kid
 
 You have developed a small and dumb application and would like to host it at some nice place with a little effort. PaaS like Heroku have been doing it for you for last years.
 The problem is price, performance and managment (Buildpacks meh). For example, tryflow.org was hosted on Heroku and it's constantly failing because of strong memory consumption.
-Don't forget the article is for a Fullstack Javascript developer, which main principle is basically don't worry a lot about the infrastructure.
+Don't forget the article focused for guys like me - Javascript developer, which main principle is basically don't worry a lot about the infrastructure. It's fun to spent all --life-- weekend to setup your awesome non-determenistic fully-automated state-of-the-art secured distributed accross a few datacenters network, this article is just not about that.
 
-## The implementation of cool concept
+## Cool concept, I need the implementation
 
-Containers technology itself isn't something new. Parallels has Virtuozzo for many years, though, community wasn't yet ready for such thing at the time.
-But recently it has become a huge, huge hype, got funded, got community involved into this. And yet we have no common standard for containers.
-You have raw [LXC, LXD](https://linuxcontainers.org/), CoreOS team trying [Rkt](https://github.com/coreos/rkt) and the most popular abstraction above LXC called [Docker](https://docker.io). I've choose Docker only because I've been already working with Docker since late 2013. The marketing called this "Solid Ecosystem", obviously it means almost production-ready support by many major cloud provider.
+Containers technology itself isn't something new. Parallels has Virtuozzo for many years, I feel sad, though, community wasn't yet ready for such thing at the time.
+But recently it has become a huge, huge^5, got funded, got every devops involved into this. And yet we have no common standard for containers.
+So I was about Linux containers (not Solaris or Windows, no kidding): raw [LXC, LXD](https://linuxcontainers.org/), CoreOS team trying [Rkt](https://github.com/coreos/rkt) and the most popular abstraction above LXC called [Docker](https://docker.io). I've choose Docker only because I've been already working with Docker since late 2013. The marketing called this "Solid Ecosystem", obviously it means almost production-ready support by many major cloud provider.
 
-So, Docker. To install it on OS X I use Homebrew and its addon Brew-cask - a nice way to install GUI apps via command line. Boot2docker requires VirtualBox, ensure you have it installed:
+To install Docker on OS X I use Homebrew and its addon Brew-cask - a nice way to install GUI apps via command line. Boot2docker requires VirtualBox, ensure you have it installed:
 
 ```
 brew install caskroom/cask/brew-cask
@@ -51,21 +52,23 @@ To connect the Docker client to the Docker daemon, please set:
     export DOCKER_CERT_PATH=/Users/potomushto/.boot2docker/certs/boot2docker-vm
     export DOCKER_TLS_VERIFY=1
 ```
-Set the exports and you're ready! Yes, 8GB RAM is definitely not enough for modern front-end. web.
+Set the exports and you're ready to go! You will see soon that 8GB RAM is definitely not enough for modern front-end web.
 
-## Choosing Lightweight Image
+## Choosing lightweight image
 
-Docker use the abstractions called layers to build one images on top of another. The first line of most of Dockerfile started `FROM ubuntu:12.04`, which means it use standard Ubuntu. There is a holywar about multiprocess-in-a-container vs single-process-in-a-container, which turned out as a `docker-baseimage` (Ubuntu + [Docker-specific things](https://registry.hub.docker.com/u/phusion/baseimage/)). Cool, I love Ubuntu, but do I really need the entire 300mb image for running small node.js application? Nope. I've tried some images.
+Docker use the abstractions called layers to be able build one images on top of another. The first line of most of Dockerfile started `FROM ubuntu:12.04`, which means it use standard Ubuntu image. There is a holywar about multiprocess-in-a-container vs single-process-in-a-container and how properly OS should be fitted to be used inside container, which led to the birth of `docker-baseimage` (Ubuntu + [Docker-specific things](https://registry.hub.docker.com/u/phusion/baseimage/)). Cool, I love Ubuntu, but do I really need the entire 300mb image for running small node.js application? Nope. I've tried some images.
 
 ```
 docker pull phusion/baseimage
 docker pull node
 docker pull iojs:onbuild
-docker pull ficusio/nodejs-base
+docker pull ficusio/nodejs
+docker pull mhart/alpine-node
 docker pull joeandaverde/minimal-nodejs
 docker images
 REPOSITORY                    TAG            CREATED             VIRTUAL SIZE
-ficusio/nodejs-base           latest         3 days ago          32.17 MB
+mhart/alpine-node             0.12           4 days ago          33.37 MB
+ficusio/nodejs                latest         3 days ago          32.17 MB
 iojs                          onbuild        5 days ago          700.6 MB
 node                          latest         10 days ago         706.5 MB
 phusion/baseimage             0.9.16         11 weeks ago        279.7 MB
@@ -73,4 +76,22 @@ phusion/baseimage             latest         11 weeks ago        279.7 MB
 joeandaverde/minimal-nodejs   latest         3 months ago        28.42 MB
 ```
 
-## Choosing the Layer
+```
+FROM ficusio/nodejs:latest
+EXPOSE 8080
+```
+Note: you can expose any port like 8080 and bind node to 80/443 later.
+
+For different project you might want to add different packages to this image. You need add to Python (for jest), Flow if you want.
+
+## Choosing the orchestration layer
+
+You simply link Tutum to your Cloud Provider
+
+Then creating Service, adding Image to Tutum's private registry. `unknownexception` is my username and `prism` is a repository name. All this I do from dev machine, but in real life images pushed from build server.
+
+```
+docker login totum.co
+docker build -t unknownexception/prism .
+docker tag unknownexception/prism tutum.co/unknownexception/prism
+docker push tutum.co/unknownexception/prism

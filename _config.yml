@@ -8,7 +8,7 @@ theme:
   title: Potom ush to blog
   avatar: avatar.png
   gravatar: # email md5 hash
-  description: "Node.js developer blog" # used by search engines
+  description: "Average programmer" # used by search engines
 
   # # Header and footer text
   # header_text: >
@@ -36,7 +36,7 @@ theme:
   stack_exchange:  # full URL
   steam:
   tumblr:
-  twitter: "dima_loktev"
+  twitter: "potomushto"
   wordpress:
   youtube: "phinitive"
 
