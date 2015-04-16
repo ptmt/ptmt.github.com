@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Setting up fresh installation of OS X from scratch"
-excerpt: "The recipe that install common packages, mostly using command line"
+title: "Setting up OS X after a clean install"
+excerpt: "The recipe that installs common packages, mostly using command line"
 tags: [osx, brew, brew-cask]
 comments: true
 ---
