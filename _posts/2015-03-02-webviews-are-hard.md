@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Javascript on mobile phones via AppGyver Supersonic"
-excerpt: "Hybrid iOS development not solve everything"
+excerpt: "Hybrid iOS development doesn't solve everything"
 tags: [javascript, flowtype, facebook, atscript, google, ecmascript, clojure, clojurescript, typescript]
 comments: true
 ---
