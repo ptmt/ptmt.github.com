@@ -72,6 +72,10 @@ phusion/baseimage             latest         11 weeks ago        279.7 MB
 joeandaverde/minimal-nodejs   latest         3 months ago        28.42 MB
 ```
 
+Spoiler alert: the final size with node_modules is about 300 MB.
+
+This is example of Dockerfile:
+
 ```
 FROM mhart/alpine-node
 
@@ -92,7 +96,7 @@ CMD ["node", "app/server.compiled"]
 ```
 Note: you can expose any port like 8080 and bind node to 80/443 later.
 
-For different projects you might want to add different packages to this base image. For example, you need add to Python. 
+For different projects you might want to add different packages to this base image. For example, you need add to Python.
 
 ## Choosing the clustering & orchestration layer
 
@@ -135,6 +139,6 @@ To redeploy just push the image again.
 
 ## TL;DR;
 
-- Fully customizable stack;
-- Predictable;
+- Fully customizable stack (Dockerfile);
+- Predictable load balancing (HAProxy);
 - Cheaper ($5 per instance at DO);
