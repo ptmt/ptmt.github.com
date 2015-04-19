@@ -8,6 +8,9 @@
 }
 
 .comments {
-  
+
   font-size: 0.9em;
+}
+.feature-image .comments {
+  @extend %padding-regular;
 }

@@ -31,6 +31,9 @@ article {
     background: #eee;
     font-size: 0.8em;
   }
+  img {
+    box-shadow: 1px 4px 5px #888888;
+  }
 }
 header {
   h1 {
@@ -56,6 +59,9 @@ header {
     padding: $padding-large/2.5 $padding-large;
     .meta {
       color: rgba($feature-image-text-color, .7);
+    }
+    h1 {
+      text-shadow: 1px 1px #000000;
     }
   }
   .post-content {
