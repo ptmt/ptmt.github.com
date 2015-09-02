@@ -8,6 +8,14 @@ comments: true
 feature-img: "images/2015/containers-docker.png"
 ---
 
+
+## TL;DR;
+
+- Fully customizable stack (Dockerfiles, stackfiles);
+- Predictable load balancing (HAProxy);
+- Cheaper then Heroku ($5 per instance at DO);
+
+
 ## Containers for everybody
 
 You have developed a small and dumb application and would like to host it at some nice place with a little effort. PaaS like Heroku have been doing it for you for last years.
@@ -136,9 +144,3 @@ Started service will be available by endpoint, transparently balanced between se
 ![tutum1](/images/2015/tutum3.png)
 
 To redeploy just push the image again.
-
-## TL;DR;
-
-- Fully customizable stack (Dockerfile);
-- Predictable load balancing (HAProxy);
-- Cheaper ($5 per instance at DO);
