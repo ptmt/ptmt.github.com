@@ -23,7 +23,7 @@ I like this moment: you go in the shower and suddenly there is only the cold wat
 
 ![Cold water](/images/2015/mio-waterproof.jpg)
 
-Visualization. When I was in metro, I saw the girl. Is my hear.
+Visualization. So that's the point of this graphic without knowing context? 
 
 ![Screenshot from MIO Go](/images/2015/mio-hikingat1000m.png)
 
