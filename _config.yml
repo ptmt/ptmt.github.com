@@ -5,10 +5,10 @@ url: "http://potomushto.com" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: Potom ush to blog
+  title: @ptmt programming blog
   avatar: avatar.png
   gravatar: # email md5 hash
-  description: "Average programmer" # used by search engines
+  description: "Yet another github pages blog" # used by search engines
 
   # # Header and footer text
   # header_text: >
@@ -19,14 +19,14 @@ theme:
    Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
 
   # Icons
-  rss: false
+  rss: true
   email_address: # full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
   dribbble:
   facebook:
   flickr:
-  github: "unknownexception"
+  github: "ptmt"
   google_plus:
   instagram:
   linkedin:  # full URL
