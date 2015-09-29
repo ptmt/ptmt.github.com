@@ -5,7 +5,11 @@ excerpt: "Hybrid iOS development doesn't solve everything"
 tags: [javascript, flowtype, facebook, atscript, google, ecmascript, clojure, clojurescript, typescript]
 comments: true
 ---
-Javascript on the iOS? I’m not kidding. It’s not only about platform, but about the language itself, paradigms, build processes that you’ve already learnt. Instead of fully native development we chose WebView-based, because of many reasons, basically at first look our app looks simple (just a catalog, representation of data set). AppGyver Supersonic (former Steroids) seemed really interesting — it combines WebViews with Javascript API which let you use native features: transitions, animations, a few native controls (navbar, tabbar, drawer).
+The year is 2014 and Javascript on the iOS doesn't sounds so funny anymore. It’s not only about platform, but about the language itself with paradigms, build processes that you’ve already learnt. 
+
+We chose WebView-based and that was mistake.
+
+At first it felt that our app looks simple (just a catalog, representation of data set). AppGyver Supersonic (former Steroids) seemed really interesting — it combines WebViews with Javascript API which let you use native features: transitions, animations, a few native controls (navbar, tabbar, drawer).
 
 But turned out it much harder to build app based on WebView than plain web app with equal complexity:
 
