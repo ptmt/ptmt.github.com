@@ -6,12 +6,12 @@
 		{% else if site.theme.avatar %}
 		<img class="avatar" src="/img/{{ site.theme.avatar }}" alt=""/>
 		{% endif %}
-		
+
 		<h1 class="site-title">
 			<a href="{{ site.baseurl }}/">{{ site.theme.title }}</a>
 		</h1>
 	</div>
-	
+
 	<nav class="site-nav">
 		<ul>
 			{% for page in site.pages %}
@@ -26,5 +26,5 @@
 			{% include icons.html %}
 		</ul>
 	</nav>
-	
+
 </header>

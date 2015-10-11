@@ -25,10 +25,11 @@
     }
   }
   .excerpt {
-    margin-top: 1em;
-    .button {
-      display: block;
-    }
+    font-size: 0.8em;
+  }
+  .post-title {
+    font-size: 1em;
+    margin-bottom: 0.5em;
   }
 }
 // pagination

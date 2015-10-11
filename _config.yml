@@ -5,7 +5,7 @@ url: "http://potomushto.com" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: @ptmt programming blog
+  title: "@ptmt blog"
   avatar: avatar.png
   gravatar: # email md5 hash
   description: "Yet another github pages blog" # used by search engines
@@ -16,7 +16,7 @@ theme:
   #
   #    <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
   footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
+   Powered by <a href="http://jekyllrb.com">Jekyll</a> with custom <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
 
   # Icons
   rss: true
@@ -41,7 +41,6 @@ theme:
   youtube: "phinitive"
 
   # Scripts
-  google_analytics: UA-30314477-1
   disqus_shortname: potomushtocom
 
   # Localization strings
@@ -56,8 +55,9 @@ theme:
   # Open the "_sass > base" folder, and open "_variables.scss"
 
 # PAGINATION
-paginate: 5
+paginate: 50
 paginate_path: "blog/page:num"
+gems: [jekyll-paginate]
 
 # BUILD SETTINGS
 markdown: redcarpet
