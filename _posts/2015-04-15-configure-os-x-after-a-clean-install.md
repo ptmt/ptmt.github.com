@@ -6,11 +6,14 @@ tags: [osx, brew, brew-cask]
 comments: true
 ---
 
-After a year of using OS X it eventually became extremely slow, sluggish and unresponsive sometimes.
-My lack of experience is the main reason behind this, believing in power of TimeMachine didn't help, and I've decided to do fresh start, using the favorite way of most Windows-users: the complete re-install the OS. Now it works smooth like it's on Apple's presentation. 
+After a year of using OS X it eventually became extremely slow, even sluggish and unresponsive.
 
-This is Gist recipe to setup everything, using console tools as much as possible:
-<script src="https://gist.github.com/unknownexception/4ea9eb4fda373b227fff.js"></script>
+My lack of experience is the main reason behind this, as well as curiosity which leads to apps installations outside the sandboxed App Store. A belief in the power of Time Machine couldn't help you in that, so eventually I've decided to do fresh start in the way how most Windows users do it: the complete re-install the OS. Complete reinstall helps you reevaluate the minimum and keep your third-package apps as short as possible. There is no need in OneNote, once we've got the new Note app.
+
+This is a Gist recipe to setup everything:
+<script src="https://gist.github.com/ptmt/4ea9eb4fda373b227fff.js"></script>
+
+Now OS X works flawlessly like it's on the Apple's presentations. 
 
 ## TODO:
 
