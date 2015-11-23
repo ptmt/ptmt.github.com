@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reactitve 2015
+title: Reactive 2015
 excerpt: "2 - 4 November @ Bratislava"
 tags: [react, reactive, react-native, conference]
 modified: 2015-05-01
