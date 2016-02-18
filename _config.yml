@@ -5,16 +5,11 @@ url: "http://potomushto.com" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: "@ptmt blog"
+  title: "@ptmt/blog"
   avatar: avatar.png
   gravatar: # email md5 hash
-  description: "Yet another github pages blog" # used by search engines
+  description: "Javascript, Objective C" # used by search engines
 
-  # # Header and footer text
-  # header_text: >
-  #    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  #
-  #    <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
   footer_text: >
    Powered by <a href="http://jekyllrb.com">Jekyll</a> with custom <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
 
@@ -54,14 +49,11 @@ theme:
   # Colors, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
 
-# PAGINATION
-paginate: 50
-paginate_path: "blog/page:num"
-gems: [jekyll-paginate]
 
 # BUILD SETTINGS
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
+future: true
 
 sass:
   sass_dir: _sass

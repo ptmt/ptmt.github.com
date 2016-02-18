@@ -18,7 +18,7 @@ I arrived the day before the conference. And took these horrible photos.
 ![Reactive 2015](/images/2015/reactive1.JPG)
 
 Conference talk have to be a **good show** to be enjoyed by most of people.
-I like when a spokesperson does not try to over-produce the effect. Talk for the sake of talk.
+I really like when a spokesperson does not try to over-produce the effect. When a talk isn't for the sake of talk.
 
 ![Reactive 2015](/images/2015/reactive2.JPG)
 

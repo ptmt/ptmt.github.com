@@ -13,6 +13,8 @@ Programming requires one to have a strong discipline, which basically lays in th
 
 Maybe it's better to invest your time getting into other languages, contributing into their ecosystems, and things like pipeline precompiling, source mapping, and debugging?
 
-Many developers are ashamed of their technical debt, but starting a pure JavaScript project in 2015 is like taking a loan during a severe financial crisis. You can try taking a small amount of money, but taking a mortgage is definitely not a good idea.
+Many developers are ashamed of their technical debt, but starting a pure JavaScript project in 2015 is like taking a loan during a severe financial crisis. You can try taking a small amount of money, but taking a mortgage is definitely not a good idea<sup>*</sup>.
 
 ![Feature demo](/images/2015/js.svg)
+
+<sup>*</sup>If you are not in Russia and earn in $.
