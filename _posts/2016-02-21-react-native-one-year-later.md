@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Four Stages of Living with React Native"
-excerpt: "One year later"
+title: "React Native: One Year Later"
+excerpt: "The four stage of love"
 tags: [react, react-native]
 comments: true
 published: true
