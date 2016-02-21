@@ -14,23 +14,23 @@ feature-img: "images/2016/app-store-logo.jpg"
 
 Initial conditions: A legacy app written on top of some WebView hybrid framework, which
 constantly [facing its limitations](http://potomushto.com/2015/03/02/webviews-are-hard.html).
-A completed web app using `"react": "0.12.x"` (Hmm, so I can go with JSX, I can use this ecosystem).
+A completed web app using `"react": "0.12.x"` (Hmm, so you can go with JSX, you can use this ecosystem).
 A conference where React Native has been announced.
 
 <img src="/images/2016/react-native-announce.png" alt="Annnouncing React Native" style="width: 300px;"/>
 
-And you wait. Then one day you wake up in the morning, looking in the window at a very gloomy weather outside, you open the browser and see the news all over the internet: RN is released to public and the repo already has a thousand stars.
+And you wait. Then one day you wake up in the morning, looking in the window at a very gloomy weather outside, you open the browser and see the news all over the internet: RN is released and the repo already has a thousand stars.
 
 It's finally open to `npm install`.
 
 # Stage Two: Obsession
 
 
-After first two weeks there is only pure joy in the blood. Challenge accepted. The documentation is inconsistent, but doesn't matter (there is an [awesome UIExplorer](https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/ClipboardExample.js#L33)). Best practices doesn't exist: doesn't matter, some of such could be ported from the web, some could be used from other native frameworks. Not enough plugins: doesn't matter. You can write a plugin that you need by yourself. Apple has released new APIs for 3D Touch Quick Actions. Not a problem. You need more complicated maps than you get out-of-the-box? Let's wrap into JS APIs some advanced native implementation.
+After first two weeks there is only pure joy in the blood. Challenge accepted. Challenge to use fast-growing project in a pretty early stage accepted! The documentation is inconsistent, but it doesn't really matter (there is the [awesome UIExplorer](https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/ClipboardExample.js#L33)). Best practices doesn't exist: doesn't matter, some of such could be ported from the web, some could be used from other native frameworks. Not enough plugins: you can write a plugin that you need by yourself. Apple has released new APIs for 3D Touch Quick Actions. Not a problem. You need more complicated maps than you get out-of-the-box? Let's wrap into JS APIs some of advanced native implementation.
 
-It's inevitable that you soon get your first sensible [pull request](https://github.com/facebook/react-native/pull/1318) which could take a few weeks of the fun process of contributing. Important lesson how to be more careful, after all. Objective C still scares sometimes, but it doesn't look weird anymore. Patterns, paradigms, idioms which were formed over decades. It's a new, unknown language which could teach you a lot and refresh sweet memories of pure C.
+It's inevitable that you soon get your first sensible [pull request](https://github.com/facebook/react-native/pull/1318) which could take a few weeks of the fun process of contributing. Important lesson how to be more careful, after all. Objective C still scares sometimes, but it doesn't look weird anymore, rather looks a pragmatic, including patterns, paradigms, idioms which were formed over the decades. It's a new, unknown language which could teach you a lot and refresh sweet memories of pure C. And there is Swift waiting for you.
 
-You are full of energy. It's kind of strange that ObjC doesn't have a strict popular linters like `eslint` and `jscs`, enforcing code styles. You even try [some of them](https://github.com/facebook/react-native/pull/1916), no luck:
+You are full of energy. You want to apply somehow your previous experience from JS world. Why ObjC doesn't have a popular linters like `eslint` and `jscs`, which helps to strictly enforce code style? You even try [some of them](https://github.com/facebook/react-native/pull/1916):
 
 ~~~~~~~~
 React/Views/RCTNavItem.m:53:3: ivar assignment outside accessors or init P2

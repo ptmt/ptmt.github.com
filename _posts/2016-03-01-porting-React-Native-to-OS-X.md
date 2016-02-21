@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Porting React Native to OS X
-excerpt: "2 - 4 November @ Bratislava"
+excerpt: "100 steps to inifinite road"
 tags: [cocoa, cocoa-touch, appkit, uikit, react, react-native]
 comments: true
 published: false
