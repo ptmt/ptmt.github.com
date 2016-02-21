@@ -30,11 +30,11 @@ It's finally open to `npm install`.
 # Stage Two: Obsession
 
 
-After first two weeks there is only pure joy. The documentation is inconsistent, doesn't matter (there is an [awesome UIExplorer](https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/ClipboardExample.js#L33)). Best practices doesn't exist: doesn't matter, some of such could be ported from the web, some could be used from other native frameworks. Not enough plugins: doesn't matter. You can write a plugin by yourself.
+After first two weeks there is only pure joy in the blood. The documentation is inconsistent, but doesn't matter (there is an [awesome UIExplorer](https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/ClipboardExample.js#L33)). Best practices doesn't exist: doesn't matter, some of such could be ported from the web, some could be used from other native frameworks. Not enough plugins: doesn't matter. You can write a plugin that you need by yourself. Apple has released new APIs for 3D Touch Quick Actions. Not a problem. You need more complicated maps than you get out-of-the-box? Let's wrap into JS APIs some advanced native implementation.
 
-My first sensible [pull request](https://github.com/facebook/react-native/pull/1318) takes a few weeks of the fun process of contributing. Important lesson how to be more careful, after all. Objective C still scares sometimes, but it doesn't look weird anymore. Patterns, paradigms, idioms which were formed over decades. It's a new for you, unknown language which could teach you a lot.
+It's inevitable that you soon get your first sensible [pull request](https://github.com/facebook/react-native/pull/1318) which could take a few weeks of the fun process of contributing. Important lesson how to be more careful, after all. Objective C still scares sometimes, but it doesn't look weird anymore. Patterns, paradigms, idioms which were formed over decades. It's a new, unknown language which could teach you a lot and refresh sweet memories of pure C.
 
-It's kind of strange that ObjC doesn't have a strict popular linters like `eslint` and `jscs`, enforcing code styles. You even try [some of them](https://github.com/facebook/react-native/pull/1916), no luck:
+You are full of energy. It's kind of strange that ObjC doesn't have a strict popular linters like `eslint` and `jscs`, enforcing code styles. You even try [some of them](https://github.com/facebook/react-native/pull/1916), no luck:
 
 ```
 React/Views/RCTNavItem.m:53:3: ivar assignment outside accessors or init P2
@@ -75,25 +75,26 @@ And by the way, nothing serious here, just an issue with the developer environme
 
 Your everyday routine is a forking almost every two `react-native-%plugin%` out there.
 Your everyday routine is a writing your own `RCT_EXPORT_MODULE`.
-Your everyday routine is upgrading react-native on the next version.
+Your everyday routine is upgrading npm modules on the next version.
 
 But at the end it's getting better and better everyday:
 
 - [RNPM](https://github.com/rnpm/rnpm) is becoming a thing recently;
 
-- State management solved for you: use either GraphQL/Relay ([Reindex](https://reindex.io)) or Redux + AsyncStorage. Ok, not quite solved, but it's also routine.
+- State management solved for you: use either GraphQL/Relay ([Reindex](https://reindex.io)) or Redux + AsyncStorage. Ok, not quite solved, but it's also just an another routine.
 
 - [Ship your app 10 times](https://apphub.io) per day.
 
- — React gives you abstractions which feels more right than .xib, UIViewController, AutoLayout, CoreData. And it's up to you how much UI would be on the native side.
+ — React gives you abstractions which feels more right than .xib, UIViewController, AutoLayout, CoreData. And it's up to you how much of it would be on the native side.
 
 # Stage Four: Inspiration
 
 It's February 2016. I'm working on the sixth iOS app, hoping it would be better then previous, such as [this](https://hash.ai), [this](http://wizearn.com/) and [this](http://hiflawless.com). And some other projects like [https://github.com/ptmt/react-native-desktop](https://github.com/ptmt/react-native-desktop) and [https://github.com/skeletcode](skelet).
 
-I'm really used to react-native related issues. It's not a commercial software, and **bugs** are not felt as a something unexpected.
-These very lines are written in Jekyll 3.0, and that ruby gem doesn't work great. Some combination of versions of an operation system, Ruby and Jekyll produce an bug affecting new post rendering. An hour on reading github issues, reinstalling Jekyll, and other voodoo tricks ("Ruby can't into timestamps").
+It's really easy to get used to react-native related issues. It's not a commercial software, and **bugs** are not felt as something unexpected.
 
-I'd rather dig out into Jekyll source code to find and fix that problem by myself. Can I? I certainly can  with React Native now, and that is the reason I love it and that's makes me confident.
+These very lines are written in Jekyll 3, and that ruby gem doesn't work great. Some combination of versions of an operation system, Ruby and Jekyll produce an bug affecting new post rendering. An hour on reading github issues, reinstalling Jekyll, and other voodoo tricks ("Ruby can't into timestamps").
+
+I'd rather dig out into Jekyll source code to find and fix that problem by myself. Can I do that easily? I certainly can with React Native now, and that is the reason I love it and that's makes me confident.
 
 *INB4; Stage Five — Oh, see, there is another cool technology, let's go there!*
