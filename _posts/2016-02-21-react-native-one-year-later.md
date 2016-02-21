@@ -51,9 +51,9 @@ The community is expanding so fast, that in the next few months it will [outgrow
 
 # Stage Three: Routine
 
-So, you're married now, [the honeymoon at Paris](http://localhost:4000/2015/07/30/react-europe.html) has ended a weeks ago. Welcome to the everyday life, closing issues, one by one.
+So, you're married now, [the honeymoon at Paris](http://localhost:4000/2015/07/30/react-europe.html) has ended a weeks ago. Welcome to the everyday life.
 
-At first, you realized, that React doesn't solve all problems with performance magically. Consider that fact you couldn't affect UI thread directly, and React gives you *cheap* updates, there are tons of a potential bottlenecks. JS Thread, for example.
+At first, you realise, that React doesn't solve all problems with performance magically. Regarding you can't affect UI thread directly, and React gives you *cheap* updates, there are tons of a potential bottlenecks. Blocking Javascript Thread is one of these. 
 
 <img src="/images/2016/speak-1.jpg" alt="Speak screenshot" style="width: 200px;"/>
 
