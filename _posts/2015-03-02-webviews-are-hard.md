@@ -5,7 +5,7 @@ excerpt: "Hybrid iOS development doesn't solve everything"
 tags: [javascript, flowtype, facebook, atscript, google, ecmascript, clojure, clojurescript, typescript]
 comments: true
 ---
-The year is 2014 and Javascript on the iOS doesn't sounds so funny anymore. It’s not only about platform, but about the language itself with paradigms, build processes that you’ve already learnt. 
+The year is 2014 and Javascript on the iOS doesn't sounds so funny anymore. It’s not only about platform, but about the language itself with paradigms, build processes that you’ve already learnt.
 
 We chose WebView-based and that was mistake.
 
@@ -17,9 +17,9 @@ But turned out it much harder to build app based on WebView than plain web app w
 
 How Supersonic is deal with it? You’ve got Native UI Components, for example `NavigationBar`, which allows you to set buttons and title. That’s all. You can make:
 
-```javascript
+~~~~~~~~ javascript
 steroids.view.navigationBar.show('The long-long title here and would be nice to split it into 2 lines')
-```
+~~~~~~~~ 
 But you've got only something like `The long-long tit..`. No text-wrapping. You can't place an input box there.
 Android and the exciting Material UI? Meh, no. Windows Phone? Forget about it. I mean you can’t use the same component for both platforms that feels native, but even worse, you haven’t choice. Meet Android app which looks exactly the same as iOS, but feels worse!
 

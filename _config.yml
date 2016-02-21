@@ -50,7 +50,7 @@ theme:
   # Open the "_sass > base" folder, and open "_variables.scss"
 
 # BUILD SETTINGS
-markdown: redcarpet
+#markdown: redcarpet
 
 sass:
   sass_dir: _sass

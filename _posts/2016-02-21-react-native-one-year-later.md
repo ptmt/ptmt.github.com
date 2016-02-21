@@ -36,7 +36,7 @@ It's inevitable that you soon get your first sensible [pull request](https://git
 
 You are full of energy. It's kind of strange that ObjC doesn't have a strict popular linters like `eslint` and `jscs`, enforcing code styles. You even try [some of them](https://github.com/facebook/react-native/pull/1916), no luck:
 
-```
+~~~~~~~~
 React/Views/RCTNavItem.m:53:3: ivar assignment outside accessors or init P2
 
 ...
@@ -48,7 +48,7 @@ React/Modules/RCTUIManager.m:525:7: long variable name P3 Variable name with 21 
 React/Modules/RCTUIManager.m:1114:1: deep nested block P3 Block depth of 6 exceeds limit of 5
 
 P1=0[0] P2=339[10] P3=545[20]
-```
+~~~~~~~~
 
 There is a strong expanding community, and you like it. Brent Vatne sends you [newsletter](http://brentvatne.ca/react-native-newsletter/) each week and you dream that you will be also part of it. And you finally [are](http://reactnative.cc/14-07-2015.html).
 
@@ -97,4 +97,4 @@ These very lines are written in Jekyll 3, and that ruby gem doesn't work great. 
 
 I'd rather dig out into Jekyll source code to find and fix that problem by myself. Can I do that easily? I certainly can with React Native now, and that is the reason I love it and that's makes me confident.
 
-*INB4; Stage Five — Oh, see, there is another cool technology, let's go there!*
+*INB4; Stage Five — Oh, see, the trend has changed, there is another cool technology, let's go there!*

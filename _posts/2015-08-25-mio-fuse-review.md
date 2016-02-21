@@ -23,7 +23,7 @@ I like this moment: you go in the shower and suddenly there is only the cold wat
 
 ![Cold water](/images/2015/mio-waterproof.jpg)
 
-Visualization. So that's the point of this graphic without knowing context? 
+Visualization. So that's the point of this graphic without knowing context?
 
 ![Screenshot from MIO Go](/images/2015/mio-hikingat1000m.png)
 
@@ -43,4 +43,4 @@ MIO has a great battery for a usual mode (a month). You could easily track your 
 - Many false measurements above 170+ (MIO FUSE shows its as divided by two);
 - Latency;
 
-__TL;DR;__ It's specialized device for some sort of trainings. It is doubtful that it will make your life better.
+__TL;DR;__ It's specialized device for some sort of trainings. Very unlikely it will make your life better.

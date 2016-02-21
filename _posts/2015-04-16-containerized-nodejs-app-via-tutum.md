@@ -32,15 +32,15 @@ So I was about Linux containers (not Solaris or Windows, no kidding): raw [LXC, 
 
 To install Docker on OS X I use Homebrew and its addon Brew-cask - a nice way to install GUI apps via command line. Boot2docker requires VirtualBox, ensure you have it installed:
 
-```
+~~~~~~~~
 brew install caskroom/cask/brew-cask
 brew cask install virtualbox
 brew install boot2docker
-```
+~~~~~~~~
 
 So you have Docker client and Docker server which would be executed inside VM. If you into any Linux with modern core this is a way easier since docker has single executable. But if you are forced to emulate Linux on OS X, init and start virtual machine:
 
-```
+~~~~~~~~
 $ boot2docker init
 $ boot2docker up
 
@@ -55,7 +55,7 @@ To connect the Docker client to the Docker daemon, please set:
     export DOCKER_HOST=tcp://192.168.59.103:2376
     export DOCKER_CERT_PATH=/Users/potomushto/.boot2docker/certs/boot2docker-vm
     export DOCKER_TLS_VERIFY=1
-```
+~~~~~~~~
 Set the exports and you're ready to go! You will see soon that 8GB RAM is definitely not enough for modern front-end web.
 
 ## Choosing lightweight image
@@ -84,7 +84,7 @@ Spoiler alert: the final size with node_modules is about 300 MB.
 
 This is example of Dockerfile:
 
-```
+~~~~~~~~
 FROM mhart/alpine-node
 
 RUN apk update && \
@@ -101,7 +101,8 @@ RUN npm run postinstall
 
 EXPOSE 8080
 CMD ["node", "app/server.compiled"]
-```
+~~~~~~~~
+
 Note: you can expose any port like 8080 and bind node to 80/443 later.
 
 For different projects you might want to add different packages to this base image. For example, you need add to Python.
@@ -125,12 +126,12 @@ Tutum uses the following terminology: **Stacks**, **Services**, **Nodes**.
 To add **Node** simply link Tutum to your Cloud Provider to use API or install it to nodes manually.
 To add **Service**  push Image to Tutum's private registry. `unknownexception` is my username and `prism` is a repository name. All this I'm doing from dev machine, but in real life images pushed from build server.
 
-```
+~~~~~~~~
 docker login tutum.co
 docker build -t unknownexception/prism .
 docker tag unknownexception/prism tutum.co/unknownexception/prism
 docker push tutum.co/unknownexception/prism
-```
+~~~~~~~~
 *Using makefile, I just type `make deploy` instead.*
 
 Once Image has pushed, you finally could create Service. It's pretty obvious.

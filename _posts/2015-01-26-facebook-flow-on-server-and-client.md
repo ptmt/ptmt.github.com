@@ -16,15 +16,15 @@ And now, meet the awesome [Facebook Flow](http://flowtype.org/) — a static typ
 
 Flow binaries can be installed via npm:
 
-```bash
+~~~~~~~~
 npm install flow-bin -g
-```
+~~~~~~~~
 
 There are tons of ways to do this. Either install as OPAM package, download binaries from the official site, or install it via brew as follows:
 
-```bash
+~~~~~~~~
 brew install flow
-```
+~~~~~~~~
 
 I am also working on [tryflow.org](http://tryflow.org). I hope to get to a place where it is possible to play with Flow and see it in action.
 
@@ -32,7 +32,7 @@ However, when you decide to use Flow on a really huge project, you need to build
 
 The first example is simple yet very exciting. Consider you have a function like this:
 
-```javascript
+~~~~~~~~ javascript
 /* @flow */
 function length(x) {
   return x.length;
@@ -40,7 +40,7 @@ function length(x) {
 
 var a = null, b = 10;
 console.log(length("Hello") + length(a) + length(b));
-```
+~~~~~~~~
 
 Flow performs type inference and defines the type of `x` as a `string`. Function `length` has type signature `string => number`.
 
@@ -50,7 +50,7 @@ Could it be caught at compile time rather than runtime? You could try checking t
 
 This is where Flow takes the stage. It’s no surprise, then, that we've got two related errors when run our first “flow check”:
 
-```bash
+~~~~~~~~ bash
 > flow init
 > flow check
 
@@ -64,11 +64,11 @@ Property not found in
 /private/var/folders/tp/ffwbqwn51dd1zgb9pb8j4g7w0000gn/T/flow_potomushto/flowlib_2da377b0/lib/core.js:58:1,69:1: Number
 
 Found 2 errors
-```
+~~~~~~~~
 
 To fix these errors, simply add the following two conditions to the runtime check:
 
-```javascript
+~~~~~~~~ javascript
 /* @flow */
 
 function length(x) {
@@ -85,14 +85,14 @@ function length(x) {
 
 var a, b = 10;
 console.log(length("Hello") + length(a) + length(b));
-```
+~~~~~~~~
 
 This now returns no errors at the “compile-time” step, as Flow now detects the type of `length` function as `x: ?string | ?number => number`.
 This kind of syntax refers to Union type (`type1 or type2`) where `?` for `Nullable`. In non-idiomatic Haskell it would be:
 
-```Haskell
+~~~~~~~~ Haskell
 length :: Either (Maybe Int) (Maybe String) -> Int
-```
+~~~~~~~~
 
 So far, static typechecking doesn't require explicit types to be written using dynamic conditions as constraints to refine types.
 
@@ -102,7 +102,7 @@ Flow simply analyzes a type's flow.
 
 Consider the following example of Node.js code:
 
-```javascript
+~~~~~~~~ javascript
 var exec = require('child_process').exec;
 exec(1);
 //   ^   Flow type error: first argument should be a string
@@ -111,12 +111,12 @@ exec('command', null, (err, stdout, stderr) => {
   stdout.read();
   //       ^^^^   Flow type error: stdout is Buffer
 });
-```
+~~~~~~~~
 
 How does it work? Flow allows you to extend your code by writing [declarations](flowtype.org/docs/declarations.html). It could be an external file or an inline-type declaration.
 The previous example typechecked because Flow’s standard library [define](https://github.com/facebook/flow/blob/master/lib/node.js#L116) `exec` interface looks this way:
 
-```javascript
+~~~~~~~~ javascript
 declare module "child_process" {
   declare function exec(
     command: string,
@@ -124,13 +124,13 @@ declare module "child_process" {
     callback: (error: ?Error, stdout: Buffer, stderr: Buffer) => void
   ): child_process$ChildProcess;
 }
-```
+~~~~~~~~
 
 To be able to define such APIs for browser-specific, Node or third-party libraries, while at the same time keeping code compact, Flow uses many syntax constructs similar to typescript.
 These include the following generics:
 
 
-```javascript
+~~~~~~~~ javascript
 // declarations file for knox module (node.js S3 client)
 type Callback<T> = (err: ?Error, res: T) => void;
 
@@ -150,11 +150,11 @@ client.getFile('/test/Readme.md', function(err, res){
 // do `res.pipe(..)` or `res.resume()`
 // res is ReadableStream.
 });
-```
+~~~~~~~~
 
 and optional and rest parameters:
 
-```javascript
+~~~~~~~~ javascript
 declare var Math: {
   // ..
   max(...values: Array<number>): number;
@@ -166,10 +166,10 @@ Math.max(1,2,3,4,5); // valid
 Math.max(1,'2');
 //          ^    Flow type error
 
-```
+~~~~~~~~
 ...polymorphic classes, positional access methods, static methods, inheritance:
 
-```javascript
+~~~~~~~~ javascript
 declare class NodeList<T> {
   length: number;
   item(index: number): T;
@@ -206,7 +206,7 @@ console.log(document.forms[0].nodeType        // correct
   , document.forms[0].className               // correct
   , document.forms[0].classname               // type error
 );
-```
+~~~~~~~~
 
 ## To protect the important
 <img src="/images/2015/flow-pic@2x.png" alt="Facebook Flow" width="400px"/>
@@ -218,7 +218,7 @@ However, they are pretty slow compared to the nearly instant speeds of static ty
 
 You have a Node.js app with server and client written in typed ES6 with interfaces:
 
-```
+~~~~~~~~
 --  app
 |--  server
 |--  index.js
@@ -227,11 +227,11 @@ You have a Node.js app with server and client written in typed ES6 with interfac
 |--  assets
 |--  interfaces
 
-```
+~~~~~~~~
 
 This is the part of Gulpfile compiling server to ES5 and strip types via `gulp`, `gulp-react` and `gulp-flowtype`:
 
-```javascript
+~~~~~~~~ javascript
 
 var $ = require('gulp-load-plugins')();
 
@@ -248,12 +248,12 @@ gulp.task('flow', function() {
     }))
   .pipe(gulp.dest('./app/server.compiled/'))
 });
-```
+~~~~~~~~
 Harmony is becoming less and less necessary these days, thanks to IO.js.
 
 The same task is usually more complicated for the client due to reasons of transforming, packaging, caching, minimazing, sourcemapping, etc. So for clients, you can use Flow with the independent task:
 
-```javascript
+~~~~~~~~ javascript
 
 // check code on gulp watch
 gulp.task('client-flow', function() {
@@ -265,7 +265,7 @@ gulp.task('client-flow', function() {
   }));
 });
 
-```
+~~~~~~~~ 
 See [github.com/unknownexception/tryflow/Gulpfile.js](https://github.com/unknownexception/tryflow/blob/master/gulpfile.js) for an example.
 
 ## TextEditor support
