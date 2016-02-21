@@ -87,7 +87,7 @@ But at the end it's getting better and better everyday:
 
 # Stage Four: Inspiration
 
-It's February 2016. You are working on your sixth iOS app, hoping it would be better than previous ones: like [hash.ai](https://hash.ai), [wizearn](http://wizearn.com/) or [flawless](http://hiflawless.com). And getting insipring for some other projects like [https://github.com/ptmt/react-native-desktop](https://github.com/ptmt/react-native-desktop) and [https://github.com/skeletcode](skelet).
+It's February 2016. You are working on your sixth iOS app, hoping it would be better than previous ones: like [hash.ai](https://hash.ai), [wizearn](http://wizearn.com/) or [flawless](http://hiflawless.com). After all, you're get inspired for some other projects like [https://github.com/ptmt/react-native-desktop](https://github.com/ptmt/react-native-desktop) and [https://github.com/skeletcode](skelet).
 
 It's really easy to get used to react-native related issues. It's not a commercial software, and **minor bugs** are not felt as something unexpected, whereas all conceptual things such as [assets management](http://facebook.github.io/react-native/docs/images.html#content) or Navigator develops in the transparent and clear way.
 
