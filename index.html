@@ -9,14 +9,14 @@ layout: default
   {% endif %}
 
   <div class="posts">
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
     <div class="post-teaser">
 
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
         <header>
           <p class="meta">{{ post.date | date: "%B %-d, %Y" }}</p>
           <div class="post-title">
-            {{ post.title }}</a>
+            {{ post.title }}
           </div>
           <div class="excerpt">
             {{ post.excerpt }}

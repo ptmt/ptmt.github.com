@@ -11,7 +11,7 @@ theme:
   description: "Javascript, Objective C" # used by search engines
 
   footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> with custom <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
+   Powered by <a href="http://jekyllrb.com">Jekyll</a> and custom <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
 
   # Icons
   rss: true
@@ -49,11 +49,8 @@ theme:
   # Colors, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
 
-
 # BUILD SETTINGS
-markdown: kramdown
-highlighter: pygments
-future: true
+markdown: redcarpet
 
 sass:
   sass_dir: _sass
