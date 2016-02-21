@@ -12,25 +12,21 @@ feature-img: "images/2016/app-store-logo.jpg"
 
 # Stage One: The first date
 
-Initial conditions:
-
-- A legacy app written on top of some WebView hybrid framework, which
+Initial conditions: A legacy app written on top of some WebView hybrid framework, which
 constantly [facing its limitations](http://potomushto.com/2015/03/02/webviews-are-hard.html).
-
-- A completed web app in React. Hmm, so I can go with JSX, I can use this ecosystem.
-
-- React conference where R**** Native has been announced.
+A completed web app using `"react": "0.12.x"` (Hmm, so I can go with JSX, I can use this ecosystem).
+A conference where React Native has been announced.
 
 <img src="/images/2016/react-native-announce.png" alt="Annnouncing React Native" style="width: 300px;"/>
 
-Then one day you wake up in the morning, looking in the window at a very gloomy weather outside, you open the browser and see the news all over the internet: RN is released to public and the repo already has a thousand stars.
+And you wait. Then one day you wake up in the morning, looking in the window at a very gloomy weather outside, you open the browser and see the news all over the internet: RN is released to public and the repo already has a thousand stars.
 
 It's finally open to `npm install`.
 
 # Stage Two: Obsession
 
 
-After first two weeks there is only pure joy in the blood. The documentation is inconsistent, but doesn't matter (there is an [awesome UIExplorer](https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/ClipboardExample.js#L33)). Best practices doesn't exist: doesn't matter, some of such could be ported from the web, some could be used from other native frameworks. Not enough plugins: doesn't matter. You can write a plugin that you need by yourself. Apple has released new APIs for 3D Touch Quick Actions. Not a problem. You need more complicated maps than you get out-of-the-box? Let's wrap into JS APIs some advanced native implementation.
+After first two weeks there is only pure joy in the blood. Challenge accepted. The documentation is inconsistent, but doesn't matter (there is an [awesome UIExplorer](https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/ClipboardExample.js#L33)). Best practices doesn't exist: doesn't matter, some of such could be ported from the web, some could be used from other native frameworks. Not enough plugins: doesn't matter. You can write a plugin that you need by yourself. Apple has released new APIs for 3D Touch Quick Actions. Not a problem. You need more complicated maps than you get out-of-the-box? Let's wrap into JS APIs some advanced native implementation.
 
 It's inevitable that you soon get your first sensible [pull request](https://github.com/facebook/react-native/pull/1318) which could take a few weeks of the fun process of contributing. Important lesson how to be more careful, after all. Objective C still scares sometimes, but it doesn't look weird anymore. Patterns, paradigms, idioms which were formed over decades. It's a new, unknown language which could teach you a lot and refresh sweet memories of pure C.
 
@@ -54,23 +50,22 @@ There is a strong expanding community, and you like it. Brent Vatne sends you [n
 
 # Stage Three: Routine
 
-So, you're married now, [honeymoon in Paris](http://localhost:4000/2015/07/30/react-europe.html) has ended a weeks ago. Welcome to the usual life.
-Sometimes it's even called the **fatigue**.
+So, you're married now, [the honeymoon at Paris](http://localhost:4000/2015/07/30/react-europe.html) has ended a weeks ago. Welcome to the everyday life, closing issues, one by one.
 
-At first, you realized, that React doesn't solve all problem with performance magically. Even you couldn't affect UI thread directly, and React gives you *cheap* updates, there are tons of a potential bottlenecks. JS Thread, for example.
+At first, you realized, that React doesn't solve all problems with performance magically. Consider that fact you couldn't affect UI thread directly, and React gives you *cheap* updates, there are tons of a potential bottlenecks. JS Thread, for example.
 
 <img src="/images/2016/speak-1.jpg" alt="Speak screenshot" style="width: 200px;"/>
 
-So you profile, enforce pure components, cache reducers, write ObjectiveC.
+So you profile, enforce pure components, cache reducers, whatever generic strategy for optimizing the React performance, and always have an option: writing a low-level Objective C.
 
 ![](/images/2016/speak-2.jpg)
+![](/images/2016/speak-3.png)
+*Wow, such memory leaks from an almost empty project! Poor GC on JavascriptCore struggling with the
+inexperienced developer.*
 
-Wow, such memory leaks from an almost empty project! Poor GC on JavascriptCore struggling with the
-inexperienced developer.
-It's nice that all XCode's instruments finally available and you always could rollback to low-level.
+It's nice that all XCode's instruments Chrome Developer Tools finally available for you.
 And by the way, nothing serious here, just an issue with the developer environment.
 
-![](/images/2016/speak-3.png)
 ![](/images/2016/speak-4.jpg)
 
 Your everyday routine is a forking almost every two `react-native-%plugin%` out there.
@@ -85,15 +80,15 @@ But at the end it's getting better and better everyday:
 
 - [Ship your app 10 times](https://apphub.io) per day.
 
- — React gives you abstractions which feels more right than .xib, UIViewController, AutoLayout, CoreData. And it's up to you how much of it would be on the native side.
+— React gives you familiar abstractions which feels more right than .xib, UIViewController, AutoLayout, CoreData. And it's **up to you** how much of your app would be on the native side.
 
 # Stage Four: Inspiration
 
-It's February 2016. I'm working on the sixth iOS app, hoping it would be better then previous, such as [this](https://hash.ai), [this](http://wizearn.com/) and [this](http://hiflawless.com). And some other projects like [https://github.com/ptmt/react-native-desktop](https://github.com/ptmt/react-native-desktop) and [https://github.com/skeletcode](skelet).
+It's February 2016. You are working on your sixth iOS app, hoping it would be better than previous ones: like [hash.ai](https://hash.ai), [wizearn](http://wizearn.com/) or [flawless](http://hiflawless.com). And getting insipring for some other projects like [https://github.com/ptmt/react-native-desktop](https://github.com/ptmt/react-native-desktop) and [https://github.com/skeletcode](skelet).
 
-It's really easy to get used to react-native related issues. It's not a commercial software, and **bugs** are not felt as something unexpected.
+It's really easy to get used to react-native related issues. It's not a commercial software, and **minor bugs** are not felt as something unexpected, whereas all conceptual things such as [assets management](http://facebook.github.io/react-native/docs/images.html#content) or Navigator develops in the transparent and clear way.
 
-These very lines are written in Jekyll 3, and that ruby gem doesn't work great. Some combination of versions of an operation system, Ruby and Jekyll produce an bug affecting new post rendering. An hour on reading github issues, reinstalling Jekyll, and other voodoo tricks ("Ruby can't into timestamps").
+These very lines are written in Jekyll 3, and that ruby gem doesn't work great. Some combination of versions of an operation system, Ruby and Jekyll produce an bug affecting new post rendering (`future: true`). An hour on reading github issues, reinstalling Jekyll, and other voodoo tricks ("Ruby can't into timestamps").
 
 I'd rather dig out into Jekyll source code to find and fix that problem by myself. Can I do that easily? I certainly can with React Native now, and that is the reason I love it and that's makes me confident.
 
