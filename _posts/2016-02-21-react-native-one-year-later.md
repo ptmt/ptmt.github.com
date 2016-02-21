@@ -53,35 +53,37 @@ The community is expanding so fast, that in the next few months it will [outgrow
 
 So, you're married now, [the honeymoon at Paris](http://localhost:4000/2015/07/30/react-europe.html) has ended a weeks ago. Welcome to the everyday life.
 
-At first, you realise, that React doesn't solve all problems with performance magically. Regarding you can't affect UI thread directly, and React gives you *cheap* updates, there are tons of a potential bottlenecks. Blocking Javascript Thread is one of these. 
+At first, you realise, that React doesn't solve all problems with performance magically. Regarding you can't affect UI thread directly, and React gives you *cheap* updates, there are tons of a potential bottlenecks. Blocking Javascript Thread is one of these.
 
 <img src="/images/2016/speak-1.jpg" alt="Speak screenshot" style="width: 200px;"/>
 
-So you profile, enforce pure components, cache reducers, whatever generic strategy for optimizing the React performance, and always have an option: writing a low-level Objective C.
+So you profile, enforce pure components, cache reducers, do whatever generic strategy for optimizing the React performance, and always have an option: writing a low-level Objective C.
 
 ![](/images/2016/speak-2.jpg)
 ![](/images/2016/speak-3.png)
-*Wow, such memory leaks from an almost empty project! Poor GC on JavascriptCore struggling with the
+*Wow, such memory leaks from an almost empty project! Brave GC on JavascriptCore struggling with the
 inexperienced developer.*
 
 It's nice that all XCode's instruments Chrome Developer Tools finally available for you.
-And by the way, nothing serious here, just an issue with the developer environment.
+And by the way, nothing serious here, just an issue with the environments settings.
 
 ![](/images/2016/speak-4.jpg)
 
-Your everyday routine is a forking almost every two `react-native-%plugin%` out there.
+Your everyday routine is a forking almost every second `react-native-%plugin%` out there.
 Your everyday routine is a writing your own `RCT_EXPORT_MODULE`.
-Your everyday routine is upgrading npm modules on the next version.
+Your everyday routine is upgrading some npm module on the next version.
 
 But at the end it's getting better and better everyday:
 
-- [RNPM](https://github.com/rnpm/rnpm) is becoming a thing recently;
+- [RNPlay](https://rnplay.org) allows to check your ideas instantly;
+
+- [RNPM](https://github.com/rnpm/rnpm) is becoming a thing;
 
 - State management solved for you: use either GraphQL/Relay ([Reindex](https://reindex.io)) or Redux + AsyncStorage. Ok, not quite solved, but it's also just an another routine.
 
 - [Ship your app 10 times](https://apphub.io) per day.
 
-— React gives you familiar abstractions which feels more right than .xib, UIViewController, AutoLayout, CoreData. And it's **up to you** how much of your app would be on the native side.
+- React gives you familiar abstractions which feels more right than .xib, UIViewController, AutoLayout, CoreData. And it's **up to you** how much of your app would be on the native side.
 
 # Stage Four: Inspiration
 
