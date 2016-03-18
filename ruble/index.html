@@ -20,12 +20,14 @@ conn.onmessage = function (e) {
   var rub = parseFloat($('.rub .value'));
   $('.usd .value', '$'+ (rub / dollar).toFixed(2));
   $('.euro .value', '€'+ (rub / euro).toFixed(2));
+  $('.detail-0', (rub / dollar / 2000).toFixed(2));
   $('.detail-1', (rub / dollar / 40).toFixed(2));
   $('.detail-2', (rub / dollar / 500).toFixed(2));
   $('.detail-3', (rub / euro / 600).toFixed(2));
   $('.detail-4', (rub / euro / 32.1).toFixed(2));
   $('.detail-5', (rub / dollar / 99).toFixed(2));
   $('.detail-6', (rub / dollar / 499).toFixed(2));
+  $('.detail-7', (rub / dollar / 144).toFixed(2));
 };
 </script>
 <style>
@@ -94,11 +96,13 @@ body
     <div class="note">твоя зарплата в евро</div>
   </div>
   <ul class="details note">
+    <li><span class="detail-0">0</span> базовых MacBook Pro 15 
     <li><span class="detail-1">0</span> месяцев 4Gb/2-сore виртуального сервера Digital Ocean
     <li><span class="detail-2">0</span> билетов на типичную конференцию в San Francisco (<a href="http://nodesummit.com/registration/">NodeSummit</a>)
     <li><span class="detail-3">0</span> билетов Moscow - San Francisco - Moscow (600 €)
     <li><span class="detail-4">0</span> плат Raspberry PI Model B+ (<a href="http://www.element14.com/community/community/raspberry-pi">€32.1</a>)
     <li><span class="detail-5">0</span> лет подписки на Dropbox Pro
+    <li><span class="detail-7">0</span> лет подписки Netflix 4K
     <li><span class="detail-6">0</span> камер <a href="http://shop.gopro.com/Marketing/hero4">GoPro Hero4</a>
 
 
