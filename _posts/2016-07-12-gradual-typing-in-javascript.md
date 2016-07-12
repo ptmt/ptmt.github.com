@@ -12,7 +12,7 @@ iframe {
 }
 </style>
 
-**TL;DR:** Types can be gradually applied. Gradual typing in JavaScript mostly meant Flow in the places where I worked. Flow helped us with 1) Node.js backend and CLI tools, 2) accessing and managing state with React components tree and 3) even maintaining a React Native fork. A few difficulties were out there, of course, including fast-moving Javascript language itself, its idioms and libraries (*"out-of-sync d.ts"*-problem), quite complex configs, the lack of re-using the types data in the runtime. And OCaml codebase that still sounds scary and makes Flow less suitable for contributions from the wider audience (in reality the latest tooling turns OCaml awesome language to work with).
+**TL;DR:** Types can be gradually applied. Gradual typing in JavaScript mostly meant Flow in the places where I worked. Flow helped us with 1) Node.js backend and CLI tools, 2) accessing and managing state with React components tree and 3) even maintaining a React Native fork. A few difficulties were out there, of course, including fast-moving Javascript language, its idioms and libraries (*"out-of-sync d.ts"*-problem), quite complex configs, and the lack of re-using the types in the runtime. And OCaml codebase that still may sound scary and makes Flow less suitable for contributions from the wider audience (in reality the latest tooling turns OCaml into awesome language to work with).
 
 ![JavaScript and type systems](/images/2016/javascript-and-type-systems.png)
 *One hell of controversial slide about gradual typing*
