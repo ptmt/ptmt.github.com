@@ -2,7 +2,7 @@
 layout: post
 title: "Can I please avoid writing pure Javascript?"
 excerpt: "Why would you want to get rid of the inevitable."
-tags: [javascript, flowtype, facebook, atscript, google, ecmascript, clojure, clojurescript, typescript]
+tags: [javascript, flow, facebook, atscript, google, ecmascript, clojure, clojurescript, typescript]
 comments: true
 ---
 Why would you want to get rid of the Inevitable?

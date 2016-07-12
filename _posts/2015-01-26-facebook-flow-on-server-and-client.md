@@ -2,7 +2,7 @@
 layout: post
 title: Trying to heal Node.js app with Facebook Flow
 excerpt: "Typechecking for all your javascript code, including Node.js"
-tags: [flowtype, node, javascript, ecmascript, facebook]
+tags: [flow, node, javascript, ecmascript, facebook]
 modified: 2015-01-26
 comments: true
 feature-img: "img/sample_feature_img.png"
@@ -265,7 +265,7 @@ gulp.task('client-flow', function() {
   }));
 });
 
-~~~~~~~~ 
+~~~~~~~~
 See [github.com/unknownexception/tryflow/Gulpfile.js](https://github.com/unknownexception/tryflow/blob/master/gulpfile.js) for an example.
 
 ## TextEditor support
