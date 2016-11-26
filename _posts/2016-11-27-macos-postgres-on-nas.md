@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Setting up Postgres database location on NAS"
+title: "Setting up Postgres database's location on NAS"
 excerpt: On MacOS using Autofs
 tags: [postgres, macos, nas, wd]
 comments: true
@@ -77,4 +77,4 @@ sudo nano /etc/auto_nas
 db -fstype=smbfs ://login:password@MyCloudEX2Ultra/Public/db
 ```
 
-Finally, run `sudo automount -vc` and got it worked. 
+Finally, run `sudo automount -vc` and got it worked.
