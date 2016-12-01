@@ -17,6 +17,7 @@ GEM
     ffi (1.9.6-x64-mingw32)
     ffi (1.9.6-x86-mingw32)
     hitimes (1.2.2)
+    hitimes (1.2.2-x86-mingw32)
     jekyll (2.5.1)
       classifier-reborn (~> 2.0)
       colorator (~> 0.1)
@@ -48,23 +49,6 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.4)
-    octopress (3.0.0.rc.15)
-      jekyll (~> 2.0)
-      mercenary (~> 0.3.2)
-      octopress-deploy
-      octopress-docs
-      titlecase
-    octopress-deploy (1.0.0)
-      colorator
-      octopress-docs
-    octopress-docs (0.0.9)
-      jekyll (~> 2.0)
-      octopress-escape-code (~> 1.0)
-      octopress-hooks (~> 2.0)
-    octopress-escape-code (1.0.2)
-      octopress-hooks (~> 2.0)
-    octopress-hooks (2.2.1)
-      jekyll (~> 2.0)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.9)
@@ -79,7 +63,6 @@ GEM
     sass (3.4.7)
     timers (4.0.1)
       hitimes
-    titlecase (0.1.1)
     toml (0.1.2)
       parslet (~> 1.5.0)
     yajl-ruby (1.1.0)
@@ -93,4 +76,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-sitemap
-  octopress (~> 3.0.0.rc.12)
+
+BUNDLED WITH
+   1.13.6
