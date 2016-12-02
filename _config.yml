@@ -2,56 +2,55 @@
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://potomushto.com" # the base hostname & protocol for your site
 
-# THEME-SPECIFIC CONFIGURATION
-theme:
-  # Meta
-  title: "@ptmt/blog"
-  avatar: avatar.png
-  gravatar: # email md5 hash
-  description: "Javascript, Objective-C, React, React Native" # used by search engines
 
-  footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> and custom <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
+# Meta
+title: "@ptmt/blog"
+avatar: avatar.png
+gravatar: # email md5 hash
+description: "Javascript, Objective-C, React, React Native" # used by search engines
 
-  # Icons
-  rss: true
-  email_address: # full email address, e.g. "sam@example.com"
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  github: "ptmt"
-  google_plus:
-  instagram:
-  linkedin:  # full URL
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:  # full URL
-  steam:
-  tumblr:
-  twitter: "potomushto"
-  wordpress:
-  vimeo: "phinitive"
+footer_text: >
+ Powered by <a href="http://jekyllrb.com">Jekyll</a> and custom <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
 
-  # Scripts
-  disqus_shortname: potomushtocom
+# Icons
+rss: true
+email_address: # full email address, e.g. "sam@example.com"
+behance:
+bitbucket:
+dribbble:
+facebook:
+flickr:
+github: "ptmt"
+google_plus:
+instagram:
+linkedin:  # full URL
+pinterest:
+reddit:
+soundcloud:
+stack_exchange:  # full URL
+steam:
+tumblr:
+twitter: "potomushto"
+wordpress:
+vimeo: "phinitive"
 
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  str_next: "Next"
-  str_prev: "Prev"
-  str_continue_reading: "Continue reading"
+# Scripts
+disqus_shortname: potomushtocom
+
+# Localization strings
+str_follow_on: "Follow on"
+str_rss_follow: "Follow RSS feed"
+str_email: "Email"
+str_next: "Next"
+str_prev: "Prev"
+str_continue_reading: "Continue reading"
 
   # Colors, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
 
 # BUILD SETTINGS
 #markdown: redcarpet
-
-sass:
-  sass_dir: _sass
-  style: :compressed
+# 
+# sass:
+#   sass_dir: _sass
+#   style: :compressed
