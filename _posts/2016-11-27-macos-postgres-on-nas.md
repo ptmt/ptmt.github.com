@@ -27,12 +27,13 @@ could not link file "pg_xlog/xlogtemp.71138" to "pg_xlog/00000001000000000000000
 ```
 
 After rebooting in safe mode (Cmd+R) I run:
+
 ```
 csrutil disable
 reboot
 ```
 
-That needed because by default my Mac has System Integrity Protection and won't allow editing system files. But I thoughе I need to edit one after some googling:
+That needed because by default Mac has System Integrity Protection and it won't allow editing system files. You can disable that:
 
 ```
 sudo nano /System/Library/LaunchDaemons/com.apple.smbd.plist
@@ -62,6 +63,7 @@ pg_ctl -D ~/nas/db/postgres start &
 After successfully creating db on the remote shared disk all I needed is setting up automounting directory on the system startup using `autofs`.
 
 It requires editing two files. **First, is /etc/auto_master**
+
 ```
 sudo nano /etc/auto_master
 
@@ -76,7 +78,7 @@ sudo nano /etc/auto_master
 /Users/potomushto/nas		auto_db
 ```
 
-And **the second is newly created `auto_db`**:
+And **the second is newly created `auto_db`:**:
 
 ```
 sudo nano /etc/auto_nas
