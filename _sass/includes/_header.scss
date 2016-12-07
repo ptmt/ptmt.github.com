@@ -1,15 +1,15 @@
 .site-header {
   @extend %padding-small;
   background: $brand-color;
-  border-bottom: 1px solid $border-color;
+  // border-bottom: 1px solid $border-color;
   display: inline-block;
   float: left;
   width: 100%;
-  
+
   a {
     color: $header-link-color;
   }
-  
+
   .avatar {
     height: 2em;
     width: 2em;
@@ -18,7 +18,7 @@
     border-radius: 0.2em;
     margin-right: 1em;
   }
-  
+
   .site-title {
     float: left;
     font-weight: bold;
@@ -46,7 +46,7 @@
         padding-top: $padding-small;
         text-align: left;
         width: 100%;
-      } 
+      }
     }
   }
 }

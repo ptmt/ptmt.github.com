@@ -13,15 +13,19 @@
 }
 // post listing
 .posts {
-  .post-teaser {
-    @extend %padding-regular;
+  // width: 50%;
+  padding-top: 20px;
+
+  header {
+    @extend %padding-small;
+    
     width: 100%;
-    text-align: center;
+    // text-align: center;
     margin-bottom: 0;
-    display: inline-block;
-    background-size: $feature-image-size;
+    // display: inline-block;
+    // background-size: $feature-image-size;
     border-bottom: 1px solid $border-color;
-    p a:hover {
+    a:hover {
       @extend %link-hover;
     }
   }

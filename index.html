@@ -10,21 +10,17 @@ layout: default
 
   <div class="posts">
     {% for post in site.posts %}
-    <div class="post-teaser">
 
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-        <header>
-          <p class="meta">{{ post.date | date: "%B %-d, %Y" }}</p>
-          <div class="post-title">
-            {{ post.title }}
-          </div>
-          <div class="excerpt">
-            {{ post.excerpt }}
-          </div>
-      </header>
-    </a>
+    <header>
+        <p class="meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <div class="post-title">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </div>
+        <div class="excerpt">
+          {{ post.excerpt }}
+        </div>
+    </header>
 
-    </div>
     {% endfor %}
   </div>
 
