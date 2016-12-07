@@ -75,7 +75,7 @@ sudo nano /etc/auto_master
 /home			auto_home	-nobrowse,hidefromfinder
 /Network/Servers	-fstab
 /-			-static
-/Users/potomushto/nas		auto_db
+/Users/potomushto/nas		auto_nas
 ```
 
 And **the second is newly created `auto_db`:**:
