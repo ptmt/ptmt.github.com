@@ -46,12 +46,5 @@ str_next: "Next"
 str_prev: "Prev"
 str_continue_reading: "Continue reading"
 
-  # Colors, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-
-# BUILD SETTINGS
-#markdown: redcarpet
-#
-# sass:
-#   sass_dir: _sass
-#   style: :compressed
+markdown: kramdown
+highlighter: rouge

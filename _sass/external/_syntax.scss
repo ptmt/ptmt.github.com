@@ -1,7 +1,10 @@
-
+.highlight code {
+  font-family: 'Droid Sans Mono', Monaco, monospace, monospace;
+  font-size: 0.8em;
+}
 .highlight {
-    background-color: rgba(138, 195, 195, 0.1);
-    color: #586e75;
+    background-color: rgba(175, 175, 175, 0.05);
+    color: #374246;
     padding: 15px;
     .c { color: #93a1a1 } /* Comment */
     .err{ color: #586e75 } /* Error */

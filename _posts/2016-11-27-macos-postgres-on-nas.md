@@ -7,7 +7,7 @@ comments: true
 ---
 
 Network storages are really handy. Much more disk space,
-RAID-0, fast and reliable shared storage which is available across family. 
+RAID-0, fast and reliable shared storage which is available across family.
 They have decent small CPUs, 1Ghz in my case, on the board, you can manage the time table when storage is enabled and have nice mobile apps. I wish I had NAS before.
 
 I bought one from Western Digital (MyCloud EX2Ultra to be specific), and
@@ -87,6 +87,6 @@ sudo nano /etc/auto_nas
 db -fstype=smbfs ://login:password@MyCloudEX2Ultra/Public/db
 ```
 
-Finally, run `sudo automount -vc` and got it worked. 
+Finally, run `sudo automount -vc` and got it worked.
 
 Now I always got `nas` folder mounted automatically.
