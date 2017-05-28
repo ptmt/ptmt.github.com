@@ -1,17 +1,18 @@
 ---
 layout: post
-title: "Setting up Postgres database's location on NAS"
-excerpt: On MacOS using Autofs
+title: "Setting up Postgres on NAS"
+excerpt: for MacOS using Autofs
 tags: [postgres, macos, nas, wd]
 comments: true
 ---
 
 Network storages are really handy. Much more disk space,
-RAID-0, fast and reliable shared storage across family. They have decent small CPUs on the board, you can manage the time table when storage is enabled and have mobile apps. I wish I had NAS before.
+RAID-0, fast and reliable shared storage which is available across family. 
+They have decent small CPUs, 1Ghz in my case, on the board, you can manage the time table when storage is enabled and have nice mobile apps. I wish I had NAS before.
 
 I bought one from Western Digital (MyCloud EX2Ultra to be specific), and
 one of the main reason for that is being able to work with a huge database.
-In my current case, it's Postgres, which runs on my Mac with 256GB, so any database larger than XX Gb is large enough. The cloud solution is also possible solution. But what about 2TB database?
+In my current case, it's Postgres, which runs on my Mac with 256GB, so any database larger than XX Gb is large enough to worry about. You can solve this problem with cloud, but what about 2TB database?
 
 My first attempt was about mount drive manually and create the database there:
 
@@ -20,7 +21,7 @@ mount -t smbfs smb://MyCloudEX2Ultra/Public/db db
 initdb --debug -D nas/db/postgres
 ```
 
-And it failed. It couldn't make symlinks on remote drive:
+It didn't work. One couldn't make symlinks on remote drive by default:
 
 ```
 could not link file "pg_xlog/xlogtemp.71138" to "pg_xlog/000000010000000000000001": Operation not supported
@@ -45,12 +46,12 @@ sudo nano /System/Library/LaunchDaemons/com.apple.smbd.plist
 </array>
 ```
 
-It didn't help either.
+But eventually, I still had some errors with symlinks while creating Postgres database.
 
-I choose easier way, just store logs locally.
+I choose easier way, by storing logs locally.
 
 ```
-initdb --debug -D nas/db/postgres -X db_wal
+initdb -D nas/db/postgres -X db_wal
 ```
 
 And that worked. Now I could run postgres like
@@ -86,4 +87,6 @@ sudo nano /etc/auto_nas
 db -fstype=smbfs ://login:password@MyCloudEX2Ultra/Public/db
 ```
 
-Finally, run `sudo automount -vc` and got it worked.
+Finally, run `sudo automount -vc` and got it worked. 
+
+Now I always got `nas` folder mounted automatically.
