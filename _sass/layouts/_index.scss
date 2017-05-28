@@ -14,11 +14,11 @@
 // post listing
 .posts {
   // width: 50%;
-  padding-top: 20px;
+  padding-top: 10px;
 
   header {
-    @extend %padding-small;
-    
+    @extend %padding-xtra-small;
+
     width: 100%;
     // text-align: center;
     margin-bottom: 0;
@@ -33,13 +33,14 @@
     background: #eee;
   }
   .excerpt {
+    display: none;
     font-size: 0.8em;
     color: rgba($text-color, .5);
   }
   .post-title {
     font-size: 1.2em;
     margin-top: 0.1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
   }
 }
 // pagination
