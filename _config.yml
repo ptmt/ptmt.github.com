@@ -11,6 +11,7 @@ description: "Javascript, Objective-C, React, React Native" # used by search eng
 
 header_text: Hi, my name is Dmitry Loktev. This blog is a searchable dump of workarounds, thoughts and comments. In 2015-2017 it's mostly about JavaScript, Objective-C and React Native.
 footer_text: >
+ <p>Any feedback and edits is higly appreciated <a href="https://github.com/ptmt/ptmt.github.com">https://github.com/ptmt/ptmt.github.com</a></p>
  Powered by <a href="http://jekyllrb.com">Jekyll</a> and custom <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
 
 # Icons
