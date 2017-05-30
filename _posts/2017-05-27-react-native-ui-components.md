@@ -1,8 +1,10 @@
 ---
 layout: post
-title: React Native alternatives to Bootstrap
+title: React Native alternatives to Bootstrap in early 2017
 tags:
   - react-native
+  - shoutem
+  - nativebase
 comments: true
 ---
 
@@ -12,10 +14,10 @@ Should I use UI kits for React Native? If you worked on small apps a few years a
 
 Here is a list of bootstrap projects:
 
-1. Shoutem UI: <https://github.com/shoutem/ui> (demo: [https://expo.io/@community/shoutem-ui-examples](mailto:https://expo.io/@community/shoutem-ui-examples)). High quality, complex, with very good marketing and additional visual tools to bootstrap. There are a lot of low-level components for layout (View, Row, ScrollView, Image, Tile, Divider). Support for themes which looks like scss.
-2. React Native Elements: <https://github.com/react-native-training/react-native-elements> (demo: [https://expo.io/@community/react-native-elements-starter](mailto:https://expo.io/@community/react-native-elements-starter)). This one is also popular, well-maintained by a community. It can be a good start, and certainly worth looking for some of the components.
-3. NativeBase.io ([https://getexponent.com/@community/native-base](mailto:https://getexponent.com/@community/native-base)). I have some problems with dropped frames in expo demo on iPhone 6, but this is not a problem of components itself. There is also a pretty great set of base components (Container, Button, H3, Text, Body, Right, List, ListItem, some of them feels like you're using styled-components). Uses shoutem themes. There is also a marketplace, which is a really sweet idea, I hope the market will evolve. <https://market.nativebase.io/> ($100-$500). NativeBase has <http://reazyframework.io/> as a full-featured framework solution, but I 've never tried it.
+1. Shoutem UI: <https://github.com/shoutem/ui> (demo: [https://expo.io/@community/shoutem-ui-examples](mailto:https://expo.io/@community/shoutem-ui-examples)). High quality, complex, with very good marketing and additional visual tools to bootstrap. There are a lot of low-level components for layout (View, Row, ScrollView, Image, Tile, Divider). Support for themes which looks like scss. ![Shoutem](/images/2017/shoutem-introduction@2x.jpg)
+2. React Native Elements: <https://github.com/react-native-training/react-native-elements> (demo: [https://expo.io/@community/react-native-elements-starter](mailto:https://expo.io/@community/react-native-elements-starter)). This one is also popular, well-maintained by a community. It can be a good start, and certainly worth looking for some of the components. ![React Native Elements](/images/2017/elements.png)
+3. NativeBase.io ([https://getexponent.com/@community/native-base](mailto:https://getexponent.com/@community/native-base)). I have some problems with dropped frames in expo demo on iPhone 6, but this is not a problem of components itself. There is also a pretty great set of base components (Container, Button, H3, Text, Body, Right, List, ListItem, some of them feels like you're using styled-components). Uses shoutem themes. There is also a marketplace, which is a really sweet idea, I hope the market will evolve. <https://market.nativebase.io/> ($100-$500). NativeBase has <http://reazyframework.io/> as a full-featured framework solution, but I 've never tried it. ![NativeBase](/images/2017/nativebase-android.gif)
 4. Pepperoni <https://github.com/futurice/pepperoni-app-kit> more about the full pack starter solution for React Native than UI components.
-5. <https://github.com/avocode/nachos-ui> Looks pretty basic to me, maybe it was supposed to fit the certain project.
-6. <https://github.com/xinthink/react-native-material-kit> - components that fit Material UI. Very high quality in terms of feels, but they are implemented as a fully native, so be ready to spend some time with setup.
-7. Something new in the list: <https://react-native.shop/> - costs $25\. Based on NativeBase.io and positioned as a responsive UI for React Native.
+5. <https://github.com/avocode/nachos-ui> Looked pretty basic to me some time ago, but getting more and more components. ![Nachos](/images/2017/nachos.jpg)
+6. <https://github.com/xinthink/react-native-material-kit> - components that fit Material UI. Very high quality in terms of feels on Android, but they are implemented as a fully native, so be ready to spend some time with setup if you need this on iOS for some reason. ![Material Kit](/images/2017/materialkit.gif)
+7. Something new in the list: <https://react-native.shop/> - costs $25\. Based on NativeBase.io and positioned as a responsive UI for React Native. This is also a good proof that you can enhance the design of your components afterwards and make it really neat. ![Nachos](/images/2017/reactnativeshop.png)
