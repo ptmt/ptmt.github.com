@@ -36,7 +36,7 @@ wordpress:
 vimeo: "phinitive"
 
 # Scripts
-disqus_shortname: potomushtocom
+# disqus_shortname: potomushtocom
 
 # Localization strings
 str_follow_on: "Follow on"
