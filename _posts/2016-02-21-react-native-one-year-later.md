@@ -74,24 +74,20 @@ Your everyday routine is upgrading some npm module on the next version.
 
 But at the end it's getting better and better everyday:
 
-- [RNPlay](https://rnplay.org) allows to check your ideas instantly;
-
-- [RNPM](https://github.com/rnpm/rnpm) is becoming a thing;
-
-- State management solved for you: use either GraphQL/Relay ([Reindex](https://reindex.io)) or Redux + AsyncStorage. Ok, not quite solved, but it's also just an another routine.
-
-- [Ship your app 10 times](https://apphub.io) per day.
-
-- React gives you familiar abstractions which feels more right than .xib, UIViewController, AutoLayout, CoreData. And it's **up to you** how much of your app would be on the native side.
+* [RNPlay](https://rnplay.org) allows to check your ideas instantly;
+* [RNPM](https://github.com/rnpm/rnpm) is becoming a thing;
+* State management solved for you: use either GraphQL/Relay ([Reindex](https://reindex.io)) or Redux + AsyncStorage. Ok, not quite solved, but it's also just an another routine.
+* [Ship your app 10 times](https://apphub.io) per day.
+* React gives you familiar abstractions which feels more right than .xib, UIViewController, AutoLayout, CoreData. And it's **up to you** how much of your app would be on the native side.
 
 # Stage Four: Inspiration
 
-It's February 2016. You are working on your sixth iOS app, hoping it would be better than previous ones: like [hash.ai](https://hash.ai), [wizearn](http://wizearn.com/) or [flawless](http://hiflawless.com). After all, you're get inspired for some other projects like [https://github.com/ptmt/react-native-desktop](https://github.com/ptmt/react-native-desktop) and skelet.
+It's February 2016. You are working on your sixth iOS app, hoping it would be better than previous ones: like [hash.ai](https://hash.ai), [wizearn](http://wizearn.com/) or [flawless](http://hiflawless.com). After all, you're get inspired for some other projects like [https://github.com/ptmt/react-native-desktop](https://github.com/ptmt/react-native-desktop) and SkeletCode.
 
-It's really easy to get used to react-native related issues. It's not a commercial software, and **minor bugs** are not felt as something unexpected, whereas all conceptual things such as [assets management](http://facebook.github.io/react-native/docs/images.html#content) or Navigator develops in the transparent and clear way.
+You get used to react-native related issues. It's not a commercial software, and **minor bugs** are not felt as something unexpected, whereas all conceptual things such as [assets management](http://facebook.github.io/react-native/docs/images.html#content) or Navigator develops in the transparent and clear way. (**Update from 2017** Boy I was wrong about Navigation).
 
 These very lines are written in Jekyll 3, and that ruby gem doesn't work great. Some combination of versions of an operation system, Ruby and Jekyll produce an bug affecting new post rendering (`future: true`). An hour on reading github issues, reinstalling Jekyll, and other voodoo tricks ("Ruby can't into timestamps").
 
-I'd rather dig out into Jekyll source code to find and fix that problem by myself. Can I do that easily? I certainly can with React Native now, and that is the reason I love it and that's makes me confident.
+I'd rather dig out into Jekyll source code to find and fix that problem by myself. Can I do that in reasonable amount of time? I certainly can with React Native now, and that makes me confident.
 
 *INB4; (201x) Stage Five — Oh, see, the trend has changed, there is another cool technology, let's go there!*
