@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dive into Mobile Development from a React developer's perspective
+title: A Dive into Mobile Development from a React developer's perspective
 tags:
   - react-native
   - wix
