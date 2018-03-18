@@ -4,20 +4,14 @@ layout: default
 
 <div class="home">
 
-  {% if site.header_text %}
-  <div class="call-out">{{ site.header_text }}</div>
-  {% endif %}
-
   <div class="posts">
     {% for post in site.posts %}
 
     <header>
-        <p class="meta">{{ post.date | date: "%B %-d, %Y" }}</p>
         <div class="post-title">
+
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </div>
-        <div class="excerpt">
-          {{ post.excerpt }}
+          <i class="meta">{{ post.date | date: "%B %-d, %Y" }}</i>
         </div>
     </header>
 

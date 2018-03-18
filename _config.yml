@@ -9,10 +9,9 @@ avatar: avatar.png
 gravatar: # email md5 hash
 description: "Javascript, Objective-C, React, React Native" # used by search engines
 
-header_text: Hi, my name is Dima Loktev. This blog is a searchable dump of workarounds, thoughts and comments. In recent years it's been mostly about JavaScript, Objective-C and React Native.
 footer_text: >
- <p>Any feedback and edits are higly appreciated <a href="https://github.com/ptmt/ptmt.github.com">https://github.com/ptmt/ptmt.github.com</a></p>
- Powered by <a href="http://jekyllrb.com">Jekyll</a> and custom <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
+ <p> &copy; Dmitry Loktev. Any feedback is higly appreciated <a href="https://github.com/ptmt/ptmt.github.com">https://github.com/ptmt/ptmt.github.com</a></p>
+ Powered by <a href="http://jekyllrb.com">Jekyll</a>
 
 # Icons
 rss: true

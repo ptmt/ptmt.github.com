@@ -1,0 +1,28 @@
+/* .site-header {
+  display: inline;
+} */
+h4 {
+  display: inline;
+}
+.site-header ul {
+  display: inline;
+}
+.site-header li {
+  display: inline;
+  margin-right: 0.4em;
+}
+.site-header li a {
+  text-decoration: none;
+}
+
+.site-footer {
+  font-size: 0.8em;
+}
+
+.meta {
+  font-style: italic;
+}
+
+article img {
+  max-width: 100%;
+}
