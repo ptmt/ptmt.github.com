@@ -26,7 +26,7 @@ There are tons of ways to do this. Either install as OPAM package, download bina
 brew install flow
 ~~~~~~~~
 
-I am also working on [tryflow.org](http://tryflow.org). I hope to get to a place where it is possible to play with Flow and see it in action.
+I am also working on [tryflow](https://github.com/ptmt/tryflow) (**UPDATE: it's obsolete**). I hope to get to a place where it is possible to play with Flow and see it in action.
 
 However, when you decide to use Flow on a really huge project, you need to build it from [flow git repository](https://github.com/facebook/flow) to be able to change a source code.
 
