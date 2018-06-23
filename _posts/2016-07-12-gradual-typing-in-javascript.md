@@ -24,8 +24,7 @@ Back then we had a web server written in Node (because the universal approach to
 
 (Click on functions and variables to see type signatures if you lucky)
 
-<iframe src="http://tryflow.org/?iframe=true&code=LyogQGZsb3cgKi8KY29uc3QgYSA9IHBhcnNlSW50KCIxMDAiLCAiMTAiKQpzZXRUaW1lb3V0KCgpID0+IHt9LCAiMTAwIikKCmNvbnN0IGRhdGUgPSBuZXcgRGF0ZSgpCmNvbnN0IHN0ciA9IGRhdGUgKyAic3RyaW5nIgoKY29uc3Qgd2F0bWFuID0gQXJyYXkoMTYpLmpvaW4oMSkgKyAnQmF0bWFuIScKCmltcG9ydCBmcyBmcm9tICdmcycKY29uc3QgZmlsZW5hbWUgPSAxCmZzLnJlYWRGaWxlU3luYyhmaWxlbmFtZSkKCmltcG9ydCB7IHJlc29sdmU0IH0gZnJvbSAnZG5zJwpyZXNvbHZlNCgnMTM5LjEzMC40LjUnLCAoZXJyLCByZXNvbHZlZCkgPT4gewogIGNvbnNvbGUubG9nKHJlc29sdmVkWzBdKQp9KQ=="  height="500px" frameborder="0" allowfullscreen>
-</iframe>
+__the code snippet was removed due to tryflow.org domain expiration__
 
 Should I remember the signature that node.js function or just google it? What if haven't set up a fast feedback infrastructure (e.g. live tests with mocked API and other things)?
 
