@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Can I please avoid writing pure Javascript?
+title: Can I please avoid writing pure Javascript in 2015?
 excerpt: Why would you want to get rid of the inevitable.
 tags:
   - javascript
