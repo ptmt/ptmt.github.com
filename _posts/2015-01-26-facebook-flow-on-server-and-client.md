@@ -2,15 +2,14 @@
 layout: post
 title: Trying to heal Node.js app with Facebook Flow
 excerpt: "Typechecking for all your javascript code, including Node.js"
-tags: [flow, node, javascript, ecmascript, facebook]
+tags: [flow, node, javascript, ECMAScript, Facebook]
 modified: 2015-01-26
 comments: true
-feature-img: "img/sample_feature_img.png"
 ---
 
-Recently, Facebook released a library that quickly became the lastest frontend sensation. The project, ReactJS, brings a fresh approach to maintaining the viewing part of web applications. Facebook is well known for building tools which help improve all types of legacy, including languages, codebase, developers (Hip-hop, HHVM and Hack).
+Recently, Facebook released a library that quickly became the latest frontend front-pager. The other Facebook's project, ReactJS, brought a fresh approach to maintaining the view part of web applications. Facebook is well known for building tools which help improve all types of legacy, including languages, codebase, developers (Hip-hop, HHVM, and Hack).
 
-And now, meet the awesome [Facebook Flow](http://flowtype.org/) — a static typechecker for Javascript.
+And now, meet the impressive [Facebook Flow](http://flowtype.org/) — a static type checker for Javascript.
 
 ## Getting started
 
@@ -20,15 +19,15 @@ Flow binaries can be installed via npm:
 npm install flow-bin -g
 ```
 
-There are tons of ways to do this. Either install as OPAM package, download binaries from the official site, or install it via brew as follows:
+There are other ways to install Flow. Install it as an OPAM package, download binaries from the official site, or install it via brew as follows:
 
 ```
 brew install flow
 ```
 
-I am also working on [tryflow](https://github.com/ptmt/tryflow) (**UPDATE: it's obsolete**). I hope to get to a place where it is possible to play with Flow and see it in action.
+I am also working on [tryflow](https://github.com/ptmt/tryflow) (**UPDATE: it's obsolete after a few years since you now have https://flow.org/try**). I hope to get to a place where it is possible to play with Flow and see it in action.
 
-However, when you decide to use Flow on a really huge project, you need to build it from [flow git repository](https://github.com/facebook/flow) to be able to change a source code.
+However, when you decide to use Flow on a really huge project, you may need to build it from [flow git repository](https://github.com/facebook/flow) to be able to change a source code.
 
 The first example is simple yet very exciting. Consider you have a function like this:
 
@@ -48,7 +47,7 @@ Flow performs type inference and defines the type of `x` as a `string`. Function
 Executing this code through Node or a browser obviously produces `Uncaught TypeError: Cannot read property 'length' of null`.
 Could it be caught at compile time rather than runtime? You could try checking the same code with the very useful [jshint.com](http://jshint.com/), and seeing if it gives no warnings. [TypeScript Playground](http://www.typescriptlang.org/Playground) also couldn't find this error.
 
-This is where Flow takes the stage. It’s no surprise, then, that we've got two related errors when run our first “flow check”:
+This is where Flow takes the stage. It’s no surprise, then, that we've got two related errors when running our first “flow check”:
 
 ```bash
 > flow init
@@ -56,7 +55,7 @@ This is where Flow takes the stage. It’s no surprise, then, that we've got two
 
 
 flowexamples/src/01_simple.js:4:10,17: property length
-Property cannot be accessed on possibly null value
+Property cannot be accessed on a possibly null value
 flowexamples/src/01_simple.js:7:5,5: undefined
 
 flowexamples/src/01_simple.js:4:10,17: property length
@@ -95,7 +94,7 @@ This kind of syntax refers to Union type (`type1 or type2`) where `?` for `Nulla
 length :: Either (Maybe Int) (Maybe String) -> Int
 ```
 
-So far, static typechecking doesn't require explicit types to be written using dynamic conditions as constraints to refine types.
+So far, static type checking doesn't require explicit types to be written using dynamic conditions as constraints to refine types.
 
 Flow simply analyzes a type's flow.
 
@@ -115,7 +114,7 @@ exec("command", null, (err, stdout, stderr) => {
 ```
 
 How does it work? Flow allows you to extend your code by writing [declarations](flowtype.org/docs/declarations.html). It could be an external file or an inline-type declaration.
-The previous example typechecked because Flow’s standard library [define](https://github.com/facebook/flow/blob/master/lib/node.js#L116) `exec` interface looks this way:
+The previous example type-checked because Flow’s standard library [define](https://github.com/facebook/flow/blob/master/lib/node.js#L116) `exec` interface looks this way:
 
 ```javascript
 declare module "child_process" {
@@ -213,8 +212,7 @@ console.log(
 
 <img src="/images/2015/flow-pic@2x.png" alt="Facebook Flow" width="400px"/>
 
-The key idea, and one of the advantages of Flow, is that it allows for typed and untyped code to be mixed. Unit and functional tests with code coverage are the must-have guards for your code.
-However, they are pretty slow compared to the nearly instant speeds of static typechecking.
+One of the advantages of Flow is that it allows for typed and untyped code to be mixed. That's the idea of "gradual" typings, to protect the most important parts. The same approach is often applied with the unit and functional tests.
 
 ## Example config
 
@@ -256,7 +254,7 @@ gulp.task("flow", function() {
 
 Harmony is becoming less and less necessary these days, thanks to IO.js.
 
-The same task is usually more complicated for the client due to reasons of transforming, packaging, caching, minimazing, sourcemapping, etc. So for clients, you can use Flow with the independent task:
+The same task is usually more complicated for the client due to reasons of transforming, packaging, caching, minimizing, source mapping, etc. So for clients, you can use Flow with the independent task:
 
 ```javascript
 // check code on gulp watch
@@ -287,7 +285,7 @@ Flow is developed internally, syncing with Github repo from time to time. But yo
 
 Be sure you're not about to start work on a feature which is already being developed by the Facebook team.
 
-Flow is written in OCaml, which is really nice language, with an easy-to-read type system and pattern matching. All you need is properly configured Emacs.
+Flow is written in OCaml, which is a really nice language, with an easy-to-read type system and pattern matching. All you need is properly configured Emacs.
 
 ### Cons
 
@@ -296,7 +294,7 @@ Flow is written in OCaml, which is really nice language, with an easy-to-read ty
   There is a problem with supporting multiple platforms, which could require you to write your own declarations lib. Even a simple function like setTimeout() is different in browser and Node.
   For example, we've got IO.js – an awesome Node ES6-ready fork which uses more fresh V8, has the new APIs, and which is not yet presented in Facebook’s default library.
 
-- Linters and style checkers is not working properly right now with types. So it may be harder to maintain code style across your team. And strict code style is a privacy issue, [remember](https://freedom-to-tinker.com/blog/aylin/anonymous-programmers-can-be-identified-by-analyzing-coding-style/)? Honestly, I don’t think it is a big problem to adopt things such as a jscs, to use typescript as an example.
+- Linters and style checkers is not working properly right now with types. So it may be harder to maintain code style across your team. And strict code style is a privacy issue, [remember](https://freedom-to-tinker.com/blog/aylin/anonymous-programmers-can-be-identified-by-analyzing-coding-style/)? Honestly, I don’t think it is a big problem to adapt things such as a jscs, to use typescript as an example.
 
 - Flow doesn't support a few ES6 features (for example, it doesn't currently support generators), as well as some interesting type declarations syntax. See [Coming soon](http://flowtype.org/docs/coming-soon.html) page;
 

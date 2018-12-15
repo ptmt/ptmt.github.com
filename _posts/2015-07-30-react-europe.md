@@ -18,23 +18,3 @@ React is exploding fast. I've been writing javascript views as a f(data) for a f
 Everything that could be combined with word `React` eventually will be. Add `webpack`, `native`, `redux`, `router`, `example`, `universal` and try to combine by yourself.
 
 ![React Europe](/images/2015/react-europe0.jpg)
-
-I shook hands with almost all of these guys. Smart people really around you means a lot, after all.
-
-![React Europe](/images/2015/react-europe1.jpg)
-
-This controversial advertisement. It's not funny anymore.
-
-![React Europe](/images/2015/react-europe5.jpg)
-
-French food. Not only croissants and macaroons.
-
-![React Europe](/images/2015/react-europe3.jpg)
-
-Music is coming.
-
-![React Europe](/images/2015/react-europe4.jpg)
-
-The year is 2015. The bunch of mainstream frameworks and popular libs just became obsolete and this will continue.
-
-King.js is dead, long live the King.js!
