@@ -9,7 +9,7 @@ gravatar: # email md5 hash
 description: "Programming user interfaces for mobile and desktop applications. JavaScript, Objective-C, React, React Native" # used by search engines
 
 footer_text: >
-  <p>&copy; Dmitry Loktev. Source code <a href="https://github.com/ptmt/ptmt.github.com">https://github.com/ptmt/ptmt.github.com</a></p>
+  <p>&copy; Dmitry Loktev. </p>
   <p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, No-css theme</p>
 
 # Icons
@@ -32,7 +32,6 @@ steam:
 tumblr:
 twitter: "potomushto"
 wordpress:
-vimeo: "phinitive"
 
 # Scripts
 # disqus_shortname: potomushtocom
