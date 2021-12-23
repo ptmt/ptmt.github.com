@@ -1,10 +1,11 @@
-import {getAllPosts, getPostBySlug, ideasDirectory } from "../../lib/datasource";
+import { getAllIdeas, getPostBySlug, ideasDirectory } from "../../lib/datasource";
 import { PostPage } from '../../components/PostPage.js'
 import markdownToHtml from '../../lib/markdownToHtml'
 
 export default function Idea({post}) {
     return <PostPage post={post} />
 }
+
 export async function getStaticProps({params}) {
     const post = getPostBySlug(ideasDirectory, params.slug, [
         'title',
@@ -16,7 +17,6 @@ export async function getStaticProps({params}) {
         'coverImage',
     ])
     const content = await markdownToHtml(post.content || '')
-    console.log(">> content", content)
     return {
         props: {
             post: {
@@ -28,7 +28,7 @@ export async function getStaticProps({params}) {
 }
 
 export async function getStaticPaths() {
-    const posts = getAllPosts(['slug'])
+    const posts = getAllIdeas(['slug'])
 
     return {
         paths: posts.map((post) => {

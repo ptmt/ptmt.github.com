@@ -1,6 +1,7 @@
 ---
 title: 'AnyRing'
-icon: "appstore"
-year: 2021
+icon: "app-store"
+year: 2020
 status: completed
+git: https://github.com/ptmt/anyring
 ---

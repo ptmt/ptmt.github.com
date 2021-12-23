@@ -1,4 +1,4 @@
-import {getAllPosts, getPostBySlug, projectsDirectory} from "../../lib/datasource";
+import { getAllProjects, getPostBySlug, projectsDirectory} from "../../lib/datasource";
 import { PostPage } from '../../components/PostPage.js'
 import markdownToHtml from '../../lib/markdownToHtml'
 
@@ -17,7 +17,6 @@ export async function getStaticProps({params}) {
         'coverImage',
     ])
     const content = await markdownToHtml(post.content || '')
-console.log(">> content", content)
     return {
         props: {
             post: {
@@ -29,8 +28,8 @@ console.log(">> content", content)
 }
 
 export async function getStaticPaths() {
-    const posts = getAllPosts(['slug'])
-
+    const posts = getAllProjects( ['slug'])
+    console.log(">> getAll Posts", posts)
     return {
         paths: posts.map((post) => {
             return {

@@ -4,4 +4,4 @@ date: '2021-01-01'
 status: idea
 ---
 
-E.g. Linux core, git
+From open source projects, such as Linux core, git, Rust or Unreal Engine. 

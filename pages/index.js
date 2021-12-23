@@ -1,6 +1,6 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import {getAllPosts, getAllIdeas, getAllProjects, groupByYear} from "../lib/datasource"
-
 
 export default function Home({posts, ideas, projects}) {
     return (
@@ -42,18 +42,20 @@ function LinksByYears({path, posts, withStatus}) {
     )
 }
 
-function Links({path, posts, year, withStatus}) {
+function Links({path, posts, year, withStatus, withType}) {
     return (
         <div>
             <div className="font-bold font-mono">{year}</div>
             <div className="flex flex-row flex-wrap">
                 {posts.map((post) => (
-                    <div className="flex flex-row mr-3 font-mono" key={post.slug}>
+                    <div className="flex flex-row align-center mr-3 font-mono" key={post.slug}>
                         <Link as={`/${path}/${post.slug}`} href={`/${path}/[slug]`}>
                             <a className="hover:underline">
                                 {withStatus ? '- [ ]' : '·'} {post.title}
                             </a>
                         </Link>
+                        { post.icon && <span className="m-1" /> }
+                        { post.icon && <Image src={`/svg/${post.icon}.svg`} width="18px" height="18px" /> }
                     </div>
                 ))}
             </div>
@@ -82,7 +84,8 @@ export async function getStaticProps() {
     const projects = getAllProjects([
         'title',
         'year',
-        'slug'
+        'slug',
+        'icon'
     ])
 
 

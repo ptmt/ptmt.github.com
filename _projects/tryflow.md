@@ -1,8 +1,9 @@
 ---
 title: 'TryFlow'
-icon: "github"
+icon: "web"
 year: 2016
 status: outdated
+git: https://github.com/ptmt/tryflow
 ---
 
-tryflog.org
+It used to be hosted tryflog.org
