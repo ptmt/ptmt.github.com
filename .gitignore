@@ -30,3 +30,6 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 _site*/
 .sass-cache
+
+.idea
+build

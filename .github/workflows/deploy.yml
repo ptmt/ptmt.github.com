@@ -1,41 +1,28 @@
-name: Build and Deploy Static Site
+name: Publish Website
 
 on:
   push:
     branches:
-      - main # Trigger on push to the main branch
-
-      # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-  # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+      - main
 
 jobs:
-  build-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
+  build-and-publish:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      # Checkout the content repository
+      - name: Checkout Content Repository
+        uses: actions/checkout@v3
+
+      # Use the Docker image to run Amper
+      - name: Build Website with Amper
+        uses: docker://ghcr.io/ptmt/statik:latest
         with:
-          # Upload entire repository
-          path: "./public"
+          args: run --root-path .
+
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          cname: potomushto.com
