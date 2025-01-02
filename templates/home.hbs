@@ -1,16 +1,19 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <title>{{siteName}}</title>
-  </head>
-  <body>
-    <h1>Latest Posts</h1>
-    {{#each posts}}
-      <article>
+</head>
+<body>
+<h1>About</h1>
+<p>{{siteDescription}}</p>
+<h3>Latest Posts</h3>
+{{#each posts}}
+    <article>
         <h2><a href="/{{path}}">{{title}}</a></h2>
         <time>{{formatDate date "MMM d, yyyy"}}</time>
         <p>{{excerpt content}}</p>
-      </article>
-    {{/each}}
-  </body>
+        <p>4 min read</p>
+    </article>
+{{/each}}
+</body>
 </html>
