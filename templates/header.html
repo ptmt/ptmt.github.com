@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{siteTitle}} {{siteDescription}}</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        header {
+            padding: 10px 0;
+            border-bottom: 1px solid #e2e2e2;
+        }
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .search-icon {
+            font-weight: bold;
+        }
+        .region-links {
+            display: flex;
+            gap: 15px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        .auth-links {
+            display: flex;
+            gap: 10px;
+        }
+        .auth-links button {
+            padding: 6px 12px;
+            font-size: 0.8rem;
+        }
+        .subscribe-btn {
+            background-color: #567b95;
+            color: white;
+            border: none;
+        }
+        .login-btn {
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+        }
+        .date-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            margin: 10px 0;
+        }
+        .logo {
+            text-align: center;
+            margin: 15px 0;
+        }
+        .logo img {
+            width: 430px;
+        }
+        .main-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 1px solid #e2e2e2;
+            padding-bottom: 10px;
+        }
+        .main-nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 0.9rem;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .left-column {
+            border-right: 1px solid #e2e2e2;
+            padding-right: 20px;
+        }
+        .right-column {
+            padding-left: 10px;
+        }
+        .article {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e2e2e2;
+            padding-bottom: 20px;
+        }
+        .article:last-child {
+            border-bottom: none;
+        }
+        .article-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .article-summary {
+            font-size: 0.9rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .read-time {
+            font-size: 0.8rem;
+            color: #666;
+            text-transform: uppercase;
+        }
+        .featured-article {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .article-image {
+            width: 100%;
+            height: auto;
+        }
+        .sub-nav {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 10px 0;
+            border-bottom: 1px solid #e2e2e2;
+            margin-bottom: 20px;
+        }
+        .sub-nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+        .small-articles {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .small-article {
+            margin-bottom: 20px;
+        }
+        .small-article-header {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .opinion-section {
+            border-top: 1px solid #e2e2e2;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        .section-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="top-nav">
+        <div class="search-icon">&#128269;</div>
+        <div class="region-links">
+            <div>U.S.</div>
+            <div>INTERNATIONAL</div>
+            <div>CANADA</div>
+            <div>ESPAÑOL</div>
+            <div>中文</div>
+        </div>
+        <div class="auth-links">
+            <button class="subscribe-btn">SUBSCRIBE FOR €0.50/WEEK</button>
+            <button class="login-btn">LOG IN</button>
+        </div>
+    </div>
+    <div class="date-info">
+        <div>Saturday, March 29, 2025</div>
+        <div>Today's Paper</div>
+        <div>Nasdaq <span style="color: red;">-2.7% ↓</span></div>
+    </div>
+    <div class="logo">
+        <h1 style="font-family: 'Old English Text MT', Times, serif; font-size: 3rem;">{{siteName}}</h1>
+    </div>
+    <nav class="main-nav">
+        <a href="#">U.S.</a>
+        <a href="#">World</a>
+        <a href="#">Business</a>
+        <a href="#">Arts</a>
+        <a href="#">Lifestyle</a>
+        <a href="#">Opinion</a>
+        <a href="#">Audio</a>
+        <a href="#">Games</a>
+        <a href="#">Cooking</a>
+        <a href="#">Wirecutter</a>
+        <a href="#">The Athletic</a>
+    </nav>
+</header>
