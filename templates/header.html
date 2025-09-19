@@ -3,200 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{siteTitle}} {{siteDescription}}</title>
+    <title>{{siteName}} - {{description}}</title>
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
+        
         body {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 15px;
+            padding: 0 20px;
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
         }
+        
         header {
-            padding: 10px 0;
-            border-bottom: 1px solid #e2e2e2;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
         }
-        .top-nav {
+        
+        .header-content {
+            padding: 20px 30px;
+        }
+        
+        .site-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .site-title:hover {
+            color: #3498db;
+            transition: color 0.3s ease;
+        }
+        
+        .site-description {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        
+        .author-info {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            margin-bottom: 10px;
-        }
-        .search-icon {
-            font-weight: bold;
-        }
-        .region-links {
-            display: flex;
             gap: 15px;
-            font-size: 0.8rem;
-            color: #666;
+            margin-bottom: 20px;
         }
-        .auth-links {
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             display: flex;
-            gap: 10px;
-        }
-        .auth-links button {
-            padding: 6px 12px;
-            font-size: 0.8rem;
-        }
-        .subscribe-btn {
-            background-color: #567b95;
+            align-items: center;
+            justify-content: center;
             color: white;
-            border: none;
+            font-weight: bold;
+            font-size: 1.2rem;
         }
-        .login-btn {
-            background-color: #f7f7f7;
-            border: 1px solid #ddd;
+        
+        .author-details h2 {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-bottom: 4px;
         }
-        .date-info {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.8rem;
-            margin: 10px 0;
+        
+        .author-details p {
+            color: #7f8c8d;
+            font-size: 0.95rem;
         }
-        .logo {
-            text-align: center;
-            margin: 15px 0;
-        }
-        .logo img {
-            width: 430px;
-        }
+        
         .main-nav {
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            border-bottom: 1px solid #e2e2e2;
-            padding-bottom: 10px;
+            gap: 30px;
+            padding: 15px 30px;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
         }
+        
         .main-nav a {
             text-decoration: none;
-            color: black;
-            font-size: 0.9rem;
+            color: #495057;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 8px 0;
+            position: relative;
+            transition: color 0.3s ease;
         }
+        
+        .main-nav a:hover {
+            color: #3498db;
+        }
+        
+        .main-nav a.active {
+            color: #3498db;
+        }
+        
+        .main-nav a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #3498db;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-left: auto;
+        }
+        
+        .social-links a {
+            color: #6c757d;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #3498db;
+        }
+        
         .main-content {
             display: grid;
             grid-template-columns: 2fr 1fr;
-            gap: 20px;
+            gap: 40px;
             margin-top: 20px;
         }
+        
         .left-column {
-            border-right: 1px solid #e2e2e2;
-            padding-right: 20px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
+        
         .right-column {
-            padding-left: 10px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            height: fit-content;
         }
-        .article {
-            margin-bottom: 30px;
-            border-bottom: 1px solid #e2e2e2;
-            padding-bottom: 20px;
-        }
-        .article:last-child {
-            border-bottom: none;
-        }
-        .article-header {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .article-summary {
-            font-size: 0.9rem;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .read-time {
-            font-size: 0.8rem;
-            color: #666;
-            text-transform: uppercase;
-        }
-        .featured-article {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .article-image {
-            width: 100%;
-            height: auto;
-        }
-        .sub-nav {
-            display: flex;
-            gap: 15px;
-            overflow-x: auto;
-            padding: 10px 0;
-            border-bottom: 1px solid #e2e2e2;
-            margin-bottom: 20px;
-        }
-        .sub-nav a {
-            text-decoration: none;
-            color: black;
-            font-size: 0.9rem;
-            white-space: nowrap;
-        }
-        .small-articles {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .small-article {
-            margin-bottom: 20px;
-        }
-        .small-article-header {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .opinion-section {
-            border-top: 1px solid #e2e2e2;
-            padding-top: 20px;
-            margin-top: 20px;
-        }
-        .section-label {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 10px;
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 0 15px;
+            }
+            
+            .header-content {
+                padding: 20px;
+            }
+            
+            .site-title {
+                font-size: 2rem;
+            }
+            
+            .main-nav {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+            
+            .social-links {
+                margin-left: 0;
+                justify-content: center;
+            }
+            
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .left-column,
+            .right-column {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 
 <body>
 <header>
-    <div class="top-nav">
-        <div class="search-icon">&#128269;</div>
-        <div class="region-links">
-            <div>U.S.</div>
-            <div>INTERNATIONAL</div>
-            <div>CANADA</div>
-            <div>ESPAÑOL</div>
-            <div>中文</div>
-        </div>
-        <div class="auth-links">
-            <button class="subscribe-btn">SUBSCRIBE FOR €0.50/WEEK</button>
-            <button class="login-btn">LOG IN</button>
+    <div class="header-content">
+        <a href="/" class="site-title">{{siteName}}</a>
+        <p class="site-description">{{description}}</p>
+        
+        <div class="author-info">
+            <div class="author-avatar">{{substring author 0 1}}</div>
+            <div class="author-details">
+                <h2>{{author}}</h2>
+                <p>Personal Blog & Thoughts</p>
+            </div>
         </div>
     </div>
-    <div class="date-info">
-        <div>Saturday, March 29, 2025</div>
-        <div>Today's Paper</div>
-        <div>Nasdaq <span style="color: red;">-2.7% ↓</span></div>
-    </div>
-    <div class="logo">
-        <h1 style="font-family: 'Old English Text MT', Times, serif; font-size: 3rem;">{{siteName}}</h1>
-    </div>
+    
     <nav class="main-nav">
-        <a href="#">U.S.</a>
-        <a href="#">World</a>
-        <a href="#">Business</a>
-        <a href="#">Arts</a>
-        <a href="#">Lifestyle</a>
-        <a href="#">Opinion</a>
-        <a href="#">Audio</a>
-        <a href="#">Games</a>
-        <a href="#">Cooking</a>
-        <a href="#">Wirecutter</a>
-        <a href="#">The Athletic</a>
+        <a href="/" class="active">Home</a>
+        <a href="/about">About</a>
+        <a href="/posts">All Posts</a>
+        <a href="/contact">Contact</a>
+        <a href="/archive">Archive</a>
+        
+        <div class="social-links">
+            <a href="#" title="GitHub">📱</a>
+            <a href="#" title="Twitter">🐦</a>
+            <a href="#" title="LinkedIn">💼</a>
+            <a href="#" title="Email">✉️</a>
+        </div>
     </nav>
 </header>
