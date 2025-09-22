@@ -16,7 +16,7 @@ jobs:
       
     - name: Generate static site
       run: |
-        docker run --rm -v $(pwd):/github/workspace ghcr.io/ptmt/statik:latest run -- --root-path .
+        docker run --rm -v $(pwd):/github/workspace -w /github/workspace ghcr.io/ptmt/statik:latest run -- --root-path .
         
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
