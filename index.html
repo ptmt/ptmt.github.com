@@ -1,0 +1,191 @@
+<!-- Error including file: inline@29ba0701:206:41: could not find helper: 'substring'
+            <div class="author-avatar">{{substring author 0 1}}</div>
+                                         ^
+ -->
+
+<main class="main-content">
+    <div class="left-column">
+        <!-- Personal Information Section -->
+        <section class="personal-info">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>Hello world! Welcome to my blog.</p>
+                <p>Work in progress.</p>
+            </div>
+        </section>
+
+        <!-- Blog Posts Feed -->
+        <section class="blog-feed">
+            <h2 class="section-title">Latest Posts</h2>
+            
+            <article class="blog-post">
+                <div class="post-content">
+                    <h3 class="post-title">
+                        <a href="/2025/second-post">second post</a>
+                    </h3>
+                    <time class="post-date">October 07, 2025</time>
+                    <p class="post-excerpt">hey</p>
+                    <p class="read-time">4 min read</p>
+                </div>
+            </article>
+            
+            <article class="blog-post">
+                <div class="post-content">
+                    <h3 class="post-title">
+                        <a href="/2025/hello-world">Hello world Post Title in Yaml</a>
+                    </h3>
+                    <time class="post-date">October 07, 2025</time>
+                    <p class="post-excerpt">in markdown subtitle hey! this is actually a post content qoute bold italic? — typography</p>
+                    <p class="read-time">4 min read</p>
+                </div>
+            </article>
+            
+        </section>
+    </div>
+
+    <div class="right-column">
+        <!-- Sidebar Content -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">About This Blog</h3>
+                <p class="sidebar-content">personal web-site</p>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="/about">About Me</a></li>
+                    <li><a href="/posts">All Posts</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/archive">Archive</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<style>
+    .section-title {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+    }
+
+    .personal-info {
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .about-content {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #495057;
+    }
+
+    .about-content p {
+        margin-bottom: 15px;
+    }
+
+    .blog-feed {
+        margin-bottom: 40px;
+    }
+
+    .blog-post {
+        margin-bottom: 30px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .blog-post:last-child {
+        border-bottom: none;
+    }
+
+    .post-title {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .post-title a {
+        text-decoration: none;
+        color: #2c3e50;
+        transition: color 0.3s ease;
+    }
+
+    .post-title a:hover {
+        color: #3498db;
+    }
+
+    .post-date {
+        font-size: 0.9rem;
+        color: #6c757d;
+        margin-bottom: 12px;
+        display: block;
+    }
+
+    .post-excerpt {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        margin-bottom: 10px;
+    }
+
+    .read-time {
+        font-size: 0.8rem;
+        color: #6c757d;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .sidebar-section {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .sidebar-section:last-child {
+        border-bottom: none;
+    }
+
+    .sidebar-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #2c3e50;
+    }
+
+    .sidebar-content {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #495057;
+    }
+
+    .quick-links {
+        list-style: none;
+        padding: 0;
+    }
+
+    .quick-links li {
+        margin-bottom: 8px;
+    }
+
+    .quick-links a {
+        text-decoration: none;
+        color: #2c3e50;
+        font-size: 0.95rem;
+        transition: color 0.3s ease;
+        display: block;
+        padding: 4px 0;
+    }
+
+    .quick-links a:hover {
+        color: #3498db;
+    }
+</style>
+
+</body>
+</html>
