@@ -1,3 +1,11 @@
+:root {
+    --font-body-serif: ui-serif, "Georgia", "Times New Roman", "Noto Serif",
+                       "Times", serif;
+}
+body {
+    font-family: var(--font-body-serif);
+}
+
 .section-title {
     font-size: 1.8rem;
     font-weight: bold;
@@ -125,4 +133,62 @@
 .photo-credit {
     font-size: 0.7rem;
     text-align: right;
+}
+
+/* Home: simplified, newspaper-inspired layout */
+.featured-post {
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.featured-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.featured-title a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.latest-posts {
+    margin-bottom: 20px;
+}
+
+.post-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.post-card {
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.post-card:last-child {
+    border-bottom: none;
+}
+
+.post-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.post-card-title a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.post-card-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #6c757d;
+    font-size: 0.9rem;
 }
