@@ -1,0 +1,128 @@
+.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.personal-info {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.about-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+.blog-feed {
+    margin-bottom: 40px;
+}
+
+.blog-post {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.blog-post:last-child {
+    border-bottom: none;
+}
+
+.post-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.post-title a {
+    text-decoration: none;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
+
+.post-title a:hover {
+    color: #3498db;
+}
+
+.post-date {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.post-excerpt {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.read-time {
+    font-size: 0.8rem;
+    color: #666666;
+    text-transform: uppercase;
+}
+
+.sidebar-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.sidebar-section:last-child {
+    border-bottom: none;
+}
+
+.sidebar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.sidebar-content {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #495057;
+}
+
+.quick-links {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 8px;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 4px 0;
+}
+
+.quick-links a:hover {
+    color: #3498db;
+}
+
+.article-subsection {
+    margin-top: 30px;
+}
+
+.photo-credit {
+    font-size: 0.7rem;
+    text-align: right;
+}
