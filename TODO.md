@@ -1,0 +1,4 @@
+- Main page is a number of sections: posts in different languages and categories and ideas and a random picture. For that, all pictures on the web-site should be indexed and be available as json (Need to think where to store images)
+- Another thing - is a random quote. For that all quotes should be indexed and stored somewhere as json.
+- Ideas has lifecycle (Idea -> Project -> Archive), main page has all three columns
+- Posts is just a feed by default, but encoded with color or some other attributes. Posts in German or Russian can be filtered out. 
