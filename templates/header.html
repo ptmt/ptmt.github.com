@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{siteName}} - {{description}}</title>
+    <script>
+        (function(){
+            try {
+                var pref = localStorage.getItem('theme');
+                if (pref) document.documentElement.setAttribute('data-theme', pref);
+            } catch (e) {}
+            if (!document.documentElement.getAttribute('data-current-lang')) {
+                document.documentElement.setAttribute('data-current-lang', 'en');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="/styles.css">
     <style>
         * {
             box-sizing: border-box;
@@ -13,16 +25,16 @@
         }
         
         body {
-            max-width: 1200px;
+            max-width: var(--body-max-width, 1200px);
             margin: 0 auto;
             padding: 0 20px;
-            background-color: #fafafa;
-            color: #333;
+            background-color: var(--bg, #fafafa);
+            color: var(--fg, #333);
             line-height: 1.6;
         }
         
         header {
-            background: white;
+            background: var(--card, #ffffff);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             margin-bottom: 30px;
             border-radius: 8px;
@@ -36,20 +48,20 @@
         .site-title {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #2c3e50;
+            color: var(--title, #2c3e50);
             margin-bottom: 8px;
             text-decoration: none;
             display: block;
         }
         
         .site-title:hover {
-            color: #3498db;
+            color: var(--accent, #3498db);
             transition: color 0.3s ease;
         }
         
         .site-description {
             font-size: 1.1rem;
-            color: #7f8c8d;
+            color: var(--muted, #7f8c8d);
             margin-bottom: 20px;
         }
         
@@ -75,12 +87,12 @@
         
         .author-details h2 {
             font-size: 1.3rem;
-            color: #2c3e50;
+            color: var(--title, #2c3e50);
             margin-bottom: 4px;
         }
         
         .author-details p {
-            color: #7f8c8d;
+            color: var(--muted, #7f8c8d);
             font-size: 0.95rem;
         }
         
@@ -88,13 +100,13 @@
             display: flex;
             gap: 30px;
             padding: 15px 30px;
-            background: #f8f9fa;
-            border-top: 1px solid #e9ecef;
+            background: var(--subtle, #f8f9fa);
+            border-top: 1px solid var(--border, #e9ecef);
         }
         
         .main-nav a {
             text-decoration: none;
-            color: #495057;
+            color: var(--link, #495057);
             font-weight: 500;
             font-size: 1rem;
             padding: 8px 0;
@@ -103,11 +115,11 @@
         }
         
         .main-nav a:hover {
-            color: #3498db;
+            color: var(--accent, #3498db);
         }
         
         .main-nav a.active {
-            color: #3498db;
+            color: var(--accent, #3498db);
         }
         
         .main-nav a.active::after {
@@ -117,7 +129,7 @@
             left: 0;
             right: 0;
             height: 2px;
-            background: #3498db;
+            background: var(--accent, #3498db);
         }
         
         .social-links {
@@ -127,14 +139,14 @@
         }
         
         .social-links a {
-            color: #6c757d;
+            color: var(--link, #6c757d);
             text-decoration: none;
             font-size: 1.2rem;
             transition: color 0.3s ease;
         }
         
         .social-links a:hover {
-            color: #3498db;
+            color: var(--accent, #3498db);
         }
         
         .main-content {
@@ -145,19 +157,24 @@
         }
         
         .left-column {
-            background: white;
+            background: var(--card, #ffffff);
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
         
         .right-column {
-            background: white;
+            background: var(--card, #ffffff);
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             height: fit-content;
         }
+        
+        /* Initial language filter to avoid CLS */
+        [data-current-lang="en"] [data-post-lang]:not([data-post-lang="en"]) { display: none; }
+        [data-current-lang="de"] [data-post-lang]:not([data-post-lang="de"]) { display: none; }
+        [data-current-lang="ru"] [data-post-lang]:not([data-post-lang="ru"]) { display: none; }
         
         @media (max-width: 768px) {
             body {
@@ -223,6 +240,8 @@
             <a href="#" title="Twitter">🐦</a>
             <a href="#" title="LinkedIn">💼</a>
             <a href="#" title="Email">✉️</a>
+            <button id="theme-toggle" style="margin-left:10px; padding:6px 10px; border:1px solid var(--border, #e9ecef); background: var(--card, #fff); color: var(--fg, #333); border-radius:6px; cursor:pointer">Theme</button>
         </div>
     </nav>
 </header>
+<script defer src="/main.js"></script>

@@ -1,12 +1,14 @@
-{{include "header.html"}}
-
-<main class="main-content">
+<style>
+  :root { --content-max-width: none; }
+  /* Home is full-bleed; keep responsive */
+</style>
+<div data-lang-scope>
     <div class="left-column">
         <section class="featured-post">
             <h2 class="section-title">Featured</h2>
             {{#each posts}}
             {{#if @first}}
-            <article class="blog-post">
+            <article class="blog-post" data-post-lang="{{metadata.lang}}">
                 <div class="post-content">
                     <h3 class="featured-title"><a href="/{{path}}">{{title}}</a></h3>
                     <time class="post-date">{{formatDate date "MMM d, yyyy"}}</time>
@@ -20,10 +22,16 @@
 
         <section class="latest-posts">
             <h2 class="section-title">Latest</h2>
+            <div class="lang-filters" style="margin-bottom:12px; display:flex; gap:8px;">
+                <button data-lang-select="en">EN</button>
+                <button data-lang-select="de">DE</button>
+                <button data-lang-select="ru">RU</button>
+                <button data-lang-select="all">All</button>
+            </div>
             <div class="post-list">
                 {{#each posts}}
                 {{#unless @first}}
-                <article class="post-card">
+                <article class="post-card" data-post-lang="{{metadata.lang}}">
                     <h3 class="post-card-title"><a href="/{{path}}">{{title}}</a></h3>
                     <div class="post-card-meta">
                         <time class="post-date">{{formatDate date "MMM d, yyyy"}}</time>
@@ -35,6 +43,24 @@
                 {{/each}}
             </div>
         </section>
+
+        <section class="ideas">
+            <h2 class="section-title">Ideas</h2>
+            <div class="ideas-columns" style="display:grid; grid-template-columns: repeat(3, 1fr); gap:16px;">
+                <div>
+                    <h3>Ideas</h3>
+                    <ul id="ideas-idea"></ul>
+                </div>
+                <div>
+                    <h3>Projects</h3>
+                    <ul id="ideas-project"></ul>
+                </div>
+                <div>
+                    <h3>Archive</h3>
+                    <ul id="ideas-archived"></ul>
+                </div>
+            </div>
+        </section>
     </div>
 
     <div class="right-column">
@@ -43,9 +69,14 @@
                 <h3 class="sidebar-title">About</h3>
                 <p class="sidebar-content">{{description}}</p>
             </div>
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Random Image</h3>
+                <section id="random-image" class="widget random-image skeleton" aria-busy="true"></section>
+            </div>
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Random Quote</h3>
+                <section id="random-quote" class="widget random-quote skeleton" aria-busy="true"><p class="quote-text"></p><cite class="quote-author"></cite></section>
+            </div>
         </aside>
     </div>
-</main>
-
-</body>
-</html>
+</div>

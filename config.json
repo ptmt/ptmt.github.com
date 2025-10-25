@@ -3,5 +3,11 @@
   "baseUrl": "https://potomushto.com",
   "description": "personal web-site",
   "author": "Dmitrij Loktev",
-  "port": 3100
+  "port": 3100,
+  "staticDatasource": {
+    "enabled": true,
+    "outputDir": "datasource",
+    "collectAttribute": "data-collect",
+    "imagesFileName": "images.json"
+  }
 }

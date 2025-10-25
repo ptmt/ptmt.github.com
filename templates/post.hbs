@@ -1,22 +1,7 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>{{post.title}}</title>
-    <meta name="description" content="{{post.metadata.description}}" />
-    <meta property="og:title" content="{{post.title}}" />
-    <meta property="og:description" content="{{post.metadata.description}}" />
-    <meta property="og:url" content="{{baseUrl}}/{{post.path}}" />
-  </head>
-  <body>
-    <article>
-      <h1>{{post.title}}</h1>
-      <time datetime="{{post.date}}">{{formatDate
-          post.date
-          "MMMM d, yyyy"
-        }}</time>
-      <div class="content">
-        {{{post.content}}}
-      </div>
-    </article>
-  </body>
-</html>
+<article>
+  <h1>{{post.title}}</h1>
+  <time datetime="{{post.date}}">{{formatDate post.date "MMMM d, yyyy"}}</time>
+  <div class="content">
+    {{{post.content}}}
+  </div>
+</article>

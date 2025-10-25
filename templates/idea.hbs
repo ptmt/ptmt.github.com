@@ -1,0 +1,32 @@
+<div class="left-column">
+    <article>
+        <h1 class="featured-title">{{idea.title}}</h1>
+        <p class="post-date">Status: {{idea.metadata.status}} • {{formatDate idea.date "MMM d, yyyy"}}</p>
+        {{#if idea.metadata.summary}}
+        <p class="post-excerpt">{{idea.metadata.summary}}</p>
+        {{/if}}
+        {{#if idea.metadata.image}}
+        <img src="{{idea.metadata.image}}" alt="" />
+        {{/if}}
+        <div class="content">{{{idea.content}}}</div>
+    </article>
+</div>
+<div class="right-column">
+    <aside class="sidebar">
+        <div class="sidebar-section">
+            <h3 class="sidebar-title">About this idea</h3>
+            <p class="sidebar-content">Language: {{idea.metadata.lang}}</p>
+            {{#if idea.metadata.tags}}
+            <div class="sidebar-content">
+                <div>Tags:</div>
+                <ul>
+                    {{#each idea.metadata.tags}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{/if}}
+        </div>
+    </aside>
+</div>
+

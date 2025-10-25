@@ -376,3 +376,63 @@ header {
         padding: 20px;
     }
 }
+
+/* Theming and layout overrides */
+:root {
+    --bg: #fafafa;
+    --fg: #333333;
+    --title: #2c3e50;
+    --muted: #7f8c8d;
+    --accent: #3498db;
+    --link: #495057;
+    --border: #e9ecef;
+    --card: #ffffff;
+    --skeleton: #f3f4f6;
+    --content-max-width: 72ch;
+}
+
+[data-theme="dark"] {
+    --bg: #0f1115;
+    --fg: #e5e7eb;
+    --title: #e5e7eb;
+    --muted: #9ca3af;
+    --accent: #60a5fa;
+    --link: #cbd5e1;
+    --border: #262b35;
+    --card: #11151c;
+    --skeleton: #1f2937;
+}
+
+body { background: var(--bg); color: var(--fg); max-width: var(--content-max-width); }
+header { background: var(--card); }
+.section-title { color: var(--title); border-bottom-color: var(--accent); }
+.site-title:hover { color: var(--accent); }
+.site-description { color: var(--muted); }
+.author-details h2 { color: var(--title); }
+.author-details p { color: var(--muted); }
+.main-nav { background: var(--subtle, #f8f9fa); border-top-color: var(--border); }
+.main-nav a { color: var(--link); }
+.main-nav a:hover, .main-nav a.active { color: var(--accent); }
+.main-nav a.active::after { background: var(--accent); }
+.social-links a { color: var(--link); }
+.social-links a:hover { color: var(--accent); }
+.left-column, .right-column { background: var(--card); }
+.post-title a, .featured-title a, .post-card-title a { color: var(--title); }
+.post-title a:hover { color: var(--accent); }
+.post-date, .post-card-meta { color: var(--muted); }
+.post-excerpt, .sidebar-content { color: var(--link); }
+.read-time { color: var(--muted); }
+.sidebar-title, .quick-links a { color: var(--title); }
+.quick-links a:hover { color: var(--accent); }
+
+/* CLS-safe widgets */
+#random-image { aspect-ratio: 16 / 9; width: 100%; background: var(--skeleton); overflow: hidden; border-radius: 8px; }
+#random-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+#random-quote { min-height: 6rem; padding: 1rem; background: var(--skeleton); border-radius: 8px; }
+#random-quote .quote-text { margin: 0 0 .5rem; }
+#random-quote .quote-author { opacity: .7; }
+.skeleton { animation: pulse 1.2s ease-in-out infinite alternate; }
+@keyframes pulse { from { opacity: .6; } to { opacity: 1; } }
+
+/* Full-bleed exceptions */
+body.is-home, body.is-newspaper { max-width: none; }

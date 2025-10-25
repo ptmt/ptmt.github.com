@@ -1,4 +1,6 @@
+- The layout is very minimalistic, typography is serif for titles and sans serif for text and it's adaptive for mobile. 
 - Main page is a number of sections: posts in different languages and categories and ideas and a random picture. For that, all pictures on the web-site should be indexed and be available as json (Need to think where to store images)
-- Another thing - is a random quote. For that all quotes should be indexed and stored somewhere as json.
+- Another thing on main is a random quote. For that all quotes should be indexed and stored somewhere as json. And javascript code should load and show the quote randomly. 
 - Ideas has lifecycle (Idea -> Project -> Archive), main page has all three columns
 - Posts is just a feed by default, but encoded with color or some other attributes. Posts in German or Russian can be filtered out. 
+- Each year of post has a special newspaper layout that summarizes the year
