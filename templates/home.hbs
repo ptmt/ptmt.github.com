@@ -4,33 +4,10 @@
 </style>
 <div data-lang-scope>
     <div class="left-column">
-        <section class="featured-post">
-            <h2 class="section-title">Featured</h2>
-            {{#each posts}}
-            {{#if @first}}
-            <article class="blog-post" data-post-lang="{{metadata.lang}}">
-                <div class="post-content">
-                    <h3 class="featured-title"><a href="/{{path}}">{{title}}</a></h3>
-                    <time class="post-date">{{formatDate date "MMM d, yyyy"}}</time>
-                    <p class="post-excerpt">{{excerpt content}}</p>
-                    <p class="read-time">4 min read</p>
-                </div>
-            </article>
-            {{/if}}
-            {{/each}}
-        </section>
-
         <section class="latest-posts">
             <h2 class="section-title">Latest</h2>
-            <div class="lang-filters" style="margin-bottom:12px; display:flex; gap:8px;">
-                <button data-lang-select="en">EN</button>
-                <button data-lang-select="de">DE</button>
-                <button data-lang-select="ru">RU</button>
-                <button data-lang-select="all">All</button>
-            </div>
             <div class="post-list">
                 {{#each posts}}
-                {{#unless @first}}
                 <article class="post-card" data-post-lang="{{metadata.lang}}">
                     <h3 class="post-card-title"><a href="/{{path}}">{{title}}</a></h3>
                     <div class="post-card-meta">
@@ -39,7 +16,6 @@
                     </div>
                     <p class="post-excerpt">{{excerpt content}}</p>
                 </article>
-                {{/unless}}
                 {{/each}}
             </div>
         </section>
@@ -49,15 +25,69 @@
             <div class="ideas-columns" style="display:grid; grid-template-columns: repeat(3, 1fr); gap:16px;">
                 <div>
                     <h3>Ideas</h3>
-                    <ul id="ideas-idea"></ul>
+                    <ul>
+                        {{#with datasource}}
+                        {{#each collectables.ideas}}
+                            {{#with (lookup attributes "data-status") as |status|}}
+                                {{#if (eq status "idea")}}
+                                    <li>
+                                        <a href="{{source.path}}">
+                                            {{#if (lookup attributes "data-title")}}
+                                                {{lookup attributes "data-title"}}
+                                            {{else}}
+                                                {{source.title}}
+                                            {{/if}}
+                                        </a>
+                                    </li>
+                                {{/if}}
+                            {{/with}}
+                        {{/each}}
+                        {{/with}}
+                    </ul>
                 </div>
                 <div>
                     <h3>Projects</h3>
-                    <ul id="ideas-project"></ul>
+                    <ul>
+                        {{#with datasource}}
+                        {{#each collectables.ideas}}
+                            {{#with (lookup attributes "data-status") as |status|}}
+                                {{#if (eq status "project")}}
+                                    <li>
+                                        <a href="{{source.path}}">
+                                            {{#if (lookup attributes "data-title")}}
+                                                {{lookup attributes "data-title"}}
+                                            {{else}}
+                                                {{source.title}}
+                                            {{/if}}
+                                        </a>
+                                    </li>
+                                {{/if}}
+                            {{/with}}
+                        {{/each}}
+                        {{/with}}
+                    </ul>
                 </div>
                 <div>
                     <h3>Archive</h3>
-                    <ul id="ideas-archived"></ul>
+                    <ul>
+                        {{#with datasource}}
+                        {{#each collectables.ideas}}
+                            {{#with (lookup attributes "data-status") as |status|}}
+                                {{#if (eq status "archived")}}
+                                    <li>
+                                        <a href="{{source.path}}">
+                                            {{#if (lookup attributes "data-title")}}
+                                                {{lookup attributes "data-title"}}
+                                            {{else}}
+                                                {{source.title}}
+                                            {{/if}}
+                                        </a>
+                                    </li>
+                                {{/if}}
+                            {{/with}}
+                        {{/each}}
+                        {{/with}}
+                    </ul>
                 </div>
             </div>
         </section>

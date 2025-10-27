@@ -1,7 +1,25 @@
 <header>
     <div class="header-content">
         <a href="/" class="site-title">{{siteName}}</a>
-        <p class="site-description">{{description}}</p>
+        <p class="site-description">
+            {{#if post}}
+                {{#if post.metadata.description}}
+                    {{post.metadata.description}}
+                {{else}}
+                    {{excerpt post.content}}
+                {{/if}}
+            {{else}}
+                {{#if idea}}
+                    {{#if idea.metadata.summary}}
+                        {{idea.metadata.summary}}
+                    {{else}}
+                        {{description}}
+                    {{/if}}
+                {{else}}
+                    {{description}}
+                {{/if}}
+            {{/if}}
+        </p>
         <div class="author-info">
             <div class="author-avatar">{{substring author 0 1}}</div>
             <div class="author-details">

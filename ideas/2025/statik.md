@@ -15,6 +15,3 @@ Potential directions:
 - Identify success metrics
 - Collect references and inspiration
 
-<div data-collect="ideas" data-status="idea" data-title="Lorem Ipsum Idea"></div>
-
-

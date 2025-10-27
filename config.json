@@ -1,7 +1,7 @@
 {
   "siteName": "potomushto blog",
   "baseUrl": "https://potomushto.com",
-  "description": "personal web-site",
+  "description": "work in progress",
   "author": "Dmitrij Loktev",
   "port": 3100,
   "staticDatasource": {
@@ -9,5 +9,13 @@
     "outputDir": "datasource",
     "collectAttribute": "data-collect",
     "imagesFileName": "images.json"
+  },
+  "rss": {
+    "enabled": true,
+    "fileName": "feed.xml",
+    "includeFullContent": true
+  },
+  "theme": {
+    "assets": ["public", "media"]
   }
 }

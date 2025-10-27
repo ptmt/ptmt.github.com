@@ -14,6 +14,6 @@ hey! this is actually a `post content`
 
 <blockquote data-collect="quotes" data-author="Ada Lovelace">That brain of mine is more than merely mortal.</blockquote>
 
-![Sunrise](/media/2025/github-contribution-public.png.jpg "Golden hour")
+![Sunrise](/media/2025/github-contribution-public.png "Golden hour")
 
 **bold** _italic?_ — typography

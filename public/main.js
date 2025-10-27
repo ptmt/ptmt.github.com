@@ -56,23 +56,6 @@ fetchJSON('/datasource/quotes.json').then(function(list){
   });
 })();
 
-// Ideas columns (from datasource)
-fetchJSON('/datasource/ideas.json').then(function(list){
-  if (!Array.isArray(list) || list.length === 0) return;
-  var byStatus = { idea: [], project: [], archived: [] };
-  list.forEach(function(item){
-    var status = item.attributes && (item.attributes['data-status'] || '').toLowerCase();
-    var title = item.attributes && item.attributes['data-title'] || item.source && item.source.title || 'Untitled';
-    var path = item.source && item.source.path || '#';
-    if (!byStatus[status]) byStatus[status] = [];
-    byStatus[status].push({ title: title, path: path });
-  });
-  ['idea','project','archived'].forEach(function(key){
-    var ul = document.getElementById('ideas-' + key);
-    if (!ul) return;
-    if (!byStatus[key] || byStatus[key].length === 0) { ul.innerHTML = '<li><em>—</em></li>'; return; }
-    ul.innerHTML = byStatus[key].map(function(e){ return '<li><a href="' + e.path + '">' + e.title + '</a></li>'; }).join('');
-  });
-});
+// Ideas are rendered server-side via datasource.collectables.ideas
 
 

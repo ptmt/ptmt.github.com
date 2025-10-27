@@ -3,38 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        {{#if post.title}}{{post.title}} - {{siteName}}{{else}}
-        {{#if idea.title}}{{idea.title}} - {{siteName}}{{else}}
-        {{#if title}}{{title}} - {{siteName}}{{else}}{{siteName}}{{/if}}
-        {{/if}}
-        {{/if}}
-    </title>
-    <meta name="description" content="
-        {{#if post.metadata.description}}{{post.metadata.description}}{{else}}
-        {{#if idea.metadata.summary}}{{idea.metadata.summary}}{{else}}
-        {{#if description}}{{description}}{{else}}{{siteName}}{{/if}}
-        {{/if}}
-        {{/if}}
-    ">
-    <script>
-        (function(){
-            try {
-                var pref = localStorage.getItem('theme');
-                if (pref) document.documentElement.setAttribute('data-theme', pref);
-            } catch (e) {}
-            if (!document.documentElement.getAttribute('data-current-lang')) {
-                document.documentElement.setAttribute('data-current-lang', 'en');
-            }
-        })();
-    </script>
+    <title>{{#if title}}{{title}} - {{siteName}}{{else}}{{siteName}}{{/if}}</title>
+    <meta name="description" content="{{#if description}}{{description}}{{else}}{{siteName}}{{/if}}">
     <link rel="stylesheet" href="/styles.css">
-    <style>
-        /* Initial language filter to avoid CLS */
-        [data-current-lang="en"] [data-post-lang]:not([data-post-lang="en"]) { display: none; }
-        [data-current-lang="de"] [data-post-lang]:not([data-post-lang="de"]) { display: none; }
-        [data-current-lang="ru"] [data-post-lang]:not([data-post-lang="ru"]) { display: none; }
-    </style>
     {{#if head}}{{{head}}}{{/if}}
     {{#if styles}}{{{styles}}}{{/if}}
 </head>
