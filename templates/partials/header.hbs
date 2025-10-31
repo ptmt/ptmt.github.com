@@ -1,46 +1,22 @@
 <header>
-    <div class="header-content">
-        <a href="/" class="site-title">{{siteName}}</a>
-        <p class="site-description">
-            {{#if post}}
-                {{#if post.metadata.description}}
-                    {{post.metadata.description}}
-                {{else}}
-                    {{excerpt post.content}}
-                {{/if}}
+    <a href="/" class="site-title">{{siteName}}</a>
+    <p class="site-description">
+        {{#if post}}
+            {{#if post.metadata.description}}
+                {{post.metadata.description}}
             {{else}}
-                {{#if idea}}
-                    {{#if idea.metadata.summary}}
-                        {{idea.metadata.summary}}
-                    {{else}}
-                        {{description}}
-                    {{/if}}
+                {{excerpt post.content}}
+            {{/if}}
+        {{else}}
+            {{#if idea}}
+                {{#if idea.metadata.summary}}
+                    {{idea.metadata.summary}}
                 {{else}}
                     {{description}}
                 {{/if}}
+            {{else}}
+                {{description}}
             {{/if}}
-        </p>
-        <div class="author-info">
-            <div class="author-avatar">{{substring author 0 1}}</div>
-            <div class="author-details">
-                <h2>{{author}}</h2>
-                <p>Personal Blog & Thoughts</p>
-            </div>
-        </div>
-    </div>
-    <nav class="main-nav">
-        <a href="/" class="active">Home</a>
-        <a href="/about">About</a>
-        <a href="/posts">All Posts</a>
-        <a href="/contact">Contact</a>
-        <a href="/archive">Archive</a>
-        <div class="social-links">
-            <a href="#" title="GitHub">📱</a>
-            <a href="#" title="Twitter">🐦</a>
-            <a href="#" title="LinkedIn">💼</a>
-            <a href="#" title="Email">✉️</a>
-            <button id="theme-toggle" style="margin-left:10px; padding:6px 10px; border:1px solid var(--border, #e9ecef); background: var(--card, #fff); color: var(--fg, #333); border-radius:6px; cursor:pointer">Theme</button>
-        </div>
-    </nav>
+        {{/if}}
+    </p>
 </header>
-

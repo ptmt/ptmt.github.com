@@ -1,112 +1,85 @@
-<style>
-  :root { --content-max-width: none; }
-  /* Home is full-bleed; keep responsive */
-</style>
 <div data-lang-scope>
-    <div class="left-column">
-        <section class="latest-posts">
-            <h2 class="section-title">Latest</h2>
-            <div class="post-list">
-                {{#each posts}}
-                <article class="post-card" data-post-lang="{{metadata.lang}}">
-                    <h3 class="post-card-title"><a href="/{{path}}">{{title}}</a></h3>
-                    <div class="post-card-meta">
-                        <time class="post-date">{{formatDate date "MMM d, yyyy"}}</time>
-                        <span class="read-time">4 min read</span>
-                    </div>
-                    <p class="post-excerpt">{{excerpt content}}</p>
-                </article>
-                {{/each}}
-            </div>
-        </section>
+    <section class="latest-posts">
+        <h2 class="section-title">Latest</h2>
+        <div class="post-list">
+            {{#each posts}}
+            <article class="post-card" data-post-lang="{{metadata.lang}}">
+                <h3 class="post-card-title"><a href="/{{path}}">{{title}}</a></h3>
+                <time class="post-date">{{formatDate date "MMM d, yyyy"}}</time>
+            </article>
+            {{/each}}
+        </div>
+    </section>
 
-        <section class="ideas">
-            <h2 class="section-title">Ideas</h2>
-            <div class="ideas-columns" style="display:grid; grid-template-columns: repeat(3, 1fr); gap:16px;">
-                <div>
-                    <h3>Ideas</h3>
-                    <ul>
-                        {{#with datasource}}
-                        {{#each collectables.ideas}}
-                            {{#with (lookup attributes "data-status") as |status|}}
-                                {{#if (eq status "idea")}}
-                                    <li>
-                                        <a href="{{source.path}}">
-                                            {{#if (lookup attributes "data-title")}}
-                                                {{lookup attributes "data-title"}}
-                                            {{else}}
-                                                {{source.title}}
-                                            {{/if}}
-                                        </a>
-                                    </li>
-                                {{/if}}
-                            {{/with}}
-                        {{/each}}
+    <section class="ideas">
+        <h2 class="section-title">Ideas</h2>
+        <div class="ideas-columns">
+            <div>
+                <h3>Ideas</h3>
+                <ul>
+                    {{#with datasource}}
+                    {{#each collectables.ideas}}
+                        {{#with (lookup attributes "data-status") as |status|}}
+                            {{#if (eq status "idea")}}
+                                <li>
+                                    <a href="{{source.path}}">
+                                        {{#if (lookup attributes "data-title")}}
+                                            {{lookup attributes "data-title"}}
+                                        {{else}}
+                                            {{source.title}}
+                                        {{/if}}
+                                    </a>
+                                </li>
+                            {{/if}}
                         {{/with}}
-                    </ul>
-                </div>
-                <div>
-                    <h3>Projects</h3>
-                    <ul>
-                        {{#with datasource}}
-                        {{#each collectables.ideas}}
-                            {{#with (lookup attributes "data-status") as |status|}}
-                                {{#if (eq status "project")}}
-                                    <li>
-                                        <a href="{{source.path}}">
-                                            {{#if (lookup attributes "data-title")}}
-                                                {{lookup attributes "data-title"}}
-                                            {{else}}
-                                                {{source.title}}
-                                            {{/if}}
-                                        </a>
-                                    </li>
-                                {{/if}}
-                            {{/with}}
-                        {{/each}}
+                    {{/each}}
+                    {{/with}}
+                </ul>
+            </div>
+            <div>
+                <h3>Projects</h3>
+                <ul>
+                    {{#with datasource}}
+                    {{#each collectables.ideas}}
+                        {{#with (lookup attributes "data-status") as |status|}}
+                            {{#if (eq status "project")}}
+                                <li>
+                                    <a href="{{source.path}}">
+                                        {{#if (lookup attributes "data-title")}}
+                                            {{lookup attributes "data-title"}}
+                                        {{else}}
+                                            {{source.title}}
+                                        {{/if}}
+                                    </a>
+                                </li>
+                            {{/if}}
                         {{/with}}
-                    </ul>
-                </div>
-                <div>
-                    <h3>Archive</h3>
-                    <ul>
-                        {{#with datasource}}
-                        {{#each collectables.ideas}}
-                            {{#with (lookup attributes "data-status") as |status|}}
-                                {{#if (eq status "archived")}}
-                                    <li>
-                                        <a href="{{source.path}}">
-                                            {{#if (lookup attributes "data-title")}}
-                                                {{lookup attributes "data-title"}}
-                                            {{else}}
-                                                {{source.title}}
-                                            {{/if}}
-                                        </a>
-                                    </li>
-                                {{/if}}
-                            {{/with}}
-                        {{/each}}
+                    {{/each}}
+                    {{/with}}
+                </ul>
+            </div>
+            <div>
+                <h3>Archive</h3>
+                <ul>
+                    {{#with datasource}}
+                    {{#each collectables.ideas}}
+                        {{#with (lookup attributes "data-status") as |status|}}
+                            {{#if (eq status "archived")}}
+                                <li>
+                                    <a href="{{source.path}}">
+                                        {{#if (lookup attributes "data-title")}}
+                                            {{lookup attributes "data-title"}}
+                                        {{else}}
+                                            {{source.title}}
+                                        {{/if}}
+                                    </a>
+                                </li>
+                            {{/if}}
                         {{/with}}
-                    </ul>
-                </div>
+                    {{/each}}
+                    {{/with}}
+                </ul>
             </div>
-        </section>
-    </div>
-
-    <div class="right-column">
-        <aside class="sidebar">
-            <div class="sidebar-section">
-                <h3 class="sidebar-title">About</h3>
-                <p class="sidebar-content">{{description}}</p>
-            </div>
-            <div class="sidebar-section">
-                <h3 class="sidebar-title">Random Image</h3>
-                <section id="random-image" class="widget random-image skeleton" aria-busy="true"></section>
-            </div>
-            <div class="sidebar-section">
-                <h3 class="sidebar-title">Random Quote</h3>
-                <section id="random-quote" class="widget random-quote skeleton" aria-busy="true"><p class="quote-text"></p><cite class="quote-author"></cite></section>
-            </div>
-        </aside>
-    </div>
+        </div>
+    </section>
 </div>

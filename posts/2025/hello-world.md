@@ -1,5 +1,5 @@
 ---
-title: Hello world Post Title in Yaml
+title: Hello world
 description: A hello world showcasing metadata-driven rendering
 lang: en
 ---
