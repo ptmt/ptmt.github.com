@@ -122,9 +122,77 @@ header {
     margin: 0 auto;
 }
 
+/* Home Layout */
+.home-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+}
+
+.home-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.home-header {
+    margin-bottom: 0;
+}
+
+.home-header .site-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0.25em;
+}
+
+.home-header .site-title:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.home-header .site-description {
+    color: var(--fg-muted);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.home-right-column {
+    background: #0a0a0a;
+    color: #e5e5e5;
+    padding: var(--spacing-large);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-large);
+    min-height: 100vh;
+}
+
+.home-right-column .section-title {
+    color: #b0b0b0;
+}
+
+.home-right-column #random-quote .quote-text {
+    color: #b0b0b0;
+}
+
+.home-right-column #random-quote .quote-author {
+    color: #888;
+}
+
+.home-right-column #random-quote .quote-source-link {
+    color: #888;
+}
+
+.home-right-column .image-source-link {
+    color: #888;
+}
+
 /* Home Page */
 .latest-posts {
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: 0;
 }
 
 .section-title {
@@ -174,11 +242,17 @@ header {
     font-family: var(--font-sans);
 }
 
+.random-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
 /* Ideas Section */
 .ideas {
-    margin-top: calc(var(--spacing-xl) * 2);
-    padding-top: calc(var(--spacing-xl) * 1.5);
-    border-top: 1px solid var(--fg-light);
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
 }
 
 .ideas-columns {
@@ -306,7 +380,7 @@ article time {
 #random-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
 }
 
@@ -325,6 +399,44 @@ article time {
 #random-quote .quote-author {
     color: var(--fg-light);
     font-size: 0.9rem;
+}
+
+#random-quote .quote-source {
+    margin-top: 0.5em;
+}
+
+#random-quote .quote-source-link {
+    color: var(--fg-light);
+    font-size: 0.75rem;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+#random-quote .quote-source-link:hover {
+    opacity: 1;
+}
+
+#random-image {
+    position: relative;
+}
+
+#random-image .image-source {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+}
+
+#random-image .image-source-link {
+    color: var(--fg-light);
+    font-size: 0.75rem;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+#random-image .image-source-link:hover {
+    opacity: 1;
 }
 
 .skeleton {
@@ -369,6 +481,35 @@ article time {
     }
 }
 
+@media (min-width: 1200px) {
+    .main-content {
+        max-width: 1400px;
+    }
+    
+    .home-layout {
+        grid-template-columns: 2fr 1fr;
+        gap: calc(var(--spacing-xl) * 1.5);
+        align-items: start;
+    }
+    
+    .home-right-column {
+        position: sticky;
+        top: 0;
+        align-self: stretch;
+    }
+    
+    .main-content:has(.home-layout) ~ *,
+    body:has(.home-layout) > header {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    body:has(.home-layout) header {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     html {
         font-size: 16px;
@@ -397,5 +538,27 @@ article time {
     
     .content {
         font-size: 1.125rem;
+    }
+    
+    .home-layout {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .home-right-column {
+        order: 2;
+        min-height: auto;
+    }
+    
+    .home-left-column {
+        order: 1;
+    }
+    
+    .main-content:has(.home-layout) header {
+        display: block;
+    }
+    
+    .home-header {
+        display: none;
     }
 }
