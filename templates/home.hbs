@@ -1,13 +1,8 @@
 <div data-lang-scope>
     <div class="home-layout">
         <div class="home-left-column">
-            <section class="home-header">
-                <a href="/" class="site-title">{{siteName}}</a>
-                <p class="site-description">{{description}}</p>
-            </section>
-
             <section class="latest-posts">
-                <h2 class="section-title">Blog</h2>
+                <h2 class="section-title"><a href="/posts">Blog</a></h2>
                 <div class="post-list">
                     {{#each posts}}
                     {{#if (eq metadata.lang "en")}}
@@ -21,10 +16,10 @@
             </section>
 
             <section class="ideas">
-                <h2 class="section-title">Artefacts</h2>
+                <h2 class="section-title">Garage Wall</h2>
                 <div class="ideas-columns">
                     <div>
-                        <h3>Ideas</h3>
+                        <h3>Idea</h3>
                         <ul>
                             {{#with datasource}}
                             {{#each collectables.ideas}}
