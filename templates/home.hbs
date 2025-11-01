@@ -1,18 +1,20 @@
 <div data-lang-scope>
     <section class="latest-posts">
-        <h2 class="section-title">Latest</h2>
+        <h2 class="section-title">Blog</h2>
         <div class="post-list">
             {{#each posts}}
+            {{#if (eq metadata.lang "en")}}
             <article class="post-card" data-post-lang="{{metadata.lang}}">
                 <h3 class="post-card-title"><a href="/{{path}}">{{title}}</a></h3>
                 <time class="post-date">{{formatDate date "MMM d, yyyy"}}</time>
             </article>
+            {{/if}}
             {{/each}}
         </div>
     </section>
 
     <section class="ideas">
-        <h2 class="section-title">Ideas</h2>
+        <h2 class="section-title">Artefacts</h2>
         <div class="ideas-columns">
             <div>
                 <h3>Ideas</h3>

@@ -1,9 +1,11 @@
 {
-  "siteName": "potomushto blog",
+  "siteName": "potomushto",
   "baseUrl": "https://potomushto.com",
   "description": "work in progress",
   "author": "Dmitrij Loktev",
-  "port": 3100,
+  "devServer": {
+    "port": 3100
+  },
   "staticDatasource": {
     "enabled": true,
     "outputDir": "datasource",
