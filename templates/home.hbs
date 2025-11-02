@@ -16,10 +16,10 @@
             </section>
 
             <section class="ideas">
-                <h2 class="section-title">Garage Wall</h2>
+                <h2 class="section-title">Garage</h2>
                 <div class="ideas-columns">
                     <div>
-                        <h3>Idea</h3>
+                        <h3>Sketch</h3>
                         <ul>
                             {{#with datasource}}
                             {{#each collectables.ideas}}
@@ -41,7 +41,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h3>Projects</h3>
+                        <h3>On the desk</h3>
                         <ul>
                             {{#with datasource}}
                             {{#each collectables.ideas}}
@@ -63,7 +63,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h3>Archive</h3>
+                        <h3>On the wall</h3>
                         <ul>
                             {{#with datasource}}
                             {{#each collectables.ideas}}
@@ -87,21 +87,22 @@
                 </div>
             </section>
         </div>
-
-        <div class="home-right-column">
-            <section class="random-image-section">
-                <div id="random-image" class="skeleton" aria-busy="true">
-                    <div class="image-source"></div>
-                </div>
-            </section>
-
-            <section class="random-quote-section">
-                <div id="random-quote" class="skeleton" aria-busy="true">
-                    <div class="quote-text"></div>
-                    <div class="quote-author"></div>
-                    <div class="quote-source"></div>
-                </div>
-            </section>
-        </div>
     </div>
 </div>
+{{#content "right-column"}}
+    <div class="home-right-column">
+        <section class="random-image-section">
+            <div id="random-image" class="skeleton" aria-busy="true">
+                <div class="image-source"></div>
+            </div>
+        </section>
+
+        <section class="random-quote-section">
+            <div id="random-quote" class="skeleton" aria-busy="true">
+                <div class="quote-text"></div>
+                <div class="quote-author"></div>
+                <div class="quote-source"></div>
+            </div>
+        </section>
+    </div>
+{{/content}}
