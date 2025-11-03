@@ -2,7 +2,7 @@
     <div class="home-layout">
         <div class="home-left-column">
             <section class="latest-posts">
-                <h2 class="section-title"><a href="/posts">Blog</a></h2>
+                <h2 class="section-title"><a href="/posts/">Blog</a></h2>
                 <div class="post-list">
                     {{#each posts}}
                     {{#if (eq metadata.lang "en")}}
@@ -16,13 +16,13 @@
             </section>
 
             <section class="ideas">
-                <h2 class="section-title">Garage</h2>
+                <h2 class="section-title"><a href="/garage/">Garage</a></h2>
                 <div class="ideas-columns">
                     <div>
                         <h3>Sketch</h3>
                         <ul>
                             {{#with datasource}}
-                            {{#each collectables.ideas}}
+                            {{#each entities.garage}}
                                 {{#with (lookup attributes "data-status") as |status|}}
                                     {{#if (eq status "idea")}}
                                         <li>
@@ -44,9 +44,9 @@
                         <h3>On the desk</h3>
                         <ul>
                             {{#with datasource}}
-                            {{#each collectables.ideas}}
+                            {{#each entities.garage}}
                                 {{#with (lookup attributes "data-status") as |status|}}
-                                    {{#if (eq status "project")}}
+                                    {{#if (eq status "active")}}
                                         <li>
                                             <a href="{{source.path}}">
                                                 {{#if (lookup attributes "data-title")}}
@@ -66,7 +66,7 @@
                         <h3>On the wall</h3>
                         <ul>
                             {{#with datasource}}
-                            {{#each collectables.ideas}}
+                            {{#each entities.ideas}}
                                 {{#with (lookup attributes "data-status") as |status|}}
                                     {{#if (eq status "archived")}}
                                         <li>

@@ -10,11 +10,13 @@
     {{#if styles}}{{{styles}}}{{/if}}
 </head>
 <body>
-    {{include "partials/header.hbs"}}
-    <main class="main-content">
-        {{{content}}}
-    </main>
-    {{#block "right-column"}}{{/block}}
+    <div class="page-container">
+        {{include "partials/header.hbs"}}
+        <main class="main-content">
+            {{{content}}}
+        </main>
+        {{#block "right-column"}}{{/block}}
+    </div>
     <script defer src="/main.js"></script>
     {{#if scripts}}{{{scripts}}}{{/if}}
 </body>

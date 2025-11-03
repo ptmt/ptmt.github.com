@@ -1,12 +1,10 @@
 {
     "datasets": [
       {
-        "name": "team",
-        "output": "entity-datasource.json",
-        "folder": "entities",
-        "metadataKey": "collectAs",
-        "metadataValue": "team",
-        "includeSources": ["posts", "pages"]
+        "name": "garage",
+        "output": "garage-datasource.json",
+        "folder": "garage",
+        "includeSources": []
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "siteName": "potomushto",
   "baseUrl": "https://potomushto.com",
-  "description": "work in progress",
+  "description": "journal of work & experiments",
   "author": "Dmitrij Loktev",
   "devServer": {
     "port": 3100
@@ -18,6 +18,7 @@
     "includeFullContent": true
   },
   "theme": {
-    "assets": ["public", "media"]
+    "assets": ["public", "media"],
+    "pages": ["pages", "garage"]
   }
 }

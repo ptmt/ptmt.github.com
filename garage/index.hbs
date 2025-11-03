@@ -1,0 +1,113 @@
+<div class="garage-page">
+    <header class="garage-header">
+        <h1>Garage</h1>
+        <p class="site-description">My collection of ideas, projects, and experiments</p>
+    </header>
+
+    <div class="garage-layout">
+        <section class="garage-section">
+            <h2 class="section-title">Sketch</h2>
+            <p class="section-description">Ideas in early stages</p>
+            <div class="garage-grid">
+                {{#with datasource}}
+                {{#each entities.garage}}
+                    {{#with metadata.status as |status|}}
+                        {{#if (eq status "idea")}}
+                        <article class="garage-card">
+                            <a href="{{source.path}}" class="garage-card-link">
+                                {{#if ../metadata.image}}
+                                <div class="garage-card-image">
+                                    <img src="{{../metadata.image}}" alt="{{../title}}" />
+                                </div>
+                                {{/if}}
+                                <div class="garage-card-content">
+                                    <h3 class="garage-card-title">{{../title}}</h3>
+                                    {{#if ../metadata.summary}}
+                                    <p class="garage-card-summary">{{../metadata.summary}}</p>
+                                    {{/if}}
+                                    {{#if ../metadata.tags}}
+                                    <div class="garage-card-tags">
+                                        <span class="tag">{{../metadata.tags}}</span>
+                                    </div>
+                                    {{/if}}
+                                </div>
+                            </a>
+                        </article>
+                        {{/if}}
+                    {{/with}}
+                {{/each}}
+                {{/with}}
+            </div>
+        </section>
+
+        <section class="garage-section">
+            <h2 class="section-title">On the desk</h2>
+            <p class="section-description">Active projects in progress</p>
+            <div class="garage-grid">
+                {{#with datasource}}
+                {{#each entities.garage}}
+                    {{#with metadata.status as |status|}}
+                        {{#if (eq status "active")}}
+                        <article class="garage-card">
+                            <a href="{{source.path}}" class="garage-card-link">
+                                {{#if ../metadata.image}}
+                                <div class="garage-card-image">
+                                    <img src="{{../metadata.image}}" alt="{{../title}}" />
+                                </div>
+                                {{/if}}
+                                <div class="garage-card-content">
+                                    <h3 class="garage-card-title">{{../title}}</h3>
+                                    {{#if ../metadata.summary}}
+                                    <p class="garage-card-summary">{{../metadata.summary}}</p>
+                                    {{/if}}
+                                    {{#if ../metadata.tags}}
+                                    <div class="garage-card-tags">
+                                        <span class="tag">{{../metadata.tags}}</span>
+                                    </div>
+                                    {{/if}}
+                                </div>
+                            </a>
+                        </article>
+                        {{/if}}
+                    {{/with}}
+                {{/each}}
+                {{/with}}
+            </div>
+        </section>
+
+        <section class="garage-section">
+            <h2 class="section-title">On the wall</h2>
+            <p class="section-description">Archived and completed projects</p>
+            <div class="garage-grid">
+                {{#with datasource}}
+                {{#each entities.garage}}
+                    {{#with metadata.status as |status|}}
+                        {{#if (eq status "archived")}}
+                        <article class="garage-card">
+                            <a href="{{source.path}}" class="garage-card-link">
+                                {{#if ../metadata.image}}
+                                <div class="garage-card-image">
+                                    <img src="{{../metadata.image}}" alt="{{../title}}" />
+                                </div>
+                                {{/if}}
+                                <div class="garage-card-content">
+                                    <h3 class="garage-card-title">{{../title}}</h3>
+                                    {{#if ../metadata.summary}}
+                                    <p class="garage-card-summary">{{../metadata.summary}}</p>
+                                    {{/if}}
+                                    {{#if ../metadata.tags}}
+                                    <div class="garage-card-tags">
+                                        <span class="tag">{{../metadata.tags}}</span>
+                                    </div>
+                                    {{/if}}
+                                </div>
+                            </a>
+                        </article>
+                        {{/if}}
+                    {{/with}}
+                {{/each}}
+                {{/with}}
+            </div>
+        </section>
+    </div>
+</div>
