@@ -17,8 +17,15 @@
     "fileName": "feed.xml",
     "includeFullContent": true
   },
+  "paths": {
+      "posts": "posts",
+      "pages": ["pages", "garage"]
+    },
   "theme": {
-    "assets": ["public", "media"],
-    "pages": ["pages", "garage"]
+    "assets": ["public", "media"]
+  },
+  "html": {
+    "format": "BEAUTIFY",
+    "indentSize": 2
   }
 }

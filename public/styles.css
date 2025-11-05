@@ -39,7 +39,7 @@ body {
     background: var(--bg);
     color: var(--fg);
     line-height: 1.75;
-    padding: var(--spacing-xl) var(--spacing-large);
+    padding: var(--spacing-large) var(--spacing-large) var(--spacing-xl) var(--spacing-large);
     max-width: 90rem;
     margin: 0 auto;
 }
@@ -98,7 +98,7 @@ time {
 
 /* Header */
 header {
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-base);
 }
 
 .header-top {
@@ -277,6 +277,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    align-items: start;
 }
 
 .post-card {
@@ -490,7 +491,6 @@ article time {
 #random-image .image-source {
     position: absolute;
     bottom: 0.5em;
-    right: 0.5em;
 }
 
 #random-image .image-source-link {
@@ -681,7 +681,7 @@ article time {
     body:has(.home-layout) header {
         grid-column: 1;
         grid-row: 1;
-        padding: var(--spacing-xl) var(--spacing-large);
+        padding: var(--spacing-large) var(--spacing-large);
     }
 
     body:has(.home-layout) .main-content {
@@ -749,6 +749,11 @@ article time {
     .ideas-columns {
         grid-template-columns: 1fr;
         gap: var(--spacing-large);
+    }
+
+    .post-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .post-card-title {

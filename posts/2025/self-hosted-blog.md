@@ -1,5 +1,6 @@
 ---
 title: We are so back
+description: Waited for 10 years to resurrect the blog
 lang: en
 ---
 
