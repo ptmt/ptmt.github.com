@@ -1,6 +1,7 @@
 ---
 title: Hello world
 description: A hello world showcasing metadata-driven rendering
+draft: true
 lang: en
 ---
 
