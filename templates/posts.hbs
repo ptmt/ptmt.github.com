@@ -1,0 +1,32 @@
+<h1>All Posts</h1>
+{{#if total}}
+<p class="post-count">{{total}} {{#if (eq total 1)}}post{{else}}posts{{/if}}</p>
+{{/if}}
+<ul class="post-list">
+  {{#each posts}}
+  <li class="post-item">
+    <article class="post-entry">
+      <time class="post-date" datetime="{{date}}">{{formatDate date "MMM d, yyyy"}}</time>
+      <div class="post-title-row">
+        <h3 class="post-title"><a href="/{{path}}">{{title}}</a></h3>
+        {{#if metadata.lang}}
+        {{#unless (eq metadata.lang "en")}}
+        <span class="post-lang">{{metadata.lang}}</span>
+        {{/unless}}
+        {{/if}}
+      </div>
+      {{#if metadata.description}}
+      <p class="post-description">{{metadata.description}}</p>
+      {{/if}}
+      {{#if metadata.tags}}
+      <div class="post-tags">
+        {{#each metadata.tags}}
+        <span class="tag">{{this}}</span>
+        {{/each}}
+      </div>
+      {{/if}}
+    </article>
+  </li>
+  {{/each}}
+</ul>
+

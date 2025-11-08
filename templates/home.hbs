@@ -18,71 +18,96 @@
             <section class="ideas">
                 <h2 class="section-title"><a href="/garage/">Garage</a></h2>
                 <div class="ideas-columns">
-                    <div>
+                    <div class="ideas-column">
                         <h3>Sketch</h3>
-                        <ul>
+                        <div class="ideas-grid">
                             {{#with datasource}}
                             {{#each entities.garage}}
-                                {{#with (lookup attributes "data-status") as |status|}}
+                                {{#with metadata.status as |status|}}
                                     {{#if (eq status "idea")}}
-                                        <li>
-                                            <a href="{{source.path}}">
-                                                {{#if (lookup attributes "data-title")}}
-                                                    {{lookup attributes "data-title"}}
-                                                {{else}}
-                                                    {{source.title}}
+                                    <article class="ideas-card">
+                                        <a href="{{source.path}}" class="ideas-card-link">
+                                            {{#if ../metadata.image}}
+                                            <div class="ideas-card-image">
+                                                <img src="{{../metadata.image}}" alt="{{../title}}" />
+                                            </div>
+                                            {{/if}}
+                                            <div class="ideas-card-content">
+                                                <h4 class="ideas-card-title">{{../title}}</h4>
+                                                {{#if ../metadata.summary}}
+                                                <p class="ideas-card-summary">{{../metadata.summary}}</p>
                                                 {{/if}}
-                                            </a>
-                                        </li>
+                                                {{#if ../metadata.tags}}
+                                                <div class="ideas-card-tags">
+                                                    {{#each ../metadata.tags}}
+                                                    <span class="tag">{{this}}</span>
+                                                    {{/each}}
+                                                </div>
+                                                {{/if}}
+                                            </div>
+                                        </a>
+                                    </article>
                                     {{/if}}
                                 {{/with}}
                             {{/each}}
                             {{/with}}
-                        </ul>
+                        </div>
                     </div>
-                    <div>
+                    <div class="ideas-column">
                         <h3>On the desk</h3>
-                        <ul>
+                        <div class="ideas-grid">
                             {{#with datasource}}
                             {{#each entities.garage}}
-                                {{#with (lookup attributes "data-status") as |status|}}
+                                {{#with metadata.status as |status|}}
                                     {{#if (eq status "active")}}
-                                        <li>
-                                            <a href="{{source.path}}">
-                                                {{#if (lookup attributes "data-title")}}
-                                                    {{lookup attributes "data-title"}}
-                                                {{else}}
-                                                    {{source.title}}
+                                    <article class="ideas-card">
+                                        <a href="{{source.path}}" class="ideas-card-link">
+                                            {{#if ../metadata.image}}
+                                            <div class="ideas-card-image">
+                                                <img src="{{../metadata.image}}" alt="{{../title}}" />
+                                            </div>
+                                            {{/if}}
+                                            <div class="ideas-card-content">
+                                                <h4 class="ideas-card-title">{{../title}}</h4>
+                                                {{#if ../metadata.summary}}
+                                                <p class="ideas-card-summary">{{../metadata.summary}}</p>
                                                 {{/if}}
-                                            </a>
-                                        </li>
+                                            </div>
+                                        </a>
+                                    </article>
                                     {{/if}}
                                 {{/with}}
                             {{/each}}
                             {{/with}}
-                        </ul>
+                        </div>
                     </div>
-                    <div>
+                    <div class="ideas-column">
                         <h3>On the wall</h3>
-                        <ul>
+                        <div class="ideas-grid">
                             {{#with datasource}}
-                            {{#each entities.ideas}}
-                                {{#with (lookup attributes "data-status") as |status|}}
+                            {{#each entities.garage}}
+                                {{#with metadata.status as |status|}}
                                     {{#if (eq status "archived")}}
-                                        <li>
-                                            <a href="{{source.path}}">
-                                                {{#if (lookup attributes "data-title")}}
-                                                    {{lookup attributes "data-title"}}
-                                                {{else}}
-                                                    {{source.title}}
+                                    <article class="ideas-card">
+                                        <a href="{{source.path}}" class="ideas-card-link">
+                                            {{#if ../metadata.image}}
+                                            <div class="ideas-card-image">
+                                                <img src="{{../metadata.image}}" alt="{{../title}}" />
+                                            </div>
+                                            {{/if}}
+                                            <div class="ideas-card-content">
+                                                <h4 class="ideas-card-title">{{../title}}</h4>
+                                                {{#if ../metadata.summary}}
+                                                <p class="ideas-card-summary">{{../metadata.summary}}</p>
                                                 {{/if}}
-                                            </a>
-                                        </li>
+                                            </div>
+                                        </a>
+                                    </article>
                                     {{/if}}
                                 {{/with}}
                             {{/each}}
                             {{/with}}
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </section>

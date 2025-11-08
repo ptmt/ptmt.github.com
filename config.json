@@ -1,6 +1,6 @@
 {
   "siteName": "potomushto",
-  "baseUrl": "https://potomushto.com",
+  "baseUrl": "https://potomushto.com/",
   "description": "journal of work & experiments",
   "author": "Dmitrij Loktev",
   "devServer": {

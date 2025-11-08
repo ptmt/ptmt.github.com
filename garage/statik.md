@@ -2,7 +2,8 @@
 title: Statik
 status: active
 summary: Opionated single-purpose web-site generator
-image: /media/placeholder.jpg
+# image: /media/placeholder.jpg
+link: https://potomushto.com/statik/
 tags: [kotlin, web]
 ---
 
