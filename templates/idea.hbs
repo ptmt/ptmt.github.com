@@ -9,40 +9,39 @@
 {{#content "right-column"}}
     <div class="idea-right-column">
         <div class="idea-metadata">
-            adfa
-             {{#if page.summary}}
+             {{#if page.metadata.summary}}
             <p class="idea-summary">{{page.summary}}</p>
             {{/if}}
-            {{#if page.status}}
+            {{#if page.metadata.status}}
             <div class="metadata-item">
                 <span class="metadata-label">Status</span>
-                <span class="metadata-value status-{{metadata.status}}">{{metadata.status}}</span>
+                <span class="metadata-value status-{{page.metadata.status}}">{{metadata.status}}</span>
             </div>
             {{/if}}
             
-            {{#if metadata.link}}
+            {{#if page.metadata.link}}
             <div class="metadata-item">
                 <span class="metadata-label">Link</span>
                 <span class="metadata-value">
-                    <a href="{{metadata.link}}" target="_blank" rel="noopener noreferrer">{{metadata.link}}</a>
+                    <a href="{{page.metadata.link}}" target="_blank" rel="noopener noreferrer">{{page.metadata.link}}</a>
                 </span>
             </div>
             {{/if}}
             
-            {{#if metadata.github}}
+            {{#if page.metadata.github}}
             <div class="metadata-item">
                 <span class="metadata-label">GitHub</span>
                 <span class="metadata-value">
-                    <a href="{{metadata.github}}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    <a href="{{page.metadata.github}}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                 </span>
             </div>
             {{/if}}
             
-            {{#if metadata.tags}}
+            {{#if page.tags}}
             <div class="metadata-item">
                 <span class="metadata-label">Tags</span>
                 <div class="metadata-value">
-                    {{#each metadata.tags}}
+                    {{#each page.tags}}
                     <span class="tag">{{this}}</span>
                     {{/each}}
                 </div>

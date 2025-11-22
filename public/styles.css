@@ -551,18 +551,14 @@ article h1 {
     margin-bottom: 0.5em;
 }
 
-article .header-bottom {
-    display: block;
-    margin-bottom: 1em;
-}
-
-article .site-description {
+.post-subtitle {
     color: var(--fg-muted);
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 300;
-    line-height: 1.6;
-    margin: 0 0 1em 0;
-    font-style: italic;
+    line-height: 1.5;
+    margin-top: -0.25em;
+    margin-bottom: 1.5em;
+    font-family: var(--font-sans);
 }
 
 article time {

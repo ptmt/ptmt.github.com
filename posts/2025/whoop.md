@@ -1,5 +1,5 @@
 ---
-title: Whoop but not quite there
+title: Whoop is about missing opportunities
 description: Whoop v5 Review
 draft: true
 lang: en

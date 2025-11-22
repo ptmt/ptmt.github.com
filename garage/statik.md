@@ -6,7 +6,7 @@ summary: Opionated single-purpose web-site generator
 # image: /media/placeholder.jpg
 link: https://potomushto.com/statik/
 github: https://github.com/ptmt/statik
-tags: [kotlin, web]
+tags: kotlin, web, blog
 ---
 
 A set of scripts that can transform a set of markdown into a web-site. I've put some low-effort llm documentation, but I realize it's probably have zero re-usability. 

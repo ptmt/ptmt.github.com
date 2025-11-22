@@ -1,10 +1,10 @@
 <article>
   <h1>{{post.title}}</h1>
-  <div class="header-bottom">
-      <p class="site-description">
-          {{post.description}}
-      </p>
-  </div>
+  {{#if post.metadata.description}}
+  <p class="post-subtitle">
+      {{post.metadata.description}}
+  </p>
+  {{/if}}
   <time datetime="{{post.date}}">{{formatDate post.date "MMMM d, yyyy"}}</time>
   <div class="content">
     {{{post.content}}}
