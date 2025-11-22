@@ -1,9 +1,11 @@
 ---
 title: Statik
+template: idea 
 status: active
 summary: Opionated single-purpose web-site generator
 # image: /media/placeholder.jpg
 link: https://potomushto.com/statik/
+github: https://github.com/ptmt/statik
 tags: [kotlin, web]
 ---
 
@@ -20,7 +22,7 @@ Reasons, randomly:
 
 ### Why don't PHP? Why GitHub Pages?
 
-I have an intention to make it fully dynamic, but also don't want to host it in cloud. I don't remember why, but 10 years ago I didn't like storing web-site in git
+I have an intention to make it fully dynamic, but also don't want it to be hosted it in cloud. I don't remember why, but 10 years ago I didn't like storing web-site in git
 
 ### Biggest missed oportunity
 

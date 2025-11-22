@@ -1,0 +1,54 @@
+<div class="idea-layout">
+    <article class="idea-content">
+        <h1>{{title}}</h1>
+        <div class="content">
+            {{{page.content}}}
+        </div>
+    </article>
+</div>
+{{#content "right-column"}}
+    <div class="idea-right-column">
+        <div class="idea-metadata">
+            adfa
+             {{#if page.summary}}
+            <p class="idea-summary">{{page.summary}}</p>
+            {{/if}}
+            {{#if page.status}}
+            <div class="metadata-item">
+                <span class="metadata-label">Status</span>
+                <span class="metadata-value status-{{metadata.status}}">{{metadata.status}}</span>
+            </div>
+            {{/if}}
+            
+            {{#if metadata.link}}
+            <div class="metadata-item">
+                <span class="metadata-label">Link</span>
+                <span class="metadata-value">
+                    <a href="{{metadata.link}}" target="_blank" rel="noopener noreferrer">{{metadata.link}}</a>
+                </span>
+            </div>
+            {{/if}}
+            
+            {{#if metadata.github}}
+            <div class="metadata-item">
+                <span class="metadata-label">GitHub</span>
+                <span class="metadata-value">
+                    <a href="{{metadata.github}}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </span>
+            </div>
+            {{/if}}
+            
+            {{#if metadata.tags}}
+            <div class="metadata-item">
+                <span class="metadata-label">Tags</span>
+                <div class="metadata-value">
+                    {{#each metadata.tags}}
+                    <span class="tag">{{this}}</span>
+                    {{/each}}
+                </div>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+{{/content}}
+
