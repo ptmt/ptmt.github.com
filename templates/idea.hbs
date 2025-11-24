@@ -1,6 +1,11 @@
 <div class="idea-layout">
     <article class="idea-content">
         <h1>{{title}}</h1>
+        {{#if page.metadata.summary}}
+        <p class="post-subtitle">
+            {{page.metadata.summary}}
+        </p>
+        {{/if}}
         <div class="content">
             {{{page.content}}}
         </div>
@@ -9,13 +14,10 @@
 {{#content "right-column"}}
     <div class="idea-right-column">
         <div class="idea-metadata">
-             {{#if page.metadata.summary}}
-            <p class="idea-summary">{{page.summary}}</p>
-            {{/if}}
             {{#if page.metadata.status}}
             <div class="metadata-item">
                 <span class="metadata-label">Status</span>
-                <span class="metadata-value status-{{page.metadata.status}}">{{metadata.status}}</span>
+                <span class="metadata-value status-{{page.metadata.status}}">{{page.metadata.status}}</span>
             </div>
             {{/if}}
             

@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{#if title}}{{title}} - {{siteName}}{{else}}{{siteName}}{{/if}}</title>
     <meta name="description" content="{{#if description}}{{description}}{{else}}{{siteName}}{{/if}}">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{baseUrl}}{{path}}">
+    <meta property="og:title" content="{{#if title}}{{title}} - {{siteName}}{{else}}{{siteName}}{{/if}}">
+    <meta property="og:description" content="{{#if description}}{{description}}{{else}}{{siteName}}{{/if}}">
+    <meta property="og:image" content="{{#if image}}{{baseUrl}}{{image}}{{else}}{{baseUrl}}apple-icon-180x180.png{{/if}}">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{baseUrl}}{{path}}">
+    <meta name="twitter:title" content="{{#if title}}{{title}} - {{siteName}}{{else}}{{siteName}}{{/if}}">
+    <meta name="twitter:description" content="{{#if description}}{{description}}{{else}}{{siteName}}{{/if}}">
+    <meta name="twitter:image" content="{{#if image}}{{baseUrl}}{{image}}{{else}}{{baseUrl}}apple-icon-180x180.png{{/if}}">
     <link rel="stylesheet" href="/styles.css">
     {{#if head}}{{{head}}}{{/if}}
     {{#if styles}}{{{styles}}}{{/if}}
