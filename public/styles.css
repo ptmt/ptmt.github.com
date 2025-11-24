@@ -557,13 +557,13 @@ article h1 {
     font-weight: 300;
     line-height: 1.5;
     margin-top: -0.25em;
-    margin-bottom: 1.5em;
+    margin-bottom: var(--spacing-base);
     font-family: var(--font-sans);
 }
 
 article time {
     display: block;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-base);
 }
 
 .content {
