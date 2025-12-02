@@ -7,7 +7,9 @@ lang: en
 
 There’s this popular meme. I won’t use AI to visualize it, so I’ll describe it instead. As time goes by, you sometimes realize that the things you cared about in the beginning turn out to be true again. Some people say life moves in a spiral.
 
-[stand-alone, fully custom blog] -> [do not care just give me engagement] -> [stand-alone, fully custom blog]
+> 1. stand-alone, fully custom blog
+> 2. do not care just give me engagement 
+> 3. stand-alone, fully custom blog
 
 I’ve had several phases in my life when I tried to blog. At one point, I even created a separate Tumblr just for a seven-day trip and I still love that blog. Going back and rereading it once every five years gives me chills. Maybe I’ll bring it over here someday, when I figure out a proper way to separate things.
 
@@ -19,14 +21,28 @@ And then, ten years later, it became obvious that social media gave you a much b
 
 That went on until I started my new full-time job. I had less and less time to write — partly because I was already writing about technology and open source for work, and partly because my energy for “extra” writing was slowly running out. I felt no need, and that was a mistake.
 
-![My GitHub public contributions](/media/2025/github-contribution-public.png "GitHub public contributions")
+Compare these two images:
 
-![My GitHub private contributions](/media/2025/github-contribution.png "GitHub private contributions")
+![My GitHub public contributions "green tiles"](/media/2025/github-contribution-public.png "My  public contributions on GitHub in 2025")
+
+![My GitHub private contributions](/media/2025/github-contribution.png "My private contributions on GitHub in 2025")
 
 Now, in 2025, when most of my social network circles have dissolved and scattered across multiple platforms, I feel a bit of regret. I feel like I missed out having personal web-site empty all these years. So now I care much more about having a permanent place — something that can still be referenced in the future.
 
 And technologically, all pieces have always been right here. It turns out RSS is great. Owning your content feels right.
 
-The only thing left to solve is having zero readers. But that’s a different problem.
+The only thing left to solve is me having insufficient writing skill. And zero readers. 
 
-<blockquote data-collect="quotes" data-author="Ada Lovelace">That brain of mine is more than merely mortal.</blockquote>
+## What makes blog good
+
+I would consider a blog good, when posts got shared. And people subscribe to RSS. Not a big amount, even a few dozens people more than enough.
+
+And for that I need consistency. 
+
+<blockquote data-collect="quotes" data-author="Practice makes perfect.">Üben macht den Meister.</blockquote>
+
+This is what everyone hear constantly during German classes. Of course the devil is in the detail. You need **Tight Feedback Loop**, **Deliberate Difficulty (Not Comfort)** and **Reflection + Correction**. A similar take is [here on Veritasium](https://www.youtube.com/watch?v=5eW6Eagr9XA&t=21s)
+
+Having said that, my goal for next year is to write as much as I can — but without using AI to shape the narrative or the structure.
+
+And when it’s time to share, to step out of my comfort zone. 

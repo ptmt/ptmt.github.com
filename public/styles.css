@@ -593,12 +593,33 @@ article time {
     margin: var(--spacing-large) 0;
 }
 
+.content figure {
+    margin: var(--spacing-large) 0;
+}
+
+.content figure img {
+    margin: 0;
+}
+
+.content figcaption {
+    color: var(--fg-light);
+    font-size: 0.875rem;
+    font-family: var(--font-sans);
+    margin-top: 0.125em;
+    text-align: left;
+    line-height: 1.5;
+}
+
 .content blockquote {
     border-left: 2px solid var(--fg-light);
     padding-left: var(--spacing-large);
     margin: var(--spacing-large) 0;
     color: var(--fg-muted);
     font-style: italic;
+}
+
+.content figure blockquote {
+    margin-bottom: 0;
 }
 
 .content code {
