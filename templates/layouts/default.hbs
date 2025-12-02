@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{#if title}}{{title}} - {{siteName}}{{else}}{{siteName}}{{/if}}</title>
     <meta name="description" content="{{#if description}}{{description}}{{else}}{{siteName}}{{/if}}">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -47,6 +48,7 @@
             {{{content}}}
         </main>
         {{#block "right-column"}}{{/block}}
+        {{include "partials/footer.hbs"}}
     </div>
     <script defer src="/main.js"></script>
     {{#if scripts}}{{{scripts}}}{{/if}}

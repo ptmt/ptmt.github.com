@@ -35,7 +35,7 @@ The only thing left to solve is me having insufficient writing skill. And zero r
 
 ## What makes blog good
 
-I would consider a blog good, when posts got shared. And people subscribe to RSS. Not a big amount, even a few dozens people more than enough.
+I would consider a blog good, when posts get shared. And people subscribe to RSS. Even a few dozens subscribers more than enough.
 
 And for that I need consistency. 
 

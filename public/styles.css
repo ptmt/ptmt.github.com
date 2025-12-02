@@ -5,6 +5,7 @@
     --fg: #1a1a1a;
     --fg-muted: #666;
     --fg-light: #999;
+    --fg-link: #ddd;
     --bg: #ffffff;
     --bg-subtle: #fafafa;
     --accent: #ff3b30;
@@ -19,6 +20,7 @@
     --fg: #e5e5e5;
     --fg-muted: #b0b0b0;
     --fg-light: #888;
+    --fg-link: #999;
     --bg: #0a0a0a;
     --bg-subtle: #111;
 }
@@ -198,6 +200,40 @@ header {
     display: block;
 }
 
+/* Footer */
+footer {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-large);
+    border-top: 1px solid var(--fg-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-links {
+    display: flex;
+    gap: var(--spacing-base);
+    align-items: center;
+}
+
+footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fg-muted);
+    text-decoration: none;
+    transition: color 0.2s, opacity 0.2s;
+}
+
+footer .social-links a:hover {
+    color: var(--accent);
+    opacity: 1;
+}
+
+footer .social-links svg {
+    display: block;
+}
+
 /* Main Content */
 .main-content {
     max-width: var(--content-width);
@@ -259,23 +295,23 @@ header {
 }
 
 .home-right-column .section-title {
-    color: #b0b0b0;
+    color: var(--fg-muted);
 }
 
-.home-right-column #random-quote .quote-text {
-    color: #b0b0b0;
+#random-quote .quote-text {
+    color: var(--fg-muted);
 }
 
 .home-right-column #random-quote .quote-author {
-    color: #888;
+    color: var(--fg-light);
+}
+
+.home-right-column #random-quote .quote-source {
+    color: var(--fg-light);
 }
 
 .home-right-column #random-quote .quote-source-link {
-    color: #888;
-}
-
-.home-right-column .image-source-link {
-    color: #888;
+    color: var(--fg-link);
 }
 
 /* Home Page */
@@ -665,9 +701,22 @@ article time {
 #random-quote .quote-text {
     font-size: 1.25rem;
     line-height: 1.6;
-    color: var(--fg-muted);
+    color: var(--fg-link);
     font-style: italic;
     margin-bottom: 0.5em;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+#random-quote .quote-text::before {
+    content: '"';
+    position: absolute;
+    left: 0;
+    font-size: 3em;
+    line-height: 1;
+    color: var(--fg-light);
+    opacity: 0.3;
+    font-style: normal;
 }
 
 #random-quote .quote-author {
@@ -677,13 +726,13 @@ article time {
 
 #random-quote .quote-source {
     margin-top: 0.5em;
+    color: var(--fg-light);
 }
 
 #random-quote .quote-source-link {
-    color: var(--fg-light);
+    color: var(--fg-link);
     font-size: 0.75rem;
     text-decoration: none;
-    opacity: 0.6;
     transition: opacity 0.2s;
 }
 
@@ -699,13 +748,13 @@ article time {
 #random-image .image-source {
     position: absolute;
     bottom: 0.5em;
+    color: var(--fg-light);
 }
 
 #random-image .image-source-link {
-    color: var(--fg-light);
+    color: var(--fg-link);
     font-size: 0.75rem;
     text-decoration: none;
-    opacity: 0.6;
     transition: opacity 0.2s;
 }
 
@@ -1034,8 +1083,9 @@ article time {
     body:has(.home-layout) .page-container {
         display: grid;
         grid-template-columns: auto 400px;
-        grid-template-rows: auto 1fr;
+        grid-template-rows: auto 1fr auto;
         min-height: 100vh;
+        position: relative;
     }
 
     body:has(.home-layout) header {
@@ -1050,6 +1100,12 @@ article time {
         padding: 0 var(--spacing-large) var(--spacing-xl) var(--spacing-large);
         max-width: 1400px;
         margin: 0;
+    }
+
+    body:has(.home-layout) footer {
+        grid-column: 1;
+        grid-row: 3;
+        padding: var(--spacing-large);
     }
 
     body:has(.home-layout) .home-right-column {
