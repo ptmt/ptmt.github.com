@@ -10,10 +10,28 @@ fetchJSON('/datasource/images.json').then(function(list){
   var el = document.querySelector('#random-image');
   if (!el) return;
   
+  // Ensure structure exists for layout calculations
+  var wrapper = el.querySelector('.image-wrapper');
+  if (!wrapper) {
+    wrapper = document.createElement('div');
+    wrapper.className = 'image-wrapper';
+    el.insertBefore(wrapper, el.firstChild);
+  }
+  if (el.firstChild !== wrapper) {
+    el.insertBefore(wrapper, el.firstChild);
+  }
+  
+  var sourceEl = el.querySelector('.image-source');
+  if (!sourceEl) {
+    sourceEl = document.createElement('div');
+    sourceEl.className = 'image-source';
+    el.appendChild(sourceEl);
+  }
+  
   function loadImage(){
     // Get container dimensions (wait for layout if needed)
-    var containerWidth = el.offsetWidth || el.clientWidth;
-    var containerHeight = el.offsetHeight || el.clientHeight;
+    var containerWidth = wrapper.offsetWidth || wrapper.clientWidth;
+    var containerHeight = wrapper.offsetHeight || wrapper.clientHeight;
     
     // If container not yet rendered, wait a bit for layout
     if (containerWidth === 0 || containerHeight === 0) {
@@ -42,25 +60,37 @@ fetchJSON('/datasource/images.json').then(function(list){
           el.setAttribute('aria-busy','false');
           
           // Create/update source if available
-          var sourceEl = el.querySelector('.image-source');
           if (item.source) {
             if (!sourceEl) {
               sourceEl = document.createElement('div');
               sourceEl.className = 'image-source';
+              el.appendChild(sourceEl);
             }
             var link = document.createElement('a');
             link.href = item.source.path;
             link.textContent = item.source.title;
             link.className = 'image-source-link';
-            var text = document.createTextNode('from ');
-            sourceEl.replaceChildren(text, link);
+            var fragments = [];
+            if (item.title) {
+              var titleText = document.createElement('span');
+              titleText.textContent = item.title;
+              titleText.className = 'image-title';
+              fragments.push(titleText);
+            }
+            var fromText = document.createTextNode('from ');
+            fragments.push(fromText, link);
+            sourceEl.replaceChildren.apply(sourceEl, fragments);
+            if (!sourceEl.parentNode) {
+              el.appendChild(sourceEl);
+            }
+          } else if (sourceEl && sourceEl.parentNode) {
+            sourceEl.remove();
           }
           
-          // Replace all children with img and source
-          if (sourceEl && item.source) {
-            el.replaceChildren(img, sourceEl);
-          } else {
-            el.replaceChildren(img);
+          // Ensure image is inside wrapper
+          wrapper.replaceChildren(img);
+          if (el.firstChild !== wrapper) {
+            el.insertBefore(wrapper, el.firstChild);
           }
         } else {
           // Try next image
