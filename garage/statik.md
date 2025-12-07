@@ -3,7 +3,7 @@ title: Statik
 template: idea 
 status: active
 summary: Opionated single-purpose web-site generator
-# image: /media/placeholder.jpg
+image: https://potomushto.com/statik/images/statik.png
 link: https://potomushto.com/statik/
 github: https://github.com/ptmt/statik
 tags: kotlin, web, blog

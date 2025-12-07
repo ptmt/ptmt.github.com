@@ -17,98 +17,119 @@
 
             <section class="ideas">
                 <h2 class="section-title"><a href="/garage/">Garage</a></h2>
-                <div class="ideas-columns">
-                    <div class="ideas-column">
-                        <h3>Sketch</h3>
-                        <div class="ideas-grid">
-                            {{#with datasource}}
+                <div class="garage-columns-home">
+                    {{#with datasource}}
+                    <!-- Sketch Column -->
+                    <div class="garage-column-home">
+                        <h3 class="garage-column-title">Sketch</h3>
+                        <div class="garage-logos-grid">
                             {{#each entities.garage}}
-                                {{#with metadata.status as |status|}}
-                                    {{#if (eq status "idea")}}
-                                    <article class="ideas-card">
-                                        <a href="{{source.path}}" class="ideas-card-link">
-                                            {{#if ../metadata.image}}
-                                            <div class="ideas-card-image">
-                                                <img src="{{../metadata.image}}" alt="{{../title}}" />
+                                {{#if (eq metadata.status "idea")}}
+                                <div class="garage-logo-item">
+                                    <a href="{{source.path}}" class="garage-logo-link">
+                                        {{#if metadata.logo}}
+                                        <img src="{{metadata.logo}}" class="garage-logo" alt="{{title}}" />
+                                        {{else}}
+                                            {{#if metadata.image}}
+                                            <img src="{{metadata.image}}" class="garage-logo" alt="{{title}}" />
+                                            {{else}}
+                                            <span class="garage-logo-name">{{title}}</span>
+                                            {{/if}}
+                                        {{/if}}
+                                    </a>
+                                    <div class="garage-logo-tooltip">
+                                        <div class="garage-tooltip-content">
+                                            <h4 class="garage-tooltip-title">{{title}}</h4>
+                                            {{#if metadata.summary}}
+                                            <p class="garage-tooltip-summary">{{metadata.summary}}</p>
+                                            {{/if}}
+                                            {{#if metadata.tags}}
+                                            <div class="garage-tooltip-tags">
+                                                <span class="tag">{{metadata.tags}}</span>
                                             </div>
                                             {{/if}}
-                                            <div class="ideas-card-content">
-                                                <h4 class="ideas-card-title">{{../title}}</h4>
-                                                {{#if ../metadata.summary}}
-                                                <p class="ideas-card-summary">{{../metadata.summary}}</p>
-                                                {{/if}}
-                                                {{#if ../metadata.tags}}
-                                                <div class="ideas-card-tags">
-                                                    {{#each ../metadata.tags}}
-                                                    <span class="tag">{{this}}</span>
-                                                    {{/each}}
-                                                </div>
-                                                {{/if}}
-                                            </div>
-                                        </a>
-                                    </article>
-                                    {{/if}}
-                                {{/with}}
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/if}}
                             {{/each}}
-                            {{/with}}
                         </div>
                     </div>
-                    <div class="ideas-column">
-                        <h3>On the desk</h3>
-                        <div class="ideas-grid">
-                            {{#with datasource}}
+                    
+                    <!-- Active Column -->
+                    <div class="garage-column-home">
+                        <h3 class="garage-column-title">On the desk</h3>
+                        <div class="garage-logos-grid">
                             {{#each entities.garage}}
-                                {{#with metadata.status as |status|}}
-                                    {{#if (eq status "active")}}
-                                    <article class="ideas-card">
-                                        <a href="{{source.path}}" class="ideas-card-link">
-                                            {{#if ../metadata.image}}
-                                            <div class="ideas-card-image">
-                                                <img src="{{../metadata.image}}" alt="{{../title}}" />
+                                {{#if (eq metadata.status "active")}}
+                                <div class="garage-logo-item">
+                                    <a href="{{source.path}}" class="garage-logo-link">
+                                        {{#if metadata.logo}}
+                                        <img src="{{metadata.logo}}" class="garage-logo" alt="{{title}}" />
+                                        {{else}}
+                                            {{#if metadata.image}}
+                                            <img src="{{metadata.image}}" class="garage-logo" alt="{{title}}" />
+                                            {{else}}
+                                            <span class="garage-logo-name">{{title}}</span>
+                                            {{/if}}
+                                        {{/if}}
+                                    </a>
+                                    <div class="garage-logo-tooltip">
+                                        <div class="garage-tooltip-content">
+                                            <h4 class="garage-tooltip-title">{{title}}</h4>
+                                            {{#if metadata.summary}}
+                                            <p class="garage-tooltip-summary">{{metadata.summary}}</p>
+                                            {{/if}}
+                                            {{#if metadata.tags}}
+                                            <div class="garage-tooltip-tags">
+                                                <span class="tag">{{metadata.tags}}</span>
                                             </div>
                                             {{/if}}
-                                            <div class="ideas-card-content">
-                                                <h4 class="ideas-card-title">{{../title}}</h4>
-                                                {{#if ../metadata.summary}}
-                                                <p class="ideas-card-summary">{{../metadata.summary}}</p>
-                                                {{/if}}
-                                            </div>
-                                        </a>
-                                    </article>
-                                    {{/if}}
-                                {{/with}}
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/if}}
                             {{/each}}
-                            {{/with}}
                         </div>
                     </div>
-                    <div class="ideas-column">
-                        <h3>On the wall</h3>
-                        <div class="ideas-grid">
-                            {{#with datasource}}
+                    
+                    <!-- Archived Column -->
+                    <div class="garage-column-home">
+                        <h3 class="garage-column-title">On the wall</h3>
+                        <div class="garage-logos-grid">
                             {{#each entities.garage}}
-                                {{#with metadata.status as |status|}}
-                                    {{#if (eq status "archived")}}
-                                    <article class="ideas-card">
-                                        <a href="{{source.path}}" class="ideas-card-link">
-                                            {{#if ../metadata.image}}
-                                            <div class="ideas-card-image">
-                                                <img src="{{../metadata.image}}" alt="{{../title}}" />
+                                {{#if (eq metadata.status "archived")}}
+                                <div class="garage-logo-item">
+                                    <a href="{{source.path}}" class="garage-logo-link">
+                                        {{#if metadata.logo}}
+                                        <img src="{{metadata.logo}}" class="garage-logo" alt="{{title}}" />
+                                        {{else}}
+                                            {{#if metadata.image}}
+                                            <img src="{{metadata.image}}" class="garage-logo" alt="{{title}}" />
+                                            {{else}}
+                                            <span class="garage-logo-name">{{title}}</span>
+                                            {{/if}}
+                                        {{/if}}
+                                    </a>
+                                    <div class="garage-logo-tooltip">
+                                        <div class="garage-tooltip-content">
+                                            <h4 class="garage-tooltip-title">{{title}}</h4>
+                                            {{#if metadata.summary}}
+                                            <p class="garage-tooltip-summary">{{metadata.summary}}</p>
+                                            {{/if}}
+                                            {{#if metadata.tags}}
+                                            <div class="garage-tooltip-tags">
+                                                <span class="tag">{{metadata.tags}}</span>
                                             </div>
                                             {{/if}}
-                                            <div class="ideas-card-content">
-                                                <h4 class="ideas-card-title">{{../title}}</h4>
-                                                {{#if ../metadata.summary}}
-                                                <p class="ideas-card-summary">{{../metadata.summary}}</p>
-                                                {{/if}}
-                                            </div>
-                                        </a>
-                                    </article>
-                                    {{/if}}
-                                {{/with}}
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/if}}
                             {{/each}}
-                            {{/with}}
                         </div>
                     </div>
+                    {{/with}}
                 </div>
             </section>
         </div>

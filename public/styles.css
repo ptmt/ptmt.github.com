@@ -477,6 +477,65 @@ footer .social-links svg {
     margin-top: var(--spacing-large);
 }
 
+.ideas-grid-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-base);
+    margin-top: var(--spacing-base);
+}
+
+.ideas-grid-inline .ideas-card {
+    min-height: 100px;
+    width: 100px;
+    flex-shrink: 0;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s, z-index 0s;
+}
+
+.ideas-grid-inline .ideas-card:hover {
+    z-index: 10;
+    width: 280px;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.ideas-grid-inline .ideas-card-front {
+    height: 100px;
+    padding: 1rem;
+}
+
+.ideas-grid-inline .ideas-card:hover .ideas-card-front {
+    display: none;
+}
+
+.ideas-grid-inline .ideas-card:hover .ideas-card-back {
+    display: block;
+}
+
+.ideas-grid-inline .project-logo {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.ideas-grid-inline .project-name {
+    font-size: 0.875rem;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.ideas-grid-inline .ideas-card-image {
+    aspect-ratio: 16 / 9;
+}
+
+.ideas-grid-inline .ideas-card-title {
+    font-size: 0.9375rem;
+}
+
+.ideas-grid-inline .ideas-card-summary {
+    font-size: 0.75rem;
+    line-height: 1.4;
+}
+
 .ideas-columns h3 {
     font-size: 1.25rem;
     font-weight: 400;
@@ -507,11 +566,54 @@ footer .social-links svg {
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
     width: 100%;
+    background: var(--bg);
+    min-height: 150px;
 }
 
 .ideas-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ideas-card-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    height: 150px; /* Fixed height for consistency in grid */
+    width: 100%;
+}
+
+.project-logo {
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.project-name {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--fg);
+}
+
+.ideas-card-back {
+    display: none;
+}
+
+.ideas-card:hover .ideas-card-front {
+    display: none;
+}
+
+.ideas-card:hover .ideas-card-back {
+    display: block;
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .ideas-card-link {
@@ -572,6 +674,188 @@ footer .social-links svg {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     border-radius: 3px;
+}
+
+/* Garage Columns on Home */
+.garage-columns-home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(var(--spacing-large) * 1.5);
+    margin-top: var(--spacing-base);
+}
+
+.garage-column-home {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-base);
+}
+
+.garage-column-title {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0 0 var(--spacing-base) 0;
+    color: var(--fg-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: var(--font-sans);
+}
+
+.garage-logos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-base);
+    align-items: flex-start;
+}
+
+.garage-logo-item {
+    position: relative;
+    display: inline-block;
+}
+
+.garage-logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    padding: var(--spacing-base);
+    border-radius: 4px;
+    background: var(--bg);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.garage-logo-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.garage-logo {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.garage-logo-name {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--fg);
+    text-align: center;
+    line-height: 1.2;
+    word-break: break-word;
+}
+
+.garage-logo-tooltip {
+    position: absolute;
+    left: calc(100% + var(--spacing-base));
+    top: 0;
+    width: 280px;
+    max-width: calc(100vw - 2 * var(--spacing-large));
+    background: var(--bg);
+    border: 1px solid var(--fg-light);
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    padding: var(--spacing-base);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease-out, visibility 0.2s ease-out, transform 0.2s ease-out;
+    transform: translateX(-10px);
+    z-index: 100;
+}
+
+.garage-logo-item:hover .garage-logo-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+/* Adjust tooltip position for items in the last column to prevent overflow */
+.garage-column-home:last-child .garage-logo-item .garage-logo-tooltip {
+    left: auto;
+    right: calc(100% + var(--spacing-base));
+    transform: translateX(10px);
+}
+
+.garage-column-home:last-child .garage-logo-item:hover .garage-logo-tooltip {
+    transform: translateX(0);
+}
+
+.garage-tooltip-content {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing-base) * 0.5);
+}
+
+.garage-tooltip-title {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    color: var(--fg);
+    line-height: 1.3;
+    word-wrap: break-word;
+}
+
+.garage-tooltip-summary {
+    color: var(--fg-muted);
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.garage-tooltip-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375em;
+    margin-top: calc(var(--spacing-base) * 0.25);
+}
+
+.garage-tooltip-tags .tag {
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    background: var(--bg-subtle);
+    color: var(--fg-muted);
+    font-size: 0.6875rem;
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 3px;
+}
+
+@media (max-width: 900px) {
+    .garage-columns-home {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .garage-logo-tooltip {
+        left: auto;
+        right: 0;
+        top: calc(100% + var(--spacing-base));
+        width: 100%;
+        max-width: 320px;
+        transform: translateY(-10px);
+    }
+    
+    .garage-logo-item:hover .garage-logo-tooltip {
+        transform: translateY(0);
+    }
+    
+    .garage-logo-item:nth-last-child(-n+3) .garage-logo-tooltip {
+        right: auto;
+        left: 0;
+        transform: translateY(-10px);
+    }
+    
+    .garage-logo-item:nth-last-child(-n+3):hover .garage-logo-tooltip {
+        transform: translateY(0);
+    }
 }
 
 /* Post Page */
@@ -731,12 +1015,12 @@ article time {
 
 #random-quote .quote-source {
     margin-top: 0.5em;
+    font-size: 0.9rem;
     color: var(--fg-light);
 }
 
 #random-quote .quote-source-link {
     color: var(--fg-link);
-    font-size: 0.75rem;
     text-decoration: none;
     transition: opacity 0.2s;
 }
@@ -748,18 +1032,19 @@ article time {
 
 #random-image .image-source {
     color: var(--fg-light);
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
 
 #random-image .image-title {
-    color: var(--fg-link);
-    font-size: 0.75rem;
+    color: var(--fg-light);
+    font-size: 0.9rem;
     margin-right: 0.5em;
 }
 
 #random-image .image-source-link {
     color: var(--fg-link);
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     text-decoration: none;
     transition: opacity 0.2s;
 }
@@ -958,6 +1243,22 @@ article time {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-base);
+}
+
+.idea-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--spacing-large);
+    padding-bottom: var(--spacing-large);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.idea-logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 120px;
+    object-fit: contain;
 }
 
 .idea-metadata {

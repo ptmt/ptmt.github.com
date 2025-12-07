@@ -13,6 +13,11 @@
 </div>
 {{#content "right-column"}}
     <div class="idea-right-column">
+        {{#if page.metadata.image}}
+        <div class="idea-logo">
+            <img src="{{page.metadata.image}}" alt="{{title}} logo" />
+        </div>
+        {{/if}}
         <div class="idea-metadata">
             {{#if page.metadata.status}}
             <div class="metadata-item">

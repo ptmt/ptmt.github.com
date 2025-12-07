@@ -39,10 +39,10 @@ I would consider a blog good, when posts get shared. And people subscribe to RSS
 
 And for that I need consistency. 
 
-<blockquote data-collect="quotes" data-author="Practice makes perfect.">Üben macht den Meister.</blockquote>
+<blockquote data-collect="quotes" data-author="Practice makes perfect">Üben macht den Meister</blockquote>
 
 This is what everyone hear constantly during German classes. Of course the devil is in the detail. You need **Tight Feedback Loop**, **Deliberate Difficulty (Not Comfort)** and **Reflection + Correction**. A similar take is [here on Veritasium](https://www.youtube.com/watch?v=5eW6Eagr9XA&t=21s)
 
 Having said that, my goal for next year is to write as much as I can — but without using AI to shape the narrative or the structure.
 
-And when it’s time to share, to step out of my comfort zone. 
+And when it’s time to share, to step out of my comfort zone and share. 
