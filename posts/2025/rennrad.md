@@ -1,6 +1,6 @@
 ---
 title: Rennradsport
-description: zweite Beitrag auf Deutsch
+description: warum ist das einfach toll
 lang: de
 draft: true
 ---

@@ -4,6 +4,7 @@ template: idea
 status: active
 summary: Desktop macOS client for YouTrack
 image: /media/2025/youtrek_bw.png
+link: https://potomushto.com/youtrek/
 github: https://github.com/ptmt/youtrek
 tags: swift, desktop
 ---

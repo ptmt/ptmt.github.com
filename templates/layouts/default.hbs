@@ -48,7 +48,7 @@
             {{{content}}}
         </main>
         {{#block "right-column"}}{{/block}}
-        {{include "partials/footer.hbs"}}
+        {{#block "footer"}}{{include "partials/footer.hbs"}}{{/block}}
     </div>
     <script defer src="/main.js"></script>
     {{#if scripts}}{{{scripts}}}{{/if}}
