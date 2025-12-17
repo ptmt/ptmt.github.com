@@ -1103,25 +1103,6 @@ article time {
     gap: calc(var(--spacing-xl) * 2);
 }
 
-@media (min-width: 900px) {
-    .garage-layout {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(300px, 1fr));
-        gap: calc(var(--spacing-xl) * 1.5);
-        align-items: start;
-    }
-    
-    .garage-column {
-        min-width: 0;
-        width: 100%;
-    }
-    
-    .garage-grid {
-        grid-template-columns: 1fr !important;
-        gap: var(--spacing-base);
-    }
-}
-
 .garage-column {
     display: flex;
     flex-direction: column;
@@ -1137,8 +1118,9 @@ article time {
 
 .garage-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: var(--spacing-base);
+    align-items: start;
 }
 
 .garage-card {
@@ -1163,24 +1145,29 @@ article time {
 
 .garage-card-image {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    /* Make cards more compact: shorter media area */
+    aspect-ratio: 3 / 1;
     overflow: hidden;
     background: var(--bg-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--spacing-base) * 0.5);
 }
 
 .garage-card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
 }
 
 .garage-card-content {
-    padding: var(--spacing-base);
+    padding: calc(var(--spacing-base) * 0.75);
 }
 
 .garage-card-title {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 400;
     margin: 0 0 0.375em 0;
     color: var(--fg);
@@ -1190,9 +1177,9 @@ article time {
 
 .garage-card-summary {
     color: var(--fg-muted);
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     line-height: 1.5;
-    margin-bottom: var(--spacing-base);
+    margin-bottom: calc(var(--spacing-base) * 0.75);
     word-wrap: break-word;
 }
 
@@ -1200,7 +1187,13 @@ article time {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5em;
-    margin-top: var(--spacing-base);
+    margin-top: calc(var(--spacing-base) * 0.5);
+}
+
+/* Slightly smaller tags inside garage cards (don't affect global .tag elsewhere) */
+.garage-card .tag {
+    padding: 0.2em 0.6em;
+    font-size: 0.6875rem;
 }
 
 .tag {
@@ -1339,7 +1332,7 @@ article time {
     }
 
     .garage-page .garage-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
@@ -1351,7 +1344,8 @@ article time {
     }
 
     .garage-page .garage-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: var(--spacing-large);
     }
 }
 
