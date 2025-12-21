@@ -150,6 +150,31 @@ dataset export
     line-height: 1.6;
 }
 
+.timeline-next-button {
+    margin-top: var(--spacing-large);
+    padding: 0.75em 1.5em;
+    background: var(--bg-subtle);
+    color: var(--fg);
+    border: 1px solid var(--fg-muted);
+    border-radius: 4px;
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.timeline-next-button:hover {
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
+}
+
+.timeline-next-button:active {
+    transform: translateY(1px);
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -213,6 +238,7 @@ document.documentElement.classList.add('js');
                     <span class="caption-text">The initial appeal of Whoop lies in its gamification approach to health metrics, particularly HRV. It creates a dopamine-driven experience similar to social media platforms, making health tracking feel engaging and addictive.</span>
                 </figcaption>
             </figure>
+            <button class="timeline-next-button" data-next="promise">Next →</button>
         </section>
 
         <section id="promise" class="timeline-section">
@@ -223,6 +249,7 @@ document.documentElement.classList.add('js');
                     <span class="caption-text">The promise of wearing it all the time and hope for measuring heart rate 24/7 and access to so much data. The idea of having comprehensive health insights at your fingertips is compelling, but the reality doesn't always match the expectation.</span>
                 </figcaption>
             </figure>
+            <button class="timeline-next-button" data-next="ios-quality">Next →</button>
         </section>
 
         <section id="ios-quality" class="timeline-section">
@@ -233,6 +260,7 @@ document.documentElement.classList.add('js');
                     <span class="caption-text">The iOS app demonstrates high quality in design and user experience. The interface is polished, intuitive, and reflects the attention to detail that makes the platform feel premium.</span>
                 </figcaption>
             </figure>
+            <button class="timeline-next-button" data-next="fashion">Next →</button>
         </section>
 
         <section id="fashion" class="timeline-section">
@@ -243,6 +271,7 @@ document.documentElement.classList.add('js');
                     <span class="caption-text">Fashion attribute: people have common hobbies and attitude. Whoop has become more than a fitness tracker—it's a statement piece that signals belonging to a community of health-conscious individuals who share similar values and lifestyles.</span>
                 </figcaption>
             </figure>
+            <button class="timeline-next-button" data-next="hardware">Next →</button>
         </section>
 
         <section id="hardware" class="timeline-section">
@@ -253,6 +282,7 @@ document.documentElement.classList.add('js');
                     <span class="caption-text">Despite the polished software experience, the hardware quality leaves something to be desired. The device doesn't feel as premium as the app suggests, creating a disconnect between the digital and physical experience.</span>
                 </figcaption>
             </figure>
+            <button class="timeline-next-button" data-next="charging">Next →</button>
         </section>
 
         <section id="charging" class="timeline-section">
@@ -263,6 +293,7 @@ document.documentElement.classList.add('js');
                     <span class="caption-text">Not needing to charge it for weeks is a nice feeling, but surprisingly not that important. While the long battery life is convenient, it doesn't significantly impact the overall value proposition or user satisfaction.</span>
                 </figcaption>
             </figure>
+            <button class="timeline-next-button" data-next="measurements">Next →</button>
         </section>
 
         <section id="measurements" class="timeline-section">
@@ -273,6 +304,7 @@ document.documentElement.classList.add('js');
                     <span class="caption-text">What it could measure, no wonder, no surprises. The metrics provided are predictable and don't reveal unexpected insights about your health or performance, limiting the value of continuous monitoring.</span>
                 </figcaption>
             </figure>
+            <button class="timeline-next-button" data-next="feel">Next →</button>
         </section>
 
         <section id="feel" class="timeline-section">
@@ -283,6 +315,7 @@ document.documentElement.classList.add('js');
                     <span class="caption-text">"Feel on the hand" is not my cup of tea, still can't make a piece out of it. The physical experience of wearing the device doesn't resonate, and despite extended use, it never feels like a natural part of daily life.</span>
                 </figcaption>
             </figure>
+            <button class="timeline-next-button" data-next="sick-support">Next →</button>
         </section>
 
         <section id="sick-support" class="timeline-section">
@@ -293,6 +326,7 @@ document.documentElement.classList.add('js');
                     <span class="caption-text">You're sick — no support at all, no "pause" of any sort, gives you one more thing to worry about. When you're unwell, the device continues tracking and potentially misinterpreting your data, adding stress rather than providing helpful insights or the ability to pause monitoring.</span>
                 </figcaption>
             </figure>
+            <button class="timeline-next-button" data-next="metrics">Next →</button>
         </section>
 
         <section id="metrics" class="timeline-section">
@@ -303,6 +337,7 @@ document.documentElement.classList.add('js');
                     <span class="caption-text">Metrics, too few. Despite the promise of comprehensive data, the actual metrics provided feel limited and don't offer the depth of insight that would justify continuous wear.</span>
                 </figcaption>
             </figure>
+            <button class="timeline-next-button" data-next="hrv">Next →</button>
         </section>
 
         <section id="hrv" class="timeline-section">
@@ -313,6 +348,7 @@ document.documentElement.classList.add('js');
                     <span class="caption-text">HRV is not a holy grail, and even that is undermeasured, a lot of secret sauce that is not transparent. The core metric that Whoop emphasizes doesn't live up to its promise, and the lack of transparency about how measurements are calculated undermines trust.</span>
                 </figcaption>
             </figure>
+            <button class="timeline-next-button" data-next="big-brother">Next →</button>
         </section>
 
         <section id="big-brother" class="timeline-section">
@@ -323,6 +359,7 @@ document.documentElement.classList.add('js');
                     <span class="caption-text">Big Brother concern. The continuous monitoring and data collection raise privacy concerns, making users question who has access to their health data and how it might be used.</span>
                 </figcaption>
             </figure>
+            <button class="timeline-next-button" data-next="closed-garden">Next →</button>
         </section>
 
         <section id="closed-garden" class="timeline-section">
@@ -367,13 +404,22 @@ document.documentElement.classList.add('js');
         section.classList.remove('active');
     });
     
-    // Show first section by default
-    if (sections.length > 0) {
-        sections[0].classList.add('active');
-        const firstId = sections[0].id;
-        const firstMilestone = document.querySelector(`.timeline-milestone[href="#${firstId}"]`);
-        if (firstMilestone) {
-            firstMilestone.classList.add('active');
+    // Show first section by default (or section from hash)
+    if (window.location.hash) {
+        const hashId = window.location.hash.substring(1);
+        const hashSection = document.getElementById(hashId);
+        if (hashSection) {
+            showSection(hashId, false);
+        } else {
+            // Invalid hash, show first section
+            if (sections.length > 0) {
+                showSection(sections[0].id, false);
+            }
+        }
+    } else {
+        // No hash, show first section without updating history
+        if (sections.length > 0) {
+            showSection(sections[0].id, false);
         }
     }
     
@@ -384,7 +430,7 @@ document.documentElement.classList.add('js');
     }
     
     // Show section and activate corresponding milestone
-    function showSection(sectionId) {
+    function showSection(sectionId, updateHistory) {
         removeActive();
         const section = document.getElementById(sectionId);
         const milestone = document.querySelector(`.timeline-milestone[href="#${sectionId}"]`);
@@ -394,6 +440,11 @@ document.documentElement.classList.add('js');
         }
         if (milestone) {
             milestone.classList.add('active');
+        }
+        
+        // Update URL hash if requested
+        if (updateHistory !== false) {
+            history.pushState({ sectionId: sectionId }, '', '#' + sectionId);
         }
     }
     
@@ -406,6 +457,18 @@ document.documentElement.classList.add('js');
         });
     });
     
+    // Handle click events on next buttons
+    const nextButtons = document.querySelectorAll('.timeline-next-button');
+    nextButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const nextId = this.getAttribute('data-next');
+            if (nextId) {
+                showSection(nextId);
+            }
+        });
+    });
+    
     // Handle browser back/forward buttons
     window.addEventListener('popstate', function(e) {
         if (e.state && e.state.sectionId) {
@@ -413,21 +476,5 @@ document.documentElement.classList.add('js');
         }
     });
     
-    // Update URL hash without triggering scroll
-    milestones.forEach(milestone => {
-        milestone.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href').substring(1);
-            history.pushState({ sectionId: targetId }, '', '#' + targetId);
-        });
-    });
-    
-    // Handle initial hash on page load
-    if (window.location.hash) {
-        const hashId = window.location.hash.substring(1);
-        const hashSection = document.getElementById(hashId);
-        if (hashSection) {
-            showSection(hashId);
-        }
-    }
 })();
 </script>

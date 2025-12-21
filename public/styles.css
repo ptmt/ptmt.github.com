@@ -746,7 +746,8 @@ footer .social-links svg {
     color: var(--fg);
     text-align: center;
     line-height: 1.2;
-    word-break: break-word;
+    word-break: normal;
+    overflow-wrap: break-word;
 }
 
 .garage-logo-tooltip {
