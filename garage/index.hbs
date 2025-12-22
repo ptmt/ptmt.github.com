@@ -16,6 +16,7 @@ description: Be careful, a lot of stuff lying around
                 {{#each entities.garage}}
                     {{#with metadata.status as |status|}}
                         {{#if (eq status "idea")}}
+                        {{#unless ../metadata.hidden}}
                         <article class="garage-card">
                             <a href="{{source.path}}" class="garage-card-link">
                                 {{#if ../metadata.image}}
@@ -36,6 +37,7 @@ description: Be careful, a lot of stuff lying around
                                 </div>
                             </a>
                         </article>
+                        {{/unless}}
                         {{/if}}
                     {{/with}}
                 {{/each}}
@@ -51,6 +53,7 @@ description: Be careful, a lot of stuff lying around
                 {{#each entities.garage}}
                     {{#with metadata.status as |status|}}
                         {{#if (eq status "active")}}
+                        {{#unless ../metadata.hidden}}
                         <article class="garage-card">
                             <a href="{{source.path}}" class="garage-card-link">
                                 {{#if ../metadata.image}}
@@ -71,6 +74,7 @@ description: Be careful, a lot of stuff lying around
                                 </div>
                             </a>
                         </article>
+                        {{/unless}}
                         {{/if}}
                     {{/with}}
                 {{/each}}
@@ -86,6 +90,7 @@ description: Be careful, a lot of stuff lying around
                 {{#each entities.garage}}
                     {{#with metadata.status as |status|}}
                         {{#if (eq status "archived")}}
+                        {{#unless ../metadata.hidden}}
                         <article class="garage-card">
                             <a href="{{source.path}}" class="garage-card-link">
                                 {{#if ../metadata.image}}
@@ -106,6 +111,7 @@ description: Be careful, a lot of stuff lying around
                                 </div>
                             </a>
                         </article>
+                        {{/unless}}
                         {{/if}}
                     {{/with}}
                 {{/each}}

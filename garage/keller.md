@@ -2,6 +2,7 @@
 title: Keller.dev
 template: idea 
 status: idea
+hidden: true
 summary: Hosting for small and unambitios pet projects
 ---
 

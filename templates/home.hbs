@@ -25,6 +25,7 @@
                         <div class="garage-logos-grid">
                             {{#each entities.garage}}
                                 {{#if (eq metadata.status "idea")}}
+                                {{#unless metadata.hidden}}
                                 <div class="garage-logo-item">
                                     <a href="{{source.path}}" class="garage-logo-link">
                                         {{#if metadata.logo}}
@@ -51,6 +52,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{/unless}}
                                 {{/if}}
                             {{/each}}
                         </div>
@@ -62,6 +64,7 @@
                         <div class="garage-logos-grid">
                             {{#each entities.garage}}
                                 {{#if (eq metadata.status "active")}}
+                                {{#unless metadata.hidden}}
                                 <div class="garage-logo-item">
                                     <a href="{{source.path}}" class="garage-logo-link">
                                         {{#if metadata.logo}}
@@ -88,6 +91,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{/unless}}
                                 {{/if}}
                             {{/each}}
                         </div>
@@ -99,6 +103,7 @@
                         <div class="garage-logos-grid">
                             {{#each entities.garage}}
                                 {{#if (eq metadata.status "archived")}}
+                                {{#unless metadata.hidden}}
                                 <div class="garage-logo-item">
                                     <a href="{{source.path}}" class="garage-logo-link">
                                         {{#if metadata.logo}}
@@ -125,6 +130,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{/unless}}
                                 {{/if}}
                             {{/each}}
                         </div>
