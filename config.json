@@ -1,7 +1,7 @@
 {
   "siteName": "potomushto",
   "baseUrl": "https://potomushto.com/",
-  "description": "journal of work & experiments",
+  "description": "Personal journal of work and experiments",
   "author": "Dmitrij Loktev",
   "devServer": {
     "port": 3100
