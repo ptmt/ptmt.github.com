@@ -66,7 +66,7 @@ Maybe the GitHub Pages version is gone by then. Maybe your domain points to noth
 
 And then a stranger question appears, because by 2075 software preservation does not feel like a heroic act. It feels optional.
 By then, LLMs have eaten so much of the internet that “the past” is accessible in a new way. Not as exact files, but as a kind of memory. Slightly compressed. Slightly vague. Full of smooth edges where details used to be sharp. But ready to be regenerated almost instantly into something you can touch.
-You ask yourself: if a model can reconstruct the feeling of your old app from commits, screenshots, and a few logs, does it matter whether the binary still runs?
+You ask yourself: if a model can reconstruct the feeling of your old app from commits, screenshots, and a few logs, _does it matter_ whether the binary still runs?
 
 If a model can recompile your game into whatever the current platform is, does it matter that the original engine died?
 If a model can take your old blogposts and lay them out in any style you want, does it matter which generator you used?
@@ -77,9 +77,7 @@ A printed photo does not try to help. It does not summarize your childhood. It d
 
 That is the difference.
 
-A model gives you a version that is usable. A file gives you a version that is true.
-
-Maybe nobody needs it except you. Maybe this museum is private.
+A model gives you a version that is usable. A file gives you a version that is true. Maybe nobody needs it except you. Maybe this museum is private.
 
 Maybe in 2075 it is not about future generations at all. It is about having a few artifacts that do not negotiate with you. A few things that remain stubbornly themselves, even when everything else in the world prefers to be regenerated.
 This lets you meet your earlier self.
