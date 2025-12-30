@@ -136,4 +136,83 @@ fetchJSON('/datasource/quotes.json').then(function(list){
 
 // Ideas are rendered server-side via datasource.collectables.ideas
 
+// Abbreviation tooltip support
+(function(){
+  var tooltip = null;
+  
+  function createTooltip(text){
+    if (tooltip) {
+      tooltip.remove();
+    }
+    tooltip = document.createElement('div');
+    tooltip.className = 'abbr-tooltip';
+    tooltip.textContent = text;
+    document.body.appendChild(tooltip);
+    return tooltip;
+  }
+  
+  function positionTooltip(abbr, tooltipEl){
+    var rect = abbr.getBoundingClientRect();
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    
+    // Position tooltip above the abbr element, centered horizontally
+    var tooltipTop = rect.top + scrollTop - tooltipEl.offsetHeight - 8;
+    var tooltipLeft = rect.left + scrollLeft + (rect.width / 2) - (tooltipEl.offsetWidth / 2);
+    
+    // Adjust if tooltip would go off screen
+    if (tooltipLeft < 8) {
+      tooltipLeft = 8;
+    } else if (tooltipLeft + tooltipEl.offsetWidth > window.innerWidth - 8) {
+      tooltipLeft = window.innerWidth - tooltipEl.offsetWidth - 8;
+    }
+    
+    // If tooltip would go above viewport, position below instead
+    if (tooltipTop < scrollTop + 8) {
+      tooltipTop = rect.bottom + scrollTop + 8;
+    }
+    
+    tooltipEl.style.top = tooltipTop + 'px';
+    tooltipEl.style.left = tooltipLeft + 'px';
+  }
+  
+  function showTooltip(abbr){
+    var title = abbr.getAttribute('title');
+    if (!title) return;
+    
+    var tooltipEl = createTooltip(title);
+    positionTooltip(abbr, tooltipEl);
+    tooltipEl.classList.add('visible');
+  }
+  
+  function hideTooltip(){
+    if (tooltip) {
+      tooltip.classList.remove('visible');
+      setTimeout(function(){
+        if (tooltip && !tooltip.classList.contains('visible')) {
+          tooltip.remove();
+          tooltip = null;
+        }
+      }, 200);
+    }
+  }
+  
+  document.addEventListener('click', function(e){
+    var abbr = e.target.closest('abbr');
+    if (abbr && abbr.getAttribute('title')) {
+      e.preventDefault();
+      if (tooltip && tooltip.classList.contains('visible')) {
+        hideTooltip();
+      } else {
+        showTooltip(abbr);
+      }
+    } else if (tooltip && !tooltip.contains(e.target)) {
+      hideTooltip();
+    }
+  });
+  
+  // Hide tooltip on scroll
+  document.addEventListener('scroll', hideTooltip, true);
+})();
+
 

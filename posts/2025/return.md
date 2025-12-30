@@ -39,7 +39,7 @@ Let's start from a weak definition, not saying anything about intristic quality.
 
 And for that I need consistency. Consistency in writing attempts but keeping the same core, angle, principles. Consistency not in producing _reliable mediocrity_ but in thinking. Publishing is not the opposite of thinking deeply, avoidance is. Keeping posts in drafts for years, never publishing them because they are not good enough is something inevitable. 
 
-<blockquote data-collect="quotes" data-author="Practice makes perfect">Üben macht den Meister</blockquote>
+<blockquote data-author="Practice makes perfect">Üben macht den Meister</blockquote>
 
 This is the most naive but hard truth phrase that everyone hears constantly during German classes. Of course the devil is in the detail. You need **Tight Feedback Loop**, **Deliberate Difficulty (Not Comfort)** and **Reflection + Correction**. A similar take is [here on Veritasium](https://www.youtube.com/watch?v=5eW6Eagr9XA&t=21s).
 
