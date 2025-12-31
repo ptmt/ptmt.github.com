@@ -712,34 +712,13 @@ footer .social-links svg {
 }
 
 /* Garage Columns on Home */
-.garage-columns-home {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: calc(var(--spacing-large) * 1.5);
-    margin-top: var(--spacing-base);
-}
-
-.garage-column-home {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-base);
-}
-
-.garage-column-title {
-    font-size: 0.875rem;
-    font-weight: 400;
-    margin: 0 0 var(--spacing-base) 0;
-    color: var(--fg-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-family: var(--font-sans);
-}
-
 .garage-logos-grid {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-base);
     align-items: flex-start;
+    justify-content: center;
+    margin-top: var(--spacing-base);
 }
 
 .garage-logo-item {
@@ -784,13 +763,6 @@ footer .social-links svg {
 }
 
 
-@media (max-width: 900px) {
-    .garage-columns-home {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
-    }
-    
-}
 
 /* Post Page */
 article {
