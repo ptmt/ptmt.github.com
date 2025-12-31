@@ -715,7 +715,7 @@ footer .social-links svg {
 .garage-logos-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-base);
+    gap: calc(var(--spacing-base) * 0.5);
     align-items: flex-start;
     justify-content: center;
     margin-top: var(--spacing-base);
