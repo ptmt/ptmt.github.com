@@ -1,9 +1,10 @@
 ---
 title: Weirdstats
 template: idea 
-status: idea
+status: active
 summary: Weird cycling stats
 link: https://weirdstats.com
+github: https://github.com/ptmt/weirdstats
 image: /media/2025/weirdstats.png
 ---
 

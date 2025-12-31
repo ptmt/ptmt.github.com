@@ -1056,12 +1056,13 @@ article time {
 
 /* Garage Page */
 .garage-page {
-    max-width: 1800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .garage-header {
     margin-bottom: var(--spacing-xl);
+    text-align: center;
 }
 
 .garage-header h1 {
@@ -1070,30 +1071,12 @@ article time {
     margin-bottom: 0.25em;
 }
 
-.garage-layout {
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--spacing-xl) * 2);
-}
-
-.garage-column {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-base);
-    min-width: 0; /* Prevents grid column from being too narrow */
-}
-
-.section-description {
-    color: var(--fg-light);
-    font-size: 0.8125rem;
-    margin-bottom: var(--spacing-base);
-}
-
 .garage-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: var(--spacing-base);
     align-items: start;
+    justify-items: center;
 }
 
 .garage-card {
@@ -1305,6 +1288,7 @@ article time {
 
     .garage-page .garage-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        justify-items: center;
     }
 }
 
@@ -1318,6 +1302,7 @@ article time {
     .garage-page .garage-grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: var(--spacing-large);
+        justify-items: center;
     }
 }
 
