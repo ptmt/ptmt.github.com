@@ -800,6 +800,27 @@ article time {
     margin-bottom: 1.5em;
 }
 
+.content ul,
+.content ol {
+    padding-left: 1.25em;
+    margin-bottom: 1.5em;
+}
+
+.content li {
+    margin: 0.25em 0;
+}
+
+.content li > ul,
+.content li > ol {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+
+.content blockquote ul,
+.content blockquote ol {
+    padding-left: 1em;
+}
+
 .content h2 {
     font-size: 2rem;
     margin-top: 2em;

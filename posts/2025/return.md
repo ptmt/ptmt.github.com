@@ -60,7 +60,10 @@ __Reflection__ is most confusing to me. Writing and reflecting on your past work
 
 ## New Year Resolution
 
+<aside>That silence is part of the process, not a verdict.</aside>
+
 Having said that, my goal for next year is simple: to write regularly and finish posts. Not to optimize for reach, and not to wait for confidence, but to treat writing as practice.
 
 Most of the time there will be no feedback. No comments, no replies, no visible signal that anything landed. That silence is part of the process, not a verdict.
+
 So when it’s time to share, I will do it anyway. Publish, step out of my comfort zone, and repeat, trusting that consistency in thinking, difficulty, and reflection compounds, even when no one is watching.
