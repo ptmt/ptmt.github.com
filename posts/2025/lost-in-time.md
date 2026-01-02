@@ -73,7 +73,7 @@ If a model can take your old blogposts and lay them out in any style you want, d
 It is tempting to say no. It is tempting to accept the new kind of preservation, the kind that keeps the gist but not the grain.
 But then you look again at the printed photos.
 
-A printed photo does not try to help. It does not summarize your childhood. It does not improve the framing. It does not infer what you meant. It just sits there with all its awkwardness intact. It preserves the exact light that happened to fall on the scene that day.
+A printed photo does not try to help. It does not <abbr title="Which probably will be considered nice in 2050">summarize your childhood</abbr>. It does not improve the framing. It does not infer what you meant. It just sits there with all its awkwardness intact. It preserves the exact light that happened to fall on the scene that day.
 
 That is the difference.
 
