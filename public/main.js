@@ -113,7 +113,7 @@ fetchJSON('/datasource/images.json').then(function(list){
 });
 
 // Random quote (CLS-safe)
-fetchJSON('/datasource/quotes.json').then(function(list){
+fetchJSON('/datasource/quote.json').then(function(list){
   if (!Array.isArray(list) || list.length === 0) return;
   var el = document.querySelector('#random-quote');
   if (!el) return;

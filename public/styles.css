@@ -269,6 +269,22 @@ footer .social-links svg {
     display: block;
 }
 
+footer .social-links a.footer-site-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-family: var(--font-sans);
+    color: var(--fg-light);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+}
+
+footer .social-links a.footer-site-link:hover {
+    color: var(--accent);
+    border-bottom-color: currentColor;
+    opacity: 1;
+}
+
 /* Main Content */
 .main-content {
     max-width: var(--content-width);
