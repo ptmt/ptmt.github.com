@@ -285,6 +285,10 @@ footer .social-links a.footer-site-link:hover {
     opacity: 1;
 }
 
+.home-right-column footer .social-links a.footer-site-link {
+    display: none;
+}
+
 /* Main Content */
 .main-content {
     max-width: var(--content-width);

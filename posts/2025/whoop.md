@@ -1,14 +1,13 @@
 ---
-title: Why Whoop Still Feels Incomplete
-description: A timeline review of expectations, friction, and slow trust
+title: Whoop Still Feels Incomplete After 100 days
+# description: Expectations, friction, and slow trust
 draft: true
 lang: en
 template: timeline
 timeline:
-  - id: dopamine
-    captionTitle: Dopamine, TikTok for HRV
+  - id: Day 0
+    captionTitle: Day 0, TikTok for HRV
     captionText: The initial appeal of Whoop lies in its gamification approach to health metrics, particularly HRV. It creates a dopamine-driven experience similar to social media platforms, making health tracking feel engaging and addictive.
-    img: /placeholder.jpg
     alt: Dopamine and TikTok for HRV
   - id: promise
     captionTitle: The Promise of Continuous Monitoring
@@ -65,7 +64,7 @@ timeline:
     captionText: Big Brother concern. The continuous monitoring and data collection raise privacy concerns, making users question who has access to their health data and how it might be used.
     img: /placeholder.jpg
     alt: Big Brother concern
-  - id: closed-garden
+  - id: Day 100
     captionTitle: Closed Garden
     captionText: Closed garden, all data lives inside the app, no other angle, only small dataset export. Your health data is locked within Whoop's ecosystem, with limited options for exporting or integrating with other tools, reducing the value of the data you're generating.
     img: /placeholder.jpg

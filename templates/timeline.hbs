@@ -199,7 +199,9 @@
         {{#each post.metadata.timeline}}
         <section id="{{id}}" class="timeline-section">
             <figure>
-                <img src="{{#if img}}{{img}}{{else}}/placeholder.jpg{{/if}}" alt="{{#if alt}}{{alt}}{{else}}{{captionTitle}}{{/if}}">
+                {{#if img}}
+                <img src="{{img}}" alt="{{#if alt}}{{alt}}{{else}}{{captionTitle}}{{/if}}">
+                {{/if}}
                 <figcaption>
                     <span class="caption-title">{{captionTitle}}</span>
                     <span class="caption-text">{{captionText}}</span>
@@ -218,6 +220,7 @@
         {{/each}}
     </nav>
 </div>
+
 
 <script>
 (function() {
