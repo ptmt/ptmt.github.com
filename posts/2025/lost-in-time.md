@@ -65,19 +65,21 @@ A hosted site can disappear like a storefront. A repository is more like a box o
 Maybe the GitHub Pages version is gone by then. Maybe your domain points to nothing. But the git history, zipped into some archive you forgot you made, still has all the posts. Markdown is still there. HTML is still there. The shape of your thinking is still there.
 
 And then a stranger question appears, because by 2075 software preservation does not feel like a heroic act. It feels optional.
-By then, LLMs have eaten so much of the internet that “the past” is accessible in a new way. Not as exact files, but as a kind of memory. Slightly compressed. Slightly vague. Full of smooth edges where details used to be sharp. But ready to be regenerated almost instantly into something you can touch.
-You ask yourself: if a model can reconstruct the feeling of your old app from commits, screenshots, and a few logs, _does it matter_ whether the binary still runs?
+By then, much earlier even, AI have eaten so much of the internet that “the past” is accessible in a new way. Not as exact files, but as a kind of memory. Slightly compressed. Slightly vague. Full of smooth edges where details used to be sharp. But ready to be regenerated almost instantly into something you can touch.
 
-If a model can recompile your game into whatever the current platform is, does it matter that the original engine died?
+You ask yourself: if a model can reconstruct the feeling of your old app from _something_ by accessing your memory directly, _does it matter_ whether the binary still runs?
+
+If a model can recompile your game into whatever the current modern emulator is, does it matter that the original engine died?
 If a model can take your old blogposts and lay them out in any style you want, does it matter which generator you used?
 It is tempting to say no. It is tempting to accept the new kind of preservation, the kind that keeps the gist but not the grain.
 But then you look again at the printed photos.
 
-A printed photo does not try to help. It does not <abbr title="Which probably will be considered nice in 2050">summarize your childhood</abbr>. It does not improve the framing. It does not infer what you meant. It just sits there with all its awkwardness intact. It preserves the exact light that happened to fall on the scene that day.
+A printed photo does not try to help. It does not <abbr title="Which probably will be considered nice in 2075">summarize your childhood</abbr>. It does not improve the framing. It does not infer what you meant. It just sits there with all its awkwardness intact. It preserves the exact light that happened to fall on the scene that day.
 
 That is the difference.
 
 A model gives you a version that is usable. A file gives you a version that is true. Maybe nobody needs it except you. Maybe this museum is private.
 
 Maybe in 2075 it is not about future generations at all. It is about having a few artifacts that do not negotiate with you. A few things that remain stubbornly themselves, even when everything else in the world prefers to be regenerated.
+
 This lets you meet your earlier self.

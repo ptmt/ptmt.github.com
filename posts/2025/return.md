@@ -11,7 +11,7 @@ There’s this popular meme. I won’t use  to visualize it, so describe it inst
 > 2. do not care just give me engagement 
 > 3. stand-alone personal blog
 
-I’ve had several phases in my life when I tried to blog. At one point, I created a separate Tumblr just for a seven-day trip and I still love that blog. Going back and rereading it once every five years gives me chills. Maybe I’ll bring it over here someday, when I figure out a proper way to separate things.
+I’ve had several phases in my life when I tried to blog. This exact site alone is probably 4th reincarnation of it. At one point, I created a separate Tumblr just for a seven-day trip and I still love that blog. Going back and rereading it once every five years gives me chills. Maybe I’ll bring it over here someday, when I figure out a proper way to separate things.
 
 Another time, I used a throwaway name on Blogspot or WordPress. Something that cost me nothing and required zero hassle. And it’s still there. Still working. Still openable after all these years. Still close to zero readers and visitors. 
 
@@ -37,11 +37,11 @@ The only thing left to solve is me having insufficient writing skill. And zero r
 
 Let's start from a weak definition, not saying anything about intristic quality. A blog can be good as a private intellectual artifact, and better if it resonates outward. RSS subscribers makes me happy.
 
-And for that I need consistency. Consistency in writing attempts but keeping the same core, angle, principles. Consistency not in producing _reliable mediocrity_ but in thinking. Publishing is not the opposite of thinking deeply, avoidance is. Keeping posts in drafts for years, never publishing them because they are not good enough is something inevitable. 
+And for that I need consistency. Consistency in writing attempts but keeping the same core, angle, principles. Consistency not in producing _reliable mediocrity_ but in thinking. Keeping posts in drafts for years, never publishing them because they are not good enough is something inevitable. 
 
 <blockquote data-author="Practice makes perfect">Üben macht den Meister</blockquote>
 
-This is the most naive but hard truth phrase that everyone hears constantly during German classes. Of course the devil is in the detail. You need **Tight Feedback Loop**, **Deliberate Difficulty (Not Comfort)** and **Reflection + Correction**. A similar take is [here on Veritasium](https://www.youtube.com/watch?v=5eW6Eagr9XA&t=21s).
+This is the most naive but hard truth phrase that everyone hears constantly during any kind of German classes. Another version is that to perfect a new thing, you'll need to do it 10 thousand times. Of course the devil is in the detail. You need **Tight Feedback Loop**, **Deliberate Difficulty (Not Comfort)** and **Reflection + Correction**. A similar take is [here on Veritasium](https://www.youtube.com/watch?v=5eW6Eagr9XA&t=21s).
 
 My plans to try out different things for __feedback loop__:
 

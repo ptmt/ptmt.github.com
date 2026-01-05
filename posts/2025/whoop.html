@@ -3,478 +3,72 @@ title: Why Whoop Still Feels Incomplete
 description: A timeline review of expectations, friction, and slow trust
 draft: true
 lang: en
+template: timeline
+timeline:
+  - id: dopamine
+    captionTitle: Dopamine, TikTok for HRV
+    captionText: The initial appeal of Whoop lies in its gamification approach to health metrics, particularly HRV. It creates a dopamine-driven experience similar to social media platforms, making health tracking feel engaging and addictive.
+    img: /placeholder.jpg
+    alt: Dopamine and TikTok for HRV
+  - id: promise
+    captionTitle: The Promise of Continuous Monitoring
+    captionText: The promise of wearing it all the time and hope for measuring heart rate 24/7 and access to so much data. The idea of having comprehensive health insights at your fingertips is compelling, but the reality doesn't always match the expectation.
+    img: /placeholder.jpg
+    alt: The promise of continuous monitoring
+  - id: ios-quality
+    captionTitle: iOS App Quality
+    captionText: The iOS app demonstrates high quality in design and user experience. The interface is polished, intuitive, and reflects the attention to detail that makes the platform feel premium.
+    img: /placeholder.jpg
+    alt: iOS app quality
+  - id: fashion
+    captionTitle: "Fashion Attribute: Community and Identity"
+    captionText: "Fashion attribute: people have common hobbies and attitude. Whoop has become more than a fitness tracker—it's a statement piece that signals belonging to a community of health-conscious individuals who share similar values and lifestyles."
+    img: /placeholder.jpg
+    alt: Fashion attribute and community
+  - id: hardware
+    captionTitle: But Hardware Quality is Lacking
+    captionText: Despite the polished software experience, the hardware quality leaves something to be desired. The device doesn't feel as premium as the app suggests, creating a disconnect between the digital and physical experience.
+    img: /placeholder.jpg
+    alt: Hardware quality concerns
+  - id: charging
+    captionTitle: Not Needing to Charge for Weeks
+    captionText: Not needing to charge it for weeks is a nice feeling, but surprisingly not that important. While the long battery life is convenient, it doesn't significantly impact the overall value proposition or user satisfaction.
+    img: /placeholder.jpg
+    alt: Battery and charging
+  - id: measurements
+    captionTitle: "What It Could Measure: No Wonder, No Surprises"
+    captionText: What it could measure, no wonder, no surprises. The metrics provided are predictable and don't reveal unexpected insights about your health or performance, limiting the value of continuous monitoring.
+    img: /placeholder.jpg
+    alt: What it could measure
+  - id: feel
+    captionTitle: Feel on the Hand
+    captionText: '"Feel on the hand" is not my cup of tea, still can''t make a piece out of it. The physical experience of wearing the device doesn''t resonate, and despite extended use, it never feels like a natural part of daily life.'
+    img: /placeholder.jpg
+    alt: Feel on the hand
+  - id: sick-support
+    captionTitle: You''re Sick — No Support at All
+    captionText: You''re sick — no support at all, no "pause" of any sort, gives you one more thing to worry about. When you''re unwell, the device continues tracking and potentially misinterpreting your data, adding stress rather than providing helpful insights or the ability to pause monitoring.
+    img: /placeholder.jpg
+    alt: Lack of support when sick
+  - id: metrics
+    captionTitle: Metrics, Too Few
+    captionText: Metrics, too few. Despite the promise of comprehensive data, the actual metrics provided feel limited and don't offer the depth of insight that would justify continuous wear.
+    img: /placeholder.jpg
+    alt: Too few metrics
+  - id: hrv
+    captionTitle: HRV is Not a Holy Grail
+    captionText: HRV is not a holy grail, and even that is undermeasured, a lot of secret sauce that is not transparent. The core metric that Whoop emphasizes doesn't live up to its promise, and the lack of transparency about how measurements are calculated undermines trust.
+    img: /placeholder.jpg
+    alt: HRV limitations
+  - id: big-brother
+    captionTitle: Big Brother Concern
+    captionText: Big Brother concern. The continuous monitoring and data collection raise privacy concerns, making users question who has access to their health data and how it might be used.
+    img: /placeholder.jpg
+    alt: Big Brother concern
+  - id: closed-garden
+    captionTitle: Closed Garden
+    captionText: Closed garden, all data lives inside the app, no other angle, only small dataset export. Your health data is locked within Whoop's ecosystem, with limited options for exporting or integrating with other tools, reducing the value of the data you're generating.
+    img: /placeholder.jpg
+    alt: Closed garden ecosystem
 ---
 
-<pre>
-- dopamine, tik tok for HRV
-
-- the promise of wearing it all the time and hope for measuring hr 24x7 and 
-access to so much data
-- ios app quality
-- fashion attribute: people have common hobbies and attitude. 
-- but hardware quality is lacking
-- not needed for charging it for weeks is nice feeling, but surprisingly not 
-that important
-- what it could measure, no wonder, no suprises
-- "feel on the hand" is not my cup of tea, still can't make a piece out of it
-- you're sick — no support at all, no "pause" of any sort, gives you one more 
-thing to worry about
-- metrics, too few. 
-- HRV is a not a holy grail, and even that is undermeasured, a lot of secret 
-sauce that is not tranparent
-- Big Brother concern
-- closed garden, all data lives inside the app, no other angle, only small 
-dataset export 
-</pre>
-
-<style>
-.timeline-layout {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    gap: var(--spacing-xl);
-    position: relative;
-    max-width: calc(var(--content-width) + 200px + var(--spacing-xl));
-    margin: 0 auto;
-}
-
-.timeline-content {
-    max-width: var(--content-width);
-}
-
-.timeline-nav {
-    position: fixed;
-    right: var(--spacing-large);
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-base);
-    z-index: 100;
-}
-
-.timeline-nav::before {
-    content: '';
-    position: absolute;
-    left: 8px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: var(--fg-muted);
-    opacity: 0.3;
-}
-
-.timeline-milestone {
-    position: relative;
-    padding-left: 24px;
-    color: var(--fg-muted);
-    text-decoration: none;
-    font-size: 0.875rem;
-    font-family: var(--font-sans);
-    transition: color 0.2s;
-    line-height: 1.4;
-}
-
-.timeline-milestone::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.4em;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--fg-muted);
-    opacity: 0.5;
-    transition: all 0.2s;
-}
-
-.timeline-milestone:hover {
-    color: var(--fg);
-}
-
-.timeline-milestone:hover::before {
-    opacity: 1;
-    background: var(--accent);
-    transform: scale(1.2);
-}
-
-.timeline-milestone.active {
-    color: var(--fg);
-    font-weight: 500;
-}
-
-.timeline-milestone.active::before {
-    opacity: 1;
-    background: var(--accent);
-    transform: scale(1.3);
-}
-
-.timeline-content {
-    min-height: 400px;
-    position: relative;
-}
-
-.timeline-section {
-    display: none;
-    animation: fadeIn 0.3s ease-in;
-}
-
-.timeline-section.active {
-    display: block;
-}
-
-.timeline-section figure {
-    margin: var(--spacing-large) 0;
-}
-
-.timeline-section figure img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.timeline-section figcaption {
-    margin-top: var(--spacing-base);
-}
-
-.timeline-section figcaption .caption-title {
-    font-weight: 500;
-    font-size: 1rem;
-    color: var(--fg);
-    margin-bottom: 0.5em;
-    display: block;
-}
-
-.timeline-section figcaption .caption-text {
-    color: var(--fg-muted);
-    font-size: 0.9375rem;
-    line-height: 1.6;
-}
-
-.timeline-next-button {
-    margin-top: var(--spacing-large);
-    padding: 0.75em 1.5em;
-    background: var(--bg-subtle);
-    color: var(--fg);
-    border: 1px solid var(--fg-muted);
-    border-radius: 4px;
-    font-family: var(--font-sans);
-    font-size: 0.9375rem;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.timeline-next-button:hover {
-    background: var(--accent);
-    color: var(--bg);
-    border-color: var(--accent);
-}
-
-.timeline-next-button:active {
-    transform: translateY(1px);
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@media (max-width: 900px) {
-    .timeline-layout {
-        grid-template-columns: 1fr;
-    }
-    
-    .timeline-nav {
-        position: static;
-        transform: none;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-bottom: var(--spacing-large);
-        padding-left: 0;
-    }
-    
-    .timeline-nav::before {
-        display: none;
-    }
-    
-    .timeline-milestone {
-        padding-left: 0;
-        padding: 0.5em 1em;
-        background: var(--bg-subtle);
-        border-radius: 4px;
-    }
-    
-    .timeline-milestone::before {
-        display: none;
-    }
-}
-</style>
-
-<script>
-document.documentElement.classList.remove('no-js');
-document.documentElement.classList.add('js');
-</script>
-<noscript>
-    <style>
-        .timeline-section {
-            display: block !important;
-            margin-bottom: var(--spacing-xl);
-        }
-    </style>
-</noscript>
-
-<div class="timeline-layout">
-    <div class="timeline-content">
-        <section id="dopamine" class="timeline-section">
-            <figure>
-                <img src="/placeholder.jpg" alt="Dopamine and TikTok for HRV">
-                <figcaption>
-                    <span class="caption-title">Dopamine, TikTok for HRV</span>
-                    <span class="caption-text">The initial appeal of Whoop lies in its gamification approach to health metrics, particularly HRV. It creates a dopamine-driven experience similar to social media platforms, making health tracking feel engaging and addictive.</span>
-                </figcaption>
-            </figure>
-            <button class="timeline-next-button" data-next="promise">Next →</button>
-        </section>
-
-        <section id="promise" class="timeline-section">
-            <figure>
-                <img src="/placeholder.jpg" alt="The promise of continuous monitoring">
-                <figcaption>
-                    <span class="caption-title">The Promise of Continuous Monitoring</span>
-                    <span class="caption-text">The promise of wearing it all the time and hope for measuring heart rate 24/7 and access to so much data. The idea of having comprehensive health insights at your fingertips is compelling, but the reality doesn't always match the expectation.</span>
-                </figcaption>
-            </figure>
-            <button class="timeline-next-button" data-next="ios-quality">Next →</button>
-        </section>
-
-        <section id="ios-quality" class="timeline-section">
-            <figure>
-                <img src="/placeholder.jpg" alt="iOS app quality">
-                <figcaption>
-                    <span class="caption-title">iOS App Quality</span>
-                    <span class="caption-text">The iOS app demonstrates high quality in design and user experience. The interface is polished, intuitive, and reflects the attention to detail that makes the platform feel premium.</span>
-                </figcaption>
-            </figure>
-            <button class="timeline-next-button" data-next="fashion">Next →</button>
-        </section>
-
-        <section id="fashion" class="timeline-section">
-            <figure>
-                <img src="/placeholder.jpg" alt="Fashion attribute and community">
-                <figcaption>
-                    <span class="caption-title">Fashion Attribute: Community and Identity</span>
-                    <span class="caption-text">Fashion attribute: people have common hobbies and attitude. Whoop has become more than a fitness tracker—it's a statement piece that signals belonging to a community of health-conscious individuals who share similar values and lifestyles.</span>
-                </figcaption>
-            </figure>
-            <button class="timeline-next-button" data-next="hardware">Next →</button>
-        </section>
-
-        <section id="hardware" class="timeline-section">
-            <figure>
-                <img src="/placeholder.jpg" alt="Hardware quality concerns">
-                <figcaption>
-                    <span class="caption-title">But Hardware Quality is Lacking</span>
-                    <span class="caption-text">Despite the polished software experience, the hardware quality leaves something to be desired. The device doesn't feel as premium as the app suggests, creating a disconnect between the digital and physical experience.</span>
-                </figcaption>
-            </figure>
-            <button class="timeline-next-button" data-next="charging">Next →</button>
-        </section>
-
-        <section id="charging" class="timeline-section">
-            <figure>
-                <img src="/placeholder.jpg" alt="Battery and charging">
-                <figcaption>
-                    <span class="caption-title">Not Needing to Charge for Weeks</span>
-                    <span class="caption-text">Not needing to charge it for weeks is a nice feeling, but surprisingly not that important. While the long battery life is convenient, it doesn't significantly impact the overall value proposition or user satisfaction.</span>
-                </figcaption>
-            </figure>
-            <button class="timeline-next-button" data-next="measurements">Next →</button>
-        </section>
-
-        <section id="measurements" class="timeline-section">
-            <figure>
-                <img src="/placeholder.jpg" alt="What it could measure">
-                <figcaption>
-                    <span class="caption-title">What It Could Measure: No Wonder, No Surprises</span>
-                    <span class="caption-text">What it could measure, no wonder, no surprises. The metrics provided are predictable and don't reveal unexpected insights about your health or performance, limiting the value of continuous monitoring.</span>
-                </figcaption>
-            </figure>
-            <button class="timeline-next-button" data-next="feel">Next →</button>
-        </section>
-
-        <section id="feel" class="timeline-section">
-            <figure>
-                <img src="/placeholder.jpg" alt="Feel on the hand">
-                <figcaption>
-                    <span class="caption-title">Feel on the Hand</span>
-                    <span class="caption-text">"Feel on the hand" is not my cup of tea, still can't make a piece out of it. The physical experience of wearing the device doesn't resonate, and despite extended use, it never feels like a natural part of daily life.</span>
-                </figcaption>
-            </figure>
-            <button class="timeline-next-button" data-next="sick-support">Next →</button>
-        </section>
-
-        <section id="sick-support" class="timeline-section">
-            <figure>
-                <img src="/placeholder.jpg" alt="Lack of support when sick">
-                <figcaption>
-                    <span class="caption-title">You're Sick — No Support at All</span>
-                    <span class="caption-text">You're sick — no support at all, no "pause" of any sort, gives you one more thing to worry about. When you're unwell, the device continues tracking and potentially misinterpreting your data, adding stress rather than providing helpful insights or the ability to pause monitoring.</span>
-                </figcaption>
-            </figure>
-            <button class="timeline-next-button" data-next="metrics">Next →</button>
-        </section>
-
-        <section id="metrics" class="timeline-section">
-            <figure>
-                <img src="/placeholder.jpg" alt="Too few metrics">
-                <figcaption>
-                    <span class="caption-title">Metrics, Too Few</span>
-                    <span class="caption-text">Metrics, too few. Despite the promise of comprehensive data, the actual metrics provided feel limited and don't offer the depth of insight that would justify continuous wear.</span>
-                </figcaption>
-            </figure>
-            <button class="timeline-next-button" data-next="hrv">Next →</button>
-        </section>
-
-        <section id="hrv" class="timeline-section">
-            <figure>
-                <img src="/placeholder.jpg" alt="HRV limitations">
-                <figcaption>
-                    <span class="caption-title">HRV is Not a Holy Grail</span>
-                    <span class="caption-text">HRV is not a holy grail, and even that is undermeasured, a lot of secret sauce that is not transparent. The core metric that Whoop emphasizes doesn't live up to its promise, and the lack of transparency about how measurements are calculated undermines trust.</span>
-                </figcaption>
-            </figure>
-            <button class="timeline-next-button" data-next="big-brother">Next →</button>
-        </section>
-
-        <section id="big-brother" class="timeline-section">
-            <figure>
-                <img src="/placeholder.jpg" alt="Big Brother concern">
-                <figcaption>
-                    <span class="caption-title">Big Brother Concern</span>
-                    <span class="caption-text">Big Brother concern. The continuous monitoring and data collection raise privacy concerns, making users question who has access to their health data and how it might be used.</span>
-                </figcaption>
-            </figure>
-            <button class="timeline-next-button" data-next="closed-garden">Next →</button>
-        </section>
-
-        <section id="closed-garden" class="timeline-section">
-            <figure>
-                <img src="/placeholder.jpg" alt="Closed garden ecosystem">
-                <figcaption>
-                    <span class="caption-title">Closed Garden</span>
-                    <span class="caption-text">Closed garden, all data lives inside the app, no other angle, only small dataset export. Your health data is locked within Whoop's ecosystem, with limited options for exporting or integrating with other tools, reducing the value of the data you're generating.</span>
-                </figcaption>
-            </figure>
-        </section>
-    </div>
-
-    <nav class="timeline-nav">
-        <a href="#dopamine" class="timeline-milestone">Dopamine, TikTok for HRV</a>
-        <a href="#promise" class="timeline-milestone">The Promise</a>
-        <a href="#ios-quality" class="timeline-milestone">iOS App Quality</a>
-        <a href="#fashion" class="timeline-milestone">Fashion Attribute</a>
-        <a href="#hardware" class="timeline-milestone">Hardware Quality</a>
-        <a href="#charging" class="timeline-milestone">Charging</a>
-        <a href="#measurements" class="timeline-milestone">Measurements</a>
-        <a href="#feel" class="timeline-milestone">Feel on the Hand</a>
-        <a href="#sick-support" class="timeline-milestone">Sick Support</a>
-        <a href="#metrics" class="timeline-milestone">Metrics</a>
-        <a href="#hrv" class="timeline-milestone">HRV Limitations</a>
-        <a href="#big-brother" class="timeline-milestone">Big Brother</a>
-        <a href="#closed-garden" class="timeline-milestone">Closed Garden</a>
-    </nav>
-</div>
-
-<script>
-(function() {
-    'use strict';
-    
-    const sections = document.querySelectorAll('.timeline-section');
-    const milestones = document.querySelectorAll('.timeline-milestone');
-    
-    if (sections.length === 0 || milestones.length === 0) return;
-    
-    // Hide all sections initially, then show the first one
-    sections.forEach(section => {
-        section.classList.remove('active');
-    });
-    
-    // Show first section by default (or section from hash)
-    if (window.location.hash) {
-        const hashId = window.location.hash.substring(1);
-        const hashSection = document.getElementById(hashId);
-        if (hashSection) {
-            showSection(hashId, false);
-        } else {
-            // Invalid hash, show first section
-            if (sections.length > 0) {
-                showSection(sections[0].id, false);
-            }
-        }
-    } else {
-        // No hash, show first section without updating history
-        if (sections.length > 0) {
-            showSection(sections[0].id, false);
-        }
-    }
-    
-    // Remove active class from all milestones and sections
-    function removeActive() {
-        milestones.forEach(m => m.classList.remove('active'));
-        sections.forEach(s => s.classList.remove('active'));
-    }
-    
-    // Show section and activate corresponding milestone
-    function showSection(sectionId, updateHistory) {
-        removeActive();
-        const section = document.getElementById(sectionId);
-        const milestone = document.querySelector(`.timeline-milestone[href="#${sectionId}"]`);
-        
-        if (section) {
-            section.classList.add('active');
-        }
-        if (milestone) {
-            milestone.classList.add('active');
-        }
-        
-        // Update URL hash if requested
-        if (updateHistory !== false) {
-            history.pushState({ sectionId: sectionId }, '', '#' + sectionId);
-        }
-    }
-    
-    // Handle click events on timeline milestones
-    milestones.forEach(milestone => {
-        milestone.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            showSection(targetId);
-        });
-    });
-    
-    // Handle click events on next buttons
-    const nextButtons = document.querySelectorAll('.timeline-next-button');
-    nextButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-            const nextId = this.getAttribute('data-next');
-            if (nextId) {
-                showSection(nextId);
-            }
-        });
-    });
-    
-    // Handle browser back/forward buttons
-    window.addEventListener('popstate', function(e) {
-        if (e.state && e.state.sectionId) {
-            showSection(e.state.sectionId);
-        }
-    });
-    
-})();
-</script>
