@@ -7,8 +7,7 @@ template: timeline
 timeline:
   - id: Day 0
     captionTitle: Day 0, TikTok for HRV
-    captionText: The initial appeal of Whoop lies in its gamification approach to health metrics, particularly HRV. It creates a dopamine-driven experience similar to social media platforms, making health tracking feel engaging and addictive.
-    alt: Dopamine and TikTok for HRV
+    captionText: The _initial_ appeal of Whoop lies in its gamification approach to health metrics, particularly HRV. It creates a dopamine-driven experience similar to social media platforms, making health tracking feel engaging and addictive.
   - id: promise
     captionTitle: The Promise of Continuous Monitoring
     captionText: The promise of wearing it all the time and hope for measuring heart rate 24/7 and access to so much data. The idea of having comprehensive health insights at your fingertips is compelling, but the reality doesn't always match the expectation.
