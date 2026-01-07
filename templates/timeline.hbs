@@ -9,7 +9,7 @@
 
     {{#if post.content}}
     <div class="content">
-        {{{md post.content}}}
+        {{{post.content}}}
     </div>
     {{/if}}
 </article>
@@ -204,7 +204,7 @@
                 {{/if}}
                 <figcaption>
                     <span class="caption-title">{{captionTitle}}</span>
-                    <span class="caption-text">{{captionText}}</span>
+                    <span class="caption-text">{{{md captionText}}}</span>
                 </figcaption>
             </figure>
             {{#unless @last}}
