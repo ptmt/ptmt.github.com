@@ -110,28 +110,58 @@
     margin: var(--spacing-large) 0;
 }
 
+.timeline-section figure .caption-header {
+    margin-bottom: var(--spacing-base);
+}
+
+.timeline-section figure .timeline-id-tag {
+    flex-shrink: 0;
+    background: var(--fg);
+    color: var(--bg);
+    font-weight: 500;
+    border: 1px solid var(--fg-light);
+}
+
+.timeline-section figure .figure-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-base);
+}
+
 .timeline-section figure img {
     width: 100%;
+    max-height: 600px;
     height: auto;
     display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
-.timeline-section figcaption {
-    margin-top: var(--spacing-base);
-}
-
-.timeline-section figcaption .caption-title {
-    font-weight: 500;
-    font-size: 1rem;
+.timeline-section figure .caption-text {
+    font-family: var(--font-serif);
     color: var(--fg);
-    margin-bottom: 0.5em;
-    display: block;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    flex: 1;
 }
 
-.timeline-section figcaption .caption-text {
-    color: var(--fg-muted);
-    font-size: 0.9375rem;
-    line-height: 1.6;
+@media (min-width: 900px) {
+    .timeline-section figure .figure-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .timeline-section figure img {
+        width: auto;
+        max-width: 60%;
+        flex: 0 0 auto;
+    }
+
+    .timeline-section figure .caption-text {
+        flex: 1;
+        margin-left: var(--spacing-large);
+    }
 }
 
 .timeline-next-button {
@@ -199,13 +229,17 @@
         {{#each post.metadata.timeline}}
         <section id="{{id}}" class="timeline-section">
             <figure>
-                {{#if img}}
-                <img src="{{img}}" alt="{{#if alt}}{{alt}}{{else}}{{captionTitle}}{{/if}}">
-                {{/if}}
-                <figcaption>
-                    <span class="caption-title">{{captionTitle}}</span>
-                    <span class="caption-text">{{{md captionText}}}</span>
-                </figcaption>
+                <div class="caption-header">
+                    <span class="timeline-id-tag tag">{{id}}</span>
+                </div>
+                <div class="figure-content">
+                    {{#if img}}
+                    <img src="{{img}}" alt="{{#if alt}}{{alt}}{{else}}{{captionTitle}}{{/if}}">
+                    {{/if}}
+                    <figcaption class="caption-text">
+                        {{{md captionText}}}
+                    </figcaption>
+                </div>
             </figure>
             {{#unless @last}}
             <button class="timeline-next-button">Next →</button>
@@ -251,13 +285,35 @@
         }
     }
 
-    // Init
-    const hashId = window.location.hash ? window.location.hash.substring(1) : null;
-    if (hashId && sectionIds.includes(hashId)) {
-        showSection(hashId, false);
-    } else {
-        showSection(sectionIds[0], false);
+    // Prevent default scroll behavior when page loads with hash
+    if (window.location.hash) {
+        window.scrollTo(0, 0);
     }
+
+    // Init
+    function initSection() {
+        const hashId = window.location.hash ? decodeURIComponent(window.location.hash.substring(1)) : null;
+        if (hashId && sectionIds.includes(hashId)) {
+            showSection(hashId, false);
+            // Scroll to top of the section after showing it
+            setTimeout(() => {
+                const section = document.getElementById(hashId);
+                if (section) {
+                    const rect = section.getBoundingClientRect();
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    window.scrollTo({
+                        top: scrollTop + rect.top - 20,
+                        behavior: 'instant'
+                    });
+                }
+            }, 50);
+        } else {
+            showSection(sectionIds[0], false);
+        }
+    }
+
+    // Handle initial load - run immediately to prevent browser scroll
+    initSection();
 
     milestones.forEach(milestone => {
         milestone.addEventListener('click', function(e) {
@@ -283,6 +339,20 @@
     window.addEventListener('popstate', function(e) {
         if (e.state && e.state.sectionId) {
             showSection(e.state.sectionId, false);
+        } else {
+            // Handle browser back/forward with hash
+            const hashId = window.location.hash ? decodeURIComponent(window.location.hash.substring(1)) : null;
+            if (hashId && sectionIds.includes(hashId)) {
+                showSection(hashId, false);
+            }
+        }
+    });
+
+    // Also handle hashchange events (e.g., when user manually changes URL)
+    window.addEventListener('hashchange', function() {
+        const hashId = window.location.hash ? decodeURIComponent(window.location.hash.substring(1)) : null;
+        if (hashId && sectionIds.includes(hashId)) {
+            showSection(hashId, false);
         }
     });
 })();
