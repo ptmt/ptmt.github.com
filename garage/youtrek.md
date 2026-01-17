@@ -1,7 +1,7 @@
 ---
 title: YouTrek
 template: idea 
-status: active
+status: idea
 summary: Desktop macOS client for YouTrack
 image: /media/2025/youtrek_bw.png
 link: https://potomushto.com/youtrek/
