@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{#if title}}{{title}}{{else}}{{siteName}}{{/if}}{{#if title}} - {{#if post}}blog post{{else}}{{#if page.metadata.status}}project{{else}}{{#if (eq path "/about")}}about page{{else}}{{#if (eq path "/posts")}}blog{{else}}{{#if (eq path "/garage")}}garage{{else}}{{#if (eq path "/")}}home{{else}}page{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}} - journal of work and experiments{{else}}{{/if}}</title>
+    <title>{{#if title}}{{title}} - {{#if post}}blog post{{else}}{{#if page.metadata.status}}project{{else}}{{#if (eq path "/about")}}about page{{else}}{{#if (eq path "/posts")}}blog{{else}}{{#if (eq path "/garage")}}garage{{else}}{{#if (eq path "/")}}home{{else}}page{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}} - journal of work and experiments{{else}}{{siteName}} - {{description}}{{/if}}</title>
     <meta name="description" content="{{#if description}}{{description}}{{else}}{{siteName}}{{/if}}">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{baseUrl}}{{path}}">
-    <meta property="og:title" content="{{#if title}}{{title}}{{else}}{{siteName}}{{/if}}{{#if title}} - {{#if post}}blog post{{else}}{{#if page.metadata.status}}project{{else}}{{#if (eq path "/about")}}about page{{else}}{{#if (eq path "/posts")}}blog{{else}}{{#if (eq path "/garage")}}garage{{else}}{{#if (eq path "/")}}home{{else}}page{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}} - journal of work and experiments{{else}}{{/if}}">
+    <meta property="og:title" content="{{#if title}}{{title}} - {{#if post}}blog post{{else}}{{#if page.metadata.status}}project{{else}}{{#if (eq path "/about")}}about page{{else}}{{#if (eq path "/posts")}}blog{{else}}{{#if (eq path "/garage")}}garage{{else}}{{#if (eq path "/")}}home{{else}}page{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}} - journal of work and experiments{{else}}{{siteName}} - {{description}}{{/if}}">
     <meta property="og:description" content="{{#if description}}{{description}}{{else}}{{siteName}}{{/if}}">
     <meta property="og:image" content="{{#if image}}{{baseUrl}}{{image}}{{else}}{{baseUrl}}apple-icon-180x180.png{{/if}}">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{baseUrl}}{{path}}">
-    <meta name="twitter:title" content="{{#if title}}{{title}}{{else}}{{siteName}}{{/if}}{{#if title}} - {{#if post}}blog post{{else}}{{#if page.metadata.status}}project{{else}}{{#if (eq path "/about")}}about page{{else}}{{#if (eq path "/posts")}}blog{{else}}{{#if (eq path "/garage")}}garage{{else}}{{#if (eq path "/")}}home{{else}}page{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}} - journal of work and experiments{{else}}{{/if}}">
+    <meta name="twitter:title" content="{{#if title}}{{title}} - {{#if post}}blog post{{else}}{{#if page.metadata.status}}project{{else}}{{#if (eq path "/about")}}about page{{else}}{{#if (eq path "/posts")}}blog{{else}}{{#if (eq path "/garage")}}garage{{else}}{{#if (eq path "/")}}home{{else}}page{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}} - journal of work and experiments{{else}}{{siteName}} - {{description}}{{/if}}">
     <meta name="twitter:description" content="{{#if description}}{{description}}{{else}}{{siteName}}{{/if}}">
     <meta name="twitter:image" content="{{#if image}}{{baseUrl}}{{image}}{{else}}{{baseUrl}}apple-icon-180x180.png{{/if}}">
     <link rel="stylesheet" href="/styles.css">
