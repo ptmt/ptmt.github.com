@@ -1,6 +1,5 @@
 ---
 title: What is left for humans
-description: Expectations, friction, and slow trust
 draft: true
 ---
 
