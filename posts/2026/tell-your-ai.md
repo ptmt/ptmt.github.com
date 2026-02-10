@@ -32,7 +32,7 @@ It's simple. Let's add a request that some LLM on the backend will transform int
 
 Okay, don't want to embed any AI, but can't ignore it. Just a copyable json schema and an input - past to UI and ask for writing. Last model, no complicated copyright. 
 
-![/media/2026/weirdstats_ask_ui.png](weirdstats ask ui)
+!(weirdstats ask ui)[/media/2026/weirdstats_ask_ui.png]
 
 This is where I ended up. But it requires copy pasting, and still ocassionaly break. Not a big of a problem, and it's future proof in a way that agents can use it too.
 
