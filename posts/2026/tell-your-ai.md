@@ -7,38 +7,38 @@ lang: en
 
 ## Problem
 
-I have [a service](/garage/weirdstats) for additional stats for activities from Strava. It's for personal use. Mostly. Among other features I want to be able to mute repetitive activities from other users' feed. For that I need _rules_ 
+I have [a garage service](/garage/weirdstats) for calculating additional stats for activities from Strava. And also mute repetitive activities from other users' feed. For that I need _rules_. 
 
 ## Constructor UI
 
 A rule can consist of different stats, like distance. All of them can be combined. I need a special UI. First version looked this:
 ![old ui for rules](/media/2026/weirdstats_rules.png)
 
-But I quickly understood I need even more complicated engine. Do not want to implement, do not want to use.
+But I quickly understood I need even more complicated engine. Do not want to implement it, will not want to use it.
 
 ## Text-editor with parser, validator and auto-complete
 
 Why not instead adding a single huge text area, give some example for pseudo-language that can express condition, add validation and autocomplete? 
 
-A code editor. Something from the work. This I can deal with. Could be _fun_.
+A code editor. Something I have experience with. This I can deal with. Could be _fun_.
 
 ## Natural Language input
 
-Ok, now in 2026 writing _formal_ expressions is considered old-fashion and waste of keystrokes. People probably never will write regexes, Excel formulas and home brew DSL rules again. Not at the site like this.
+In 2026 writing _formal_ expressions is considered old-fashion and waste of keystrokes. People probably never will write regexes, Excel formulas and home brew DSL rules again. Not at the site like this.
 
-It's simple. Let's add a request that some LLM on the backend will transform into a rule? But I don't want to deal with LLM keys, and local ones that I'm able to run on my [tiny server](/garage/tinyserve) are bad. And what will be with that LLM in two years?
+It's simple. Let's add a request that some LLM on the backend will transform into a rule? But I don't want to deal with LLM keys, and local ones that I'm able to run on my [tiny server](/garage/tinyserve) are bad. And what will happen with that LLM in two years?
 
 ## Ask Your AI
 
-Okay, don't want to embed any AI, but can't ignore it. Just a copyable json schema and an input - past to UI and ask for writing. Last model, no complicated copyright. 
+Okay, don't keen on embedding LLMs, but can't ignore it. Instead: just a copyable json schema and an input - past to UI and ask for writing. Last model, no complicated copyright. 
 
 ![weirdstats ask ui](/media/2026/weirdstats_ask_ui.png)
 
-This is where I ended up. But it requires copy pasting, and still ocassionaly break. Not a big of a problem, and it's future proof in a way that agents can use it too.
+This is what I ended up with. Requires copy pasting, and still ocassionaly break. Not a problem, and it's future proof in a way that agents can use it too.
 
 ## Browser or OS-level standard in the future
 
-Temporary, in the old era, if LLM progress were frozen, we would have eventually something like this:
+If LLM progress were frozen, we would have eventually something like this:
 
 ```
 <input type="ai" validation="schema.json">
@@ -46,6 +46,6 @@ Temporary, in the old era, if LLM progress were frozen, we would have eventually
 
 A special input, that browser recognizes and use AI that is tailored to you, making it very simple to create a rule.
 
-But really, no need. All browsers soon if not already will be able to do it anyway, without any _hints_ from developers and just help with any kind of input everywhere.
+But really, no need to bother. All browsers soon if not already will be able to do it anyway, without any _hints_ from developers and just help with any kind of input everywhere.
 
-And even then, only useful until the Singlarity.
+And even then, only useful we have traditional interfaces. If OpenClaw shown us anything, we may rethink the whole idea and people will just interact with the single entity. It'll solve prloblems by implementing Weirdstats under the hood, but you'll never even know about it.
