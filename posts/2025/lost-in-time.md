@@ -4,8 +4,6 @@ description: What do you feel when you look at your oldest family photos?
 published: 2025-12-15T10:00
 lang: en
 ---
-
-
 ## The Year Is 2050
 
 You are not “checking your old projects” the way you used to check old photos. It is more like opening a drawer of odd objects you once built by hand: a tiny wooden box, a key you no longer own the lock for, a perfectly shaped stone you picked up because it felt important at the time.
@@ -32,12 +30,10 @@ Some run in a compatibility bubble and feel right in a weird way, like hearing a
 
 You remember, suddenly, that games are not just software. They are performance. Timing. Latency. Input. A particular kind of friction. And time changes friction.
 
-Now the hosting question returns, because in 2050 the internet is not a place you “put things.” It is a meter.
-
 You scroll through a neat list of services that were once cheap because each one felt like nothing: a small site here, a webhook there, a little worker, a domain redirect, an analytics script, some uptime monitor, a storage bucket with “just a couple files.”
 Each one was fine. Together they are a constellation with a monthly price tag that looks more like a utility bill than a hobby.
 
-You realize something slightly uncomfortable: the cost was not the cloud. The cost was counting. Every project that stays alive demands a little ongoing payment, like a tiny aquarium in someone else’s house. 
+Every project that stays alive demands a little ongoing payment, like a tiny aquarium in someone else’s house. 
 
 So you consider the other route: the home machine.
 
