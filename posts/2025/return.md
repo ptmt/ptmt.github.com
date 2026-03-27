@@ -10,15 +10,15 @@ There’s this popular meme. I won’t use  to visualize it, so describe it inst
 > 2. do not care just give me engagement 
 > 3. stand-alone personal blog
 
-I’ve had several phases in my life when I tried blogging. This exact site alone is probably 4th reincarnation of it. At one point, I created a separate Tumblr just for a seven-day trip and I still love that blog. Going back and rereading it once every five years gives me chills. Maybe I’ll bring it over here someday, when I figure out a proper way to separate things.
+I’ve had several phases in my life when I tried blogging. potomushto.com is probably 4th reincarnation of it. At one point, I created a separate Tumblr just for a seven-day trip and I still love that blog. Going back and rereading it once every five years gives me chills. Maybe I’ll bring it over here someday, when I figure out a proper way to separate things.
 
 Another time, I used a throwaway name on Blogspot or WordPress. Something that cost me nothing and required zero hassle. And it’s still there. Still working. Still openable after all these years. Still close to zero readers and visitors. 
 
-Twenty years ago, I loved writing so much that I did it almost every day. After a while, I decided that what I was producing didn’t look serious enough, and that I needed a more professional blog. Then I decided I wanted to write essays. Exquisitely bad pieces. I guess I just loved the act of typing on a keyboard. They were so bad that I came to an inevitable conclusion — not just to stop, but to shut the whole site down.
+Twenty years ago, I loved writing so much that I did it almost every day. After a while, I decided that what I was producing didn’t look serious enough, and that I needed a more professional blog. Then I decided I wanted to write essays. Exquisitely bad pieces. I guess I just loved the act of typing on a keyboard. They were so bad that I came to an inevitable conclusion: not just to stop, but to shut the whole site down.
 
-And then, ten years later, it became obvious that social media gave you a much bigger boost. It felt great riding that wave: you could easily discover new, interesting people, and they could find you just as easily. 
+And then, ten years later, at 2015 it became obvious that social media gave you a much bigger boost. It felt great riding that wave: you could easily discover new, interesting people, and they could find you just as easily. 
 
-That went on until I started my new full-time job. I had less and less time to write — partly because I was already writing about technology and open source for work, and partly because my energy for “extra” writing was slowly running out. I felt no need, and that was a mistake.
+That went on until I started my new full-time job. I had less and less time to write. Partly because I was already writing about technology and open source for work, and partly because my energy for “extra” writing was slowly running out. I felt no need, and that was a mistake.
 
 Compare these two images:
 
@@ -30,7 +30,7 @@ Now, in 2025, when most of my social network circles have dissolved and scattere
 
 And technologically, all pieces have always been right here. It turns out RSS is great. Owning your content feels right.
 
-The only thing left to solve is me having insufficient writing skill. And zero readers. 
+The only thing left to solve is me having insufficient writing skill. 
 
 ## What makes blog good
 
@@ -47,7 +47,7 @@ My plans to try out different things for __feedback loop__:
 - Reading the draft out loud and fixing awkward English
 - Rewriting the same paragraph 3 times in one sitting
 - A trusted peer review 
-- A review from AI
+- A review from AI but not a rewrite
 
 So it's muscle memory for writing. And I love to train muscle memory, which usually gained by drills.
 
@@ -59,10 +59,10 @@ __Reflection__ is most confusing to me. Writing and reflecting on your past work
 
 ## New Year Resolution
 
-<aside>That silence is part of the process, not a verdict.</aside>
+<aside>That silence is part of the process.</aside>
 
-Having said that, my goal for next year is simple: to write regularly and finish posts. Not to optimize for reach, and not to wait for confidence, but to treat writing as practice.
+Having said that, my goal for next year is simple: to write regularly and finish posts. Not to optimize for reach, and not to wait for confidence, but to treat writing as practice. Let's say __12__ posts a year. 
 
-Most of the time there will be no feedback. No comments, no replies, no visible signal that anything landed. That silence is part of the process, not a verdict.
+Most of the time there will be no feedback. No comments, no replies, no visible signal that anything landed. That silence is part of the process.
 
-So when it’s time to share, I will do it anyway. Publish, step out of my comfort zone, and repeat, trusting that consistency in thinking, difficulty, and reflection compounds, even when no one is watching.
+So when it’s time to share, I will do it anyway. Publish, step out of my comfort zone, and repeat, trusting that consistency in thinking, difficulty, and reflection compounds, even when no one is watching. _How naive._
