@@ -4,14 +4,13 @@ description: I waited for 10 years to resurrect this blog
 published: 2025-10-15T10:00
 lang: en
 ---
-
 There’s this popular meme. I won’t use  to visualize it, so describe it instead. As time goes by, you sometimes realize that the things you cared about in the beginning turn out to be true again. Some people say life moves in a spiral.
 
 > 1. stand-alone personal blog
 > 2. do not care just give me engagement 
 > 3. stand-alone personal blog
 
-I’ve had several phases in my life when I tried to blog. This exact site alone is probably 4th reincarnation of it. At one point, I created a separate Tumblr just for a seven-day trip and I still love that blog. Going back and rereading it once every five years gives me chills. Maybe I’ll bring it over here someday, when I figure out a proper way to separate things.
+I’ve had several phases in my life when I tried blogging. This exact site alone is probably 4th reincarnation of it. At one point, I created a separate Tumblr just for a seven-day trip and I still love that blog. Going back and rereading it once every five years gives me chills. Maybe I’ll bring it over here someday, when I figure out a proper way to separate things.
 
 Another time, I used a throwaway name on Blogspot or WordPress. Something that cost me nothing and required zero hassle. And it’s still there. Still working. Still openable after all these years. Still close to zero readers and visitors. 
 
