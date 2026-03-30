@@ -1,6 +1,6 @@
 ---
 title: Whoop Is Just A Dream
-description: Still Feels Incomplete After 100 days
+description: Still Feels Incomplete After 200 days
 draft: true
 lang: en
 template: timeline
@@ -53,8 +53,12 @@ timeline:
     captionText: Closed garden, all data lives inside the app, no other angle, only small dataset export. Your health data is locked within Whoop's ecosystem, with limited options for exporting or integrating with other tools, reducing the value of the data you're generating.
     img: /placeholder.jpg
     alt: Closed garden ecosystem
-  - id: Day 100, Closed Garden
+  - id: Day 150, Closed Garden
     captionText: Closed garden, all data lives inside the app, no other angle, only small dataset export. Your health data is locked within Whoop's ecosystem, with limited options for exporting or integrating with other tools, reducing the value of the data you're generating.
     img: /placeholder.jpg
     alt: Closed garden ecosystem
+  - id: Day 180, Better habits
+    captionText: Better habbits.
+    img: /placeholder.jpg
+    alt: better habits
 ---
