@@ -18,7 +18,7 @@ Twenty years ago, I loved writing so much that I did it almost every day. After 
 
 And then, ten years later, at 2015 it became obvious that social media gave you a much bigger boost. It felt great riding that wave: you could easily discover new, interesting people, and they could find you just as easily. 
 
-That went on until I started my new full-time job. I had less and less time to write. Partly because I was already writing about technology and open source for work, and partly because my energy for “extra” writing was slowly running out. I felt no need, and that was a mistake.
+That went on until I started my new full-time job. I had less and less time to write. Ny energy for “extra” writing was slowly running out. I felt no need, and that was a mistake.
 
 Compare these two images:
 
