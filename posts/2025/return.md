@@ -10,7 +10,7 @@ There’s this popular meme. I won’t use  to visualize it, so describe it inst
 > 2. do not care just give me engagement 
 > 3. stand-alone personal blog
 
-I’ve had several phases in my life when I tried blogging. potomushto.com is probably 4th reincarnation of it. At one point, I created a separate Tumblr just for a seven-day trip and I still love that blog. Going back and rereading it once every five years gives me chills. Maybe I’ll bring it over here someday, when I figure out a proper way to separate things.
+I’ve had several phases in my life when I tried blogging. [potomushto.com](https://potomushto.com) is probably 4th reincarnation of it. At one point, I created a separate Tumblr just for a seven-day trip and I still love that blog. Going back and rereading it once every five years gives me chills. Maybe I’ll bring it over here someday, when I figure out a proper way to separate things.
 
 Another time, I used a throwaway name on Blogspot or WordPress. Something that cost me nothing and required zero hassle. And it’s still there. Still working. Still openable after all these years. Still close to zero readers and visitors. 
 
@@ -65,4 +65,4 @@ Having said that, my goal for next year is simple: to write regularly and finish
 
 Most of the time there will be no feedback. No comments, no replies, no visible signal that anything landed. That silence is part of the process.
 
-So when it’s time to share, I will do it anyway. Publish, step out of my comfort zone, and repeat, trusting that consistency in thinking, difficulty, and reflection compounds, even when no one is watching. _How naive._
+So when it’s time to share, I will do it anyway. Publish, step out of my comfort zone, and repeat, trusting that consistency in thinking, difficulty, and reflection compounds, even when no one is watching. _How naive._(
