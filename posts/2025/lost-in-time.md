@@ -28,7 +28,7 @@ And then the games.
 
 Some run in a compatibility bubble and feel right in a weird way, like hearing an old song on new speakers. Others load but the magic is not there: the physics are off, the controller mapping is wrong, the timing feels like someone retold a joke with different pauses.
 
-You remember, suddenly, that games are not just software. They are performance. Timing. Latency. Input. A particular kind of friction. And time changes friction.
+You remember, suddenly, that games are performance more than just software. Timing. Latency. Input. A particular kind of friction. And time changes friction.
 
 You scroll through a neat list of services that were once cheap because each one felt like nothing: a small site here, a webhook there, a little worker, a domain redirect, an analytics script, some uptime monitor, a storage bucket with “just a couple files.”
 Each one was fine. Together they are a constellation with a monthly price tag that looks more like a utility bill than a hobby.
