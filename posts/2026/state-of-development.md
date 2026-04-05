@@ -1,6 +1,6 @@
 ---
-title: State of development in early 2026
-description: My view
+title: State of development
+description: What is happening with development in early 2026
 published: 2026-03-28T12:04:00
 draft: true
 ---
@@ -12,4 +12,4 @@ In pursiut of autonomous
 We still have hope. 
 We still have work. 
 
-- Native macOS apps is incredibly frustrating
+- Native macOS apps is incredibly frustratingrly
