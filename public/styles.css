@@ -825,7 +825,7 @@ article time {
 }
 
 .content {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 1.8;
 }
 
@@ -1538,7 +1538,7 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
     }
 
     .content {
-        font-size: 1.125rem;
+        font-size: 1rem;
     }
 
     .content aside {
