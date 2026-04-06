@@ -4,10 +4,9 @@ description: What if <input type="ai">
 published: 2026-02-10T10:00
 lang: en
 ---
-
 ## Problem
 
-I have [a garage service](/garage/weirdstats) for calculating additional stats for activities from Strava. And also mute repetitive activities from other users' feed. For that I need _rules_. 
+I have [a small web-site in the garage](/garage/weirdstats) for calculating additional stats for activities from Strava. Mostly for cycling. And also mute repetitive activities from other users' feed. For that muting I need _rules_. 
 
 ## Constructor UI
 
@@ -48,4 +47,4 @@ A special input, that browser recognizes and use AI that is tailored to you, mak
 
 But really, no need to bother. All browsers soon if not already will be able to do it anyway, without any _hints_ from developers and just help with any kind of input everywhere.
 
-And even then, only useful we have traditional interfaces. If OpenClaw shown us anything, we may rethink the whole idea and people will just interact with the single entity. It'll solve prloblems by implementing Weirdstats under the hood, but you'll never even know about it.
+And even then, only useful we have traditional interfaces. If OpenClaw shown us anything, we may rethink the whole idea and people will just interact with the single entity. It'll solve prloblems by implementing Weirdstats under the hood, but you'll never even know about it. 
