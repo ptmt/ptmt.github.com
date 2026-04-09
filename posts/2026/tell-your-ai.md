@@ -6,7 +6,7 @@ lang: en
 ---
 ## Problem
 
-I have [a small web-site in the garage](/garage/weirdstats) for calculating additional stats for activities from Strava. Mostly for cycling. And also mute repetitive activities from other users' feed. For that muting I need _rules_. 
+I have [a small web-site in the garage](/garage/weirdstats) that calculates additional stats for Strava activities. Mostly for cycling. And also mute repetitive activities from other users' feed. For that muting I need _rules_. 
 
 ## Constructor UI
 
