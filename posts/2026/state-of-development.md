@@ -4,7 +4,11 @@ description: What is happening with development in early 2026
 published: 2026-03-28T12:04:00
 draft: true
 ---
-March 2026. 
+### Anxiety of being replaced
+
+### Competition
+
+Big companies that can afford to train and host frontier models
 
 ### Frontier models: it's still Anthropic and Open AI
 
@@ -23,6 +27,10 @@ Claude Code shipping tens of features each month. You can get certification for 
 Cursor is not that fancy anymore, despite still being very impressive technically and product-wise. I just find it very little reason to launch. As IDE, IntelliJ is still better, and then I just use advanced terminal setup (occasionally trying new things, like Air). 
 
 ### In pursiut of autonomous
+
+### Open source should change
+
+### Hangover after fake productivity
 
 ### We still have hope. 
 

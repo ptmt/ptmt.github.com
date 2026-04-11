@@ -1,6 +1,6 @@
 ---
-title: Whoop Is Just A Dream
-description: Still Feels Incomplete After 200 days
+title: 200 Days of Whoop
+description: Still Feels Incomplete, but now I know what I want
 draft: true
 lang: en
 template: timeline
@@ -30,7 +30,7 @@ timeline:
     img: /whoop-lifespan.jpg
     alt: Whoop Lifespan
   - id: Day 60, Feel
-    captionText: In order to heart rate sensor to work it should slightly push your skin. I don't like that, barely tolerate. Despite extended use, it never feels like a natural part of daily life. Too bulky for what it is.
+    captionText: In order to heart rate sensor to work it should slightly push your skin. I don't like that, can barely tolerate. Despite extended use, it never feels like a natural part of daily life. Too bulky for what it is.
     img: /placeholder.jpg
     alt: Feel on the hand
   - id: Day 63, Sickness
@@ -53,12 +53,16 @@ timeline:
     captionText: Closed garden, all data lives inside the app, no other angle, only small dataset export. Your health data is locked within Whoop's ecosystem, with limited options for exporting or integrating with other tools, reducing the value of the data you're generating.
     img: /placeholder.jpg
     alt: Closed garden ecosystem
-  - id: Day 150, Closed Garden
-    captionText: Closed garden, all data lives inside the app, no other angle, only small dataset export. Your health data is locked within Whoop's ecosystem, with limited options for exporting or integrating with other tools, reducing the value of the data you're generating.
+  - id: Day 150, Am I really better now
+    captionText: so I keep going do a run now in pursiut of better VO2Max or lower heart rate
     img: /placeholder.jpg
-    alt: Closed garden ecosystem
-  - id: Day 180, Better habits
-    captionText: Better habbits.
+    alt: better
+  - id: Day 180, Two Device Problem
+    captionText: In most cardio activities you still would want second device. In Cycling, my main sport, I have bike computer with powermeter and HRV strap, so wearing second device is not a problem. In running, it's a bit more wierd, and in swimming it's just ridiculous. So my current solution is bicep strap, to at least pretend I wear only one watch. 
     img: /placeholder.jpg
-    alt: better habits
+    alt: bicep strap
+  - id: Day 200, 
+    captionText: Whoop showed me a new frontier and I'd love to keep using something like it after subscription expires. But that won't be Whoop. What I want: hackable device, either much less noticable, like a ring or ribber band or just combines a watch and all day long hrv measurement. 
+    img: /placeholder.jpg
+    alt: bicep strap
 ---
