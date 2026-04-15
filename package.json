@@ -1,0 +1,11 @@
+{
+  "name": "ptmt.github.com",
+  "private": true,
+  "scripts": {
+    "audit:css": "node scripts/check-css-usage.mjs",
+    "lint:css": "stylelint \"public/styles.css\""
+  },
+  "devDependencies": {
+    "stylelint": "^17.8.0"
+  }
+}
