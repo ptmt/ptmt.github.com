@@ -1,7 +1,7 @@
 :root {
     --font-mono: ui-monospace, 'SFMono-Regular', 'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
-    --font-sans: var(--font-mono);
-    --font-serif: var(--font-mono);
+    --font-sans: 'Avenir Next', Avenir, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    --font-serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
     
     --fg: #1a1a1a;
     --fg-muted: #666;
@@ -40,10 +40,11 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    scrollbar-gutter: stable both-edges;
 }
 
 body {
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     background: var(--bg);
     color: var(--fg);
     line-height: 1.7;
@@ -90,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     font-weight: 500;
     letter-spacing: -0.04em;
     margin-top: 0;
@@ -524,6 +525,7 @@ footer {
 }
 
 .post-description {
+    font-family: var(--font-serif);
     color: var(--fg-muted);
     font-size: 0.9375rem;
     line-height: 1.5;
@@ -561,7 +563,7 @@ footer {
     width: 100%;
     min-height: 5.5rem;
     aspect-ratio: 1 / 1;
-    padding: var(--spacing-base);
+    padding: calc(var(--spacing-base) * 1.25);
     border-radius: 4px;
     background: var(--bg);
     border: 1px solid var(--border);
@@ -575,8 +577,8 @@ footer {
 }
 
 .garage-logo {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 76%;
+    max-height: 76%;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -593,6 +595,7 @@ footer {
 }
 
 .garage-logo-summary {
+    font-family: var(--font-serif);
     margin-top: calc(var(--spacing-base) * 0.5);
     font-size: 0.75rem;
     color: var(--fg-muted);
@@ -609,7 +612,7 @@ article {
 }
 
 article h1 {
-    font-size: clamp(2.4rem, 7vw, 4.2rem);
+    font-size: clamp(2.2rem, 6.5vw, 3.8rem);
     line-height: 1.05;
     margin-bottom: 0.5em;
 }
@@ -630,6 +633,7 @@ article time {
 }
 
 .content {
+    font-family: var(--font-serif);
     font-size: 1rem;
     line-height: 1.85;
 }
@@ -891,7 +895,7 @@ article time {
 }
 
 .garage-header h1 {
-    font-size: 3rem;
+    font-size: 2.65rem;
     font-weight: 400;
     margin-bottom: 0.25em;
 }
@@ -932,12 +936,14 @@ article time {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: calc(var(--spacing-base) * 0.5);
+    padding: calc(var(--spacing-base) * 0.75);
 }
 
 .garage-card-image img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    max-width: 82%;
+    max-height: 82%;
     object-fit: contain;
     display: block;
 }
@@ -956,6 +962,7 @@ article time {
 }
 
 .garage-card-summary {
+    font-family: var(--font-serif);
     color: var(--fg-muted);
     font-size: 0.8125rem;
     line-height: 1.5;
@@ -1311,9 +1318,9 @@ article time {
 
 /* Home Shell (responsive) */
 body:has(.home-layout) {
-    padding: 0;
-    width: 100%;
-    max-width: none;
+    padding: var(--page-gutter) var(--page-gutter) calc(var(--page-gutter) * 2);
+    width: min(100%, 90rem);
+    max-width: 90rem;
     overflow-x: hidden;
 }
 
@@ -1328,14 +1335,14 @@ body:has(.home-layout) .page-container {
 body:has(.home-layout) header {
     grid-column: 1;
     grid-row: 1;
-    padding: var(--page-gutter);
+    padding: 0;
     margin-bottom: 0;
 }
 
 body:has(.home-layout) .main-content {
     grid-column: 1;
     grid-row: 2;
-    padding: 0 var(--page-gutter) calc(var(--page-gutter) * 2);
+    padding: 0;
     max-width: 1400px;
     margin: 0;
     width: 100%;
@@ -1371,27 +1378,29 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
     }
 
     body:has(.home-layout) header {
-        grid-column: 1;
+        grid-column: 1 / -1;
         grid-row: 1;
-        padding: var(--page-gutter);
+        padding: 0;
     }
 
     body:has(.home-layout) .main-content {
         grid-column: 1;
         grid-row: 2;
-        padding: 0 var(--page-gutter) calc(var(--page-gutter) * 2);
+        padding: 0;
         max-width: 1400px;
         margin: 0;
     }
 
     body:has(.home-layout) .home-right-column {
         grid-column: 2;
-        grid-row: 1 / -1;
+        grid-row: 2;
         position: sticky;
-        top: 0;
-        height: 100vh;
+        top: var(--page-gutter);
+        max-height: calc(100vh - (var(--page-gutter) * 2));
+        height: auto;
         overflow-y: auto;
         border-radius: 0;
+        align-self: start;
     }
 
     .home-layout {
@@ -1401,27 +1410,28 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
     }
 
     body:has(.idea-layout) {
-        padding: 0;
-        max-width: none;
+        padding: var(--page-gutter) var(--page-gutter) calc(var(--page-gutter) * 2);
+        width: min(100%, 90rem);
+        max-width: 90rem;
     }
 
     body:has(.idea-layout) .page-container {
         display: grid;
-        grid-template-columns: auto 350px;
+        grid-template-columns: minmax(0, 1fr) 350px;
         grid-template-rows: auto 1fr;
         min-height: 100vh;
     }
 
     body:has(.idea-layout) header {
-        grid-column: 1;
+        grid-column: 1 / -1;
         grid-row: 1;
-        padding: var(--page-gutter);
+        padding: 0;
     }
 
     body:has(.idea-layout) .main-content {
         grid-column: 1;
         grid-row: 2;
-        padding: 0 var(--page-gutter) calc(var(--page-gutter) * 2);
+        padding: 0;
         width: 100%;
         max-width: 1400px;
         margin: 0;
@@ -1429,10 +1439,11 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
 
     body:has(.idea-layout) .idea-right-column {
         grid-column: 2;
-        grid-row: 1 / -1;
+        grid-row: 2;
         position: sticky;
-        top: 0;
-        height: 100vh;
+        top: var(--page-gutter);
+        max-height: calc(100vh - (var(--page-gutter) * 2));
+        height: auto;
         overflow-y: auto;
         align-self: start;
     }
@@ -1455,11 +1466,11 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
     }
 
     body:has(.home-layout) header {
-        padding: var(--page-gutter);
+        padding: 0;
     }
 
     body:has(.home-layout) .main-content {
-        padding: 0 var(--page-gutter) calc(var(--page-gutter) * 2);
+        padding: 0;
     }
 
     body:has(.home-layout) .home-right-column {
@@ -1468,11 +1479,11 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
     }
 
     h1 {
-        font-size: clamp(2rem, 10vw, 2.75rem);
+        font-size: clamp(1.9rem, 9vw, 2.5rem);
     }
 
     article h1 {
-        font-size: clamp(2rem, 10vw, 2.75rem);
+        font-size: clamp(1.9rem, 9vw, 2.5rem);
     }
 
     .post-list {
