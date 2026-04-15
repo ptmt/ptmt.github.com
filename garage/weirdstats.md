@@ -6,6 +6,6 @@ summary: Weird cycling stats
 link: https://weirdstats.com
 github: https://github.com/ptmt/weirdstats
 image: /media/2025/weirdstats.png
+tags: cycling, go, ios
 ---
-
 Once I was riding a small route that suppose to take 1 hour, but I got unlucky — all traffic light stops, and one railroad crossing added a lot of time. And now I wonder how much did it take and I want such stats to be added to Strava.

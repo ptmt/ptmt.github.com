@@ -6,9 +6,8 @@ summary: Desktop macOS client for YouTrack
 image: /media/2025/youtrek_bw.png
 link: https://potomushto.com/youtrek/
 github: https://github.com/ptmt/youtrek
-tags: swift, desktop
+tags: swift, desktop, ios
 ---
-
 In JetBrains YouTrack is a issue tracker of choice. 
 
 The number of features there is enourmous. Take automation workflows for example. And the installation has million of issues already.

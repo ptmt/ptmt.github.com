@@ -6,6 +6,7 @@ link: https://tinyserve.org
 github: https://github.com/ptmt/statik
 image: https://tinyserve.org/tinyserve_logo_full.png
 summary: Hosting for small and unambitious projects
+tags: go, docker
 ---
 The problem: you vibe coded a service that only your family and friends need. What if you have 10 of such projects? Or 50?
 
