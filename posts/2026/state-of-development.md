@@ -41,4 +41,4 @@ Random notes:
 - Developing native macOS apps is incredibly frustrating. Can't get anything done that is _nice to use_ without very detailed spec. 
 - Without oversight things can go in a wrong direction quite fast. You should either code review everything thoroughly or invent a sophisticated verification pipelines that takes as much time and constantly changing
 - As everyone says: someone should decide what to build and what not to build, to keep a balance. 
-- Doing something on your own gives you more pace, syncronization is a pain. But only on code level. If you want to build the real product, the product and QA is even more important. 
+- You have bigger pace when doing something on your own. But only if you know youself what to build. Syncronization is pain. But only on code level. If you want to build the real product, the product and QA is even more important. 
