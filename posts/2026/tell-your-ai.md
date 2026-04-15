@@ -1,6 +1,6 @@
 ---
 title: Ask Your AI To Fill This
-description: <input type="ai">
+description: What if <input type="ai">
 published: 2026-02-10T10:00
 lang: en
 ---

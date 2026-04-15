@@ -178,12 +178,8 @@ abbr {
 }
 
 /* Header */
-header {
-    margin-bottom: var(--spacing-large);
-}
-
 .site-header {
-    border-top: 1px solid var(--border);
+    margin-bottom: var(--spacing-large);
     border-bottom: 1px solid var(--border);
     padding: 0.75rem 0 1rem;
 }
@@ -1332,11 +1328,9 @@ body:has(.home-layout) .page-container {
     width: 100%;
 }
 
-body:has(.home-layout) header {
+body:has(.home-layout) .site-header {
     grid-column: 1;
     grid-row: 1;
-    padding: 0;
-    margin-bottom: 0;
 }
 
 body:has(.home-layout) .main-content {
@@ -1377,10 +1371,9 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
         min-height: 100vh;
     }
 
-    body:has(.home-layout) header {
+    body:has(.home-layout) .site-header {
         grid-column: 1 / -1;
         grid-row: 1;
-        padding: 0;
     }
 
     body:has(.home-layout) .main-content {
@@ -1422,10 +1415,9 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
         min-height: 100vh;
     }
 
-    body:has(.idea-layout) header {
+    body:has(.idea-layout) .site-header {
         grid-column: 1 / -1;
         grid-row: 1;
-        padding: 0;
     }
 
     body:has(.idea-layout) .main-content {
@@ -1463,10 +1455,6 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
 
     body {
         padding: var(--page-gutter);
-    }
-
-    body:has(.home-layout) header {
-        padding: 0;
     }
 
     body:has(.home-layout) .main-content {
