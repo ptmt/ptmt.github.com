@@ -1,36 +1,18 @@
-<header>
+<header class="site-header">
     <div class="header-top">
-        <a href="/" class="site-title">
-            <span class="logo-shape"></span>
-            {{siteName}}
-        </a>
-        {{#unless posts}}
-        <nav class="main-nav">
+        <div class="header-identity">
+            <a href="/" class="site-title">
+                <span class="site-title-mark">~/</span>
+                <span class="site-title-text">{{siteName}}</span>
+            </a>
+            <p class="site-description">
+                journal of work & experiments
+            </p>
+        </div>
+        <nav class="main-nav" aria-label="Primary">
             <a href="/posts">Blog</a>
             <a href="/garage">Garage</a>
             <a href="/about">About</a>
         </nav>
-        {{/unless}}
     </div>
-    {{#if posts}}
-    <div class="header-bottom">
-        <p class="site-description">
-            journal of work & experiments
-        </p>
-    </div>
-    {{/if}}
-    {{#if post}}
-    <div class="header-bottom">
-        <p class="site-description">
-            journal of work & experiments
-        </p>
-    </div>
-    {{/if}}
-    {{#if page}}
-    <div class="header-bottom">
-        <p class="site-description">
-            journal of work & experiments
-        </p>
-    </div>
-    {{/if}}
 </header>
