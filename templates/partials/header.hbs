@@ -1,10 +1,13 @@
 <header class="site-header">
     <div class="header-top">
         <div class="header-identity">
-            <a href="/" class="site-title">
-                <span class="site-title-mark">~/</span>
-                <span class="site-title-text">{{siteName}}</span>
-            </a>
+            <div class="site-title-row">
+                <a href="/" class="site-title">
+                    <span class="site-title-mark">/</span>
+                    <span class="site-title-text">{{siteName}}</span>
+                </a>
+                {{#block "header-title-suffix"}}{{/block}}
+            </div>
             <p class="site-description">
                 journal of work & experiments
             </p>

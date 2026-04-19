@@ -2,11 +2,13 @@
 title: Garage
 description: Be careful, a lot of stuff lying around
 ---
+{{#content "header-title-suffix"}}
+<h1 class="site-title-context">
+    <span class="site-title-separator">/</span>
+    <span class="site-title-context-text">garage</span>
+</h1>
+{{/content}}
 <div class="garage-page">
-    <header class="garage-header">
-        <h1>Garage</h1>
-    </header>
-
     <div class="garage-grid">
         {{#with datasource}}
         {{#each entities.garage}}

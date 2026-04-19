@@ -198,13 +198,22 @@ abbr {
     gap: 0.4rem;
 }
 
+.site-title-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0;
+    min-width: 0;
+}
+
 .site-title {
+    font-family: var(--font-sans);
     font-size: clamp(1.35rem, 4vw, 1.9rem);
     font-weight: 500;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0;
     width: fit-content;
     letter-spacing: 0.04em;
     text-transform: lowercase;
@@ -219,6 +228,28 @@ abbr {
     display: inline-block;
 }
 
+.site-title-context {
+    font-family: var(--font-sans);
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0;
+    margin: 0;
+    min-width: 0;
+    font-size: clamp(1.35rem, 4vw, 1.9rem);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+    text-transform: lowercase;
+}
+
+.site-title-separator {
+    color: var(--accent);
+}
+
+.site-title-context-text {
+    color: var(--fg);
+}
+
 .site-title:hover {
     color: var(--accent);
     opacity: 1;
@@ -228,9 +259,9 @@ abbr {
 .main-nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.25rem;
     font-family: var(--font-mono);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     align-items: center;
     justify-content: flex-start;
 }
@@ -239,14 +270,12 @@ abbr {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    padding: 0.45rem 0.8rem;
+    padding: 0.2rem 0.4rem;
     text-decoration: none;
     color: var(--fg);
-    border: 1px solid var(--border);
-    border-radius: 999px;
     letter-spacing: 0.02em;
     font-weight: 400;
-    transition: color 0.2s, border-color 0.2s, background-color 0.2s, opacity 0.2s;
+    transition: color 0.2s, opacity 0.2s;
 }
 
 .main-nav a::before {
@@ -256,7 +285,6 @@ abbr {
 
 .main-nav a:hover {
     color: var(--accent);
-    border-color: currentColor;
     opacity: 1;
 }
 
@@ -535,10 +563,10 @@ footer {
 /* Garage Columns on Home */
 .garage-logos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(8.5rem, 100%), 1fr));
-    gap: var(--spacing-base);
+    grid-template-columns: repeat(auto-fit, minmax(min(7.5rem, 100%), 1fr));
+    gap: calc(var(--spacing-base) * 0.75);
     align-items: start;
-    justify-items: stretch;
+    justify-items: center;
     margin-top: var(--spacing-base);
 }
 
@@ -547,7 +575,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    max-width: none;
+    max-width: 15rem;
     width: 100%;
     min-width: 0;
 }
@@ -557,12 +585,10 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 5.5rem;
-    aspect-ratio: 1 / 1;
-    padding: calc(var(--spacing-base) * 1.25);
-    border-radius: 4px;
-    background: var(--bg);
-    border: 1px solid var(--border);
+    min-height: 4.25rem;
+    aspect-ratio: 3 / 1;
+    padding: calc(var(--spacing-base) * 0.55);
+    background: var(--bg-subtle);
     transition: transform 0.2s, box-shadow 0.2s;
     text-decoration: none;
     color: inherit;
@@ -573,15 +599,15 @@ footer {
 }
 
 .garage-logo {
-    max-width: 76%;
-    max-height: 76%;
+    max-width: 74%;
+    max-height: 74%;
     width: auto;
     height: auto;
     object-fit: contain;
 }
 
 .garage-logo-name {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 400;
     color: var(--fg);
     text-align: center;
@@ -592,8 +618,8 @@ footer {
 
 .garage-logo-summary {
     font-family: var(--font-serif);
-    margin-top: calc(var(--spacing-base) * 0.5);
-    font-size: 0.75rem;
+    margin-top: calc(var(--spacing-base) * 0.35);
+    font-size: 0.72rem;
     color: var(--fg-muted);
     text-align: center;
     line-height: 1.3;
@@ -885,31 +911,20 @@ article time {
     margin: 0 auto;
 }
 
-.garage-header {
-    margin-bottom: var(--spacing-xl);
-    text-align: center;
-}
-
-.garage-header h1 {
-    font-size: 2.65rem;
-    font-weight: 400;
-    margin-bottom: 0.25em;
-}
-
 .garage-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: var(--spacing-base);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: calc(var(--spacing-base) * 0.75);
     align-items: start;
     justify-items: center;
 }
 
 .garage-card {
-    border: 1px solid var(--border);
-    border-radius: 4px;
+    border: 0;
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
     width: 100%;
+    max-width: 15rem;
     min-width: 0;
 }
 
@@ -932,24 +947,24 @@ article time {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: calc(var(--spacing-base) * 0.75);
+    padding: calc(var(--spacing-base) * 0.55);
 }
 
 .garage-card-image img {
     width: auto;
     height: auto;
-    max-width: 82%;
-    max-height: 82%;
+    max-width: 74%;
+    max-height: 74%;
     object-fit: contain;
     display: block;
 }
 
 .garage-card-content {
-    padding: calc(var(--spacing-base) * 0.75);
+    padding: calc(var(--spacing-base) * 0.55);
 }
 
 .garage-card-title {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 400;
     margin: 0 0 0.375em 0;
     color: var(--fg);
@@ -960,9 +975,9 @@ article time {
 .garage-card-summary {
     font-family: var(--font-serif);
     color: var(--fg-muted);
-    font-size: 0.8125rem;
+    font-size: 0.78rem;
     line-height: 1.5;
-    margin-bottom: calc(var(--spacing-base) * 0.75);
+    margin-bottom: calc(var(--spacing-base) * 0.55);
     word-wrap: break-word;
 }
 
@@ -1288,7 +1303,7 @@ article time {
 
     .garage-page .garage-grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: var(--spacing-large);
+        gap: var(--spacing-base);
         justify-items: center;
     }
     
@@ -1348,6 +1363,7 @@ body:has(.home-layout) .home-right-column {
     position: static;
     height: auto;
     overflow: visible;
+    margin-top: calc(var(--spacing-xl) * 0.5);
 }
 
 body:has(.home-layout) .home-right-column footer {
@@ -1394,6 +1410,7 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
         overflow-y: auto;
         border-radius: 0;
         align-self: start;
+        margin-top: 0;
     }
 
     .home-layout {
@@ -1499,12 +1516,12 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
     }
 
     .main-nav {
-        gap: 0.5rem;
-        font-size: 0.85rem;
+        gap: 0.25rem;
+        font-size: 0.8rem;
     }
 
     .main-nav a {
-        padding: 0.4rem 0.7rem;
+        padding: 0.2rem 0.35rem;
     }
 
     .social-links {
