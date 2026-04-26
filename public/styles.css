@@ -461,6 +461,33 @@ footer {
     width: 100%;
 }
 
+.post-year-sections {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-large);
+}
+
+.post-year-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.post-year-section + .post-year-section {
+    padding-top: var(--spacing-large);
+    border-top: 1px solid var(--border);
+}
+
+.post-year-heading {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--fg-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-family: var(--font-mono);
+}
+
 .post-card {
     display: flex;
     flex-direction: column;
