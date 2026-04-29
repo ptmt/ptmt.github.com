@@ -451,6 +451,10 @@ footer {
     margin-right: 0.3rem;
 }
 
+.home-layout .section-title a::before {
+    content: none;
+}
+
 .post-list {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
@@ -470,7 +474,7 @@ footer {
 .post-year-section {
     display: flex;
     flex-direction: column;
-    gap: 0.9rem;
+    gap: 0.55rem;
 }
 
 .post-year-section + .post-year-section {
@@ -480,11 +484,11 @@ footer {
 
 .post-year-heading {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 0.75rem;
     font-weight: 400;
-    color: var(--fg-muted);
+    color: var(--fg-light);
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
     font-family: var(--font-mono);
 }
 
@@ -587,13 +591,19 @@ footer {
     margin-top: 0;
 }
 
+.home-layout .post-year-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
 /* Garage Columns on Home */
 .garage-logos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(7.5rem, 100%), 1fr));
-    gap: calc(var(--spacing-base) * 0.75);
+    grid-template-columns: repeat(auto-fit, minmax(min(9.5rem, 100%), 1fr));
+    gap: var(--spacing-base);
     align-items: start;
-    justify-items: center;
+    justify-items: stretch;
     margin-top: var(--spacing-base);
 }
 
@@ -602,21 +612,20 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    max-width: 15rem;
     width: 100%;
     min-width: 0;
 }
 
 .garage-logo-link {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
     width: 100%;
-    min-height: 4.25rem;
-    aspect-ratio: 3 / 1;
-    padding: calc(var(--spacing-base) * 0.55);
-    background: var(--bg-subtle);
-    transition: transform 0.2s, box-shadow 0.2s;
+    min-height: 0;
+    padding: 0;
+    background: transparent;
+    transition: color 0.2s, opacity 0.2s;
     text-decoration: none;
     color: inherit;
 }
@@ -626,29 +635,32 @@ footer {
 }
 
 .garage-logo {
-    max-width: 74%;
-    max-height: 74%;
+    display: block;
+    max-width: 4.75rem;
+    max-height: 2rem;
     width: auto;
     height: auto;
     object-fit: contain;
+    opacity: 0.72;
 }
 
 .garage-logo-name {
-    font-size: 0.72rem;
+    font-family: var(--font-mono);
+    font-size: 0.98rem;
     font-weight: 400;
     color: var(--fg);
-    text-align: center;
-    line-height: 1.2;
+    text-align: left;
+    line-height: 1.3;
     word-break: normal;
     overflow-wrap: break-word;
 }
 
 .garage-logo-summary {
     font-family: var(--font-serif);
-    margin-top: calc(var(--spacing-base) * 0.35);
-    font-size: 0.72rem;
+    margin-top: 0.2rem;
+    font-size: 0.84rem;
     color: var(--fg-muted);
-    text-align: center;
+    text-align: left;
     line-height: 1.3;
     max-width: 100%;
     word-wrap: break-word;
@@ -1406,16 +1418,21 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
     color: var(--accent);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
+    body:has(.home-layout) {
+        padding-bottom: 0;
+    }
+
     body:has(.home-layout) .page-container {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) 400px;
+        grid-template-columns: minmax(0, 1fr) clamp(18rem, 30vw, 400px);
         grid-template-rows: auto 1fr;
-        min-height: 100vh;
+        column-gap: clamp(1.25rem, 3vw, var(--spacing-xl));
+        min-height: calc(100vh - (var(--page-gutter) * 2));
     }
 
     body:has(.home-layout) .site-header {
-        grid-column: 1 / -1;
+        grid-column: 1;
         grid-row: 1;
     }
 
@@ -1429,11 +1446,11 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
 
     body:has(.home-layout) .home-right-column {
         grid-column: 2;
-        grid-row: 2;
+        grid-row: 1 / -1;
         position: sticky;
         top: var(--page-gutter);
         max-height: calc(100vh - (var(--page-gutter) * 2));
-        height: auto;
+        height: calc(100vh - (var(--page-gutter) * 2));
         overflow-y: auto;
         border-radius: 0;
         align-self: start;
@@ -1445,7 +1462,9 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
         gap: var(--spacing-xl);
         align-items: start;
     }
+}
 
+@media (min-width: 1200px) {
     body:has(.idea-layout) {
         padding: var(--page-gutter) var(--page-gutter) calc(var(--page-gutter) * 2);
         width: min(100%, 90rem);
