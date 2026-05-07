@@ -4,13 +4,13 @@ description: Waited for 10 years to resurrect this blog
 published: 2025-10-15T10:00
 lang: en
 ---
-There’s this popular meme. I won’t use  to visualize it, so describe it instead. As time goes by, you sometimes realize that the things you cared about in the beginning turn out to be true again. Some people say life moves in a spiral.
+There’s this popular IQ Bell curve meme. As time goes by, you sometimes realize that the things you cared about in the beginning turn out to be true again. Some people say life moves in a spiral. Exactly what happened to me:
 
 > 1. stand-alone personal blog
 > 2. do not care just give me engagement 
 > 3. stand-alone personal blog
 
-I’ve had several phases in my life when I tried blogging. [potomushto.com](https://potomushto.com) is probably 4th reincarnation of it. At one point, I created a separate Tumblr just for a seven-day trip and I still love that blog. Going back and rereading it once every five years gives me chills. Maybe I’ll bring it over here someday, when I figure out a proper way to separate things.
+I’ve had several phases in my life when I tried blogging. [potomushto.com](https://potomushto.com) is probably 4th reincarnation of it. At one point, I created a separate Tumblr just for a seven-day trip and I still love that blog. Going back and rereading it once every five years gives me chills. 
 
 Another time, I used a throwaway name on Blogspot or WordPress. Something that cost me nothing and required zero hassle. And it’s still there. Still working. Still openable after all these years. Still close to zero readers and visitors. 
 
@@ -18,7 +18,7 @@ Twenty years ago, I loved writing so much that I did it almost every day. After 
 
 And then, ten years later, at 2015 it became obvious that social media gave you a much bigger boost. It felt great riding that wave: you could easily discover new, interesting people, and they could find you just as easily. 
 
-That went on until I started my new full-time job. I had less and less time to write. Ny energy for “extra” writing was slowly running out. I felt no need, and that was a mistake.
+That went on until I started my new full-time job. I had less and less time to write. Ny energy for “extra” writing was slowly running out. I felt no need, and that was a mistake. No side experiments, no social networks.
 
 Compare these two images:
 
@@ -34,13 +34,13 @@ The only thing left to solve is me having insufficient writing skill.
 
 ## What makes blog good
 
-Let's start from a weak definition, not saying anything about intristic quality. A blog can be good as a private intellectual artifact, and better if it resonates outward. RSS subscribers makes me happy.
+A blog can be good as a private intellectual artifact whatever that means, and better if it resonates outward meaning: RSS subscribers would make me happy. I want to be proud of it.
 
-And for that I need consistency. Consistency in writing attempts but keeping the same core, angle, principles. Consistency not in producing _reliable mediocrity_ but in thinking. Keeping posts in drafts for years, never publishing them because they are not good enough is something inevitable. 
+For improving the writing skill I need consistency. Consistency in writing attempts but keeping the same core, angle, principles. Consistency not in producing _reliable mediocrity_ but in thinking. Keeping posts in drafts for years, never publishing them because they are not good enough is something inevitable. 
 
 <blockquote data-author="Practice makes perfect">Üben macht den Meister</blockquote>
 
-This is the most naive but hard truth phrase that everyone hears constantly during any kind of German classes. Another version is that to perfect a new thing, you'll need to do it 10 thousand times. Of course the devil is in the detail. You need **Tight Feedback Loop**, **Deliberate Difficulty (Not Comfort)** and **Reflection + Correction**. A similar take is [here on Veritasium](https://www.youtube.com/watch?v=5eW6Eagr9XA&t=21s).
+This is the most naive but hard truth type of phrase that everyone hears constantly during any kind of German classes. Another version is that to perfect a new thing, you'll need to do it 10 thousand times. Of course the devil is in the detail. You need **Tight Feedback Loop**, **Deliberate Difficulty (Not Comfort)** and **Reflection + Correction**. A similar take is [here on Veritasium](https://www.youtube.com/watch?v=5eW6Eagr9XA&t=21s).
 
 My plans to try out different things for __feedback loop__:
 
@@ -65,4 +65,4 @@ Having said that, my goal for next year is simple: to write regularly and finish
 
 Most of the time there will be no feedback. No comments, no replies, no visible signal that anything landed. That silence is part of the process.
 
-So when it’s time to share, I will do it anyway. Publish, step out of my comfort zone, and repeat, trusting that consistency in thinking, difficulty, and reflection compounds, even when no one is watching. _How naive._(
+So when it’s time to share, I will do it anyway. Publish, step out of my comfort zone, and repeat, trusting that consistency in thinking, difficulty, and reflection compounds, even when no one is watching. _How naive._

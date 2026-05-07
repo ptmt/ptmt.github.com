@@ -14,7 +14,7 @@ You start with the easy ones.
 A directory called *potomushto.com* is mostly text files. Markdown. A <abbr title="well, I hope there will be many">few</abbr> HTML pages you once generated and never touched again. You open one and it just appears. Instantly. No “restore environment,” no “dependency mismatch,” no “this plugin can’t be verified.”
 
 It feels the way it feels to find an old printed photo: slightly too sharp, slightly too honest, and strangely immune to time.
-The rendering is different than it was in 2026. Fonts drift, spacing changes a little, but the words are the words. Links still point somewhere or they do not. Either way the text stays. And that is the trick: plain content does not need an ecosystem to survive. It needs a surface.
+The rendering is different than it was in 2025. Fonts drift, spacing changes a little, but the words are the words. Links still point somewhere or they do not. Either way the text stays. Plain content does not need an ecosystem to survive.
 
 Then you open the harder drawer.
 
@@ -24,7 +24,7 @@ But the OS has evolved the way cities evolve. It did not “break” your old ap
 You can revive it. _Of course you can!_ Everything can be revived now with AI.
 But reviving is never free. It costs attention, and attention in 2050 is expensive in the way your free evenings used to be expensive.
 
-And then the games.
+Finally, the games.
 
 Some run in a compatibility bubble and feel right in a weird way, like hearing an old song on new speakers. Others load but the magic is not there: the physics are off, the controller mapping is wrong, the timing feels like someone retold a joke with different pauses.
 
@@ -33,7 +33,7 @@ You remember, suddenly, that games are performance more than just software. Timi
 You scroll through a neat list of services that were once cheap because each one felt like nothing: a small site here, a webhook there, a little worker, a domain redirect, an analytics script, some uptime monitor, a storage bucket with “just a couple files.”
 Each one was fine. Together they are a constellation with a monthly price tag that looks more like a utility bill than a hobby.
 
-Every project that stays alive demands a little ongoing payment, like a tiny aquarium in someone else’s house. 
+Every project that stays alive demands a little ongoing payment.
 
 So you consider the other route: the home machine.
 
@@ -42,7 +42,7 @@ So you consider the other route: the home machine.
 One machine in the corner of your future home, humming gently. Some projects hosted there, most archived there, all of them yours in a literal sense.
 
 And then you hit the real graveyard: the integration projects.
-The ones that talked to other services like [WeirdStats](/garage/weirdstats). Most of them are gone, not because your code rotted, but because the other side disappeared. APIs closed. Companies pivoted. Services merged, rebranded, died, got regulated, got acquired, got sunset. The internet changed its furniture.
+The ones that talked to other services like [WeirdStats](/garage/weirdstats). Most of them are gone, not because your code rotted, but because the other side disappeared. APIs closed. Companies pivoted. Services merged, rebranded, died, got regulated, got acquired, got sunset. The internet became different.
 
 Those projects feel like old screenshots of conversations with people you no longer know. Not sad exactly, just un-runnable.
 
@@ -60,7 +60,6 @@ A hosted site can disappear like a storefront. A repository is more like a box o
 
 Maybe the GitHub Pages version is gone by then. Maybe your domain points to nothing. But the git history, zipped into some archive you forgot you made, still has all the posts. Markdown is still there. HTML is still there. The shape of your thinking is still there.
 
-And then a stranger question appears, because by 2075 software preservation does not feel like a heroic act. It feels optional.
 By then, much earlier even, AI have eaten so much of the internet that “the past” is accessible in a new way. Not as exact files, but as a kind of memory. Slightly compressed. Slightly vague. Full of smooth edges where details used to be sharp. But ready to be regenerated almost instantly into something you can touch.
 
 You ask yourself: if a model can reconstruct the feeling of your old app from _something_ by accessing your memory directly, _does it matter_ whether the binary still runs?
@@ -71,8 +70,6 @@ It is tempting to say no. It is tempting to accept the new kind of preservation,
 But then you look again at the printed photos.
 
 A printed photo does not try to help. It does not <abbr title="Which probably will be considered nice in 2075">summarize your childhood</abbr>. It does not improve the framing. It does not infer what you meant. It just sits there with all its awkwardness intact. It preserves the exact light that happened to fall on the scene that day.
-
-That is the difference.
 
 A model gives you a version that is usable. A file gives you a version that is true. Maybe nobody needs it except you. Maybe this museum is private.
 
