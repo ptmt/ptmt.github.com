@@ -61,8 +61,8 @@ timeline:
     captionText: In most cardio activities you still would want second device. In Cycling, my main sport, I have bike computer with powermeter and HRV strap, so wearing second device is not a problem. In running, it's a bit more wierd, and in swimming it's just ridiculous. So my current solution is bicep strap, to at least pretend I wear only one watch. 
     img: /placeholder.jpg
     alt: bicep strap
-  - id: Day 200, 
-    captionText: Whoop showed me a new frontier and I'd love to keep using something like it after subscription expires. But that won't be Whoop. What I want: hackable device, either much less noticable, like a ring or ribber band or just combines a watch and all day long hrv measurement. 
+  - id: Day 200, What I Want
+    captionText: "Whoop showed me a new frontier and I'd love to keep using something like it after subscription expires. But that won't be Whoop. What I want: hackable device, either much less noticable, like a ring or ribber band or just combines a watch and all day long hrv measurement."
     img: /placeholder.jpg
     alt: bicep strap
 ---
