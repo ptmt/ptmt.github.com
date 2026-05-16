@@ -1,19 +1,24 @@
 ---
 title: Software Development In Early 2026
+description: Anxiety and hope in face of AI
 published: 2026-03-28T12:04:00
 ---
 
+I want to write a post, that I'll read later and see the dynamic from my own perspective. 
+
 For the past few months, starting last December, anxiety has been my dominant feeling. Always in the background. Every few days another voice joins this movement and share: everything has changed because of AI, everything will change even more. Tools are obsolete, the way how organizations work is outdated, team dynamics, markets, workforce. As opposed to previous dramatic changes in our profession, it's no longer clear if it's possible to adapt for most of us.
 
-Many are trying to adapt, including myself. In 2025 it was about "it will be just another level of abstractions, problem solving is still on us". I used to learn by doing, but here, it's no longer work that way. 
+Many people are trying to adapt, including myself. In 2025 it was about "it will be just another level of abstractions, problem solving is still on us". The question is do I learn enough. I used to learn by doing, but here, it's no longer work that way. Or at least not working enough to protect me from anxiety. Did I find the right word? 
+
+It's partially a being nervous before a competitive sport event, which is good. But partially a fear of loosing a job. I can't call it comfortable times, but for sure, it might get much worse.
+
+### Frontier models are still from the same companies
+
+In the beginning of 2026 it's time of Anthropic Claude 3.6 and GPT-5.3/5.4. They are gold standard and game changers. Gemini 3.1 family is good for everyday practical tasks, but rarely used in my bubble for agentic coding. Used though in many other places. Claude Code is a default agent. Codex is getting bigger, Pi, which is behind OpenClaw getting traction. 
 
 ### AI Assistance all day long
 
 Business as usual, AI agents are no longer experimental thing for side projects. It's an essential part of most of workflows now. People may turned down a little on writing assistance, on generating slop prototypes, just because our attention is limited and trust is easy to lost. 
-
-### Frontier models are still from the same companies
-
-In the beginning of 2026 it's still time of Anthropic Claude 3.6 and GPT-5.4. They are gold standard and game changers. Gemini 3.1 family is good, but rarely used in my bubble for agentic coding. Used though in many other places. Claude Code is a default agent. Codex is getting bigger, Pi, which is behind OpenClaw getting traction. 
 
 ### Super fast inference
 
@@ -54,4 +59,6 @@ This is what I experienced after initial boost to "finish some apps I always wan
 
 Until "please make this product possible and then keep adding features" prompt are viable, there are tons of micro descisions every day on every level.
 
-Most of the projects appeared last months are not sneaking into my life and my habits. I still like polished UI and familirity and predictability. Small dopamine hits on using a hot path almost instinctively, instead of talking or writing with some AI bot.
+Most of the projects appeared last months have not yet taken significant place in my life and my habits, except SOTA agents for software development. I still like polished user interface, familirity and predictability. I used to these small dopamine hits of hot paths when you interact with it almost instinctively, and reliazed I prefer it over talking or writing with some AI bot.
+
+So let it be hope
