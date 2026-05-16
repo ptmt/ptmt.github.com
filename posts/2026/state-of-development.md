@@ -8,7 +8,7 @@ I want to write a post, that I'll read later and see the dynamic from my own per
 
 For the past few months, starting last December, anxiety has been my dominant feeling. Always in the background. Every few days another voice joins this movement and share: everything has changed because of AI, everything will change even more. Tools are obsolete, the way how organizations work is outdated, team dynamics, markets, workforce. As opposed to previous dramatic changes in our profession, it's no longer clear if it's possible to adapt for most of us.
 
-Many people are trying to adapt, including myself. In 2025 it was about "it will be just another level of abstractions, problem solving is still on us". The question is do I learn enough. I used to learn by doing, but here, it's no longer work that way. Or at least not working enough to protect me from anxiety. Did I find the right word? 
+Many people are trying to adapt, including me. In 2025 it was about final settlement that we need to wait: "it will be just another level of abstractions, problem solving is still on us". The question is do I learn enough. I used to learn by doing, but here, it's no longer work that way. Or at least not working enough to protect me from anxiety. Did I find the right word? 
 
 It's partially a being nervous before a competitive sport event, which is good. But partially a fear of loosing a job. I can't call it comfortable times, but for sure, it might get much worse.
 
