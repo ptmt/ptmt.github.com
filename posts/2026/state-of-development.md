@@ -48,11 +48,11 @@ This is what I experienced after initial boost to "finish some apps I always wan
 
 ### Indie Developer Dream: died or not?
 
-The dillema of the last few months: on one hand it's never be easy to have something published now, on the other hand nobody needs this. You can build your own instead of paying you subscription. And this is devastation for many people, especially not builders. When you can only dream, previously you have an excuse: no time. Now you have another excuse: why bother.
+The dillema of the last few months: on one hand it's never be that easy to have something published now, on the other hand nobody would need this. One can build a small service instead of paying you subscription. And this is devastation for many people, especially not builders. When you can only dream, previously you have an excuse: no time. Now you have another excuse: why bother.
 
-So we'll see what exactly will be differentiators. Maybe it's time for influencers and socially active people, all that matters.
+So we'll see what exactly will be differentiators. Maybe it's time for influencers and socially active people, if that all that matters. People with taste and love of craft, will they have enough users?
 
-### Random notes from a single working days
+### Random notes from a single random working day
 
 - Developing native macOS apps is incredibly frustrating. Can't get anything done that is _nice to use_ without very detailed spec with a lot of follow-ups. 
 - Without oversight things can go in a wrong direction quite fast. You should either code review everything thoroughly or invent a sophisticated verification pipelines that takes as much time and constantly changing
@@ -67,4 +67,3 @@ Until "please make this product possible and then keep adding features" prompt a
 
 Most of the projects appeared last months have not yet taken significant place in my life and my habits, except SOTA agents for software development. I still like polished user interface, familirity and predictability. I used to these small dopamine hits of hot paths when you interact with it almost instinctively, and reliazed I prefer it over talking or writing with some AI bot.
 
-So let it be hope
