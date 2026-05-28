@@ -4,21 +4,24 @@ description: Anxiety and hope in face of AI
 published: 2026-03-28T12:04:00
 ---
 
-I want to write a post, that I'll read later and see the dynamic from my own perspective. 
+I want to write a post, that I'll read later and see the dynamic from my own perspective. I want to preserve my emotional state and the tooling landscape that affected me.
 
 For the past few months, starting last December, anxiety has been my dominant feeling. Always in the background. Every few days another voice joins this movement and share: everything has changed because of AI, everything will change even more. Tools are obsolete, the way how organizations work is outdated, team dynamics, markets, workforce. As opposed to previous dramatic changes in our profession, it's no longer clear if it's possible to adapt for most of us.
 
 Many people are trying to adapt, including me. In 2025 it was about final settlement: "it will be just another level of abstraction, problem solving is still on us". The question is do I understand enough. I used to learn by doing, but here, it's no longer work that way. Or at least not working enough to protect me from anxiety. Did I find the right word? 
 
-It's partially a being nervous before a competitive sport event, which is good. But partially a fear of loosing a job. I can't call it comfortable times, but for sure, it might get much worse.
+It's partially similar to being nervous before a competitive sport event, which is good. But partially a fear of loosing my job. I can't call these times comfortable, but it might get much worse.
 
-### Frontier models are still from the same companies
-
-In the beginning of 2026 it's time of Anthropic Claude 3.6 and GPT-5.3/5.4. They are gold standard and game changers. Gemini 3.1 family is good for everyday practical tasks, but rarely used in my bubble for agentic coding. Used though in many other places. Claude Code is a default agent. Codex is getting bigger, Pi, which is behind OpenClaw getting traction. 
+I guess I'm just afraid to loose "experience" and start from scratch. But there's signs that it will matter.
 
 ### AI Assistance all day long
 
-Business as usual, AI agents are no longer experimental thing for side projects. It's an essential part of most of workflows now. People may turned down a little on writing assistance, on generating slop prototypes, just because our attention is limited and trust is easy to lost. 
+A year ago, I was regularly consulting with LLMs about algorithms and APIs, used auto-complete heavily. Now it's all agentic long tasks. Business as usual, AI agents are no longer experimental thing for side projects. It's an essential part of most of workflows now. People may turned down a little on writing assistance, on generating slop prototypes, just because our attention is limited and trust is easy to lost. But it's hard to imagine not using AI Agent at all. I can even say, I envy those who can afford that.
+
+### Frontier models are still from the same companies
+
+Let's remember this: In the beginning of 2026 it's time of Anthropic Claude 3.6 and GPT-5.3/5.4. They are gold standard and game changers. Gemini 3.1 family is good for everyday practical tasks, but rarely used in my bubble for agentic coding. Used though in many other places. Claude Code is a default agent. Codex is getting bigger, Pi.dev, which is behind OpenClaw getting traction. Antropic grows like crazy.
+
 
 ### Super fast inference
 
@@ -26,9 +29,9 @@ A glimpse of faster inference is here in various places. It's easy to be impress
 
 ### Black magic and art of satisfying agent needs
 
-Claude Code shipping tens of features each month. You can now get certification for mastering it, it's no joke. Some people created a cheat sheet that takes full A4 of commands. People share their lifehacks. If you have a bad experience it's a skill issue, and jokes being made that it's literal now. 
+Claude Code shipping tens of features each month. You can now get certification for mastering it, I'm not kidding. People created a cheat sheet that takes full A4 of commands. People share their lifehacks. If you have a bad experience it's a skill issue, and jokes being made that it's literal now. 
 
-What is hard it is to **scale** these practices. Have you ever seen all ceremony and instructions, number of scripts and custom CLIs in a big project? 
+What is hard it is to **scale** these practices. Have you ever seen all ceremony and instructions, number of scripts and custom CLIs in a big project? Trying to describe it here would take more text then this post, but it's almost is how to answer to questions "what to do, so people using two leading agents can contribute in this codebase doing as low customization as possible".
 
 ### Cursor decline
  
@@ -36,7 +39,7 @@ Cursor is not that fancy thing anymore, despite still being very impressive tech
 
 ### In pursiut of autonomous agents
 
-We see Anthropic, OpenAI and Cursor experimenting with it. Days and weeks efforts where an agent does a very big project with as little of human intevention as possible. Competition can be replicated, so data and distribution is important as ever. As we develop more sophisticated frameworks for such agents, probably a completely new browser engine or operating system will be possible. And that brings anxiety again
+Anthropic, OpenAI and Cursor are experimenting with it. Days and weeks efforts where an agent does a very big project with as little of human intevention as possible. Competition can be replicated, so data and distribution is important as ever. As we develop more sophisticated frameworks for such agents, probably a completely new browser engine or operating system will be possible. And that brings anxiety again
 
 ### Open Source is changing
 
