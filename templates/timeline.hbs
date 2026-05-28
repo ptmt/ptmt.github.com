@@ -23,10 +23,10 @@
     </style>
 </noscript>
 
-<div class="timeline-layout">
+<div class="timeline-layout" data-focus-from="{{#if post.metadata.timelineFocusFrom}}{{post.metadata.timelineFocusFrom}}{{else}}1{{/if}}">
     <div class="timeline-content">
         {{#each post.metadata.timeline}}
-        <section id="{{id}}" class="timeline-section">
+        <section id="{{id}}" class="timeline-section{{#unless @first}} timeline-section--focus{{/unless}}">
             <figure>
                 <div class="caption-header">
                     <span class="timeline-id-tag tag">{{id}}</span>
@@ -40,9 +40,14 @@
                     </figcaption>
                 </div>
             </figure>
-            {{#unless @last}}
-            <button class="timeline-next-button">Next →</button>
-            {{/unless}}
+            <div class="timeline-section-nav">
+                {{#unless @first}}
+                <button type="button" class="timeline-prev-button timeline-nav-button">← Prev</button>
+                {{/unless}}
+                {{#unless @last}}
+                <button type="button" class="timeline-next-button timeline-nav-button">Next →</button>
+                {{/unless}}
+            </div>
         </section>
         {{/each}}
     </div>
@@ -59,12 +64,25 @@
 (function() {
     'use strict';
 
+    const layout = document.querySelector('.timeline-layout');
     const sections = Array.from(document.querySelectorAll('.timeline-section'));
     const milestones = Array.from(document.querySelectorAll('.timeline-milestone'));
 
     if (sections.length === 0 || milestones.length === 0) return;
 
     const sectionIds = sections.map(s => s.id);
+    const focusFromIndex = layout
+        ? Math.max(0, parseInt(layout.dataset.focusFrom, 10) || 1)
+        : 1;
+
+    function isFocusSection(sectionId) {
+        const idx = sectionIds.indexOf(sectionId);
+        return idx >= focusFromIndex;
+    }
+
+    function setFocusMode(sectionId) {
+        document.body.classList.toggle('timeline-focus-mode', isFocusSection(sectionId));
+    }
 
     function removeActive() {
         milestones.forEach(m => m.classList.remove('active'));
@@ -77,10 +95,19 @@
         const milestone = document.querySelector('.timeline-milestone[href="#' + sectionId + '"]');
 
         if (section) section.classList.add('active');
-        if (milestone) milestone.classList.add('active');
+        if (milestone) {
+            milestone.classList.add('active');
+            milestone.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        }
 
         if (updateHistory !== false) {
             history.pushState({ sectionId: sectionId }, '', '#' + sectionId);
+        }
+
+        setFocusMode(sectionId);
+
+        if (isFocusSection(sectionId)) {
+            window.scrollTo({ top: 0, behavior: 'instant' });
         }
     }
 
@@ -95,17 +122,19 @@
         if (hashId && sectionIds.includes(hashId)) {
             showSection(hashId, false);
             // Scroll to top of the section after showing it
-            setTimeout(() => {
-                const section = document.getElementById(hashId);
-                if (section) {
-                    const rect = section.getBoundingClientRect();
-                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                    window.scrollTo({
-                        top: scrollTop + rect.top - 20,
-                        behavior: 'instant'
-                    });
-                }
-            }, 50);
+            if (!isFocusSection(hashId)) {
+                setTimeout(() => {
+                    const section = document.getElementById(hashId);
+                    if (section) {
+                        const rect = section.getBoundingClientRect();
+                        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                        window.scrollTo({
+                            top: scrollTop + rect.top - 20,
+                            behavior: 'instant'
+                        });
+                    }
+                }, 50);
+            }
         } else {
             showSection(sectionIds[0], false);
         }
@@ -122,18 +151,20 @@
         });
     });
 
-    const nextButtons = Array.from(document.querySelectorAll('.timeline-next-button'));
-    nextButtons.forEach(button => {
+    function navigateSection(button, offset) {
         button.addEventListener('click', function(e) {
             e.preventDefault();
             const current = this.closest('.timeline-section');
             if (!current) return;
             const idx = sectionIds.indexOf(current.id);
             if (idx < 0) return;
-            const nextId = sectionIds[idx + 1];
-            if (nextId) showSection(nextId);
+            const targetId = sectionIds[idx + offset];
+            if (targetId) showSection(targetId);
         });
-    });
+    }
+
+    document.querySelectorAll('.timeline-next-button').forEach(button => navigateSection(button, 1));
+    document.querySelectorAll('.timeline-prev-button').forEach(button => navigateSection(button, -1));
 
     window.addEventListener('popstate', function(e) {
         if (e.state && e.state.sectionId) {

@@ -6,23 +6,23 @@ lang: en
 template: timeline
 timeline:
   - id: Day 0, The Promise
-    captionText: After 10 years of Apple Watch, I decided to try something new. Notification fatigue, ecosystem fatigue. *What else is there?* Whoop gained popularity by being fashion statement. Dopamine for health data. But also simplicity. The promise of wearing Whoop all the time, such wide access to data, not missing any single activity, counting everything. What insights I can gain? Will it motivate me be healthier? Will I get inner calmness?
-    img: /apple-watch-vs-whoop.png
+    captionText: After 10 years of Apple Watch, I decided to try something new. Notification fatigue, ecosystem fatigue. *What else is there?* Whoop gained popularity by being fashion statement. Dopamine for health data. But also simplicity. The promise of wearing Whoop all the time, with such wide access to data, not missing any single activity, counting everything. I want more insights.
+    img: /media/2026/whoop/watch_vs_whoop.png
     alt: Apple Watch Series 10 and Whoop lying together
   - id: Day 1, Hardware
-    captionText: First impression dissapoints. Changing bands is simple, but clumsy and low confidence. It feels less premium. For swimming I hate non-rubber bands in water, but rubber is not nice in casual 24x7 life. *I hope I'll get used to it.* 
-    img: /placeholder.jpg
+    captionText: First impression dissapoints. Changing bands is simple, but clumsy and low confidence. It feels less premium than Apple Watch. For swimming I usually hate any non-rubber bands in water, but rubber band for Whoop is not nice in casual 24x7 life. *I hope I'll get used to it.* 
+    img: /media/2026/whoop/watch_vs_whoop.png
     alt: This is what Whoop + bracelet look like
-  # - id: Day 2, Fashion
-  #   captionText: "Fashion attribute: people have common hobbies and attitude. Whoop has become more than a fitness tracker—it's a statement piece that signals belonging to a community of health-conscious individuals who share similar values and lifestyles."
-  #   img: /placeholder.jpg
-  #   alt: Fashion attribute and community
+  - id: Day 2, Fashion
+    captionText: Fashion attribute for people have common hobbies and attitude. It's a statement piece that signals belonging to a community of health-conscious individuals who share similar values and lifestyles. But what is trendy today, tomorrow will make you tired
+    img: /media/2026/whoop/watch_vs_whoop.png
+    alt: Fashion attribute and community
   - id: Day 7, iOS app
-    captionText: The app is optimized for retention and it shows. It's just feels right, cozy and I didn't have any problems with finding what I want in it.
+    captionText: The app is optimized for retention and it shows. It's just feels right, and I didn't have any problems with finding what I want in it.
     img: /media/2026/whoop/ios_app.jpeg
     alt: iOS App Screenshot
   - id: Day 14, Charging
-    captionText: Not needing to charge it for weeks is a nice feeling, but surprisingly not that important. Unless you travel often. And you supposed to charge it on you, so you won't loose even a heartbeat. But I'm not convinced.
+    captionText: Not needing to charge it for weeks is a nice feeling, but surprisingly not that important. Unless you travel often, maybe. And you supposed to charge it on you, so you won't loose even a heartbeat. But I'm not convinced.
     img: /placeholder.jpg
     alt: Battery and charging
   - id: Day 30, Patience
@@ -30,15 +30,15 @@ timeline:
     img: /whoop-lifespan.jpg
     alt: Whoop Lifespan
   - id: Day 60, Feel
-    captionText: In order to heart rate sensor to work it should slightly push your skin. I don't like that, can barely tolerate. Despite extended use, it never feels like a natural part of daily life. Too bulky for what it is.
+    captionText: In order for the heart rate sensor to work it should slightly push your skin. I don't like that, can barely tolerate. Despite extended use, it never feels like a natural part of daily life. Too bulky for what it is.
     img: /placeholder.jpg
     alt: Feel on the hand
   - id: Day 63, Sickness
-    captionText: You're sick — no support at all, no "pause" of any sort, gives you one more thing to worry about. When you're unwell, the device continues tracking and potentially misinterpreting your data, adding stress rather than providing helpful insights or the ability to pause monitoring.
+    captionText: You're sick — no support at all, no "pause" of any sort, gives you one more thing to worry about. When you're unwell, the device continues tracking and potentially misinterpreting your data, adding stress rather than providing helpful insights. "Your recovery is bad due to bad sleep". 
     img: /placeholder.jpg
     alt: Lack of support when sick
   - id: Day 70, Metrics
-    captionText: Metrics, too few. Despite the promise of comprehensive data, the actual metrics provided feel limited and don't offer the depth of insight that would justify continuous wear.
+    captionText: HRV measured only in the morning, as well as resting heart rate. And no explanation. I was hoping for more data. Correlleation are weak, not a single insight, although diary of habits seemed useful at first.
     img: /placeholder.jpg
     alt: Too few metrics
   - id: Day 80, HRV limitations
@@ -58,11 +58,11 @@ timeline:
     img: /placeholder.jpg
     alt: better
   - id: Day 180, Two Device Problem
-    captionText: In most cardio activities you still would want second device. In Cycling, my main sport, I have bike computer with powermeter and HRV strap, so wearing second device is not a problem. In running, it's a bit more wierd, and in swimming it's just ridiculous. So my current solution is bicep strap, to at least pretend I wear only one watch. 
+    captionText: In most cardio interval activities you still would want the second device. In cycling, my main sport, I have a bike computer and a powermeter and an HRM strap anyway. In running, it's a bit more wierd, and in swimming it's just **ridiculous**. So my current solution is a bicep strap, it's a bit comfier and at least I get to pretend I wear only one watch. 
     img: /placeholder.jpg
     alt: bicep strap
   - id: Day 200, What I Want
-    captionText: "Whoop showed me a new frontier and I'd love to keep using something like it after subscription expires. But that won't be Whoop. What I want: hackable device, either much less noticable, like a ring or ribber band or just combines a watch and all day long hrv measurement."
+    captionText: "Whoop showed me a new frontier and I'd love to keep using something like this. But that won't be a Whoop v5. What I want: hackable device, either much less noticable, like a ring or ribber band or just combines a watch with all day long sensors in a predicted way."
     img: /placeholder.jpg
     alt: bicep strap
 ---
