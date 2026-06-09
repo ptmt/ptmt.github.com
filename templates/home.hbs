@@ -2,23 +2,26 @@
     <div class="home-layout">
         <div class="home-left-column">
             <section class="latest-posts">
-                <h2 class="section-title"><a href="/posts/">Blog</a></h2>
-                <div class="post-year-sections">
-                    {{#each (groupBy posts "date" format="yyyy")}}
-                    <section class="post-year-section" aria-labelledby="posts-year-{{name}}">
-                        <h3 class="post-year-heading" id="posts-year-{{name}}">{{name}}</h3>
-                        <div class="post-list post-year-list">
-                            {{#each items}}
-                            {{#if (eq metadata.lang "en")}}
-                            <article class="post-card" data-post-lang="{{metadata.lang}}">
-                                <h4 class="post-card-title"><a href="/{{path}}">{{title}}</a></h4>
-                            </article>
-                            {{/if}}
-                            {{/each}}
-                        </div>
-                    </section>
-                    {{/each}}
-                </div>
+                <table class="post-file-list">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Size</th>
+                            <th scope="col">Date Added</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each posts}}
+                        {{#if (eq metadata.lang "en")}}
+                        <tr data-post-lang="{{metadata.lang}}">
+                            <td class="post-file-name"><a href="/{{path}}">{{title}}</a></td>
+                            <td class="post-file-size" data-size-url="/{{path}}" data-size-bytes="{{content.length}}">--</td>
+                            <td class="post-file-date"><time datetime="{{date}}">{{formatDate date "yyyy-MM-dd"}}</time></td>
+                        </tr>
+                        {{/if}}
+                        {{/each}}
+                    </tbody>
+                </table>
             </section>
 
             <section class="ideas">

@@ -432,6 +432,69 @@ footer {
     margin-bottom: 0;
 }
 
+.post-file-list {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.post-file-list th,
+.post-file-list td {
+    padding: 0.16rem 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+.post-file-list th {
+    color: var(--fg-light);
+    font-family: var(--font-mono);
+    font-size: 0.64rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+}
+
+.post-file-list th:nth-child(2),
+.post-file-list td:nth-child(2) {
+    width: 3.8rem;
+    text-align: right;
+}
+
+.post-file-list th:nth-child(3),
+.post-file-list td:nth-child(3) {
+    width: 6.2rem;
+    text-align: right;
+}
+
+.post-file-name {
+    min-width: 0;
+    overflow: hidden;
+    font-size: 1.05rem;
+    line-height: 1.35;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.post-file-name a {
+    color: var(--fg);
+    text-decoration: none;
+}
+
+.post-file-name a:hover {
+    color: var(--accent);
+    opacity: 1;
+}
+
+.post-file-size,
+.post-file-date {
+    color: var(--fg-light);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.35;
+    white-space: nowrap;
+}
+
 .section-title {
     font-weight: 400;
     margin-bottom: 1rem;
@@ -467,44 +530,6 @@ footer {
     width: 100%;
 }
 
-.post-year-sections {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-large);
-}
-
-.post-year-section {
-    display: flex;
-    flex-direction: column;
-    gap: 0.55rem;
-}
-
-.post-year-section + .post-year-section {
-    padding-top: var(--spacing-large);
-    border-top: 1px solid var(--border);
-}
-
-.post-year-heading {
-    margin: 0;
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: var(--fg-light);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    font-family: var(--font-mono);
-}
-
-.post-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25em;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-width: none;
-}
-
-.post-card-title,
 .post-title {
     font-size: 1.25rem;
     font-weight: 400;
@@ -512,13 +537,11 @@ footer {
     margin: 0;
 }
 
-.post-card-title a,
 .post-title a {
     text-decoration: none;
     color: var(--fg);
 }
 
-.post-card-title a:hover,
 .post-title a:hover {
     color: var(--accent);
     opacity: 1;
@@ -591,17 +614,6 @@ footer {
 
 .ideas {
     margin-top: 0;
-}
-
-.home-layout .post-year-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.55rem;
-}
-
-.latest-posts .post-card-title {
-    font-size: 1.05rem;
-    line-height: 1.35;
 }
 
 /* Garage Columns on Home */
@@ -1358,11 +1370,20 @@ article time {
 
 /* Timeline focus mode (days after the first) */
 body.timeline-focus-mode {
-    padding-top: var(--page-gutter);
+    --timeline-focus-header-height: 2.75rem;
 }
 
-body.timeline-focus-mode .site-header,
 body.timeline-focus-mode footer {
+    display: none;
+}
+
+body.timeline-focus-mode .site-header {
+    margin-bottom: var(--spacing-base);
+    padding: 0.35rem 0 0.5rem;
+}
+
+body.timeline-focus-mode .site-description,
+body.timeline-focus-mode .main-nav {
     display: none;
 }
 
@@ -1382,12 +1403,22 @@ body.timeline-focus-mode .timeline-layout {
 
 body.timeline-focus-mode .timeline-content {
     max-width: var(--content-width);
-    min-height: calc(100dvh - var(--timeline-focus-nav-height, 4.5rem) - 2 * var(--page-gutter));
+    min-height: calc(
+        100dvh
+        - var(--timeline-focus-nav-height, 4.5rem)
+        - var(--timeline-focus-header-height)
+        - 2 * var(--page-gutter)
+    );
     padding-bottom: var(--timeline-focus-nav-height, 4.5rem);
 }
 
 body.timeline-focus-mode .timeline-nav {
-    max-height: calc(100dvh - var(--timeline-focus-nav-height, 4.5rem) - var(--timeline-nav-inset));
+    max-height: calc(
+        100dvh
+        - var(--timeline-focus-nav-height, 4.5rem)
+        - var(--timeline-focus-header-height)
+        - var(--timeline-nav-inset)
+    );
     padding-bottom: 0.25rem;
 }
 
@@ -1667,8 +1698,22 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
         gap: 1rem;
     }
 
-    .post-card-title {
-        font-size: 1.125rem;
+    .post-file-list th:nth-child(2),
+    .post-file-list td:nth-child(2) {
+        display: none;
+    }
+
+    .post-file-list th:nth-child(3),
+    .post-file-list td:nth-child(3) {
+        width: 5.7rem;
+    }
+
+    .post-file-name {
+        font-size: 1rem;
+    }
+
+    .post-file-date {
+        font-size: 0.68rem;
     }
 
     .content {

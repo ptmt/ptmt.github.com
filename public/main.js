@@ -4,6 +4,38 @@ async function fetchJSON(path){
     return r.ok ? r.json() : []; } catch { return []; }
 }
 
+// File-list metadata formatting
+(function(){
+  function formatBytes(value){
+    var size = Number(value);
+    if (!Number.isFinite(size) || size <= 0) return '';
+    if (size < 1024) return size + ' B';
+    if (size < 1024 * 1024) return (size / 1024).toFixed(1).replace(/\.0$/, '') + ' KB';
+    return (size / (1024 * 1024)).toFixed(1).replace(/\.0$/, '') + ' MB';
+  }
+
+  document.querySelectorAll('[data-size-url]').forEach(function(el){
+    var url = el.getAttribute('data-size-url');
+    var fallback = formatBytes(el.getAttribute('data-size-bytes'));
+    if (!url) {
+      if (fallback) el.textContent = fallback;
+      return;
+    }
+
+    fetch(url, { headers: { 'accept': 'text/html' } })
+      .then(function(response){
+        return response.ok ? response.text() : '';
+      })
+      .then(function(html){
+        var formatted = html ? formatBytes(new Blob([html]).size) : fallback;
+        if (formatted) el.textContent = formatted;
+      })
+      .catch(function(){
+        if (fallback) el.textContent = fallback;
+      });
+  });
+})();
+
 // Random image (CLS-safe)
 fetchJSON('/datasource/images.json').then(function(list){
   if (!Array.isArray(list) || list.length === 0) return;
@@ -214,5 +246,3 @@ fetchJSON('/datasource/quote.json').then(function(list){
   // Hide tooltip on scroll
   document.addEventListener('scroll', hideTooltip, true);
 })();
-
-
