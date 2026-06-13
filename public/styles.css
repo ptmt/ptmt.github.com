@@ -466,6 +466,24 @@ footer {
     text-align: right;
 }
 
+.post-file-list tbody tr td {
+    transition: background-color 0.12s, color 0.12s;
+}
+
+.post-file-list:focus-within tbody tr.is-selected td {
+    background: var(--bg-subtle);
+}
+
+.post-file-list:focus-within tbody tr.is-selected .post-file-name a {
+    color: var(--accent);
+}
+
+.post-file-list:focus-within tbody tr.is-selected .post-file-size,
+.post-file-list:focus-within tbody tr.is-selected .post-file-date,
+.post-file-list:focus-within tbody tr.is-selected .post-file-date time {
+    color: var(--fg-muted);
+}
+
 .post-file-name {
     min-width: 0;
     overflow: hidden;
@@ -483,6 +501,11 @@ footer {
 .post-file-name a:hover {
     color: var(--accent);
     opacity: 1;
+}
+
+.post-file-name a:focus-visible {
+    outline: 1px solid var(--accent);
+    outline-offset: 0.16rem;
 }
 
 .post-file-size,

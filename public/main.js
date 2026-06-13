@@ -36,6 +36,65 @@ async function fetchJSON(path){
   });
 })();
 
+// File-list row keyboard navigation
+(function(){
+  document.querySelectorAll('[data-row-navigation]').forEach(function(table){
+    var rows = Array.prototype.slice.call(table.querySelectorAll('tbody tr')).filter(function(row){
+      return row.querySelector('.post-file-name a[href]');
+    });
+    if (!rows.length) return;
+
+    var links = rows.map(function(row){
+      return row.querySelector('.post-file-name a[href]');
+    });
+    var selectedIndex = -1;
+
+    function setSelected(index, shouldFocus){
+      if (index < 0 || index >= rows.length) return;
+
+      selectedIndex = index;
+      rows.forEach(function(row, rowIndex){
+        row.classList.toggle('is-selected', rowIndex === index);
+        links[rowIndex].setAttribute('tabindex', rowIndex === index ? '0' : '-1');
+      });
+
+      if (shouldFocus) {
+        links[index].focus();
+        rows[index].scrollIntoView({ block: 'nearest' });
+      }
+    }
+
+    links.forEach(function(link, index){
+      link.setAttribute('tabindex', index === 0 ? '0' : '-1');
+      link.addEventListener('focus', function(){
+        setSelected(index, false);
+      });
+    });
+
+    table.addEventListener('keydown', function(event){
+      if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp' && event.key !== 'Enter') return;
+
+      var activeRow = event.target.closest('tbody tr');
+      var currentIndex = rows.indexOf(activeRow);
+      if (currentIndex === -1) currentIndex = selectedIndex === -1 ? 0 : selectedIndex;
+
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        links[currentIndex].click();
+        return;
+      }
+
+      event.preventDefault();
+      setSelected(
+        event.key === 'ArrowDown'
+          ? Math.min(currentIndex + 1, rows.length - 1)
+          : Math.max(currentIndex - 1, 0),
+        true
+      );
+    });
+  });
+})();
+
 // Random image (CLS-safe)
 fetchJSON('/datasource/images.json').then(function(list){
   if (!Array.isArray(list) || list.length === 0) return;
