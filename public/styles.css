@@ -438,29 +438,17 @@ footer {
     table-layout: fixed;
 }
 
-.post-file-list th,
 .post-file-list td {
     padding: 0.16rem 0;
     border: 0;
     vertical-align: baseline;
 }
 
-.post-file-list th {
-    color: var(--fg-light);
-    font-family: var(--font-mono);
-    font-size: 0.64rem;
-    font-weight: 400;
-    line-height: 1;
-    text-align: left;
-}
-
-.post-file-list th:nth-child(2),
 .post-file-list td:nth-child(2) {
     width: 3.8rem;
     text-align: right;
 }
 
-.post-file-list th:nth-child(3),
 .post-file-list td:nth-child(3) {
     width: 6.2rem;
     text-align: right;
@@ -471,17 +459,18 @@ footer {
 }
 
 .post-file-list:focus-within tbody tr.is-selected td {
-    background: var(--bg-subtle);
+    background: color-mix(in srgb, var(--fg) 88%, var(--bg));
+    color: var(--bg);
 }
 
 .post-file-list:focus-within tbody tr.is-selected .post-file-name a {
-    color: var(--accent);
+    color: var(--bg);
 }
 
 .post-file-list:focus-within tbody tr.is-selected .post-file-size,
 .post-file-list:focus-within tbody tr.is-selected .post-file-date,
 .post-file-list:focus-within tbody tr.is-selected .post-file-date time {
-    color: var(--fg-muted);
+    color: color-mix(in srgb, var(--bg) 78%, var(--fg));
 }
 
 .post-file-name {
@@ -506,6 +495,11 @@ footer {
 .post-file-name a:focus-visible {
     outline: 1px solid var(--accent);
     outline-offset: 0.16rem;
+}
+
+.post-file-list tbody tr.is-selected .post-file-name a:focus-visible {
+    outline: 0;
+    caret-color: transparent;
 }
 
 .post-file-size,
@@ -1721,12 +1715,10 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
         gap: 1rem;
     }
 
-    .post-file-list th:nth-child(2),
     .post-file-list td:nth-child(2) {
         display: none;
     }
 
-    .post-file-list th:nth-child(3),
     .post-file-list td:nth-child(3) {
         width: 5.7rem;
     }

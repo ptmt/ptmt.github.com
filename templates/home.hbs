@@ -3,19 +3,12 @@
         <div class="home-left-column">
             <section class="latest-posts">
                 <table class="post-file-list" data-row-navigation aria-label="Posts">
-                    <thead>
-                        <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Size</th>
-                            <th scope="col">Date Added</th>
-                        </tr>
-                    </thead>
                     <tbody>
                         {{#each posts}}
                         {{#if (eq metadata.lang "en")}}
                         <tr data-post-lang="{{metadata.lang}}">
                             <td class="post-file-name"><a href="/{{path}}">{{title}}</a></td>
-                            <td class="post-file-size" data-size-url="/{{path}}" data-size-bytes="{{content.length}}">--</td>
+                            <td class="post-file-size">{{formatBytes outputSizeBytes}}</td>
                             <td class="post-file-date"><time datetime="{{date}}">{{formatDate date "yyyy-MM-dd"}}</time></td>
                         </tr>
                         {{/if}}
