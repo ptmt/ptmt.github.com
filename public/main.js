@@ -71,6 +71,13 @@ async function fetchJSON(path){
       });
     });
 
+    rows.forEach(function(row, index){
+      row.addEventListener('click', function(event){
+        if (event.target.closest('a[href]')) return;
+        setSelected(index, true);
+      });
+    });
+
     table.addEventListener('keydown', function(event){
       if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp' && event.key !== 'Enter') return;
 
