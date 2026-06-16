@@ -271,7 +271,7 @@ abbr {
 .main-nav a {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
+    gap: 0.15rem;
     padding: 0.2rem 0.4rem;
     text-decoration: none;
     color: var(--fg);
