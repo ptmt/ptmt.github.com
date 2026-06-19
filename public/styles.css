@@ -433,7 +433,9 @@ footer {
 }
 
 .post-file-list {
-    width: 100%;
+    width: calc(100% + 1rem);
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
     border-collapse: collapse;
     table-layout: fixed;
 }
@@ -444,13 +446,21 @@ footer {
     vertical-align: baseline;
 }
 
+.post-file-list td:first-child {
+    padding-left: 0.5rem;
+}
+
+.post-file-list td:last-child {
+    padding-right: 0.5rem;
+}
+
 .post-file-list td:nth-child(2) {
     width: 3.8rem;
     text-align: right;
 }
 
 .post-file-list td:nth-child(3) {
-    width: 6.2rem;
+    width: 6.7rem;
     text-align: right;
 }
 
@@ -1724,7 +1734,7 @@ body:has(.home-layout) .home-right-column footer .social-links a:hover {
     }
 
     .post-file-list td:nth-child(3) {
-        width: 5.7rem;
+        width: 6.2rem;
     }
 
     .post-file-name {
