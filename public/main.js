@@ -42,7 +42,13 @@ async function fetchJSON(path){
     rows.forEach(function(row, index){
       row.addEventListener('click', function(event){
         if (event.target.closest('a[href]')) return;
+        if (row.classList.contains('is-selected')) return;
         setSelected(index, true);
+      });
+
+      row.addEventListener('dblclick', function(event){
+        if (event.target.closest('a[href]')) return;
+        links[index].click();
       });
     });
 

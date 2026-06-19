@@ -467,6 +467,10 @@ footer {
     color: var(--bg);
 }
 
+.post-file-list:focus-within tbody tr.is-selected .post-file-name a:hover {
+    color: var(--accent);
+}
+
 .post-file-list:focus-within tbody tr.is-selected .post-file-size,
 .post-file-list:focus-within tbody tr.is-selected .post-file-date,
 .post-file-list:focus-within tbody tr.is-selected .post-file-date time {
