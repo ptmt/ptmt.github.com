@@ -8,8 +8,7 @@ link: https://potomushto.com/statik/
 github: https://github.com/ptmt/statik
 tags: kotlin, web, blog
 ---
-
-A set of scripts that can transform a set of markdown into a web-site. I've put some low-effort llm documentation, but I realize it's probably have zero re-usability. And that's okay
+A set of scripts that can transform a bunch of handlebars templates and markdown into a web-site. I've put some low-effort llm documentation, but I realize it's probably have zero re-usability. And that's okay. 
 
 Reasons, in no particular order:
 
@@ -34,10 +33,6 @@ I don't remember why, but 10 years ago I didn't like storing web-site in git.
 Would be nice to have easier post creation and editing process, than operating with Markdown files in git repository.
 Could it be solved on top of the engine? Most likely yes, just do git commits afterwards. 
 
-### Future of over-engineering
-
-- Static web-site, generated, ss it is now.
-- CMS that allows to modify the content, preview it, and publish the final version through git.
 
 ### Biggest missed oportunity
 
