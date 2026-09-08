@@ -1,5 +1,5 @@
 ---
-title: 300 Days of Whoop
+title: One Year of Whoop
 description: Still Feels Incomplete, but now I know what I want
 draft: true
 lang: en
@@ -23,46 +23,35 @@ timeline:
     alt: iOS App Screenshot
   - id: Day 14, Charging
     captionText: Not needing to charge it for weeks is a nice feeling, but surprisingly not that important. Unless you travel often, maybe. And you supposed to charge it on you, so you won't loose even a heartbeat. But I'm not convinced.
-    img: /placeholder.jpg
     alt: Battery and charging
   - id: Day 30, Patience
     captionText: My Whoop's finally calibrated. But what it shows me is barely interesting. HRV in the morning I have hardly trust.
-    img: /whoop-lifespan.jpg
     alt: Whoop Lifespan
   - id: Day 60, Feel
-    captionText: In order for the heart rate sensor to work it should slightly push your skin. I don't like that, can barely tolerate. Despite extended use, it never feels like a natural part of daily life. Too bulky for what it is.
-    img: /placeholder.jpg
+    captionText: In order for the heart rate sensor to work it should slightly push your skin. Always tight. I don't like that, can barely tolerate. Despite extended use, it never feels like a natural part of daily life. Too bulky. I miss so much a feeling of ordinary watches or bands that are loose on hand.
     alt: Feel on the hand
   - id: Day 63, Sickness
     captionText: You're sick — no support at all, no "pause" of any sort, gives you one more thing to worry about. When you're unwell, the device continues tracking and potentially misinterpreting your data, adding stress rather than providing helpful insights. "Your recovery is bad due to bad sleep". 
-    img: /placeholder.jpg
     alt: Lack of support when sick
   - id: Day 70, Metrics
     captionText: HRV measured only in the morning, as well as resting heart rate. And no explanation. I was hoping for more data. Correlleation are weak, not a single insight, although diary of habits seemed useful at first.
-    img: /placeholder.jpg
     alt: Too few metrics
   - id: Day 80, HRV limitations
     captionText: HRV is not a holy grail, and even that is undermeasured, a lot of secret sauce that is not transparent. The core metric that Whoop emphasizes doesn't live up to its promise, and the lack of transparency about how measurements are calculated undermines trust.
-    img: /placeholder.jpg
     alt: HRV limitations
   - id: Day, 90 big-brother
     captionText: Big Brother concern. The continuous monitoring and data collection raise privacy concerns, making users question who has access to their health data and how it might be used.
-    img: /placeholder.jpg
     alt: Big Brother concern
   - id: Day 100, Closed Garden
     captionText: Closed garden, all data lives inside the app, no other angle, only small dataset export. Your health data is locked within Whoop's ecosystem, with limited options for exporting or integrating with other tools, reducing the value of the data you're generating.
-    img: /placeholder.jpg
     alt: Closed garden ecosystem
   - id: Day 150, Am I really better now
     captionText: so I keep going do a run now in pursiut of better VO2Max or lower heart rate
-    img: /placeholder.jpg
     alt: better
   - id: Day 180, Two Device Problem
     captionText: In most cardio interval activities you still would want the second device. In cycling, my main sport, I have a bike computer and a powermeter and an HRM strap anyway. In running, it's a bit more wierd, and in swimming it's just **ridiculous**. So my current solution is a bicep strap, it's a bit comfier and at least I get to pretend I wear only one watch. 
-    img: /placeholder.jpg
     alt: bicep strap
-  - id: Day 200, What I Want
+  - id: Day 365, What I Want
     captionText: "Whoop showed me a new frontier and I'd love to keep using something like this. But that won't be a Whoop v5. What I want: hackable device, either much less noticable, like a ring or ribber band or just combines a watch with all day long sensors in a predicted way."
-    img: /placeholder.jpg
     alt: bicep strap
 ---

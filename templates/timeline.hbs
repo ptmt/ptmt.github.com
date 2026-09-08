@@ -1,189 +1,164 @@
-<article>
-    <h1>{{post.title}}</h1>
-    {{#if post.metadata.description}}
-    <p class="post-subtitle">
-        {{post.metadata.description}}
-    </p>
-    {{/if}}
-    <time datetime="{{post.date}}">{{formatDate post.date "MMMM d, yyyy"}}</time>
+<article class="story-reader" aria-label="{{post.title}}" aria-roledescription="story carousel">
+    <header class="story-header">
+        <div class="story-topline">
+            <a href="/" class="story-home">← {{siteName}}</a>
+            <time datetime="{{post.date}}">{{formatDate post.date "MMMM d, yyyy"}}</time>
+        </div>
+        <h1>{{post.title}}</h1>
+        {{#if post.metadata.description}}
+        <p class="post-subtitle">{{post.metadata.description}}</p>
+        {{/if}}
+    </header>
 
     {{#if post.content}}
-    <div class="content">
-        {{{post.content}}}
-    </div>
+    <div class="content">{{{post.content}}}</div>
     {{/if}}
-</article>
 
-<noscript>
-    <style>
-        .timeline-section {
-            display: block !important;
-            margin-bottom: var(--spacing-xl);
-        }
-    </style>
-</noscript>
+    <div class="story-layout">
+        <nav class="story-chapters" aria-label="Story chapters">
+            {{#each post.metadata.timeline}}
+            <a href="#{{id}}" data-story-index="{{@index}}">{{id}}</a>
+            {{/each}}
+        </nav>
 
-<div class="timeline-layout" data-focus-from="{{#if post.metadata.timelineFocusFrom}}{{post.metadata.timelineFocusFrom}}{{else}}1{{/if}}">
-    <div class="timeline-content">
-        {{#each post.metadata.timeline}}
-        <section id="{{id}}" class="timeline-section{{#unless @first}} timeline-section--focus{{/unless}}">
-            <figure>
-                <div class="caption-header">
-                    <span class="timeline-id-tag tag">{{id}}</span>
-                </div>
-                <div class="figure-content">
-                    {{#if img}}
-                    <img src="{{img}}" alt="{{#if alt}}{{alt}}{{else}}{{captionTitle}}{{/if}}">
-                    {{/if}}
-                    <figcaption class="caption-text">
-                        {{{md captionText}}}
-                    </figcaption>
-                </div>
-            </figure>
-            <div class="timeline-section-nav">
-                {{#unless @first}}
-                <button type="button" class="timeline-prev-button timeline-nav-button">← Prev</button>
-                {{/unless}}
-                {{#unless @last}}
-                <button type="button" class="timeline-next-button timeline-nav-button">Next →</button>
-                {{/unless}}
+        <div class="story-stage">
+            <div class="story-tools" hidden>
+                <p class="story-count" role="status" aria-live="polite" aria-atomic="true"></p>
+                <span class="story-keyboard-hint" aria-hidden="true">← → to explore</span>
             </div>
-        </section>
-        {{/each}}
+
+            <div class="story-slides">
+                {{#each post.metadata.timeline}}
+                <section id="{{id}}" class="story-slide" aria-label="{{id}}" aria-roledescription="slide" tabindex="-1">
+                    <h2>{{id}}</h2>
+                    <figure class="story-figure">
+                        <div class="story-media">
+                            {{#if img}}
+                            <img src="{{img}}" alt="{{alt}}" {{#unless @first}}loading="lazy"{{/unless}} decoding="async">
+                            {{else}}
+                            <span class="story-image-placeholder">Photo to come</span>
+                            {{/if}}
+                            <button type="button" class="story-image-next" aria-label="{{#if @last}}Read the story again{{else}}Next moment{{/if}}" hidden></button>
+                        </div>
+                        <figcaption class="story-caption">
+                            {{{md captionText}}}
+                        </figcaption>
+                    </figure>
+                </section>
+                {{/each}}
+            </div>
+
+            <div class="story-controls" hidden>
+                <button type="button" class="story-previous">← Previous</button>
+                <button type="button" class="story-next">Next →</button>
+            </div>
+        </div>
     </div>
-
-    <nav class="timeline-nav">
-        {{#each post.metadata.timeline}}
-        <a href="#{{id}}" class="timeline-milestone">{{id}}</a>
-        {{/each}}
-    </nav>
-</div>
-
+</article>
 
 <script>
 (function() {
     'use strict';
 
-    const layout = document.querySelector('.timeline-layout');
-    const sections = Array.from(document.querySelectorAll('.timeline-section'));
-    const milestones = Array.from(document.querySelectorAll('.timeline-milestone'));
+    const reader = document.querySelector('.story-reader');
+    const slides = Array.from(reader.querySelectorAll('.story-slide'));
+    if (!slides.length) return;
 
-    if (sections.length === 0 || milestones.length === 0) return;
+    const chapters = reader.querySelector('.story-chapters');
+    const links = Array.from(chapters.querySelectorAll('[data-story-index]'));
+    const previous = reader.querySelector('.story-previous');
+    const next = reader.querySelector('.story-next');
+    const count = reader.querySelector('.story-count');
+    let current = 0;
 
-    const sectionIds = sections.map(s => s.id);
-    const focusFromIndex = layout
-        ? Math.max(0, parseInt(layout.dataset.focusFrom, 10) || 1)
-        : 1;
-
-    function isFocusSection(sectionId) {
-        const idx = sectionIds.indexOf(sectionId);
-        return idx >= focusFromIndex;
-    }
-
-    function setFocusMode(sectionId) {
-        document.body.classList.toggle('timeline-focus-mode', isFocusSection(sectionId));
-    }
-
-    function removeActive() {
-        milestones.forEach(m => m.classList.remove('active'));
-        sections.forEach(s => s.classList.remove('active'));
-    }
-
-    function showSection(sectionId, updateHistory) {
-        removeActive();
-        const section = document.getElementById(sectionId);
-        const milestone = document.querySelector('.timeline-milestone[href="#' + sectionId + '"]');
-
-        if (section) section.classList.add('active');
-        if (milestone) {
-            milestone.classList.add('active');
-            milestone.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-        }
-
-        if (updateHistory !== false) {
-            history.pushState({ sectionId: sectionId }, '', '#' + sectionId);
-        }
-
-        setFocusMode(sectionId);
-
-        if (isFocusSection(sectionId)) {
-            window.scrollTo({ top: 0, behavior: 'instant' });
+    function indexFromHash() {
+        try {
+            const id = decodeURIComponent(location.hash.slice(1));
+            const index = slides.findIndex(slide => slide.id === id);
+            return index < 0 ? 0 : index;
+        } catch (_) {
+            return 0;
         }
     }
 
-    // Prevent default scroll behavior when page loads with hash
-    if (window.location.hash) {
-        window.scrollTo(0, 0);
-    }
-
-    // Init
-    function initSection() {
-        const hashId = window.location.hash ? decodeURIComponent(window.location.hash.substring(1)) : null;
-        if (hashId && sectionIds.includes(hashId)) {
-            showSection(hashId, false);
-            // Scroll to top of the section after showing it
-            if (!isFocusSection(hashId)) {
-                setTimeout(() => {
-                    const section = document.getElementById(hashId);
-                    if (section) {
-                        const rect = section.getBoundingClientRect();
-                        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                        window.scrollTo({
-                            top: scrollTop + rect.top - 20,
-                            behavior: 'instant'
-                        });
-                    }
-                }, 50);
-            }
-        } else {
-            showSection(sectionIds[0], false);
+    function keepChapterVisible() {
+        const link = links[current];
+        // Scroll only the chapter list, keeping the image and page in place.
+        if (chapters.scrollWidth > chapters.clientWidth) {
+            chapters.scrollLeft = link.offsetLeft - chapters.clientWidth / 2 + link.offsetWidth / 2;
+        } else if (link.offsetTop < chapters.scrollTop) {
+            chapters.scrollTop = link.offsetTop;
+        } else if (link.offsetTop + link.offsetHeight > chapters.scrollTop + chapters.clientHeight) {
+            chapters.scrollTop = link.offsetTop + link.offsetHeight - chapters.clientHeight;
         }
     }
 
-    // Handle initial load - run immediately to prevent browser scroll
-    initSection();
+    function show(index, updateHistory = true) {
+        if (index < 0 || index >= slides.length) return;
+        const focusWillBeHidden = (index !== current && slides[current].contains(document.activeElement))
+            || (index === 0 && document.activeElement === previous);
 
-    milestones.forEach(milestone => {
-        milestone.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            showSection(targetId);
+        slides.forEach((slide, i) => {
+            slide.hidden = i !== index;
+        });
+        current = index;
+        links.forEach((link, position) => {
+            if (position === current) link.setAttribute('aria-current', 'step');
+            else link.removeAttribute('aria-current');
+        });
+        previous.disabled = current === 0;
+        next.textContent = current === slides.length - 1 ? 'Read again ↺' : 'Next →';
+        count.textContent = String(current + 1).padStart(2, '0') + ' / ' + slides.length;
+        count.setAttribute('aria-label', 'Moment ' + (current + 1) + ' of ' + slides.length + ': ' + slides[current].id);
+        keepChapterVisible();
+
+        if (updateHistory) {
+            history.pushState(null, '', '#' + encodeURIComponent(slides[current].id));
+        }
+        if (focusWillBeHidden) slides[current].focus({ preventScroll: true });
+        if (updateHistory && reader.getBoundingClientRect().top < -20) {
+            reader.scrollIntoView({ block: 'start' });
+        }
+    }
+
+    function advance() {
+        show(current === slides.length - 1 ? 0 : current + 1);
+    }
+
+    previous.addEventListener('click', () => show(current - 1));
+    next.addEventListener('click', advance);
+    reader.querySelectorAll('.story-image-next').forEach(button => {
+        button.hidden = false;
+        button.addEventListener('click', advance);
+    });
+    links.forEach(link => {
+        link.addEventListener('click', event => {
+            if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+            event.preventDefault();
+            show(Number(link.dataset.storyIndex));
         });
     });
 
-    function navigateSection(button, offset) {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-            const current = this.closest('.timeline-section');
-            if (!current) return;
-            const idx = sectionIds.indexOf(current.id);
-            if (idx < 0) return;
-            const targetId = sectionIds[idx + offset];
-            if (targetId) showSection(targetId);
-        });
-    }
-
-    document.querySelectorAll('.timeline-next-button').forEach(button => navigateSection(button, 1));
-    document.querySelectorAll('.timeline-prev-button').forEach(button => navigateSection(button, -1));
-
-    window.addEventListener('popstate', function(e) {
-        if (e.state && e.state.sectionId) {
-            showSection(e.state.sectionId, false);
-        } else {
-            // Handle browser back/forward with hash
-            const hashId = window.location.hash ? decodeURIComponent(window.location.hash.substring(1)) : null;
-            if (hashId && sectionIds.includes(hashId)) {
-                showSection(hashId, false);
-            }
+    document.addEventListener('keydown', event => {
+        if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+        if (event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
+        if (event.key === 'ArrowRight') {
+            event.preventDefault();
+            if (current < slides.length - 1) show(current + 1);
+        } else if (event.key === 'ArrowLeft') {
+            event.preventDefault();
+            show(current - 1);
         }
     });
 
-    // Also handle hashchange events (e.g., when user manually changes URL)
-    window.addEventListener('hashchange', function() {
-        const hashId = window.location.hash ? decodeURIComponent(window.location.hash.substring(1)) : null;
-        if (hashId && sectionIds.includes(hashId)) {
-            showSection(hashId, false);
-        }
+    window.addEventListener('popstate', () => show(indexFromHash(), false));
+    window.addEventListener('hashchange', () => show(indexFromHash(), false));
+    window.addEventListener('resize', keepChapterVisible);
+
+    reader.querySelectorAll('.story-tools, .story-controls').forEach(control => {
+        control.hidden = false;
     });
+    reader.classList.add('is-interactive');
+    show(indexFromHash(), false);
 })();
 </script>
