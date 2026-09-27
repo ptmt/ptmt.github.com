@@ -18,15 +18,6 @@
     --page-gutter: clamp(1rem, 3vw, 2rem);
 }
 
-[data-theme="dark"] {
-    --fg: #e5e5e5;
-    --fg-muted: #b0b0b0;
-    --fg-light: #888;
-    --bg: #0a0a0a;
-    --bg-subtle: #111;
-    --border: rgba(229, 229, 229, 0.18);
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -318,10 +309,6 @@ abbr {
     opacity: 1;
 }
 
-.social-links svg {
-    display: block;
-}
-
 /* Footer */
 footer {
     margin-top: var(--spacing-xl);
@@ -459,23 +446,16 @@ footer {
     transition: background-color 0.12s, color 0.12s;
 }
 
-.post-file-list:focus-within tbody tr.is-selected td {
-    background: color-mix(in srgb, var(--fg) 88%, var(--bg));
-    color: var(--bg);
+.post-file-list tbody tr {
+    cursor: pointer;
 }
 
-.post-file-list:focus-within tbody tr.is-selected .post-file-name a {
-    color: var(--bg);
+.post-file-list tbody tr:focus-within td {
+    background: color-mix(in srgb, var(--fg) 7%, var(--bg));
 }
 
-.post-file-list:focus-within tbody tr.is-selected .post-file-name a:hover {
-    color: var(--accent);
-}
-
-.post-file-list:focus-within tbody tr.is-selected .post-file-size,
-.post-file-list:focus-within tbody tr.is-selected .post-file-date,
-.post-file-list:focus-within tbody tr.is-selected .post-file-date time {
-    color: color-mix(in srgb, var(--bg) 78%, var(--fg));
+.post-file-list tbody tr:focus-within td:first-child {
+    box-shadow: inset 2px 0 var(--accent);
 }
 
 .post-file-name {
@@ -498,13 +478,10 @@ footer {
 }
 
 .post-file-name a:focus-visible {
-    outline: 1px solid var(--accent);
-    outline-offset: 0.16rem;
-}
-
-.post-file-list tbody tr.is-selected .post-file-name a:focus-visible {
     outline: 0;
-    caret-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 2px;
 }
 
 .post-file-size,

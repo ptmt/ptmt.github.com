@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const rootDir = process.cwd();
-const cssPath = path.join(rootDir, 'public/styles.css');
+const cssFiles = ['styles.css', 'plain.css'];
 const contentRoots = ['templates', 'pages', 'posts', 'garage', 'public'];
 const markupExtensions = new Set(['.hbs', '.html', '.md']);
 const scriptExtensions = new Set(['.js', '.mjs', '.cjs']);
@@ -120,15 +120,17 @@ for (const contentRoot of contentRoots) {
   }
 }
 
-const css = fs.readFileSync(cssPath, 'utf8');
-const unusedSelectors = getUnusedSelectors(css);
+const unusedSelectors = cssFiles.flatMap((fileName) => {
+  const css = fs.readFileSync(path.join(rootDir, 'public', fileName), 'utf8');
+  return getUnusedSelectors(css).map((selector) => `${fileName}: ${selector}`);
+});
 
 if (unusedSelectors.length === 0) {
-  console.log('No unused CSS selectors found in public/styles.css');
+  console.log('No unused CSS selectors found in public CSS');
   process.exit(0);
 }
 
-console.log('Unused CSS selectors found in public/styles.css:');
+console.log('Unused CSS selectors found in public CSS:');
 for (const selector of unusedSelectors) {
   console.log(`- ${selector}`);
 }

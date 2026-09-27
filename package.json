@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "audit:css": "node scripts/check-css-usage.mjs",
-    "lint:css": "stylelint \"public/styles.css\""
+    "lint:css": "stylelint \"public/*.css\""
   },
   "devDependencies": {
     "stylelint": "^17.8.0"

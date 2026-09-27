@@ -1,10 +1,9 @@
-
 async function fetchJSON(path){
   try { const r = await fetch(path, { headers: { 'accept': 'application/json' } });
     return r.ok ? r.json() : []; } catch { return []; }
 }
 
-// File-list row keyboard navigation
+// File-list links keep normal browser behavior, with arrow keys as a shortcut.
 (function(){
   document.querySelectorAll('[data-row-navigation]').forEach(function(table){
     var rows = Array.prototype.slice.call(table.querySelectorAll('tbody tr')).filter(function(row){
@@ -15,63 +14,39 @@ async function fetchJSON(path){
     var links = rows.map(function(row){
       return row.querySelector('.post-file-name a[href]');
     });
-    var selectedIndex = -1;
-
-    function setSelected(index, shouldFocus){
-      if (index < 0 || index >= rows.length) return;
-
-      selectedIndex = index;
-      rows.forEach(function(row, rowIndex){
-        row.classList.toggle('is-selected', rowIndex === index);
-        links[rowIndex].setAttribute('tabindex', rowIndex === index ? '0' : '-1');
-      });
-
-      if (shouldFocus) {
-        links[index].focus();
-        rows[index].scrollIntoView({ block: 'nearest' });
-      }
-    }
-
-    links.forEach(function(link, index){
-      link.setAttribute('tabindex', index === 0 ? '0' : '-1');
-      link.addEventListener('focus', function(){
-        setSelected(index, false);
-      });
-    });
 
     rows.forEach(function(row, index){
       row.addEventListener('click', function(event){
         if (event.target.closest('a[href]')) return;
-        if (row.classList.contains('is-selected')) return;
-        setSelected(index, true);
-      });
-
-      row.addEventListener('dblclick', function(event){
-        if (event.target.closest('a[href]')) return;
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        if (window.getSelection && String(window.getSelection()).trim()) return;
         links[index].click();
       });
     });
 
-    table.addEventListener('keydown', function(event){
-      if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp' && event.key !== 'Enter') return;
+    document.addEventListener('keydown', function(event){
+      if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
+      if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
 
-      var activeRow = event.target.closest('tbody tr');
-      var currentIndex = rows.indexOf(activeRow);
-      if (currentIndex === -1) currentIndex = selectedIndex === -1 ? 0 : selectedIndex;
-
-      if (event.key === 'Enter') {
-        event.preventDefault();
-        links[currentIndex].click();
-        return;
+      var activeElement = document.activeElement;
+      var currentIndex = links.indexOf(activeElement);
+      if (currentIndex === -1) {
+        if (activeElement !== document.body && activeElement !== document.documentElement) return;
+        var bounds = table.getBoundingClientRect();
+        if (bounds.bottom <= 0 || bounds.top >= window.innerHeight) return;
       }
 
       event.preventDefault();
-      setSelected(
-        event.key === 'ArrowDown'
-          ? Math.min(currentIndex + 1, rows.length - 1)
-          : Math.max(currentIndex - 1, 0),
-        true
-      );
+      var nextIndex;
+      if (currentIndex === -1) {
+        nextIndex = event.key === 'ArrowDown' ? 0 : rows.length - 1;
+      } else if (event.key === 'ArrowDown') {
+        nextIndex = Math.min(currentIndex + 1, rows.length - 1);
+      } else {
+        nextIndex = Math.max(currentIndex - 1, 0);
+      }
+      links[nextIndex].focus();
+      rows[nextIndex].scrollIntoView({ block: 'nearest' });
     });
   });
 })();
