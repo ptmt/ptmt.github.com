@@ -696,21 +696,6 @@ article h1 {
     margin-bottom: 0.5em;
 }
 
-.post-subtitle {
-    color: var(--fg-muted);
-    font-size: 1.05rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-top: -0.25em;
-    margin-bottom: var(--spacing-base);
-    font-family: var(--font-mono);
-}
-
-article time {
-    display: block;
-    margin-bottom: var(--spacing-base);
-}
-
 .content {
     font-family: var(--font-serif);
     font-size: 1rem;
