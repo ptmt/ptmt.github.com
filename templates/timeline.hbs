@@ -33,12 +33,19 @@
                     <h2>{{id}}</h2>
                     <figure class="story-figure">
                         <div class="story-media">
+                            {{#if video}}
+                            <video controls loop muted playsinline preload="metadata" {{#if poster}}poster="{{poster}}"{{/if}} aria-label="{{alt}}">
+                                <source src="{{video}}" type="video/mp4">
+                                <a href="{{video}}">Download the video</a>
+                            </video>
+                            {{else}}
                             {{#if img}}
                             <img src="{{img}}" alt="{{alt}}" {{#unless @first}}loading="lazy"{{/unless}} decoding="async">
                             {{else}}
                             <span class="story-image-placeholder">Photo to come</span>
                             {{/if}}
                             <button type="button" class="story-image-next" aria-label="{{#if @last}}Read the story again{{else}}Next moment{{/if}}" hidden></button>
+                            {{/if}}
                         </div>
                         <figcaption class="story-caption">
                             {{{md captionText}}}
@@ -100,6 +107,7 @@
 
         slides.forEach((slide, i) => {
             slide.hidden = i !== index;
+            if (slide.hidden) slide.querySelectorAll('video').forEach(video => video.pause());
         });
         current = index;
         links.forEach((link, position) => {
@@ -141,7 +149,7 @@
 
     document.addEventListener('keydown', event => {
         if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
-        if (event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
+        if (event.target.closest('input, textarea, select, video, [contenteditable="true"]')) return;
         if (event.key === 'ArrowRight') {
             event.preventDefault();
             if (current < slides.length - 1) show(current + 1);

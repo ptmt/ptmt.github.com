@@ -4,22 +4,21 @@ description: What do you feel when you look at your oldest family photos?
 published: 2025-12-15T10:00
 lang: en
 ---
-## The Year Is 2050
+### The Year Is 2050
 
 You are not “checking your old projects” the way you used to check old photos. It is more like opening a drawer of odd objects you once built by hand: a tiny wooden box, a key you no longer own the lock for, a perfectly shaped stone you picked up because it felt important at the time.
 
 Your projects are like that now. Some still open with a satisfying click. Some fight you. Some are just labels pointing at places that do not exist anymore.
 You start with the easy ones.
 
-A directory called *potomushto.com* is mostly text files. Markdown. A <abbr title="well, I hope there will be many">few</abbr> HTML pages you once generated and never touched again. You open one and it just appears. Instantly. No “restore environment,” no “dependency mismatch,” no “this plugin can’t be verified.”
+A directory called *potomushto.com* is mostly text files. Markdown. A <abbr title="well, I hope there will be many">few</abbr> HTML pages you once generated and never touched again. You open one and it just appears. Instantly. Instead of “restore environment,”  “dependency mismatch,”  “this plugin can’t be verified.”
 
-It feels the way it feels to find an old printed photo: slightly too sharp, slightly too honest, and strangely immune to time.
-The rendering is different than it was in 2025. Fonts drift, spacing changes a little, but the words are the words. Links still point somewhere or they do not. Either way the text stays. Plain content does not need an ecosystem to survive.
+It feels the way it feels to find an old printed photo. HTML still differs. The rendering is different than it was in 2025. Fonts drift, spacing changes a little, but the words are the words. Links still point somewhere or they do not. Either way the text stays. Plain content does not need an ecosystem to survive.
 
 Then you open the harder drawer.
 
 A little macOS app you were proud of. Sleek, minimal, “native.” It used to feel permanent because it lived inside the operating system, not on some website.
-But the OS has evolved the way cities evolve. It did not “break” your old apartment, it just stopped building roads to that neighborhood. Code signing rules changed. Sandboxing got stricter. A security model shifted after some global incident you barely remember now. The app still exists as a binary like a fossil exists as a shape. Recognizable, but not quite alive.
+But the OS has evolved the way cities evolve. It did not “break” your old apartment, it just stopped building roads to that neighborhood. Code signing rules changed. CPU architecure changed. Sandboxing got stricter. A security model shifted after some global incident <abbr title="of course it's AI">you barely remember now</abbr>. The app still exists as a binary like a fossil exists as a shape. Recognizable, but not quite alive.
 
 You can revive it. _Of course you can!_ Everything can be revived now with AI.
 But reviving is never free. It costs attention, and attention in 2050 is expensive in the way your free evenings used to be expensive.
@@ -46,7 +45,7 @@ The ones that talked to other services like [WeirdStats](/garage/weirdstats). Mo
 
 Those projects feel like old screenshots of conversations with people you no longer know. Not sad exactly, just un-runnable.
 
-## 2075
+### 2075
 
 You are older now, older enough that you stop trusting anything that depends on a company staying interested.
 
@@ -58,13 +57,13 @@ But the repository feels different. It may survive, not nesseceraly as a git, bu
 
 A hosted site can disappear like a storefront. A repository is more like a box of papers. It gets copied. It gets mirrored. It gets bundled into backups and exports and “takeout” archives. It ends up inside someone else’s cold storage the way family photo albums end up in attics. Even if the original platform is gone, a bundle often survives somewhere because it was small, easy to copy, and once copied, hard to fully erase.
 
-Maybe the GitHub Pages version is gone by then. Maybe your domain points to nothing. But the git history, zipped into some archive you forgot you made, still has all the posts. Markdown is still there. HTML is still there. The shape of your thinking is still there.
+Maybe the GitHub Pages version is gone by then. Probably a long ago. Maybe your domain points to nothing. But the git history, zipped into some archive you forgot you made, still has all the posts. Markdown is still there. HTML is still there. 
 
 By then, much earlier even, AI have eaten so much of the internet that “the past” is accessible in a new way. Not as exact files, but as a kind of memory. Slightly compressed. Slightly vague. Full of smooth edges where details used to be sharp. But ready to be regenerated almost instantly into something you can touch.
 
 You ask yourself: if a model can reconstruct the feeling of your old app from _something_ by accessing your memory directly, _does it matter_ whether the binary still runs?
 
-If a model can recompile your game into whatever the current modern emulator is, does it matter that the original engine died?
+If a model can recompile your game into whatever the current modern computer is, does it matter that the original engine died?
 If a model can take your old blogposts and lay them out in any style you want, does it matter which generator you used?
 It is tempting to say no. It is tempting to accept the new kind of preservation, the kind that keeps the gist but not the grain.
 But then you look again at the printed photos.
