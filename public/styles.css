@@ -1062,6 +1062,14 @@ article h1 {
     width: 100%;
 }
 
+.idea-content .post-subtitle {
+    margin: 0 0 var(--spacing-large);
+    color: var(--fg-muted);
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 .idea-right-column {
     background: var(--bg-subtle);
     padding: var(--spacing-large);

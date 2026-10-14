@@ -2,7 +2,7 @@
 title: Statik
 template: idea 
 status: active
-summary: Opionated single-purpose web-site generator
+summary: Opinionated single-purpose web-site generator from 2025
 image: https://potomushto.com/statik/images/statik.png
 link: https://potomushto.com/statik/
 github: https://github.com/ptmt/statik

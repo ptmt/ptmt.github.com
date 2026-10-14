@@ -10,7 +10,7 @@ There’s this popular IQ Bell curve meme. As time goes by, you sometimes realiz
 > 2. do not care just give me engagement 
 > 3. stand-alone personal blog
 
-I’ve had several phases in my life when I tried blogging. [potomushto.com](https://potomushto.com) is probably 4th reincarnation of it. At one point, I created a separate Tumblr just for a seven-day trip and I still love that blog. Going back and rereading it once every five years gives me chills. 
+I’ve had several phases in my life when I tried blogging. The current version of [potomushto.com](https://potomushto.com) is probably the 4th reincarnation of it. At one point, I created a separate Tumblr just for a seven-day trip and I still love that blog. Going back and rereading it once every five years gives me chills. 
 
 Another time, I used a throwaway name on Blogspot or WordPress. Something that cost me nothing and required zero hassle. And it’s still there. Still working. Still openable after all these years. Still close to zero readers and visitors. 
 
