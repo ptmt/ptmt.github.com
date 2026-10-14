@@ -1,6 +1,5 @@
 ---
 title: We are so back
-description: Waited for 10 years to resurrect this blog
 published: 2025-10-15T10:00
 lang: en
 ---
