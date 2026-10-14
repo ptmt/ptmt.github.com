@@ -16,7 +16,7 @@ Let's get back a few years go. (Preferrably before Covid and War). These used to
 - [Reverse engineering Apple’s GPU to make it work on Linux](https://asahilinux.org/2022/12/gpu-drivers-now-in-asahi-linux/).
 - [Figuring out why GTA Online takes so long to load and cutting that time by 70%](https://nee.lv/2021/02/28/How-I-cut-GTA-Online-loading-times-by-70/).
 
-I would open those links with _Vorfreude_. They were like some sort of unfullfilled dream to me. Yes, I'm not capable of doing that myself (except maybe in 2015-2016), but man can dream. You read this articles and secretly believe: one day will accomplish such things, because there are so much to explore! Or maybe it's like buying the gym membership. Or just a hobby that you wish you had, but something else in life gets in a way, but at least you can peek.
+I would open those links with _Vorfreude_. They were like some sort of unfullfilled dream to me. I'm not capable of doing that myself (except maybe short period of time in 2015-2016), but man can dream. You read this articles and secretly believe: one day will accomplish such things, because there are so much to explore! Or maybe it's like buying a gym membership. Or just a hobby that you wish you had, but something else in life gets in a way, but at least you can peek.
 
 Now there’s a growing collection of such stories with AI doing a substantial part of the work:
 
@@ -24,7 +24,7 @@ Now there’s a growing collection of such stories with AI doing a substantial p
 - [Rebuilding Playwright’s browser-control layer in Rust with coding agents](https://news.ycombinator.com/item?id=48923788).
 - [Using agents to decompile Modern Warfare 2](https://momo5502.com/posts/2026-08-17-mw2-decompilation/), and the whole game deplatformization thing. Like https://playgta5.top/
 
-Then there are the wonderfully specific personal projects. The “my coding agent fixed my toaster” genre:
+These are the wonderfully specific personal projects. But now it's "my coding agent fixed my toaster" genre:
 
 - [A tool for controlling a coffee machine through its reverse-engineered Bluetooth protocol](https://github.com/Janczykkkko/xbloom-ble).
 - [Investigating the firmware of a monitor, webcam, microphone, and other gadgets within arm’s reach](https://schlarp.com/posts/everything-i-own-owned/).
@@ -37,6 +37,8 @@ Now I find myself asking how much the agent did before I’ve even let myself ap
 
 Another recent example was [an interactive visualization of Calvino’s *Invisible Cities*, generated from one prompt](https://quesma.com/blog/invisible-cities-one-shot/). The author was mesmerized. I read it and [felt](https://news.ycombinator.com/item?id=50006181) very little. Another thing that would once have seemed extraordinary had become something I could scroll past.
 
-I think partially my "wow" about such things used to come from imaginging the creator as a person. At past we had a privelige to "fix" things in spare time, and this was making our whole profession more interesting. Learning something new while overcoming your struggle, Dan's post certainly has plenty of it. I hope I will adapt. Achivement is still there, AI is just another tool, right? If some post got popular enough, enough people recognized it to care. 
+I think partially my "wow" about such things used to come from imaginging the creator as a person. At past we had a privilege to "fix" things in our spare time, and this was making our whole profession more interesting. Learning something new while overcoming your struggle, Dan's post certainly has plenty of it. Achievement is still there, AI is just another tool, right? If some post got popular enough, enough people recognized it to care. 
 
 And in case of Dan and what I envy about Dan is the time he has devoted to math and learning it from scratch, long before AI. 
+
+I hope I will adapt, but right now, my excitement is somewhere else.
