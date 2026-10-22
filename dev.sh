@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-cd ../statik && ./amper run -- --root-path=../ptmt.github.com --watch
+cd ../statik && ./kotlin run -- --root-path=../ptmt.github.com --watch

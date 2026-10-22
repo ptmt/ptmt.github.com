@@ -14,7 +14,7 @@ Reasons, in no particular order:
 
 - __Procrastinatination__. *Just one more feature, bro. Just one more feature and I'll do something really useful.* Classic! Instead of writing posts, you end up spending more time building your website
 - __No clear end goal__. To me, Statik is not a product. I don't care about value. Maybe should, but I don't. It's a hobby project in my garage, where I invite my friends sometimes. And it's not most exciting thing there
-- __Playground__. I still love Kotlin, and here I'm trying to try random things out. For example, [Amper](https://github.com/JetBrains/amper) - an experimental build system, instead of Gradle. It's so simple, that I could write my own subset of it if I needed to.  
+- __Playground__. I still love Kotlin, and here I'm trying to try random things out. For example, Kotlin Toolchain (formerly [Amper](https://github.com/JetBrains/amper)) - an experimental build system, instead of Gradle. It's so simple, that I could write my own subset of it if I needed to.
 - __Future-proofing__. The assumption is that in 10 years or in 20 years, I'll be still able to host it and maintain it.
 
 ### Constraints
