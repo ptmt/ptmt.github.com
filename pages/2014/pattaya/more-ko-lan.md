@@ -1,5 +1,5 @@
 ---
-title: "Ещё Ко Ланг"
+title: "Ещё Ко Лан"
 published: "2014-10-10T13:00:28+00:00"
 date: "2014-10-10"
 lang: ru
@@ -18,6 +18,6 @@ next:
   title: "Пёс на кассе"
 ---
 
-<p><a href="/media/2014/pattaya/wpid-dsc00497.jpg"><img src="/media/2014/pattaya/wpid-dsc00497.webp" alt="Ещё Ко Ланг — фото 1" width="1600" height="1069" decoding="async" /></a></p>
-<p><a href="/media/2014/pattaya/wpid-wp-1412945941263.jpeg"><img src="/media/2014/pattaya/wpid-wp-1412945941263.webp" alt="Ещё Ко Ланг — фото 2" width="1600" height="1069" decoding="async" loading="lazy" /></a></p>
-<p><a href="/media/2014/pattaya/wpid-wp-1412945959118.jpeg"><img src="/media/2014/pattaya/wpid-wp-1412945959118.webp" alt="Ещё Ко Ланг — фото 3" width="1600" height="1069" decoding="async" loading="lazy" /></a></p>
+<p><a href="/media/2014/pattaya/wpid-dsc00497.jpg"><img src="/media/2014/pattaya/wpid-dsc00497.webp" alt="Ещё Ко Лан — фото 1" width="1600" height="1069" decoding="async" /></a></p>
+<p><a href="/media/2014/pattaya/wpid-wp-1412945941263.jpeg"><img src="/media/2014/pattaya/wpid-wp-1412945941263.webp" alt="Ещё Ко Лан — фото 2" width="1600" height="1069" decoding="async" loading="lazy" /></a></p>
+<p><a href="/media/2014/pattaya/wpid-wp-1412945959118.jpeg"><img src="/media/2014/pattaya/wpid-wp-1412945959118.webp" alt="Ещё Ко Лан — фото 3" width="1600" height="1069" decoding="async" loading="lazy" /></a></p>

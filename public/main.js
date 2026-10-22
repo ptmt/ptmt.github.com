@@ -51,6 +51,64 @@ async function fetchJSON(path){
   });
 })();
 
+// Keep linked photos in the article, with a dismissible native image viewer.
+(function(){
+  if (!window.HTMLDialogElement || !HTMLDialogElement.prototype.showModal) return;
+
+  var viewer;
+  var photo;
+  var opener;
+
+  function createViewer(){
+    viewer = document.createElement('dialog');
+    viewer.className = 'image-viewer';
+    viewer.setAttribute('aria-label', 'Image viewer');
+
+    var closeButton = document.createElement('button');
+    closeButton.type = 'button';
+    closeButton.className = 'image-viewer-close';
+    closeButton.textContent = '× Close';
+    closeButton.setAttribute('aria-label', 'Close image');
+    closeButton.setAttribute('autofocus', '');
+    closeButton.addEventListener('click', function(){ viewer.close(); });
+
+    photo = document.createElement('img');
+    viewer.append(closeButton, photo);
+    document.body.appendChild(viewer);
+
+    viewer.addEventListener('click', function(event){
+      if (event.target === viewer) viewer.close();
+    });
+    // Native dialogs also close on Escape and keep keyboard focus inside.
+    viewer.addEventListener('close', function(){
+      document.documentElement.classList.remove('image-viewer-open');
+      photo.removeAttribute('src');
+      if (opener && opener.isConnected) opener.focus({ preventScroll: true });
+      opener = null;
+    });
+  }
+
+  document.addEventListener('click', function(event){
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+    var link = event.target.closest('.content a[href]');
+    if (!link || link.hasAttribute('download')) return;
+    var thumbnail = link.querySelector('img');
+    if (!thumbnail) return;
+
+    var url = new URL(link.href, document.baseURI);
+    if (!/^https?:$/.test(url.protocol) || !/\.(?:jpe?g|png|gif|webp|avif|svg|bmp|ico|apng)$/i.test(url.pathname)) return;
+
+    event.preventDefault();
+    if (!viewer) createViewer();
+    opener = link;
+    photo.alt = thumbnail.alt;
+    photo.src = url.href;
+    viewer.showModal();
+    document.documentElement.classList.add('image-viewer-open');
+  });
+})();
+
 // Random image (CLS-safe)
 fetchJSON('/datasource/images.json').then(function(list){
   if (!Array.isArray(list) || list.length === 0) return;

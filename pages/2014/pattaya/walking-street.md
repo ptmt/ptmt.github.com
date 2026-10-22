@@ -18,7 +18,7 @@ next:
   title: "Остров Ко Лан"
 ---
 
-<p>Не Арбат и не Елисейские поля. И даже не Reeperbahn. Кислотно-тошнотворный однообразный дешевый антураж. Секс? Только что доступный и видимо дешевый. Впечатлило, но не понравилось. </p>
+<p>Не Арбат и не Елисейские поля. И даже не Reeperbahn. Кислотно-тошнотворный однообразный дешевый антураж. Секс? Только что доступный и, видимо, дешевый. Впечатлило, но не понравилось. </p>
 <p><a href="/media/2014/pattaya/wpid-wp-1412937866556.jpeg"><img src="/media/2014/pattaya/wpid-wp-1412937866556.webp" alt="Walking street — фото 1" width="1600" height="1069" decoding="async" /></a></p>
 <p><a href="/media/2014/pattaya/wpid-dsc00469_2.jpg"><img src="/media/2014/pattaya/wpid-dsc00469_2.webp" alt="Walking street — фото 2" width="1600" height="1069" decoding="async" loading="lazy" /></a></p>
 <p><a href="/media/2014/pattaya/wpid-dsc00444.jpg"><img src="/media/2014/pattaya/wpid-dsc00444.webp" alt="Walking street — фото 3" width="1600" height="1069" decoding="async" loading="lazy" /></a></p>

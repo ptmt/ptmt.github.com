@@ -18,6 +18,6 @@ next:
   title: "MB"
 ---
 
-<p>То самое, за что многие родину в конце концов и продают. Хотя есть еще кое-что (здесь ссылка)</p>
+<p>То самое, за что многие родину в конце концов и продают. Хотя есть еще кое-что (здесь ссылка).</p>
 <p><a href="/media/2014/pattaya/wpid-img-20141011-wa0013.jpg"><img src="/media/2014/pattaya/wpid-img-20141011-wa0013.webp" alt="Банановые блинчики — фото 1" width="960" height="1280" decoding="async" /></a></p>
 <p><a href="/media/2014/pattaya/wpid-img-20141011-wa0011.jpg"><img src="/media/2014/pattaya/wpid-img-20141011-wa0011.webp" alt="Банановые блинчики — фото 2" width="1280" height="960" decoding="async" loading="lazy" /></a></p>

@@ -15,7 +15,7 @@ previous:
   title: "Мидии на пару"
 next:
   path: "2014/pattaya/more-ko-lan"
-  title: "Ещё Ко Ланг"
+  title: "Ещё Ко Лан"
 ---
 
 <p><a href="/media/2014/pattaya/wpid-dsc00418.jpg"><img src="/media/2014/pattaya/wpid-dsc00418.webp" alt="Alibaba — фото 1" width="1600" height="1069" decoding="async" /></a></p>

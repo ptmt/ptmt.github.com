@@ -12,7 +12,7 @@ source_url: "https://pattaya201409.wordpress.com/2014/10/11/%d1%81%d0%ba%d1%80%d
 source_id: 61
 previous:
   path: "2014/pattaya/playing-while-she-shops"
-  title: "Поиграть пока она в магазине"
+  title: "Поиграть, пока она в магазине"
 next:
   path: "2014/pattaya/japanese-approach"
   title: "Японский подход"

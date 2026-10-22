@@ -29,6 +29,6 @@
     </details>
     <footer class="post-meta" lang="en">
         Published <time datetime="{{page.metadata.published}}">{{page.metadata.date}}</time>
-        · <a href="{{page.metadata.source_url}}">Original on WordPress</a>
+        · <a href="{{page.metadata.source_url}}">Original on {{#if page.metadata.source_name}}{{page.metadata.source_name}}{{else}}WordPress{{/if}}</a>
     </footer>
 </article>

@@ -1,5 +1,5 @@
 ---
-title: "Поиграть пока она в магазине"
+title: "Поиграть, пока она в магазине"
 published: "2014-10-11T07:47:02+00:00"
 date: "2014-10-11"
 lang: ru
@@ -18,4 +18,4 @@ next:
   title: "Скромный ответ"
 ---
 
-<p><a href="/media/2014/pattaya/wpid-wp-1413013501290.jpeg"><img src="/media/2014/pattaya/wpid-wp-1413013501290.webp" alt="Поиграть пока она в магазине — фото 1" width="1600" height="1200" decoding="async" /></a></p>
+<p><a href="/media/2014/pattaya/wpid-wp-1413013501290.jpeg"><img src="/media/2014/pattaya/wpid-wp-1413013501290.webp" alt="Поиграть, пока она в магазине — фото 1" width="1600" height="1200" decoding="async" /></a></p>

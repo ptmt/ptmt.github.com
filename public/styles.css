@@ -667,6 +667,62 @@ article h1 {
     margin: 0;
 }
 
+html.image-viewer-open {
+    overflow: hidden;
+}
+
+.image-viewer {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 4rem 1rem 1rem;
+    border: 0;
+    background: transparent;
+    color: #fff;
+}
+
+.image-viewer[open] {
+    display: grid;
+    grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+    place-items: center;
+}
+
+.image-viewer::backdrop {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.image-viewer img {
+    display: block;
+    min-width: 0;
+    min-height: 0;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.image-viewer-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    min-height: 44px;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    background: #222;
+    color: #fff;
+    font: 1rem var(--font-sans);
+    cursor: pointer;
+}
+
+.image-viewer-close:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+}
+
 .content figcaption {
     color: var(--fg-light);
     font-size: 0.875rem;

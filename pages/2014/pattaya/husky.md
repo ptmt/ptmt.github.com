@@ -15,7 +15,7 @@ previous:
   title: "Пёс на кассе"
 next:
   path: "2014/pattaya/playing-while-she-shops"
-  title: "Поиграть пока она в магазине"
+  title: "Поиграть, пока она в магазине"
 ---
 
 <p><a href="/media/2014/pattaya/wpid-wp-1412997050236.jpeg"><img src="/media/2014/pattaya/wpid-wp-1412997050236.webp" alt="Хаски — фото 1" width="1600" height="1200" decoding="async" /></a></p>

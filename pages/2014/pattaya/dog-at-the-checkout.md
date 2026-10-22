@@ -12,7 +12,7 @@ source_url: "https://pattaya201409.wordpress.com/2014/10/11/%d0%bf%d1%91%d1%81-%
 source_id: 48
 previous:
   path: "2014/pattaya/more-ko-lan"
-  title: "Ещё Ко Ланг"
+  title: "Ещё Ко Лан"
 next:
   path: "2014/pattaya/husky"
   title: "Хаски"

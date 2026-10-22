@@ -20,4 +20,4 @@ next:
 
 <p><a href="/media/2014/pattaya/wpid-wp-1413291725833.jpeg"><img src="/media/2014/pattaya/wpid-wp-1413291725833.webp" alt="Северный пирс — фото 1" width="1600" height="1069" decoding="async" /></a></p>
 <p><a href="/media/2014/pattaya/wpid-wp-1413291786537.jpeg"><img src="/media/2014/pattaya/wpid-wp-1413291786537.webp" alt="Северный пирс — фото 2" width="1600" height="1069" decoding="async" loading="lazy" /></a></p>
-<p>Полузаброшенный пирс, по типу шлюза</p>
+<p>Полузаброшенный пирс по типу шлюза.</p>
