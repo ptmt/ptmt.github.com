@@ -4,13 +4,22 @@
             <section class="latest-posts">
                 <table class="post-file-list" data-row-navigation aria-label="Posts">
                     <tbody>
-                        {{#each posts}}
-                        {{#if (eq metadata.lang "en")}}
-                        <tr data-post-lang="{{metadata.lang}}">
-                            <td class="post-file-name"><a href="/{{path}}">{{title}}</a></td>
-                            <td class="post-file-size">{{formatBytes outputSizeBytes}}</td>
-                            <td class="post-file-date"><time datetime="{{date}}">{{formatDate date "yyyy-MM-dd"}}</time></td>
+                        {{!-- Filter by language before limiting the latest posts. --}}
+                        {{#each (groupBy posts "metadata.lang")}}
+                        {{#if (eq name "en")}}
+                        {{#each (limit items 5)}}
+                        {{include "partials/post-file-row.hbs"}}
+                        {{/each}}
+                        {{!-- Index 5 is the first post beyond the five shown above. --}}
+                        {{#each items}}
+                        {{#if (eq @index 5)}}
+                        <tr>
+                            <td class="post-file-name"><a href="/posts/#post-{{id}}" aria-label="Older posts in the archive">older/</a></td>
+                            <td class="post-file-size"></td>
+                            <td class="post-file-date">{{formatDate date "yyyy"}} &amp; earlier</td>
                         </tr>
+                        {{/if}}
+                        {{/each}}
                         {{/if}}
                         {{/each}}
                     </tbody>

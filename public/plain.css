@@ -58,15 +58,13 @@ h3 {
 
 a,
 .post-file-name a,
-.post-title a,
 .section-title a {
     color: var(--accent);
     text-decoration: underline;
 }
 
 a:hover,
-.post-file-name a:hover,
-.post-title a:hover {
+.post-file-name a:hover {
     color: var(--fg);
 }
 
@@ -176,23 +174,6 @@ a:hover,
     font-size: 0.75rem;
 }
 
-.post-list {
-    display: block;
-}
-
-.post-item {
-    margin-bottom: 1.4rem;
-}
-
-.post-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.post-entry {
-    gap: 0.2rem;
-}
-
 .garage-logo-name {
     color: var(--fg);
     font-family: inherit;
@@ -205,8 +186,7 @@ a:hover,
     line-height: 1.5;
 }
 
-.tag,
-.post-lang {
+.tag {
     border-radius: 0;
     letter-spacing: normal;
     text-transform: none;
