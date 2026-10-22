@@ -241,6 +241,69 @@ article .post-meta time {
     letter-spacing: normal;
 }
 
+.subpost-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.9rem;
+}
+
+.subpost-contents ol {
+    padding-left: 1.75rem;
+}
+
+.subpost-contents li {
+    padding: 0.3rem 0;
+}
+
+.subpost-contents a {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: baseline;
+    gap: 0.75rem;
+}
+
+.subpost-contents time {
+    color: var(--fg-muted);
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.subpost-contents a[aria-current="page"] {
+    font-weight: 700;
+}
+
+.subpost-pagination {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.subpost-next {
+    grid-column: 2;
+    text-align: right;
+}
+
+.subpost-direction {
+    display: block;
+    color: var(--fg-muted);
+    font-size: 0.8rem;
+}
+
+.subpost-all {
+    margin-top: 2rem;
+}
+
+.subpost-all summary {
+    cursor: pointer;
+    margin-bottom: 0.75rem;
+}
+
 .content blockquote {
     border-left: 1px solid var(--border);
 }

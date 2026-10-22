@@ -1,0 +1,16 @@
+{{!-- Include with the parent post (or a subpost's metadata.parent) as context.
+      Statik sorts pages by nav_order. Pages keep entries out of post lists/RSS. --}}
+<nav class="subpost-contents" id="entries" aria-label="{{title}}: all entries" lang="en">
+    <ol>
+        {{#each @root.pages}}
+        {{#if (eq metadata.parent.path ../path)}}
+        <li>
+            <a href="/{{path}}/"{{#if (eq path @root.page.path)}} aria-current="page"{{/if}}>
+                <span lang="{{metadata.lang}}">{{title}}</span>
+                <time datetime="{{metadata.published}}">{{metadata.date}}</time>
+            </a>
+        </li>
+        {{/if}}
+        {{/each}}
+    </ol>
+</nav>

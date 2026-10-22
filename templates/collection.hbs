@@ -1,0 +1,18 @@
+{{!-- A collection is a regular post. Its subposts live in pages/ and declare
+      parent: {path: <this post's path>, title: <this post's title>}.
+      Set nav_order on each subpost to order the shared contents. --}}
+<article>
+    <h1>{{post.title}}</h1>
+    {{#if post.metadata.description}}
+    <p class="post-deck">{{post.metadata.description}}</p>
+    {{/if}}
+    <div class="content">
+        {{{post.content}}}
+    </div>
+    {{#with post}}
+    {{include "partials/subpost-contents.hbs"}}
+    {{/with}}
+    <footer class="post-meta">
+        Published <time datetime="{{post.date}}">{{formatDate post.date "MMMM d, yyyy"}}</time>
+    </footer>
+</article>

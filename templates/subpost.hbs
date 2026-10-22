@@ -1,0 +1,34 @@
+<article>
+    <nav class="subpost-breadcrumb" aria-label="{{page.metadata.parent.title}}" lang="en">
+        <a href="/{{page.metadata.parent.path}}/">← {{page.metadata.parent.title}}</a>
+        <a href="#entries">All entries</a>
+    </nav>
+    <h1>{{page.title}}</h1>
+    <div class="content">
+        {{{page.content}}}
+    </div>
+    <nav class="subpost-pagination" aria-label="Diary entries" lang="en">
+        {{#with page.metadata.previous}}
+        <a href="/{{path}}/" rel="prev">
+            <span class="subpost-direction">← Previous</span>
+            <span lang="{{@root.page.metadata.lang}}">{{title}}</span>
+        </a>
+        {{/with}}
+        {{#with page.metadata.next}}
+        <a href="/{{path}}/" rel="next" class="subpost-next">
+            <span class="subpost-direction">Next →</span>
+            <span lang="{{@root.page.metadata.lang}}">{{title}}</span>
+        </a>
+        {{/with}}
+    </nav>
+    <details class="subpost-all">
+        <summary lang="en">All entries in {{page.metadata.parent.title}}</summary>
+        {{#with page.metadata.parent}}
+        {{include "partials/subpost-contents.hbs"}}
+        {{/with}}
+    </details>
+    <footer class="post-meta" lang="en">
+        Published <time datetime="{{page.metadata.published}}">{{page.metadata.date}}</time>
+        · <a href="{{page.metadata.source_url}}">Original on WordPress</a>
+    </footer>
+</article>
