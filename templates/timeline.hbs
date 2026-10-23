@@ -22,11 +22,6 @@
         </nav>
 
         <div class="story-stage">
-            <div class="story-tools" hidden>
-                <p class="story-count" role="status" aria-live="polite" aria-atomic="true"></p>
-                <span class="story-keyboard-hint" aria-hidden="true">← → to explore</span>
-            </div>
-
             <div class="story-slides">
                 {{#each post.metadata.timeline}}
                 <section id="{{id}}" class="story-slide" aria-label="{{id}}" aria-roledescription="slide" tabindex="-1">
@@ -75,7 +70,6 @@
     const links = Array.from(chapters.querySelectorAll('[data-story-index]'));
     const previous = reader.querySelector('.story-previous');
     const next = reader.querySelector('.story-next');
-    const count = reader.querySelector('.story-count');
     let current = 0;
 
     function indexFromHash() {
@@ -116,8 +110,6 @@
         });
         previous.disabled = current === 0;
         next.textContent = current === slides.length - 1 ? 'Read again ↺' : 'Next →';
-        count.textContent = String(current + 1).padStart(2, '0') + ' / ' + slides.length;
-        count.setAttribute('aria-label', 'Moment ' + (current + 1) + ' of ' + slides.length + ': ' + slides[current].id);
         keepChapterVisible();
 
         if (updateHistory) {
@@ -163,9 +155,7 @@
     window.addEventListener('hashchange', () => show(indexFromHash(), false));
     window.addEventListener('resize', keepChapterVisible);
 
-    reader.querySelectorAll('.story-tools, .story-controls').forEach(control => {
-        control.hidden = false;
-    });
+    reader.querySelector('.story-controls').hidden = false;
     reader.classList.add('is-interactive');
     show(indexFromHash(), false);
 })();

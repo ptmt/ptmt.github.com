@@ -1209,7 +1209,6 @@ body:has(.story-reader) footer {
 }
 
 .story-topline,
-.story-tools,
 .story-controls {
     display: flex;
     justify-content: space-between;
@@ -1245,17 +1244,6 @@ body:has(.story-reader) footer {
     font-family: var(--font-sans);
     font-size: 0.75rem;
     line-height: 1.45;
-}
-
-.story-tools {
-    margin-bottom: 0.35rem;
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    color: var(--fg-muted);
-}
-
-.story-count {
-    font-variant-numeric: tabular-nums;
 }
 
 .story-chapters {
@@ -1384,12 +1372,6 @@ body:has(.story-reader) footer {
     color: var(--accent);
 }
 
-.story-keyboard-hint {
-    font-family: var(--font-mono);
-    font-size: 0.6rem;
-    color: var(--fg-muted);
-}
-
 .story-reader :is(a, button):focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 3px;
@@ -1397,12 +1379,6 @@ body:has(.story-reader) footer {
 
 .story-reader .story-image-next:focus-visible {
     outline-offset: -4px;
-}
-
-@media (pointer: coarse) {
-    .story-keyboard-hint {
-        display: none;
-    }
 }
 
 @media (max-width: 900px) {
@@ -1476,7 +1452,7 @@ body:has(.story-reader) footer {
         display: block;
     }
 
-    .story-reader :is(.story-tools, .story-chapters, .story-controls, .story-image-next) {
+    .story-reader :is(.story-chapters, .story-controls, .story-image-next) {
         display: none !important;
     }
 }

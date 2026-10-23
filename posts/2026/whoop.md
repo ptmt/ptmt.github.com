@@ -1,6 +1,5 @@
 ---
 title: One Year of Whoop
-description: Still Feels Incomplete, but now I know what I want
 draft: true
 lang: en
 template: timeline
@@ -31,7 +30,7 @@ timeline:
     alt: Whoop Lifespan
   - id: Day 60, Feel
     captionText: _Taken from whoop.com. Modified_ In order for the heart rate sensor to work it should slightly push your skin. Always tight. I don't like that, can tolerate, but for that? Too bulky. I miss so much a feeling of ordinary watches or bands that are loose on hand. Maybe in 20 years we'll have a technology that will overcome this.
-    img: /media/2026/whoop/feel_photo_v10-v3.png
+    img: /media/2026/whoop/feel_photo.png
     alt: Edited official WHOOP photograph showing an olive-green WHOOP v5 wristband beside a slim imaginary WHOOP v10 rubber band, with small text labels
   - id: Day 63, Sickness
     captionText: You're sick — no support at all, no "pause" of any sort, gives you one more thing to worry about. When you're unwell, the device continues tracking and potentially misinterpreting your data, adding stress rather than providing helpful insights. It attributes my low recovery to yesterday's heavy strain, even when I'm sick. "A lower Recovery is normal after heavy strain."
@@ -57,8 +56,8 @@ timeline:
   - id: Day 180, Two Device Problem
     captionText: In most cardio interval activities you still would want the second device. In cycling, my main sport, I have a bike computer and a powermeter and an HRM strap anyway. In running, it's a bit more wierd, and in swimming it's just **ridiculous**. So my current solution is a bicep strap, it's a bit comfier and at least I get to pretend I wear only one watch. 
     alt: bicep strap
-  - id: Day 365, What I Want
-    captionText: "Whoop showed me a new frontier and I'd love to keep using something like this. But that won't be a Whoop v5. What I want: hackable device, either much less noticable, like a ring or a ribber band or just combines a watch with all day long sensors in a predicted way."
+  - id: Day 365, Goodbye
+    captionText: "Whoop showed me a new frontier and I'd love to keep using something like this. But that won't be a Whoop v5."
     img: /media/2026/whoop/365_day_streak.png
     alt: WHOOP app celebrating a 365-day streak with the New Day Streak Unlocked message
   - id: Day 400, Epilogue
