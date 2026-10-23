@@ -676,6 +676,26 @@ article h1 {
     margin: var(--spacing-large) 0;
 }
 
+.content .image-disclosure {
+    margin-bottom: 1.5em;
+}
+
+.content .image-disclosure summary {
+    color: var(--fg-muted);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.content .image-disclosure summary:is(:hover, :focus-visible) {
+    color: var(--fg);
+}
+
+.content .image-disclosure img {
+    display: block;
+    margin: var(--spacing-base) 0 0;
+}
+
 .content figure {
     margin: var(--spacing-large) 0;
 }
