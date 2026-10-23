@@ -345,6 +345,7 @@ footer {
     margin: 0 auto;
 }
 
+.main-content:has(.post-archive),
 .main-content:has(.garage-page),
 .main-content:has(.idea-layout) {
     width: 100%;
@@ -442,6 +443,16 @@ footer {
     text-align: right;
 }
 
+.post-archive {
+    table-layout: auto;
+}
+
+.post-archive td:nth-child(2),
+.post-archive td:nth-child(3) {
+    width: 1%;
+    padding-left: 1rem;
+}
+
 .post-file-list tbody tr td {
     transition: background-color 0.12s, color 0.12s;
 }
@@ -465,6 +476,12 @@ footer {
     line-height: 1.35;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.post-archive .post-file-name {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
 }
 
 .post-file-name a {
