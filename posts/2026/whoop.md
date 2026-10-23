@@ -25,9 +25,10 @@ timeline:
     video: /media/2026/whoop/basic_charger.mp4
     poster: /media/2026/whoop/basic_charger.jpg
     alt: WHOOP basic charger plugged in while worn on the wrist
-  - id: Day 30, Patience
-    captionText: My Whoop's finally calibrated. But what it shows me is barely interesting. HRV in the morning I have hardly trust.
-    alt: Whoop Lifespan
+  - id: Day 30, Calibrated
+    captionText: My Whoop's finally calibrated. But what it shows me is barely interesting. HRV in the morning I have hardly trust. 5K steps is too low, but I hoped it can capture other type of all day movement and normalize it. 
+    img: /media/2026/whoop/8D534E91-C7FF-48E0-B445-763970033A2F_1_105_c.jpeg
+    alt: WHOOP Age dashboard showing an age of 33, weekly activity metrics, steps, and VO2 max
   - id: Day 60, Feel
     captionText: _Taken from whoop.com. Modified_ In order for the heart rate sensor to work it should slightly push your skin. Always tight. I don't like that, can tolerate, but for that? Too bulky. I miss so much a feeling of ordinary watches or bands that are loose on hand. Maybe in 20 years we'll have a technology that will overcome this.
     img: /media/2026/whoop/feel_photo.png
@@ -41,7 +42,7 @@ timeline:
     img: /media/2026/whoop/auto_detected_activities.png
     alt: WHOOP app listing sleep, walking, and multiple yard work and gardening activities with strain scores
   - id: Day 80, More Metrics
-    captionText: HRV is not a holy grail, but Whoop relies on it too much. I hoped that a lot of secret sauce overweight the lack of transparency, but so far it doesn't.
+    captionText: HRV is not a holy grail, but Whoop relies on it too much. I hoped that a lot of secret sauce overweight the lack of transparency, but so far it doesn't. It seems software is on the limit, we need another breakthrough, like a glucose sensor. And somehow measure true muscle strain.
     alt: HRV limitations
   - id: Day, 90 Big Brother
     captionText: Big Brother concern. 24x7 continuous monitoring and data collection. Thank god it doesn't have GPS at least, right?
@@ -52,7 +53,8 @@ timeline:
     alt: Grids of colored squares showing recovery in green and yellow, strain in blue, and sleep in purple from my Whoop data export
   - id: Day 150, Am I really better now
     captionText: so I keep going do a run now in pursiut of better VO2Max or lower heart rate
-    alt: better
+    img: /media/2026/whoop/1F35E9B8-F40D-4F10-B36C-97BA22AE6314_1_105_c.jpeg
+    alt: WHOOP heart rate zones 4–5 trend showing weekly activity totals and a 34-minute weekly average
   - id: Day 180, Two Device Problem
     captionText: In most cardio interval activities you still would want the second device. In cycling, my main sport, I have a bike computer and a powermeter and an HRM strap anyway. In running, it's a bit more wierd, and in swimming it's just **ridiculous**. So my current solution is a bicep strap, it's a bit comfier and at least I get to pretend I wear only one watch. 
     alt: bicep strap
