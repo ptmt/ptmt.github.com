@@ -60,17 +60,20 @@
     <div class="home-right-column">
         <h2 class="sidebar-title">At random</h2>
         <section class="random-image-section">
-            <div id="random-image" class="skeleton" aria-busy="true">
-                <div class="image-source"></div>
-            </div>
+            <figure id="random-image" class="skeleton" aria-busy="true">
+                <div class="image-wrapper">Loading image…</div>
+                <figcaption class="image-source" tabindex="0" aria-label="Image caption"></figcaption>
+            </figure>
         </section>
 
         <section class="random-quote-section">
-            <div id="random-quote" class="skeleton" aria-busy="true">
-                <div class="quote-text"></div>
-                <div class="quote-author"></div>
-                <div class="quote-source"></div>
-            </div>
+            <figure id="random-quote" class="skeleton" aria-busy="true" tabindex="0" aria-label="Random quote">
+                <blockquote class="quote-text">Loading quote…</blockquote>
+                <figcaption class="quote-source">
+                    <div class="quote-author"></div>
+                    <div class="quote-reference"></div>
+                </figcaption>
+            </figure>
         </section>
 
         {{include "partials/footer.hbs"}}

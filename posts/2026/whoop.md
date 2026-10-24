@@ -13,15 +13,21 @@ timeline:
     img: /media/2026/whoop/watch_vs_whoop.png
     alt: This is what Whoop + bracelet look like
   - id: Day 2, Fashion
-    captionText: Fashion attribute for people have common hobbies and attitude. It's a statement piece that signals belonging to a community of health-conscious individuals who share similar values and lifestyles. But what is trendy today, tomorrow will make you tired
-    img: /media/2026/whoop/watch_vs_whoop.png
-    alt: Fashion attribute and community
+    captionText: |
+      Fashion attribute for people have common hobbies and attitude. It's a statement piece that signals belonging to a community of health-conscious individuals who share similar values and lifestyles. But what is trendy today, tomorrow will make you tired
+
+      _Photos: [Wan Mikhail Roslan / NurPhoto via Getty Images, via GQ Italia](https://www.gqitalia.it/article/charles-leclerc-orologi-richard-mille-whoop); [Photopress.be, via Pianeta MTB](https://www.pianetamountainbike.it/risultati-gare-mtb/20863-campionati-mondiali-cyclo-cross/71929-van-der-poel); [WHOOP press kit](https://www.whoop.com/us/en/press-center/)._
+    img: /media/2026/whoop/fashion-collage.jpg
+    alt: Three photos of Charles Leclerc, Mathieu van der Poel and Cristiano Ronaldo wearing WHOOP bands, in the paddock, celebrating a cycling victory and training with a football
   - id: Day 7, iOS app
     captionText: The app is optimized for retention and it shows. It's just feels right, and I didn't have any problems with finding what I want in it.
     img: /media/2026/whoop/ios_app.jpeg
     alt: iOS App Screenshot
   - id: Day 14, Charging
-    captionText: _(c)_ _from whoop.com._ Not needing to charge it for weeks is a nice feeling, but surprisingly not that important. Unless you travel often, maybe. And you supposed to charge it on you, so you won't loose even a heartbeat. But I'm not convinced. I feel like a prisoner.
+    captionText: |
+      Not needing to charge it for weeks is a nice feeling, but surprisingly not that important. Unless you travel often, maybe. And you supposed to charge it on you, so you won't loose even a heartbeat. But I'm not convinced. I feel like a prisoner.
+
+      _Video: © [WHOOP](https://www.whoop.com/)._
     video: /media/2026/whoop/basic_charger.mp4
     poster: /media/2026/whoop/basic_charger.jpg
     alt: WHOOP basic charger plugged in while worn on the wrist
@@ -30,7 +36,10 @@ timeline:
     img: /media/2026/whoop/8D534E91-C7FF-48E0-B445-763970033A2F_1_105_c.jpeg
     alt: WHOOP Age dashboard showing an age of 33, weekly activity metrics, steps, and VO2 max
   - id: Day 60, Feel
-    captionText: _Taken from whoop.com. Modified_ In order for the heart rate sensor to work it should slightly push your skin. Always tight. I don't like that, can tolerate, but for that? Too bulky. I miss so much a feeling of ordinary watches or bands that are loose on hand. Maybe in 20 years we'll have a technology that will overcome this.
+    captionText: |
+      In order for the heart rate sensor to work it should slightly push your skin. Always tight. I don't like that, can tolerate, but for that? Too bulky. I miss so much a feeling of ordinary watches or bands that are loose on hand. Maybe in 20 years we'll have a technology that will overcome this.
+
+      _Photo: © [WHOOP](https://www.whoop.com/), modified._
     img: /media/2026/whoop/feel_photo.png
     alt: Edited official WHOOP photograph showing an olive-green WHOOP v5 wristband beside a slim imaginary WHOOP v10 rubber band, with small text labels
   - id: Day 63, Sickness
@@ -42,8 +51,9 @@ timeline:
     img: /media/2026/whoop/auto_detected_activities.png
     alt: WHOOP app listing sleep, walking, and multiple yard work and gardening activities with strain scores
   - id: Day 80, More Metrics
-    captionText: HRV is not a holy grail, but Whoop relies on it too much. I hoped that a lot of secret sauce overweight the lack of transparency, but so far it doesn't. It seems software is on the limit, we need another breakthrough, like a glucose sensor. And somehow measure true muscle strain.
-    alt: HRV limitations
+    captionText: HRV is not a holy grail, but Whoop relies on it too much. I hoped that a lot of secret sauce overweight the lack of transparency, but so far it doesn't. The trends feature for example, can confuse cause and effect too — Whoop credits caffeine with 8% better recovery, but I only drink coffee when I'm healthy and feel great, not the other way around. It seems software is on the limit, we need another breakthrough for more data, like a glucose sensor. And somehow measure true muscle strain.
+    img: /media/2026/whoop/B08F14B9-3889-43BC-A92A-394CA738C304_1_105_c.jpeg
+    alt: WHOOP Recovery Impact Analysis showing caffeine with a +8% recovery impact and consistent bedtime with +6%
   - id: Day, 90 Big Brother
     captionText: Big Brother concern. 24x7 continuous monitoring and data collection. Thank god it doesn't have GPS at least, right?
     alt: Big Brother concern

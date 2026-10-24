@@ -320,13 +320,9 @@ body:has(.home-layout) .home-right-column {
 }
 
 #random-quote .quote-text {
-    padding: 0;
+    padding: 0 0 0 0.85rem;
     font-size: 1rem;
     line-height: 1.6;
-}
-
-#random-quote .quote-text::before {
-    content: none;
 }
 
 #random-image .image-source-link,

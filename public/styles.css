@@ -844,17 +844,31 @@ html.image-viewer-open {
 }
 
 /* Widgets */
+.random-image-section,
+.random-quote-section {
+    flex-shrink: 0;
+}
+
 #random-image {
     margin: var(--spacing-large) 0;
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    gap: 0.75rem;
 }
 
 #random-image .image-wrapper {
     aspect-ratio: 16 / 9;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fg-muted);
+    font-size: 0.85rem;
+}
+
+#random-image.skeleton .image-wrapper {
+    background: var(--bg-subtle);
 }
 
 #random-image .image-wrapper img {
@@ -866,6 +880,9 @@ html.image-viewer-open {
 
 #random-quote {
     margin: var(--spacing-large) 0;
+    height: 14rem;
+    overflow-y: auto;
+    overscroll-behavior: contain;
 }
 
 #random-quote .quote-text {
@@ -874,31 +891,20 @@ html.image-viewer-open {
     color: var(--fg);
     font-style: normal;
     margin-bottom: 0.5em;
-    padding-left: 1.15em;
-    position: relative;
+    padding-left: 0.85rem;
+    border-left: 2px solid var(--border);
     overflow-wrap: anywhere;
-}
-
-#random-quote .quote-text::before {
-    content: '"';
-    position: absolute;
-    left: 0;
-    font-size: 3em;
-    line-height: 1;
-    color: var(--fg-light);
-    opacity: 0.3;
-    font-style: normal;
 }
 
 #random-quote .quote-author {
     color: var(--fg-muted);
-    font-size: 0.9rem;
     overflow-wrap: anywhere;
 }
 
 #random-quote .quote-source {
     margin-top: 0.5em;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
     color: var(--fg-muted);
     overflow-wrap: anywhere;
 }
@@ -916,20 +922,21 @@ html.image-viewer-open {
 
 #random-image .image-source {
     color: var(--fg-muted);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     line-height: 1.4;
+    height: 6em;
+    overflow-y: auto;
+    overscroll-behavior: contain;
     overflow-wrap: anywhere;
 }
 
 #random-image .image-title {
-    color: var(--fg-muted);
-    font-size: 0.85rem;
-    margin-right: 0.5em;
+    display: block;
+    margin-bottom: 0.35em;
 }
 
 #random-image .image-source-link {
     color: var(--fg);
-    font-size: 0.85rem;
     text-decoration: none;
     transition: opacity 0.2s;
 }
