@@ -14,7 +14,7 @@ timeline:
     alt: This is what Whoop + bracelet look like
   - id: Day 2, Fashion
     captionText: |
-      Fashion attribute for people have common hobbies and attitude. It's a statement piece that signals belonging to a community of health-conscious individuals who share similar values and lifestyles. But what is trendy today, tomorrow will make you tired
+      Fashion attribute for people who share similar values and lifestyles. It also unlocks you to wear nice physical watches and not loose "recovery" data at the same time. Do you want to wear a  $100K watch, not some stupid Apple Watch or Garmin, right?
 
       _Photos: [Wan Mikhail Roslan / NurPhoto via Getty Images, via GQ Italia](https://www.gqitalia.it/article/charles-leclerc-orologi-richard-mille-whoop); [Photopress.be, via Pianeta MTB](https://www.pianetamountainbike.it/risultati-gare-mtb/20863-campionati-mondiali-cyclo-cross/71929-van-der-poel); [WHOOP press kit](https://www.whoop.com/us/en/press-center/)._
     img: /media/2026/whoop/fashion-collage.jpg
