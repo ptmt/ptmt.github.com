@@ -66,8 +66,12 @@ timeline:
     img: /media/2026/whoop/1F35E9B8-F40D-4F10-B36C-97BA22AE6314_1_105_c.jpeg
     alt: WHOOP heart rate zones 4–5 trend showing weekly activity totals and a 34-minute weekly average
   - id: Day 180, Two Device Problem
-    captionText: In most cardio interval activities you still would want the second device. In cycling, my main sport, I have a bike computer and a powermeter and an HRM strap anyway. In running, it's a bit more wierd, and in swimming it's just **ridiculous**. So my current solution is a bicep strap, it's a bit comfier and at least I get to pretend I wear only one watch. 
-    alt: bicep strap
+    captionText: |
+      In most cardio interval activities you still would want the second device. In cycling, my main sport, I have a bike computer and a powermeter and an HRM strap anyway. In running, it's a bit more wierd, and in swimming it's just **ridiculous**. So my current solution is a bicep strap, it's a bit comfier and at least I get to pretend I wear only one watch.
+
+      _Photos: © WHOOP ([bicep band](https://shop.whoop.com/us/en/products/coreknit-bicep-band/), [arm sleeve](https://shop.whoop.com/us/en/products/5-0-arm-sleeve/), [WHOOP Body](https://www.whoop.com/us/en/accessories-guide/))._
+    img: /media/2026/whoop/wearing-options-collage.jpg
+    alt: Three official WHOOP photos showing a bicep band on the upper arm, an arm sleeve worn by a basketball player, and a sensor being inserted into a WHOOP Body waist pocket
   - id: Day 365, Goodbye
     captionText: "Whoop showed me a new frontier and I'd love to keep using something like this. But that won't be a Whoop v5."
     img: /media/2026/whoop/365_day_streak.png
